@@ -1,0 +1,43 @@
+{
+  "status": "PROVISIONAL_CATEGORIES_UNREVIEWED",
+  "seed": 42,
+  "categories": {
+    "ood_near": [
+      "LAMP",
+      "LIGHT_FIXTURE"
+    ],
+    "ood_far": [
+      "SHOES",
+      "SANDAL",
+      "BOOT"
+    ]
+  },
+  "max_per_tier": 150,
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "backend": "onnx_float32",
+    "max_seq_length": 256
+  },
+  "excluded": {
+    "high_frequency_shared_image": 982,
+    "overlap_with_existing_group": 13
+  },
+  "skipped_pairs": {},
+  "item_counts": {
+    "ood_far": 150,
+    "ood_near": 150
+  },
+  "pair_counts": {
+    "ood_far/pos": 150,
+    "ood_far/N1": 150,
+    "ood_far/N2": 150,
+    "ood_near/pos": 150,
+    "ood_near/N1": 150,
+    "ood_near/N2": 150,
+    "ood_far/N3": 29,
+    "ood_near/N3": 29
+  },
+  "group_overlap_with_existing": 0,
+  "note": "No training on OOD; thresholds must come from ID validation. N3 coverage is unequal; no final class balance claimed."
+}

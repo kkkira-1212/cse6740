@@ -1,0 +1,23 @@
+{
+  "ID": {
+    "uploaded_filename": "sean_review_completed.csv",
+    "source_sha256": "8a8ed4b3bf8e44e871ce08f1b1ae858d86e75043755a19dbb34d8453a146b954",
+    "rows": 200,
+    "retained_n3": 100,
+    "retained_n3_by_split": {
+      "train": 84,
+      "test": 5,
+      "val": 11
+    }
+  },
+  "OOD": {
+    "uploaded_filename": "sean_review_completed (1).csv",
+    "source_sha256": "12c8f3481e8c69d576e6f1ecf52a2cc0ff73967747426e4e9c53ed06f792a7b7",
+    "rows": 60,
+    "retained_n3": 19,
+    "retained_n3_by_split": {
+      "ood_near": 10,
+      "ood_far": 9
+    }
+  }
+}

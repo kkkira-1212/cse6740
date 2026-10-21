@@ -1,0 +1,64 @@
+{
+  "upstream_commit": "d40b8f3495487c885947bac0a8be5f4df6a984e3",
+  "stage": "RECHECK_COMPLETE_N2_ADJUDICATION_PENDING",
+  "recheck_rows": 39,
+  "recheck_counts": {
+    "mismatch": 28,
+    "uncertain": 3,
+    "match": 8
+  },
+  "reused_N2_judgments": 61,
+  "reused_N3_judgments": 100,
+  "current_ID_judgments": {
+    "N2": {
+      "total": 100,
+      "counts": {
+        "match": 35,
+        "mismatch": 59,
+        "uncertain": 6
+      },
+      "determinate": 94,
+      "false_negative_rate": 0.3723404255319149,
+      "uncertain_rate": 0.06,
+      "denominator": "match + mismatch; pending and uncertain excluded"
+    },
+    "N3": {
+      "total": 100,
+      "counts": {
+        "mismatch": 100
+      },
+      "determinate": 100,
+      "false_negative_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "denominator": "match + mismatch; pending and uncertain excluded"
+    }
+  },
+  "n3_split_changes": 108,
+  "retained_N3_split_changes": 7,
+  "n3_by_split": {
+    "train": 885,
+    "val": 104,
+    "test": 129
+  },
+  "diagnostics": {
+    "N1": {
+      "rows": 3978,
+      "cross_split": 0,
+      "same_image": 0,
+      "positive_input_collision": 0,
+      "same_group": 0
+    },
+    "N2": {
+      "rows": 3977,
+      "cross_split": 0,
+      "same_image": 0,
+      "positive_input_collision": 0,
+      "same_group": 0
+    }
+  },
+  "residual_image_paths_across_splits": 2,
+  "source_upload_sha256": "dd44d997464ed85061a57b1f695276f2e13e9a75038fb18da1130b5fc7d722a8",
+  "recheck_dataset_id": "6ae79afd34dd0bc3bf3b",
+  "interpretation": "Reviewer match-flag rates, not adjudicated false-negative rates. Changed-only batch is not a random new sample. Two unchanged N2 disputes remain pending; original labels preserved.",
+  "ood_validation": "Full selection rerun against current items: selected 300 rows including group IDs identical; image/text and judgments unchanged."
+}

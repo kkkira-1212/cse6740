@@ -1,0 +1,20 @@
+pair_id,item_id,image_path,text,label,neg_type,category,year,split
+B07QB7HXY1_N3,B07QB7HXY1,small/96/96a23fb3.jpg,"Amazon Brand – Ravenna Home Farmhouse Wall Sconce Light, 17.93""H, Blue",0,N3,LIGHT_FIXTURE,,ood_near
+B07JQB4S6S_N3,B07JQB4S6S,small/48/4820d4df.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Wall Sconce Fixture With Light Bulb - 4.75 x 5.5 x 11 Inches, Blue, For Indoor Outdoor Use",0,N3,LIGHT_FIXTURE,,ood_near
+B0711Q7WK7_N3,B0711Q7WK7,small/4b/4bf05f8b.jpg,"Amazon Brand – Rivet Modern Industrial Geometric Cage Pendant Chandelier Fixture With Light Bulb - 10.5 x 10.5 Inch, 14.75-62.75 Inch Cord, Green",0,N3,LIGHT_FIXTURE,,ood_near
+B07HK5CDRQ_N3,B07HK5CDRQ,small/ce/ce0b55a2.jpg,"Amazon Brand – Stone & Beam Modern Indoor Outdoor Wall Mount Sconce with Light Bulb, 11.75""H, Green",0,N3,LIGHT_FIXTURE,,ood_near
+B07MBFG1D2_N3,B07MBFG1D2,small/35/350ef17f.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp with LED Light Bulb, 16""H, Green",0,N3,LAMP,,ood_near
+B07374P5NP_N3,B07374P5NP,small/67/670c21b4.jpg,"Amazon Brand – Rivet Eclipse Mid Century Modern 5-Globe Hanging Ceiling Pendant Chandelier Fixture - 20 x 20 x 48 Inches, Red Metal With Frosted Glass Globes",0,N3,LIGHT_FIXTURE,,ood_near
+B07HKGY4F2_N3,B07HKGY4F2,small/96/9656ad8c.jpg,"Amazon Brand – Rivet Modern Concrete Cubic Outdoor Porch Light Wall Sconce with Integrated LED Light - 4.75 x 5.63 x 4.75 Inches, Green Base",0,N3,LIGHT_FIXTURE,,ood_near
+B07374K539_N3,B07374K539,small/ba/ba7a184e.jpg,"Amazon Brand – Stone & Beam Modern Ceiling Pendant Light Chandelier Fixture With Glass Shade - 11.5 x 11.5 x 42 Inches, Yellow",0,N3,LIGHT_FIXTURE,,ood_near
+B07MBFDJQ3_N3,B07MBFDJQ3,small/0c/0c84de5f.jpg,"Amazon Brand – Ravenna Home Textured Ceramic Base Table Lamp with LED Light Bulb, 18""H, Red - 20465-002",0,N3,LAMP,,ood_near
+B07B4YS1QP_N3,B07B4YS1QP,small/8e/8edf95e9.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5 x 10 Inches, Blue",0,N3,LIGHT_FIXTURE,,ood_near
+B06X9XF23R_N3,B06X9XF23R,small/4d/4dfe5a87.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Red US 10.5,0,N3,SHOES,,ood_far
+B082TJLTF3_N3,B082TJLTF3,small/19/196a5c8f.jpg,"Amazon Essentials Women's Ivy Sandal, Red, 7 Medium US",0,N3,SANDAL,,ood_far
+B071KPV8YT_N3,B071KPV8YT,small/4f/4f8b115d.jpg,"Amazon Brand - find. Men's Mansall Smart Strap, Red, US 12",0,N3,BOOT,,ood_far
+B07Y5X8G7G_N3,B07Y5X8G7G,small/2d/2d54094e.jpg,"find. Women's Weave Slingback Leather Open Toe Sandals, Red, 2",0,N3,SANDAL,,ood_far
+B06XRX1H42_N3,B06XRX1H42,small/0a/0a2472fa.jpg,"find. Women's 10311 Open-Toe Sandals, Blue, 8 US",0,N3,SHOES,,ood_far
+B07Z59BQ57_N3,B07Z59BQ57,small/8c/8c21ce00.jpg,"find. Women's Mule Wedge Leather Open Toe Heels, Yellow, US-0 / Asia Size s",0,N3,SHOES,,ood_far
+B06XGZPP8T_N3,B06XGZPP8T,small/7e/7e70bd65.jpg,"Amazon Brand - The Fix Women's Dolly Block Heel Buckle Gladiator Sandal,Green,11 B US",0,N3,SHOES,,ood_far
+B08CHZY3H7_N3,B08CHZY3H7,small/9b/9bd45e82.jpg,Solefit Women's Yellow Slippers-7 UK (41 EU) (SLFT-0067),0,N3,SHOES,,ood_far
+B071GFDG1X_N3,B071GFDG1X,small/9e/9e9752b5.jpg,"Amazon Brand - find. Men's Classic Casual, Yellow, US 8",0,N3,BOOT,,ood_far

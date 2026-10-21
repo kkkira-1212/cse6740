@@ -1,0 +1,19 @@
+{
+  "status": "UNREVIEWED_CANDIDATES",
+  "seed": 42,
+  "items": 3978,
+  "candidates": 1118,
+  "raw_color_checked": true,
+  "by_split": {
+    "train": 885,
+    "val": 104,
+    "test": 129
+  },
+  "skipped_by_reason": {
+    "raw_color_missing_multivalue_or_ambiguous": 2538,
+    "title_must_contain_exactly_one_known_color_span": 213,
+    "title_metadata_color_disagree": 32,
+    "title_multicolor_pattern_or_swatch": 3,
+    "high_frequency_shared_image": 74
+  }
+}

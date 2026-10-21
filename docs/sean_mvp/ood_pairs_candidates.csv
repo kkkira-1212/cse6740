@@ -1,0 +1,959 @@
+pair_id,item_id,image_path,text,label,neg_type,category,year,split
+B07PJ7QGWJ_pos,B07PJ7QGWJ,small/80/80be2fb6.jpg,"Amazon Essentials Women's Aola Ankle Boot, Black, 12 B US",1,pos,BOOT,,ood_far
+B07PJ7QGWJ_N1,B06XH4MS2C,small/da/dad7c657.jpg,"Amazon Essentials Women's Aola Ankle Boot, Black, 12 B US",0,N1,BOOT,,ood_far
+B07PJ7QGWJ_N2,B074JPC2PH,small/b9/b9168d0e.jpg,"Amazon Essentials Women's Aola Ankle Boot, Black, 12 B US",0,N2,BOOT,,ood_far
+B07D6DPY1Y_pos,B07D6DPY1Y,small/94/9411e28d.jpg,"find. Women's Contrast Heel, Black, US 10.5",1,pos,BOOT,,ood_far
+B07D6DPY1Y_N1,B071JM37NH,small/cb/cb64d319.jpg,"find. Women's Contrast Heel, Black, US 10.5",0,N1,BOOT,,ood_far
+B07D6DPY1Y_N2,B07D942QW9,small/69/6912629e.jpg,"find. Women's Contrast Heel, Black, US 10.5",0,N2,BOOT,,ood_far
+B07PKD2N2Q_pos,B07PKD2N2Q,small/c8/c8858713.jpg,Amazon Brand - find. Women’s Wide Fit Open Toe Sandals,1,pos,SHOES,,ood_far
+B07PKD2N2Q_N1,B07L6KL3P4,small/40/4016fb3b.jpg,Amazon Brand - find. Women’s Wide Fit Open Toe Sandals,0,N1,SHOES,,ood_far
+B07PKD2N2Q_N2,B06XRX1H42,small/0a/0a2472fa.jpg,Amazon Brand - find. Women’s Wide Fit Open Toe Sandals,0,N2,SHOES,,ood_far
+B074KPGTB1_pos,B074KPGTB1,small/77/77d6bd98.jpg,"Amazon Brand - The Fix Women's Sutton Round-Toe Sequin Ankle Boot, Silver, 6.5 B US",1,pos,BOOT,,ood_far
+B074KPGTB1_N1,B072V88KHV,small/92/927cd580.jpg,"Amazon Brand - The Fix Women's Sutton Round-Toe Sequin Ankle Boot, Silver, 6.5 B US",0,N1,BOOT,,ood_far
+B074KPGTB1_N2,B074JPC2PH,small/b9/b9168d0e.jpg,"Amazon Brand - The Fix Women's Sutton Round-Toe Sequin Ankle Boot, Silver, 6.5 B US",0,N2,BOOT,,ood_far
+B078GVYVLD_pos,B078GVYVLD,small/9b/9ba3d31a.jpg,Amazon Brand - 206 Collective Men's Greenlake Double Band Velcro Sandal,1,pos,SANDAL,,ood_far
+B078GVYVLD_N1,B07NSQJ4DY,small/6c/6cbd67c6.jpg,Amazon Brand - 206 Collective Men's Greenlake Double Band Velcro Sandal,0,N1,SANDAL,,ood_far
+B078GVYVLD_N2,B07MHY7Y5C,small/ba/badc896e.jpg,Amazon Brand - 206 Collective Men's Greenlake Double Band Velcro Sandal,0,N2,SANDAL,,ood_far
+B081Q9TKG3_pos,B081Q9TKG3,small/85/85033b6c.jpg,find. Women's Inset Heel Strippy Mule,1,pos,SANDAL,,ood_far
+B081Q9TKG3_N1,B07G17D96L,small/2f/2f753db4.jpg,find. Women's Inset Heel Strippy Mule,0,N1,SANDAL,,ood_far
+B081Q9TKG3_N2,B07Z59MNTP,small/5a/5a44a697.jpg,find. Women's Inset Heel Strippy Mule,0,N2,SANDAL,,ood_far
+B07TL53LYZ_pos,B07TL53LYZ,small/95/950ff680.jpg,"find. Arthur Classic Boots, Brown Napa Tan), 11.5 UK",1,pos,BOOT,,ood_far
+B07TL53LYZ_N1,B07VQ8KTTD,small/02/0224f081.jpg,"find. Arthur Classic Boots, Brown Napa Tan), 11.5 UK",0,N1,BOOT,,ood_far
+B07TL53LYZ_N2,B07VQ8KTTD,small/02/0224f081.jpg,"find. Arthur Classic Boots, Brown Napa Tan), 11.5 UK",0,N2,BOOT,,ood_far
+B07WJYHL4B_pos,B07WJYHL4B,small/d0/d0934019.jpg,find. Womens^Women's Soft Leather Loafer,1,pos,SHOES,,ood_far
+B07WJYHL4B_N1,B078B281PN,small/ce/ce3a1cd6.jpg,find. Womens^Women's Soft Leather Loafer,0,N1,SHOES,,ood_far
+B07WJYHL4B_N2,B07W5VV562,small/7e/7e821528.jpg,find. Womens^Women's Soft Leather Loafer,0,N2,SHOES,,ood_far
+B0813HP9SB_pos,B0813HP9SB,small/84/84054e59.jpg,"find. Womens^Women's Strippy Wedge Espadrille Sandal, Beige Natural, 8 us",1,pos,SANDAL,,ood_far
+B0813HP9SB_N1,B07TJ1D7LB,small/d6/d64e6f49.jpg,"find. Womens^Women's Strippy Wedge Espadrille Sandal, Beige Natural, 8 us",0,N1,SANDAL,,ood_far
+B0813HP9SB_N2,B082TK5FJ9,small/3e/3e97147d.jpg,"find. Womens^Women's Strippy Wedge Espadrille Sandal, Beige Natural, 8 us",0,N2,SANDAL,,ood_far
+B071GFDG1X_pos,B071GFDG1X,small/9e/9e9752b5.jpg,"Amazon Brand - find. Men's Classic Casual, Black, US 8",1,pos,BOOT,,ood_far
+B071GFDG1X_N1,B0789K8F8Z,small/d8/d853c702.jpg,"Amazon Brand - find. Men's Classic Casual, Black, US 8",0,N1,BOOT,,ood_far
+B071GFDG1X_N2,B071KPV8YT,small/4f/4f8b115d.jpg,"Amazon Brand - find. Men's Classic Casual, Black, US 8",0,N2,BOOT,,ood_far
+B06X989ZYF_pos,B06X989ZYF,small/9d/9d72c834.jpg,Amazon Brand - find. Women’s Sandals Mid-heel Ankle Strap Brown (Cuoio) US 7.5,1,pos,SANDAL,,ood_far
+B06X989ZYF_N1,B07G17D96L,small/2f/2f753db4.jpg,Amazon Brand - find. Women’s Sandals Mid-heel Ankle Strap Brown (Cuoio) US 7.5,0,N1,SANDAL,,ood_far
+B06X989ZYF_N2,B075Z53FTN,small/cf/cf00a434.jpg,Amazon Brand - find. Women’s Sandals Mid-heel Ankle Strap Brown (Cuoio) US 7.5,0,N2,SANDAL,,ood_far
+B07WHTR647_pos,B07WHTR647,small/5f/5f83dfef.jpg,"find. Tassle Leather Loafers, Brown (Tan), 3.5 UK",1,pos,SHOES,,ood_far
+B07WHTR647_N1,B07Z59MNTP,small/5a/5a44a697.jpg,"find. Tassle Leather Loafers, Brown (Tan), 3.5 UK",0,N1,SHOES,,ood_far
+B07WHTR647_N2,B06XG48Q89,small/d6/d67c0456.jpg,"find. Tassle Leather Loafers, Brown (Tan), 3.5 UK",0,N2,SHOES,,ood_far
+B072MTQ2J4_pos,B072MTQ2J4,small/98/982584d3.jpg,"Red Wagon Le Chat, Girls’ Mary Jane Black 10 UK Child (28 EU)",1,pos,SHOES,,ood_far
+B072MTQ2J4_N1,B01N2B34Z0,small/e0/e0cb5691.jpg,"Red Wagon Le Chat, Girls’ Mary Jane Black 10 UK Child (28 EU)",0,N1,SHOES,,ood_far
+B072MTQ2J4_N2,B071K1FF2Q,small/d0/d012290c.jpg,"Red Wagon Le Chat, Girls’ Mary Jane Black 10 UK Child (28 EU)",0,N2,SHOES,,ood_far
+B07VBC5FQX_pos,B07VBC5FQX,small/a2/a27f5642.jpg,Amazon Essentials Kids' Maui Sneaker,1,pos,SHOES,,ood_far
+B07VBC5FQX_N1,B06X9W194C,small/94/94271ad6.jpg,Amazon Essentials Kids' Maui Sneaker,0,N1,SHOES,,ood_far
+B07VBC5FQX_N2,B07W5R75YP,small/d9/d9a56c4b.jpg,Amazon Essentials Kids' Maui Sneaker,0,N2,SHOES,,ood_far
+B075ZZQHN7_pos,B075ZZQHN7,small/00/00fca538.jpg,"Amazon Brand - 206 Collective Women's Linden Mid Rain Boot, Burgundy, 7 B US",1,pos,BOOT,,ood_far
+B075ZZQHN7_N1,B0812CLS7C,small/5b/5be2f045.jpg,"Amazon Brand - 206 Collective Women's Linden Mid Rain Boot, Burgundy, 7 B US",0,N1,BOOT,,ood_far
+B075ZZQHN7_N2,B07NC445X2,small/fd/fdfc1d9b.jpg,"Amazon Brand - 206 Collective Women's Linden Mid Rain Boot, Burgundy, 7 B US",0,N2,BOOT,,ood_far
+B06WD6K3VH_pos,B06WD6K3VH,small/54/54e1f1bd.jpg,"find. Women's 116393 Boots, Blue Navy Black, 8 US",1,pos,SHOES,,ood_far
+B06WD6K3VH_N1,B07L95D8W7,small/f4/f4e63fc9.jpg,"find. Women's 116393 Boots, Blue Navy Black, 8 US",0,N1,SHOES,,ood_far
+B06WD6K3VH_N2,B06XRX1H42,small/0a/0a2472fa.jpg,"find. Women's 116393 Boots, Blue Navy Black, 8 US",0,N2,SHOES,,ood_far
+B07PH32YW1_pos,B07PH32YW1,small/7f/7f15be3a.jpg,"Amazon Brand - find. Assymetric Leather Mule Open Toe Heels, Black), US 6",1,pos,SHOES,,ood_far
+B07PH32YW1_N1,B074KPGTB1,small/77/77d6bd98.jpg,"Amazon Brand - find. Assymetric Leather Mule Open Toe Heels, Black), US 6",0,N1,SHOES,,ood_far
+B07PH32YW1_N2,B07Z59BQ57,small/8c/8c21ce00.jpg,"Amazon Brand - find. Assymetric Leather Mule Open Toe Heels, Black), US 6",0,N2,SHOES,,ood_far
+B08BVNLDFV_pos,B08BVNLDFV,small/41/4156f812.jpg,ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002),1,pos,SHOES,,ood_far
+B08BVNLDFV_N1,B07W5VV562,small/7e/7e821528.jpg,ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002),0,N1,SHOES,,ood_far
+B08BVNLDFV_N2,B08CHZY3H7,small/9b/9bd45e82.jpg,ELISE Women's Pink Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002),0,N2,SHOES,,ood_far
+B07YFGN762_pos,B07YFGN762,small/54/54168bcf.jpg,"Concept 3 by Skechers Women's Liana Fashion Slip-on Sneaker, PNK, 6 Medium US",1,pos,SHOES,,ood_far
+B07YFGN762_N1,B072DXJYNY,small/5f/5f854cc6.jpg,"Concept 3 by Skechers Women's Liana Fashion Slip-on Sneaker, PNK, 6 Medium US",0,N1,SHOES,,ood_far
+B07YFGN762_N2,B07YFGN76W,small/67/67b9af04.jpg,"Concept 3 by Skechers Women's Liana Fashion Slip-on Sneaker, PNK, 6 Medium US",0,N2,SHOES,,ood_far
+B07RV4HG8R_pos,B07RV4HG8R,small/03/0380b857.jpg,"find. Faroe Hi-Top Trainers, Brown Camel, 11 US",1,pos,SHOES,,ood_far
+B07RV4HG8R_N1,B01MZI9SSK,small/70/70122e6f.jpg,"find. Faroe Hi-Top Trainers, Brown Camel, 11 US",0,N1,SHOES,,ood_far
+B07RV4HG8R_N2,B06X9W194C,small/94/94271ad6.jpg,"find. Faroe Hi-Top Trainers, Brown Camel, 11 US",0,N2,SHOES,,ood_far
+B071G178W1_pos,B071G178W1,small/11/11be6210.jpg,"RED WAGON Boys' Clean Lace Up Low-Top Sneakers, Black, Women 2",1,pos,SHOES,,ood_far
+B071G178W1_N1,B07VQ8KTTD,small/02/0224f081.jpg,"RED WAGON Boys' Clean Lace Up Low-Top Sneakers, Black, Women 2",0,N1,SHOES,,ood_far
+B071G178W1_N2,B071JM2Q5H,small/ff/ffdb479d.jpg,"RED WAGON Boys' Clean Lace Up Low-Top Sneakers, Black, Women 2",0,N2,SHOES,,ood_far
+B07W7TWP3Q_pos,B07W7TWP3Q,small/7c/7cd26aaa.jpg,"find. Women's #_JUDD-S-1A-1 Espadrilles, Brown Natural Snake, x-small",1,pos,SANDAL,,ood_far
+B07W7TWP3Q_N1,B075Z53FTN,small/cf/cf00a434.jpg,"find. Women's #_JUDD-S-1A-1 Espadrilles, Brown Natural Snake, x-small",0,N1,SANDAL,,ood_far
+B07W7TWP3Q_N2,B0813HP9SB,small/84/84054e59.jpg,"find. Women's #_JUDD-S-1A-1 Espadrilles, Brown Natural Snake, x-small",0,N2,SANDAL,,ood_far
+B07896K6CR_pos,B07896K6CR,small/ea/ea0c872a.jpg,"Amazon Brand - 206 Collective Women's Loyal Block Heel Dress Sandal-High Heeled, caramel suede, 6 B US",1,pos,SANDAL,,ood_far
+B07896K6CR_N1,B07Z59MNTP,small/5a/5a44a697.jpg,"Amazon Brand - 206 Collective Women's Loyal Block Heel Dress Sandal-High Heeled, caramel suede, 6 B US",0,N1,SANDAL,,ood_far
+B07896K6CR_N2,B0789BKSTZ,small/b3/b3a83588.jpg,"Amazon Brand - 206 Collective Women's Loyal Block Heel Dress Sandal-High Heeled, caramel suede, 6 B US",0,N2,SANDAL,,ood_far
+B06XGZPP8T_pos,B06XGZPP8T,small/7e/7e70bd65.jpg,"Amazon Brand - The Fix Women's Dolly Block Heel Buckle Gladiator Sandal,Black,11 B US",1,pos,SHOES,,ood_far
+B06XGZPP8T_N1,B071K1FF2Q,small/d0/d012290c.jpg,"Amazon Brand - The Fix Women's Dolly Block Heel Buckle Gladiator Sandal,Black,11 B US",0,N1,SHOES,,ood_far
+B06XGZPP8T_N2,B01MTEI7V1,small/e0/e08c74c2.jpg,"Amazon Brand - The Fix Women's Dolly Block Heel Buckle Gladiator Sandal,Black,11 B US",0,N2,SHOES,,ood_far
+B07NZP182R_pos,B07NZP182R,small/e4/e468719d.jpg,Amazon Brand - find. Women's Suede Leather Wedge Heel Espadrille Shoes,1,pos,SANDAL,,ood_far
+B07NZP182R_N1,B079LK3GTS,small/93/935e4b2e.jpg,Amazon Brand - find. Women's Suede Leather Wedge Heel Espadrille Shoes,0,N1,SANDAL,,ood_far
+B07NZP182R_N2,B01MS832UD,small/0d/0deeb312.jpg,Amazon Brand - find. Women's Suede Leather Wedge Heel Espadrille Shoes,0,N2,SANDAL,,ood_far
+B07QFWBRYJ_pos,B07QFWBRYJ,small/aa/aaa177ae.jpg,Amazon Essentials Women's Shelly Sneaker,1,pos,SHOES,,ood_far
+B07QFWBRYJ_N1,B071G178W1,small/11/11be6210.jpg,Amazon Essentials Women's Shelly Sneaker,0,N1,SHOES,,ood_far
+B07QFWBRYJ_N2,B01N7XN6C5,small/96/96b2ecf8.jpg,Amazon Essentials Women's Shelly Sneaker,0,N2,SHOES,,ood_far
+B01MS832UD_pos,B01MS832UD,small/0d/0deeb312.jpg,"Amazon Brand - find. Women's Shoes with Plaited Leather and Gum Rubber Sole, Multicolour (Tan/Navy), US 7.5",1,pos,SANDAL,,ood_far
+B01MS832UD_N1,B07L95D8W7,small/f4/f4e63fc9.jpg,"Amazon Brand - find. Women's Shoes with Plaited Leather and Gum Rubber Sole, Multicolour (Tan/Navy), US 7.5",0,N1,SANDAL,,ood_far
+B01MS832UD_N2,B075Z53FTN,small/cf/cf00a434.jpg,"Amazon Brand - find. Women's Shoes with Plaited Leather and Gum Rubber Sole, Multicolour (Tan/Navy), US 7.5",0,N2,SANDAL,,ood_far
+B071KPV8YT_pos,B071KPV8YT,small/4f/4f8b115d.jpg,"Amazon Brand - find. Men's Mansall Smart Strap, Black, US 12",1,pos,BOOT,,ood_far
+B071KPV8YT_N1,B077TR1P29,small/9e/9ec99895.jpg,"Amazon Brand - find. Men's Mansall Smart Strap, Black, US 12",0,N1,BOOT,,ood_far
+B071KPV8YT_N2,B0732TNV2W,small/bf/bf136700.jpg,"Amazon Brand - find. Men's Mansall Smart Strap, Black, US 12",0,N2,BOOT,,ood_far
+B07R8GBR97_pos,B07R8GBR97,small/55/5503359a.jpg,"CARE OF by PUMA Men’s Mesh Low-Top Trainers, Beige, US 7",1,pos,SHOES,,ood_far
+B07R8GBR97_N1,B06X9XF23R,small/4d/4dfe5a87.jpg,"CARE OF by PUMA Men’s Mesh Low-Top Trainers, Beige, US 7",0,N1,SHOES,,ood_far
+B07R8GBR97_N2,B07R7BGVF1,small/b1/b16d86c2.jpg,"CARE OF by PUMA Men’s Mesh Low-Top Trainers, Beige, US 7",0,N2,SHOES,,ood_far
+B01N4TGOGK_pos,B01N4TGOGK,small/33/33e10258.jpg,"Amazon Brand - The Fix Women's Jackson Rope-Tie Block Heel Dress Sandal,Havana Tan,10 B US",1,pos,SHOES,,ood_far
+B01N4TGOGK_N1,B01MTEI3IP,small/eb/eb121256.jpg,"Amazon Brand - The Fix Women's Jackson Rope-Tie Block Heel Dress Sandal,Havana Tan,10 B US",0,N1,SHOES,,ood_far
+B01N4TGOGK_N2,B01NBYLUNG,small/16/16e48774.jpg,"Amazon Brand - The Fix Women's Jackson Rope-Tie Block Heel Dress Sandal,Havana Tan,10 B US",0,N2,SHOES,,ood_far
+B079LK3GTS_pos,B079LK3GTS,small/93/935e4b2e.jpg,Amazon Brand - The Fix Women's Nikole Open Toe Slide with Chain Detail Flat Sandal,1,pos,SANDAL,,ood_far
+B079LK3GTS_N1,B07HH61ZSV,small/4d/4d6277b1.jpg,Amazon Brand - The Fix Women's Nikole Open Toe Slide with Chain Detail Flat Sandal,0,N1,SANDAL,,ood_far
+B079LK3GTS_N2,B078FBC6YB,small/21/217807be.jpg,Amazon Brand - The Fix Women's Nikole Open Toe Slide with Chain Detail Flat Sandal,0,N2,SANDAL,,ood_far
+B06XCGVH9L_pos,B06XCGVH9L,small/8d/8dfac694.jpg,"Amazon Brand - find. Men's Derby in Classic Cut with Lace Up, Black (Black), US 10",1,pos,SHOES,,ood_far
+B06XCGVH9L_N1,B01N7XN6C5,small/96/96b2ecf8.jpg,"Amazon Brand - find. Men's Derby in Classic Cut with Lace Up, Black (Black), US 10",0,N1,SHOES,,ood_far
+B06XCGVH9L_N2,B077TR1P29,small/9e/9ec99895.jpg,"Amazon Brand - find. Men's Derby in Classic Cut with Lace Up, Black (Black), US 10",0,N2,SHOES,,ood_far
+B072236D4W_pos,B072236D4W,small/b4/b4aae5b4.jpg,"RED WAGON Boys' Spot Boots, Blue (Navy), 00 Large",1,pos,BOOT,,ood_far
+B072236D4W_N1,B06XRX1H42,small/0a/0a2472fa.jpg,"RED WAGON Boys' Spot Boots, Blue (Navy), 00 Large",0,N1,BOOT,,ood_far
+B072236D4W_N2,B07VQ8KTTD,small/02/0224f081.jpg,"RED WAGON Boys' Spot Boots, Blue (Navy), 00 Large",0,N2,BOOT,,ood_far
+B07HH61PZT_pos,B07HH61PZT,small/6a/6abbc356.jpg,"Jenny Women's Korsika 2257287, (Schwarz 70), 5 UK",1,pos,SHOES,,ood_far
+B07HH61PZT_N1,B06XH6SMBN,small/e5/e562bc27.jpg,"Jenny Women's Korsika 2257287, (Schwarz 70), 5 UK",0,N1,SHOES,,ood_far
+B07HH61PZT_N2,B07H5YY9PN,small/4d/4d85fd7f.jpg,"Jenny Women's Korsika 2257287, (Schwarz 70), 5 UK",0,N2,SHOES,,ood_far
+B06XRX1H42_pos,B06XRX1H42,small/0a/0a2472fa.jpg,"find. Women's 10311 Open-Toe Sandals, White, 8 US",1,pos,SHOES,,ood_far
+B06XRX1H42_N1,B07NC3QW16,small/a9/a9d64762.jpg,"find. Women's 10311 Open-Toe Sandals, White, 8 US",0,N1,SHOES,,ood_far
+B06XRX1H42_N2,B07PKD2N2Q,small/c8/c8858713.jpg,"find. Women's 10311 Open-Toe Sandals, White, 8 US",0,N2,SHOES,,ood_far
+B07NSQJ4DY_pos,B07NSQJ4DY,small/6c/6cbd67c6.jpg,"Amazon Essentials Men's Watson Oxford, Black, 9 B US",1,pos,SHOES,,ood_far
+B07NSQJ4DY_N1,B07Z9LD5TN,small/b5/b5121ed6.jpg,"Amazon Essentials Men's Watson Oxford, Black, 9 B US",0,N1,SHOES,,ood_far
+B07NSQJ4DY_N2,B078GTNSR4,small/f8/f86a3d4e.jpg,"Amazon Essentials Men's Watson Oxford, Black, 9 B US",0,N2,SHOES,,ood_far
+B07D942QW9_pos,B07D942QW9,small/69/6912629e.jpg,"find. Women's Contrast Heel, Red, US 7.5",1,pos,BOOT,,ood_far
+B07D942QW9_N1,B07Y5X8G7G,small/2d/2d54094e.jpg,"find. Women's Contrast Heel, Red, US 7.5",0,N1,BOOT,,ood_far
+B07D942QW9_N2,B07D6DPY1Y,small/94/9411e28d.jpg,"find. Women's Contrast Heel, Red, US 7.5",0,N2,BOOT,,ood_far
+B07712D1W4_pos,B07712D1W4,small/74/740e70f1.jpg,"Amazon Brand - The Fix Women's Sonya Scrunch Metallic Ballet Flat, Silver/Metallic Crackle Leather, 10 B US",1,pos,SHOES,,ood_far
+B07712D1W4_N1,B086W7PGYX,small/b5/b582aa4b.jpg,"Amazon Brand - The Fix Women's Sonya Scrunch Metallic Ballet Flat, Silver/Metallic Crackle Leather, 10 B US",0,N1,SHOES,,ood_far
+B07712D1W4_N2,B075DNSLG7,small/cb/cb26e3b4.jpg,"Amazon Brand - The Fix Women's Sonya Scrunch Metallic Ballet Flat, Silver/Metallic Crackle Leather, 10 B US",0,N2,SHOES,,ood_far
+B078B281PN_pos,B078B281PN,small/ce/ce3a1cd6.jpg,"Amazon Brand - 206 Collective Women's Battelle Closed-Toe Covered Wedge Pump, black patent leather, 5 C/D US",1,pos,SHOES,,ood_far
+B078B281PN_N1,B07712D1W4,small/74/740e70f1.jpg,"Amazon Brand - 206 Collective Women's Battelle Closed-Toe Covered Wedge Pump, black patent leather, 5 C/D US",0,N1,SHOES,,ood_far
+B078B281PN_N2,B06XH4MS2C,small/da/dad7c657.jpg,"Amazon Brand - 206 Collective Women's Battelle Closed-Toe Covered Wedge Pump, black patent leather, 5 C/D US",0,N2,SHOES,,ood_far
+B07MHHS2PS_pos,B07MHHS2PS,small/66/665b0ffb.jpg,"Amazon Brand - find. Women's Tie Up Sandal With Kitten Heel, Beige, US 6.5",1,pos,SANDAL,,ood_far
+B07MHHS2PS_N1,B079LK3GTS,small/93/935e4b2e.jpg,"Amazon Brand - find. Women's Tie Up Sandal With Kitten Heel, Beige, US 6.5",0,N1,SANDAL,,ood_far
+B07MHHS2PS_N2,B082TK5FJ9,small/3e/3e97147d.jpg,"Amazon Brand - find. Women's Tie Up Sandal With Kitten Heel, Beige, US 6.5",0,N2,SANDAL,,ood_far
+B071JM2Q5H_pos,B071JM2Q5H,small/ff/ffdb479d.jpg,find. Men's Um1530 Low-Top Sneakers,1,pos,SHOES,,ood_far
+B071JM2Q5H_N1,B0794P473N,small/61/610ee9fe.jpg,find. Men's Um1530 Low-Top Sneakers,0,N1,SHOES,,ood_far
+B071JM2Q5H_N2,B06X9WMJL2,small/6f/6fbeafbe.jpg,find. Men's Um1530 Low-Top Sneakers,0,N2,SHOES,,ood_far
+B07HH61ZSV_pos,B07HH61ZSV,small/4d/4d6277b1.jpg,"Bugatti Women's Korsika 2257268 Mules, Multi 54, 7.5 US",1,pos,SHOES,,ood_far
+B07HH61ZSV_N1,B079LK3GTS,small/93/935e4b2e.jpg,"Bugatti Women's Korsika 2257268 Mules, Multi 54, 7.5 US",0,N1,SHOES,,ood_far
+B07HH61ZSV_N2,B07PK126JM,small/5d/5df21d46.jpg,"Bugatti Women's Korsika 2257268 Mules, Multi 54, 7.5 US",0,N2,SHOES,,ood_far
+B01N7XN6C5_pos,B01N7XN6C5,small/96/96b2ecf8.jpg,"Amazon Brand - The Fix Women's Tanner Creeper Fashion Sneaker, Natural Multi, 7.5 B US",1,pos,SHOES,,ood_far
+B01N7XN6C5_N1,B07R4CSP73,small/a6/a675602f.jpg,"Amazon Brand - The Fix Women's Tanner Creeper Fashion Sneaker, Natural Multi, 7.5 B US",0,N1,SHOES,,ood_far
+B01N7XN6C5_N2,B01MTEI7V1,small/e0/e08c74c2.jpg,"Amazon Brand - The Fix Women's Tanner Creeper Fashion Sneaker, Natural Multi, 7.5 B US",0,N2,SHOES,,ood_far
+B077XK79YR_pos,B077XK79YR,small/f2/f24e2582.jpg,Amazon Brand - find. Men’s Leather Chelsea Boots,1,pos,BOOT,,ood_far
+B077XK79YR_N1,B07NSQJ4DY,small/6c/6cbd67c6.jpg,Amazon Brand - find. Men’s Leather Chelsea Boots,0,N1,BOOT,,ood_far
+B077XK79YR_N2,B07NC445X2,small/fd/fdfc1d9b.jpg,Amazon Brand - find. Men’s Leather Chelsea Boots,0,N2,BOOT,,ood_far
+B07M7PFDT8_pos,B07M7PFDT8,small/01/0138fb46.jpg,"Amazon Brand - find. Women's Crossover Cork Sole Leather, Silber Silver), US 7",1,pos,SANDAL,,ood_far
+B07M7PFDT8_N1,B07RW5HMJY,small/ba/baf0bb54.jpg,"Amazon Brand - find. Women's Crossover Cork Sole Leather, Silber Silver), US 7",0,N1,SANDAL,,ood_far
+B07M7PFDT8_N2,B075Z53FTN,small/cf/cf00a434.jpg,"Amazon Brand - find. Women's Crossover Cork Sole Leather, Silber Silver), US 7",0,N2,SANDAL,,ood_far
+B07W5R75YP_pos,B07W5R75YP,small/d9/d9a56c4b.jpg,"Amazon Essentials Girls' Aeron Sneaker, White, 6 Medium US Toddler",1,pos,SHOES,,ood_far
+B07W5R75YP_N1,B07Y5X8G7G,small/2d/2d54094e.jpg,"Amazon Essentials Girls' Aeron Sneaker, White, 6 Medium US Toddler",0,N1,SHOES,,ood_far
+B07W5R75YP_N2,B07VBC5FQX,small/a2/a27f5642.jpg,"Amazon Essentials Girls' Aeron Sneaker, White, 6 Medium US Toddler",0,N2,SHOES,,ood_far
+B07Z59MNTP_pos,B07Z59MNTP,small/5a/5a44a697.jpg,"find. Women's Lattice Strap Mule Open Toe Sandals, Elfenbein Off White Croc, US-0 / Asia Size s",1,pos,SANDAL,,ood_far
+B07Z59MNTP_N1,B07YFGN762,small/54/54168bcf.jpg,"find. Women's Lattice Strap Mule Open Toe Sandals, Elfenbein Off White Croc, US-0 / Asia Size s",0,N1,SANDAL,,ood_far
+B07Z59MNTP_N2,B07YCHPN2H,small/72/72b5024f.jpg,"find. Women's Lattice Strap Mule Open Toe Sandals, Elfenbein Off White Croc, US-0 / Asia Size s",0,N2,SANDAL,,ood_far
+B082PM5XY6_pos,B082PM5XY6,small/a5/a5dae80a.jpg,"Amazon Essentials Girls' Strappy Sandal, Gold, 7 Toddler US Toddler",1,pos,SANDAL,,ood_far
+B082PM5XY6_N1,B072V81JKL,small/2f/2f972888.jpg,"Amazon Essentials Girls' Strappy Sandal, Gold, 7 Toddler US Toddler",0,N1,SANDAL,,ood_far
+B082PM5XY6_N2,B07FR8GJDS,small/62/6202baf2.jpg,"Amazon Essentials Girls' Strappy Sandal, Gold, 7 Toddler US Toddler",0,N2,SANDAL,,ood_far
+B07YCHPN2H_pos,B07YCHPN2H,small/72/72b5024f.jpg,"find. Women's N-7976 Open Toe Sandals, Black, US-0 / Asia Size s",1,pos,SANDAL,,ood_far
+B07YCHPN2H_N1,B07L6KL3P4,small/40/4016fb3b.jpg,"find. Women's N-7976 Open Toe Sandals, Black, US-0 / Asia Size s",0,N1,SANDAL,,ood_far
+B07YCHPN2H_N2,B07Y5X8G7G,small/2d/2d54094e.jpg,"find. Women's N-7976 Open Toe Sandals, Black, US-0 / Asia Size s",0,N2,SANDAL,,ood_far
+B07TJ1D7LB_pos,B07TJ1D7LB,small/d6/d64e6f49.jpg,"find. Abe Loafers, Chocolate Brown), 12 UK",1,pos,SHOES,,ood_far
+B07TJ1D7LB_N1,B06XCGVH9L,small/8d/8dfac694.jpg,"find. Abe Loafers, Chocolate Brown), 12 UK",0,N1,SHOES,,ood_far
+B07TJ1D7LB_N2,B07WHTR647,small/5f/5f83dfef.jpg,"find. Abe Loafers, Chocolate Brown), 12 UK",0,N2,SHOES,,ood_far
+B06XG48Q89_pos,B06XG48Q89,small/d6/d67c0456.jpg,"Amazon Brand - find. Men's Loafers in Patent Leather with Tassel and Fringe, Black (Black), US 7",1,pos,SHOES,,ood_far
+B06XG48Q89_N1,B06XH4MS2C,small/da/dad7c657.jpg,"Amazon Brand - find. Men's Loafers in Patent Leather with Tassel and Fringe, Black (Black), US 7",0,N1,SHOES,,ood_far
+B06XG48Q89_N2,B07WHTR647,small/5f/5f83dfef.jpg,"Amazon Brand - find. Men's Loafers in Patent Leather with Tassel and Fringe, Black (Black), US 7",0,N2,SHOES,,ood_far
+B0789BKSTZ_pos,B0789BKSTZ,small/b3/b3a83588.jpg,"Amazon Brand - 206 Collective Women's Eve Stiletto Heel Dress Sandal-Low Heeled, black suede, 12 B US",1,pos,SANDAL,,ood_far
+B0789BKSTZ_N1,B07TL53LYZ,small/95/950ff680.jpg,"Amazon Brand - 206 Collective Women's Eve Stiletto Heel Dress Sandal-Low Heeled, black suede, 12 B US",0,N1,SANDAL,,ood_far
+B0789BKSTZ_N2,B078B281PS,small/d3/d3879721.jpg,"Amazon Brand - 206 Collective Women's Eve Stiletto Heel Dress Sandal-Low Heeled, black suede, 12 B US",0,N2,SANDAL,,ood_far
+B06XH6SMBN_pos,B06XH6SMBN,small/e5/e562bc27.jpg,"Amazon Brand - The Fix Women's Ursula Faux Fur Slide Sandal, Dark Green, 8 B US",1,pos,SHOES,,ood_far
+B06XH6SMBN_N1,B07Q2R4FBS,small/8a/8a2aa338.jpg,"Amazon Brand - The Fix Women's Ursula Faux Fur Slide Sandal, Dark Green, 8 B US",0,N1,SHOES,,ood_far
+B06XH6SMBN_N2,B07L6KL3P4,small/40/4016fb3b.jpg,"Amazon Brand - The Fix Women's Ursula Faux Fur Slide Sandal, Dark Green, 8 B US",0,N2,SHOES,,ood_far
+B07TGKFX2C_pos,B07TGKFX2C,small/72/72828a3d.jpg,"find. Men's Atwood Chelsea Boots, Brown Tan Tan, US 11",1,pos,BOOT,,ood_far
+B07TGKFX2C_N1,B081Q9TKG3,small/85/85033b6c.jpg,"find. Men's Atwood Chelsea Boots, Brown Tan Tan, US 11",0,N1,BOOT,,ood_far
+B07TGKFX2C_N2,B077XK79YR,small/f2/f24e2582.jpg,"find. Men's Atwood Chelsea Boots, Brown Tan Tan, US 11",0,N2,BOOT,,ood_far
+B07895SMHD_pos,B07895SMHD,small/9e/9ea4d8cf.jpg,"Amazon Brand - 206 Collective Women's Anamarie Stiletto Heel Dress Sandal-High Heeled, white leather, 6 B US",1,pos,SANDAL,,ood_far
+B07895SMHD_N1,B07NC445X2,small/fd/fdfc1d9b.jpg,"Amazon Brand - 206 Collective Women's Anamarie Stiletto Heel Dress Sandal-High Heeled, white leather, 6 B US",0,N1,SANDAL,,ood_far
+B07895SMHD_N2,B078B281PS,small/d3/d3879721.jpg,"Amazon Brand - 206 Collective Women's Anamarie Stiletto Heel Dress Sandal-High Heeled, white leather, 6 B US",0,N2,SANDAL,,ood_far
+B07G4HKBP1_pos,B07G4HKBP1,small/84/84fc24f4.jpg,Amazon Essentials Women's Leather Moccasin Slipper,1,pos,SHOES,,ood_far
+B07G4HKBP1_N1,B07L95D8W7,small/f4/f4e63fc9.jpg,Amazon Essentials Women's Leather Moccasin Slipper,0,N1,SHOES,,ood_far
+B07G4HKBP1_N2,B07L6KL3P4,small/40/4016fb3b.jpg,Amazon Essentials Women's Leather Moccasin Slipper,0,N2,SHOES,,ood_far
+B01N5WLS91_pos,B01N5WLS91,small/93/930215d6.jpg,"Amazon Brand - 206 Collective Women's Alki Flip Flop, Olive, 12 B US",1,pos,SHOES,,ood_far
+B01N5WLS91_N1,B07VZJYHTG,small/7b/7b3c9f07.jpg,"Amazon Brand - 206 Collective Women's Alki Flip Flop, Olive, 12 B US",0,N1,SHOES,,ood_far
+B01N5WLS91_N2,B075DNSLG7,small/cb/cb26e3b4.jpg,"Amazon Brand - 206 Collective Women's Alki Flip Flop, Olive, 12 B US",0,N2,SHOES,,ood_far
+B082TK5FJ9_pos,B082TK5FJ9,small/3e/3e97147d.jpg,"Amazon Essentials Women's Heeled Sandal, Tan, 8 M US",1,pos,SANDAL,,ood_far
+B082TK5FJ9_N1,B07YV7BTXH,small/da/da1858f7.jpg,"Amazon Essentials Women's Heeled Sandal, Tan, 8 M US",0,N1,SANDAL,,ood_far
+B082TK5FJ9_N2,B07FR8GJDS,small/62/6202baf2.jpg,"Amazon Essentials Women's Heeled Sandal, Tan, 8 M US",0,N2,SANDAL,,ood_far
+B078GV7L6Z_pos,B078GV7L6Z,small/75/75f5a1fa.jpg,"Amazon Brand - 206 Collective Women's Lemolo Lace-Up Fashion Sneaker, Rose Suede, 7 B US",1,pos,SHOES,,ood_far
+B078GV7L6Z_N1,B073SZHH5R,small/52/527e4b00.jpg,"Amazon Brand - 206 Collective Women's Lemolo Lace-Up Fashion Sneaker, Rose Suede, 7 B US",0,N1,SHOES,,ood_far
+B078GV7L6Z_N2,B01N2B34Z0,small/e0/e0cb5691.jpg,"Amazon Brand - 206 Collective Women's Lemolo Lace-Up Fashion Sneaker, Rose Suede, 7 B US",0,N2,SHOES,,ood_far
+B075DNSLG7_pos,B075DNSLG7,small/cb/cb26e3b4.jpg,"Amazon Brand - The Fix Women's Erica Round-Toe Sequin Ballet Flat, Silver, 10 B US",1,pos,SHOES,,ood_far
+B075DNSLG7_N1,B07G17D96L,small/2f/2f753db4.jpg,"Amazon Brand - The Fix Women's Erica Round-Toe Sequin Ballet Flat, Silver, 10 B US",0,N1,SHOES,,ood_far
+B075DNSLG7_N2,B072V81JKL,small/2f/2f972888.jpg,"Amazon Brand - The Fix Women's Erica Round-Toe Sequin Ballet Flat, Silver, 10 B US",0,N2,SHOES,,ood_far
+B07MY2RLHV_pos,B07MY2RLHV,small/f7/f74a4270.jpg,"Amazon Brand - 206 Collective Men's Galen, charcoal wool, 13 M US",1,pos,SHOES,,ood_far
+B07MY2RLHV_N1,B07H5YY9PN,small/4d/4d85fd7f.jpg,"Amazon Brand - 206 Collective Men's Galen, charcoal wool, 13 M US",0,N1,SHOES,,ood_far
+B07MY2RLHV_N2,B078GTNSR4,small/f8/f86a3d4e.jpg,"Amazon Brand - 206 Collective Men's Galen, charcoal wool, 13 M US",0,N2,SHOES,,ood_far
+B0789K8F8Z_pos,B0789K8F8Z,small/d8/d853c702.jpg,"Amazon Brand - 206 Collective Women's Myrtle Gladiator Fashion Sandal Flat, gold leather, 7 B US",1,pos,SANDAL,,ood_far
+B0789K8F8Z_N1,B07D45P6TX,small/c8/c8570f06.jpg,"Amazon Brand - 206 Collective Women's Myrtle Gladiator Fashion Sandal Flat, gold leather, 7 B US",0,N1,SANDAL,,ood_far
+B0789K8F8Z_N2,B07MHY7Y5C,small/ba/badc896e.jpg,"Amazon Brand - 206 Collective Women's Myrtle Gladiator Fashion Sandal Flat, gold leather, 7 B US",0,N2,SANDAL,,ood_far
+B07Z59BQ57_pos,B07Z59BQ57,small/8c/8c21ce00.jpg,"find. Women's Mule Wedge Leather Open Toe Heels, Black, US-0 / Asia Size s",1,pos,SHOES,,ood_far
+B07Z59BQ57_N1,B07D4593MG,small/c0/c082a8df.jpg,"find. Women's Mule Wedge Leather Open Toe Heels, Black, US-0 / Asia Size s",0,N1,SHOES,,ood_far
+B07Z59BQ57_N2,B07PH32YW1,small/7f/7f15be3a.jpg,"find. Women's Mule Wedge Leather Open Toe Heels, Black, US-0 / Asia Size s",0,N2,SHOES,,ood_far
+B06X9XF23R_pos,B06X9XF23R,small/4d/4dfe5a87.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Blue US 10.5,1,pos,SHOES,,ood_far
+B06X9XF23R_N1,B01MS832UD,small/0d/0deeb312.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Blue US 10.5,0,N1,SHOES,,ood_far
+B06X9XF23R_N2,B06X9WMJL2,small/6f/6fbeafbe.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Blue US 10.5,0,N2,SHOES,,ood_far
+B071XC8J33_pos,B071XC8J33,small/60/601105f5.jpg,"RED WAGON Girls' Bow Ballet Flats, Black Black Patent, 6 us",1,pos,SHOES,,ood_far
+B071XC8J33_N1,B071G178W1,small/11/11be6210.jpg,"RED WAGON Girls' Bow Ballet Flats, Black Black Patent, 6 us",0,N1,SHOES,,ood_far
+B071XC8J33_N2,B072V81JKL,small/2f/2f972888.jpg,"RED WAGON Girls' Bow Ballet Flats, Black Black Patent, 6 us",0,N2,SHOES,,ood_far
+B07G17D96L_pos,B07G17D96L,small/2f/2f753db4.jpg,"find. Women's Chunky Leather, Black), US 10.5",1,pos,BOOT,,ood_far
+B07G17D96L_N1,B06XGZPP8T,small/7e/7e70bd65.jpg,"find. Women's Chunky Leather, Black), US 10.5",0,N1,BOOT,,ood_far
+B07G17D96L_N2,B07N28CL6M,small/fe/fe269380.jpg,"find. Women's Chunky Leather, Black), US 10.5",0,N2,BOOT,,ood_far
+B0812CLS7C_pos,B0812CLS7C,small/5b/5be2f045.jpg,"find. Womens^Women's Boat Shoes, Brown Cognac, US-0 / Asia Size s",1,pos,SHOES,,ood_far
+B0812CLS7C_N1,B07MY2RLHV,small/f7/f74a4270.jpg,"find. Womens^Women's Boat Shoes, Brown Cognac, US-0 / Asia Size s",0,N1,SHOES,,ood_far
+B0812CLS7C_N2,B07Z59BQ57,small/8c/8c21ce00.jpg,"find. Womens^Women's Boat Shoes, Brown Cognac, US-0 / Asia Size s",0,N2,SHOES,,ood_far
+B07Y5X8G7G_pos,B07Y5X8G7G,small/2d/2d54094e.jpg,"find. Women's Weave Slingback Leather Open Toe Sandals, Black, 2",1,pos,SANDAL,,ood_far
+B07Y5X8G7G_N1,B07W7TWP3Q,small/7c/7cd26aaa.jpg,"find. Women's Weave Slingback Leather Open Toe Sandals, Black, 2",0,N1,SANDAL,,ood_far
+B07Y5X8G7G_N2,B07YCHPN2H,small/72/72b5024f.jpg,"find. Women's Weave Slingback Leather Open Toe Sandals, Black, 2",0,N2,SANDAL,,ood_far
+B07D4593MG_pos,B07D4593MG,small/c0/c082a8df.jpg,"find. Women's Round Heel, Brown Plum), US 6.5",1,pos,BOOT,,ood_far
+B07D4593MG_N1,B071KPV8YT,small/4f/4f8b115d.jpg,"find. Women's Round Heel, Brown Plum), US 6.5",0,N1,BOOT,,ood_far
+B07D4593MG_N2,B07D942QW9,small/69/6912629e.jpg,"find. Women's Round Heel, Brown Plum), US 6.5",0,N2,BOOT,,ood_far
+B082PN4DBF_pos,B082PN4DBF,small/11/111f2f22.jpg,"Amazon Essentials Boys' Liam Flat Sandal, Black, 6 M US Big Kid",1,pos,SANDAL,,ood_far
+B082PN4DBF_N1,B07HH61ZSV,small/4d/4d6277b1.jpg,"Amazon Essentials Boys' Liam Flat Sandal, Black, 6 M US Big Kid",0,N1,SANDAL,,ood_far
+B082PN4DBF_N2,B082PM5XY6,small/a5/a5dae80a.jpg,"Amazon Essentials Boys' Liam Flat Sandal, Black, 6 M US Big Kid",0,N2,SANDAL,,ood_far
+B07VZJYHTG_pos,B07VZJYHTG,small/7b/7b3c9f07.jpg,"Amazon Essentials Girls' Mixie Ankle Boot, Black, 11 Toddler US Toddler",1,pos,BOOT,,ood_far
+B07VZJYHTG_N1,B07Z8FGZJR,small/c8/c89ac41b.jpg,"Amazon Essentials Girls' Mixie Ankle Boot, Black, 11 Toddler US Toddler",0,N1,BOOT,,ood_far
+B07VZJYHTG_N2,B07PJ7QGWJ,small/80/80be2fb6.jpg,"Amazon Essentials Girls' Mixie Ankle Boot, Black, 11 Toddler US Toddler",0,N2,BOOT,,ood_far
+B073XGBVWF_pos,B073XGBVWF,small/8b/8b45706a.jpg,"Amazon Brand - The Fix Women's Diem Pointed Toe Slide Mule, Black Croco, 6.5 Medium US",1,pos,SHOES,,ood_far
+B073XGBVWF_N1,B083SF6ZDY,small/e4/e4ac56c3.jpg,"Amazon Brand - The Fix Women's Diem Pointed Toe Slide Mule, Black Croco, 6.5 Medium US",0,N1,SHOES,,ood_far
+B073XGBVWF_N2,B07PH32YW1,small/7f/7f15be3a.jpg,"Amazon Brand - The Fix Women's Diem Pointed Toe Slide Mule, Black Croco, 6.5 Medium US",0,N2,SHOES,,ood_far
+B07YFGN76W_pos,B07YFGN76W,small/67/67b9af04.jpg,"Concept 3 by Skechers Women's Liana Fashion Slip-on Sneaker, SIL, 8 Medium US",1,pos,SHOES,,ood_far
+B07YFGN76W_N1,B07HH61PZT,small/6a/6abbc356.jpg,"Concept 3 by Skechers Women's Liana Fashion Slip-on Sneaker, SIL, 8 Medium US",0,N1,SHOES,,ood_far
+B07YFGN76W_N2,B07YFGN762,small/54/54168bcf.jpg,"Concept 3 by Skechers Women's Liana Fashion Slip-on Sneaker, SIL, 8 Medium US",0,N2,SHOES,,ood_far
+B07YCHXYBG_pos,B07YCHXYBG,small/8e/8e3382a3.jpg,"find. Women's N-7529sleek Ankle Boots, Brown Tawny Croc, 7",1,pos,BOOT,,ood_far
+B07YCHXYBG_N1,B074KPGTB1,small/77/77d6bd98.jpg,"find. Women's N-7529sleek Ankle Boots, Brown Tawny Croc, 7",0,N1,BOOT,,ood_far
+B07YCHXYBG_N2,B079FXXMRP,small/42/4243bb12.jpg,"find. Women's N-7529sleek Ankle Boots, Brown Tawny Croc, 7",0,N2,BOOT,,ood_far
+B0869PF5XK_pos,B0869PF5XK,small/53/53b6f371.jpg,Centrino Men's S5514 Black Loafers-10 UK (44 EU) (11 US) (S5514-01),1,pos,SHOES,,ood_far
+B0869PF5XK_N1,B07YCHPN2H,small/72/72b5024f.jpg,Centrino Men's S5514 Black Loafers-10 UK (44 EU) (11 US) (S5514-01),0,N1,SHOES,,ood_far
+B0869PF5XK_N2,B06XG48Q89,small/d6/d67c0456.jpg,Centrino Men's S5514 Black Loafers-10 UK (44 EU) (11 US) (S5514-01),0,N2,SHOES,,ood_far
+B07W4QPMPR_pos,B07W4QPMPR,small/b4/b4c4c6a3.jpg,"find. Flat Strippy Leather Open Sandals, Mehrfarbig (Metallic Multi), 38 EU",1,pos,SHOES,,ood_far
+B07W4QPMPR_N1,B082QFJ72D,small/01/01c1f0f4.jpg,"find. Flat Strippy Leather Open Sandals, Mehrfarbig (Metallic Multi), 38 EU",0,N1,SHOES,,ood_far
+B07W4QPMPR_N2,B07W7ZCC2L,small/73/739e6219.jpg,"find. Flat Strippy Leather Open Sandals, Mehrfarbig (Metallic Multi), 38 EU",0,N2,SHOES,,ood_far
+B07R7BGVF1_pos,B07R7BGVF1,small/b1/b16d86c2.jpg,"CARE OF by PUMA Women’s Leather Platform Low-Top Trainers, White, US 8",1,pos,SHOES,,ood_far
+B07R7BGVF1_N1,B06X9W194C,small/94/94271ad6.jpg,"CARE OF by PUMA Women’s Leather Platform Low-Top Trainers, White, US 8",0,N1,SHOES,,ood_far
+B07R7BGVF1_N2,B07R8GBR97,small/55/5503359a.jpg,"CARE OF by PUMA Women’s Leather Platform Low-Top Trainers, White, US 8",0,N2,SHOES,,ood_far
+B075Z53FTN_pos,B075Z53FTN,small/cf/cf00a434.jpg,"Amazon Brand - find. Women’s Woven Leather Sandals, Brown (Tan), US 7.5",1,pos,SANDAL,,ood_far
+B075Z53FTN_N1,B06XG48Q89,small/d6/d67c0456.jpg,"Amazon Brand - find. Women’s Woven Leather Sandals, Brown (Tan), US 7.5",0,N1,SANDAL,,ood_far
+B075Z53FTN_N2,B01MS832UD,small/0d/0deeb312.jpg,"Amazon Brand - find. Women’s Woven Leather Sandals, Brown (Tan), US 7.5",0,N2,SANDAL,,ood_far
+B08FSC92HZ_pos,B08FSC92HZ,small/85/85c4ee6e.jpg,find. Women's Closed Toe Hurrache Sandals,1,pos,SANDAL,,ood_far
+B08FSC92HZ_N1,B06XH4MS2C,small/da/dad7c657.jpg,find. Women's Closed Toe Hurrache Sandals,0,N1,SANDAL,,ood_far
+B08FSC92HZ_N2,B0815NS34C,small/d4/d4253688.jpg,find. Women's Closed Toe Hurrache Sandals,0,N2,SANDAL,,ood_far
+B072N7HZFL_pos,B072N7HZFL,small/23/2380fc54.jpg,"Red Wagon Girls' K0090 Mary Jane, 7 us Little Kid Red",1,pos,SHOES,,ood_far
+B072N7HZFL_N1,B071K1FF2Q,small/d0/d012290c.jpg,"Red Wagon Girls' K0090 Mary Jane, 7 us Little Kid Red",0,N1,SHOES,,ood_far
+B072N7HZFL_N2,B071K1FF2Q,small/d0/d012290c.jpg,"Red Wagon Girls' K0090 Mary Jane, 7 us Little Kid Red",0,N2,SHOES,,ood_far
+B0891M3WB8_pos,B0891M3WB8,small/4c/4c6b1a0a.jpg,find. Women's Point Court Closed Toe Kitten Heels,1,pos,SHOES,,ood_far
+B0891M3WB8_N1,B0813HP9SB,small/84/84054e59.jpg,find. Women's Point Court Closed Toe Kitten Heels,0,N1,SHOES,,ood_far
+B0891M3WB8_N2,B082MV4Q6X,small/ca/caf4d550.jpg,find. Women's Point Court Closed Toe Kitten Heels,0,N2,SHOES,,ood_far
+B078B281PS_pos,B078B281PS,small/d3/d3879721.jpg,"Amazon Brand - 206 Collective Women's Eve Stiletto Heel Dress Sandal-Low Heeled, Neutral leather, 7.5 B US",1,pos,SANDAL,,ood_far
+B078B281PS_N1,B07PK126JM,small/5d/5df21d46.jpg,"Amazon Brand - 206 Collective Women's Eve Stiletto Heel Dress Sandal-Low Heeled, Neutral leather, 7.5 B US",0,N1,SANDAL,,ood_far
+B078B281PS_N2,B07895SMHD,small/9e/9ea4d8cf.jpg,"Amazon Brand - 206 Collective Women's Eve Stiletto Heel Dress Sandal-Low Heeled, Neutral leather, 7.5 B US",0,N2,SANDAL,,ood_far
+B01N2AISMB_pos,B01N2AISMB,small/4f/4fb1bbdc.jpg,Amazon Brand - find. Women's Suede Pointed Ballet,1,pos,SHOES,,ood_far
+B01N2AISMB_N1,B07M7PFDT8,small/01/0138fb46.jpg,Amazon Brand - find. Women's Suede Pointed Ballet,0,N1,SHOES,,ood_far
+B01N2AISMB_N2,B072V81JKL,small/2f/2f972888.jpg,Amazon Brand - find. Women's Suede Pointed Ballet,0,N2,SHOES,,ood_far
+B06XC5XTDL_pos,B06XC5XTDL,small/9b/9bd44216.jpg,"Amazon Brand - find. Men's Chukka Boots, Beige (Sand), US 11.5",1,pos,BOOT,,ood_far
+B06XC5XTDL_N1,B081Q9TKG3,small/85/85033b6c.jpg,"Amazon Brand - find. Men's Chukka Boots, Beige (Sand), US 11.5",0,N1,BOOT,,ood_far
+B06XC5XTDL_N2,B079FXXMRP,small/42/4243bb12.jpg,"Amazon Brand - find. Men's Chukka Boots, Beige (Sand), US 11.5",0,N2,BOOT,,ood_far
+B0812CGVVZ_pos,B0812CGVVZ,small/a6/a6321a98.jpg,"find. Women's Moccasin Boot, Brown Dark Brown, 8",1,pos,SHOES,,ood_far
+B0812CGVVZ_N1,B07MY2RLHV,small/f7/f74a4270.jpg,"find. Women's Moccasin Boot, Brown Dark Brown, 8",0,N1,SHOES,,ood_far
+B0812CGVVZ_N2,B06WD6K3VH,small/54/54e1f1bd.jpg,"find. Women's Moccasin Boot, Brown Dark Brown, 8",0,N2,SHOES,,ood_far
+B07L6DQJHN_pos,B07L6DQJHN,small/ad/adf9301f.jpg,Amazon Brand - find. Women's Wide Band Mule Sandal,1,pos,SHOES,,ood_far
+B07L6DQJHN_N1,B071KPV8YT,small/4f/4f8b115d.jpg,Amazon Brand - find. Women's Wide Band Mule Sandal,0,N1,SHOES,,ood_far
+B07L6DQJHN_N2,B07L6KL3P4,small/40/4016fb3b.jpg,Amazon Brand - find. Women's Wide Band Mule Sandal,0,N2,SHOES,,ood_far
+B07R4CSP73_pos,B07R4CSP73,small/a6/a675602f.jpg,"Amazon Brand - find. Chunky Hiker, Women’s Ankle boots",1,pos,SHOES,,ood_far
+B07R4CSP73_N1,B06X9XF23R,small/4d/4dfe5a87.jpg,"Amazon Brand - find. Chunky Hiker, Women’s Ankle boots",0,N1,SHOES,,ood_far
+B07R4CSP73_N2,B01N2B34Z0,small/e0/e0cb5691.jpg,"Amazon Brand - find. Chunky Hiker, Women’s Ankle boots",0,N2,SHOES,,ood_far
+B07R47ZJYT_pos,B07R47ZJYT,small/ac/acd1f3c4.jpg,"Amazon Brand - find. Lace Up Wedge Bootie Ankle Boots, Black, US 6.5",1,pos,SHOES,,ood_far
+B07R47ZJYT_N1,B082QFJ72D,small/01/01c1f0f4.jpg,"Amazon Brand - find. Lace Up Wedge Bootie Ankle Boots, Black, US 6.5",0,N1,SHOES,,ood_far
+B07R47ZJYT_N2,B01N2B34Z0,small/e0/e0cb5691.jpg,"Amazon Brand - find. Lace Up Wedge Bootie Ankle Boots, Black, US 6.5",0,N2,SHOES,,ood_far
+B07HPVMHV6_pos,B07HPVMHV6,small/dd/dddfbbbb.jpg,"Amazon Brand - find. Women's Kitten Heel Sling Back Pump,Green (Jade Croc),US 10.5",1,pos,SHOES,,ood_far
+B07HPVMHV6_N1,B07WJYHL4B,small/d0/d0934019.jpg,"Amazon Brand - find. Women's Kitten Heel Sling Back Pump,Green (Jade Croc),US 10.5",0,N1,SHOES,,ood_far
+B07HPVMHV6_N2,B06XH4MS2C,small/da/dad7c657.jpg,"Amazon Brand - find. Women's Kitten Heel Sling Back Pump,Green (Jade Croc),US 10.5",0,N2,SHOES,,ood_far
+B07W6W4R5P_pos,B07W6W4R5P,small/d9/d93136f5.jpg,"FIND Soft Back Leather Espadrilles, Blue (Navy), 8 UK",1,pos,SHOES,,ood_far
+B07W6W4R5P_N1,B07HPVMHV6,small/dd/dddfbbbb.jpg,"FIND Soft Back Leather Espadrilles, Blue (Navy), 8 UK",0,N1,SHOES,,ood_far
+B07W6W4R5P_N2,B082MV4Q4T,small/ba/ba6681ec.jpg,"FIND Soft Back Leather Espadrilles, Blue (Navy), 8 UK",0,N2,SHOES,,ood_far
+B082MV4Q4T_pos,B082MV4Q4T,small/ba/ba6681ec.jpg,"find. Connie Leather Closed Toe Heels, Blue (Navy), 8 UK",1,pos,SHOES,,ood_far
+B082MV4Q4T_N1,B07HH61PZT,small/6a/6abbc356.jpg,"find. Connie Leather Closed Toe Heels, Blue (Navy), 8 UK",0,N1,SHOES,,ood_far
+B082MV4Q4T_N2,B082MV4Q6X,small/ca/caf4d550.jpg,"find. Connie Leather Closed Toe Heels, Blue (Navy), 8 UK",0,N2,SHOES,,ood_far
+B07FSBXFPG_pos,B07FSBXFPG,small/fd/fdc48ff7.jpg,"Amazon Essentials Women's Casual Thong with Ankle Strap Sandal, Natural, 9.5 B US",1,pos,SANDAL,,ood_far
+B07FSBXFPG_N1,B081Q9TKG3,small/85/85033b6c.jpg,"Amazon Essentials Women's Casual Thong with Ankle Strap Sandal, Natural, 9.5 B US",0,N1,SANDAL,,ood_far
+B07FSBXFPG_N2,B082TK5FJ9,small/3e/3e97147d.jpg,"Amazon Essentials Women's Casual Thong with Ankle Strap Sandal, Natural, 9.5 B US",0,N2,SANDAL,,ood_far
+B07MMG13G9_pos,B07MMG13G9,small/32/3225aad4.jpg,Amazon Brand - find. Men's Slip on,1,pos,SHOES,,ood_far
+B07MMG13G9_N1,B06XC5XTDL,small/9b/9bd44216.jpg,Amazon Brand - find. Men's Slip on,0,N1,SHOES,,ood_far
+B07MMG13G9_N2,B07Q2R4FBS,small/8a/8a2aa338.jpg,Amazon Brand - find. Men's Slip on,0,N2,SHOES,,ood_far
+B083SF6ZDY_pos,B083SF6ZDY,small/e4/e4ac56c3.jpg,Amazon Essentials Men's Story Sandal,1,pos,SANDAL,,ood_far
+B083SF6ZDY_N1,B0813HP9SB,small/84/84054e59.jpg,Amazon Essentials Men's Story Sandal,0,N1,SANDAL,,ood_far
+B083SF6ZDY_N2,B07FR8GJDS,small/62/6202baf2.jpg,Amazon Essentials Men's Story Sandal,0,N2,SANDAL,,ood_far
+B07D45P6TX_pos,B07D45P6TX,small/c8/c8570f06.jpg,"find. Men's Chukka, (Black), 9 UK",1,pos,BOOT,,ood_far
+B07D45P6TX_N1,B073SZHH5R,small/52/527e4b00.jpg,"find. Men's Chukka, (Black), 9 UK",0,N1,BOOT,,ood_far
+B07D45P6TX_N2,B07FGKML15,small/a0/a06092ba.jpg,"find. Men's Chukka, (Black), 9 UK",0,N2,BOOT,,ood_far
+B07RCY3Z8N_pos,B07RCY3Z8N,small/a8/a85a4e49.jpg,"Amazon Brand - find. Casual Suede Ankle Boots, Black), US 6.5",1,pos,BOOT,,ood_far
+B07RCY3Z8N_N1,B07895SMHD,small/9e/9ea4d8cf.jpg,"Amazon Brand - find. Casual Suede Ankle Boots, Black), US 6.5",0,N1,BOOT,,ood_far
+B07RCY3Z8N_N2,B079FXXMRP,small/42/4243bb12.jpg,"Amazon Brand - find. Casual Suede Ankle Boots, Black), US 6.5",0,N2,BOOT,,ood_far
+B0815NS34C_pos,B0815NS34C,small/d4/d4253688.jpg,find. Women's Hurrache Closed Toe Sandals,1,pos,SANDAL,,ood_far
+B0815NS34C_N1,B06XG48Q89,small/d6/d67c0456.jpg,find. Women's Hurrache Closed Toe Sandals,0,N1,SANDAL,,ood_far
+B0815NS34C_N2,B08FSC92HZ,small/85/85c4ee6e.jpg,find. Women's Hurrache Closed Toe Sandals,0,N2,SANDAL,,ood_far
+B078FBC6YB_pos,B078FBC6YB,small/21/217807be.jpg,"Amazon Brand - The Fix Women's Molli Triple Heart Block Heel Sandal, bright white leather, 8 B US",1,pos,SANDAL,,ood_far
+B078FBC6YB_N1,B072DXJYNY,small/5f/5f854cc6.jpg,"Amazon Brand - The Fix Women's Molli Triple Heart Block Heel Sandal, bright white leather, 8 B US",0,N1,SANDAL,,ood_far
+B078FBC6YB_N2,B07895SMHD,small/9e/9ea4d8cf.jpg,"Amazon Brand - The Fix Women's Molli Triple Heart Block Heel Sandal, bright white leather, 8 B US",0,N2,SANDAL,,ood_far
+B07Z8FGZJR_pos,B07Z8FGZJR,small/c8/c89ac41b.jpg,"find. Men's Moccasin, Rot (Burgundy/Black), US 7",1,pos,SHOES,,ood_far
+B07Z8FGZJR_N1,B07XPP2HW5,small/01/01c2803f.jpg,"find. Men's Moccasin, Rot (Burgundy/Black), US 7",0,N1,SHOES,,ood_far
+B07Z8FGZJR_N2,B0812CGVVZ,small/a6/a6321a98.jpg,"find. Men's Moccasin, Rot (Burgundy/Black), US 7",0,N2,SHOES,,ood_far
+B072DXJYNY_pos,B072DXJYNY,small/5f/5f854cc6.jpg,"Amazon Brand - find. Women's Amazon Brand - find. Women's Chelsea Boots in Leather with Gum Sole and Rand Boot, Black, US 6.5",1,pos,BOOT,,ood_far
+B072DXJYNY_N1,B07FSBXFPG,small/fd/fdc48ff7.jpg,"Amazon Brand - find. Women's Amazon Brand - find. Women's Chelsea Boots in Leather with Gum Sole and Rand Boot, Black, US 6.5",0,N1,BOOT,,ood_far
+B072DXJYNY_N2,B07NC445X2,small/fd/fdfc1d9b.jpg,"Amazon Brand - find. Women's Amazon Brand - find. Women's Chelsea Boots in Leather with Gum Sole and Rand Boot, Black, US 6.5",0,N2,BOOT,,ood_far
+B078GTNSR4_pos,B078GTNSR4,small/f8/f86a3d4e.jpg,"Amazon Brand - 206 Collective Men's Barnes Suede Casual Oxford, Gray, 9.5 D US",1,pos,SHOES,,ood_far
+B078GTNSR4_N1,B06X9WMJL2,small/6f/6fbeafbe.jpg,"Amazon Brand - 206 Collective Men's Barnes Suede Casual Oxford, Gray, 9.5 D US",0,N1,SHOES,,ood_far
+B078GTNSR4_N2,B07NSQJ4DY,small/6c/6cbd67c6.jpg,"Amazon Brand - 206 Collective Men's Barnes Suede Casual Oxford, Gray, 9.5 D US",0,N2,SHOES,,ood_far
+B07L95D8W7_pos,B07L95D8W7,small/f4/f4e63fc9.jpg,Amazon Brand - find. Women's Closed Toe Espadrille Wedge Sandal,1,pos,SHOES,,ood_far
+B07L95D8W7_N1,B07FGKML15,small/a0/a06092ba.jpg,Amazon Brand - find. Women's Closed Toe Espadrille Wedge Sandal,0,N1,SHOES,,ood_far
+B07L95D8W7_N2,B07PKD2N2Q,small/c8/c8858713.jpg,Amazon Brand - find. Women's Closed Toe Espadrille Wedge Sandal,0,N2,SHOES,,ood_far
+B07L6KL3P4_pos,B07L6KL3P4,small/40/4016fb3b.jpg,Amazon Brand - find. Women's Simple Slide Leather Sandal,1,pos,SHOES,,ood_far
+B07L6KL3P4_N1,B07MHY7Y5C,small/ba/badc896e.jpg,Amazon Brand - find. Women's Simple Slide Leather Sandal,0,N1,SHOES,,ood_far
+B07L6KL3P4_N2,B01NBYLUNG,small/16/16e48774.jpg,Amazon Brand - find. Women's Simple Slide Leather Sandal,0,N2,SHOES,,ood_far
+B0732WSYTS_pos,B0732WSYTS,small/b4/b41aeb6c.jpg,Red Wagon Kids' Tom Boots,1,pos,BOOT,,ood_far
+B0732WSYTS_N1,B071JM37NH,small/cb/cb64d319.jpg,Red Wagon Kids' Tom Boots,0,N1,BOOT,,ood_far
+B0732WSYTS_N2,B072236D4W,small/b4/b4aae5b4.jpg,Red Wagon Kids' Tom Boots,0,N2,BOOT,,ood_far
+B072V88KHV_pos,B072V88KHV,small/92/927cd580.jpg,"Amazon Brand - The Fix Women's Fay Embellished Slide Smoking Loafer, Black/Bumblebee Patch, 7.5 M Us",1,pos,SHOES,,ood_far
+B072V88KHV_N1,B077XK79YR,small/f2/f24e2582.jpg,"Amazon Brand - The Fix Women's Fay Embellished Slide Smoking Loafer, Black/Bumblebee Patch, 7.5 M Us",0,N1,SHOES,,ood_far
+B072V88KHV_N2,B074JPC2P8,small/64/641e4201.jpg,"Amazon Brand - The Fix Women's Fay Embellished Slide Smoking Loafer, Black/Bumblebee Patch, 7.5 M Us",0,N2,SHOES,,ood_far
+B07FGKML15_pos,B07FGKML15,small/a0/a06092ba.jpg,"find. Men's Leather Cleated Brogue, Black), 7 UK",1,pos,BOOT,,ood_far
+B07FGKML15_N1,B07FR8GJDS,small/62/6202baf2.jpg,"find. Men's Leather Cleated Brogue, Black), 7 UK",0,N1,BOOT,,ood_far
+B07FGKML15_N2,B07G17D96L,small/2f/2f753db4.jpg,"find. Men's Leather Cleated Brogue, Black), 7 UK",0,N2,BOOT,,ood_far
+B086W7PGYX_pos,B086W7PGYX,small/b5/b582aa4b.jpg,find. Men's Zip Classic Worker Boots Biker,1,pos,BOOT,,ood_far
+B086W7PGYX_N1,B082QFJ72D,small/01/01c1f0f4.jpg,find. Men's Zip Classic Worker Boots Biker,0,N1,BOOT,,ood_far
+B086W7PGYX_N2,B07Z9LD5TN,small/b5/b5121ed6.jpg,find. Men's Zip Classic Worker Boots Biker,0,N2,BOOT,,ood_far
+B06X9W194C_pos,B06X9W194C,small/94/94271ad6.jpg,find. Women's Walsh Elastic Trainer Pink (Pink) 7 UK (40 EU),1,pos,SHOES,,ood_far
+B06X9W194C_N1,B06XGZPP8T,small/7e/7e70bd65.jpg,find. Women's Walsh Elastic Trainer Pink (Pink) 7 UK (40 EU),0,N1,SHOES,,ood_far
+B06X9W194C_N2,B08BVNLDFV,small/41/4156f812.jpg,find. Women's Walsh Elastic Trainer Pink (Pink) 7 UK (40 EU),0,N2,SHOES,,ood_far
+B01MTEI3IP_pos,B01MTEI3IP,small/eb/eb121256.jpg,Amazon Brand - The Fix Women's Page Block Heel Ghillie Dress Sandal,1,pos,SHOES,,ood_far
+B01MTEI3IP_N1,B07W5R75YP,small/d9/d9a56c4b.jpg,Amazon Brand - The Fix Women's Page Block Heel Ghillie Dress Sandal,0,N1,SHOES,,ood_far
+B01MTEI3IP_N2,B01NBYLUNG,small/16/16e48774.jpg,Amazon Brand - The Fix Women's Page Block Heel Ghillie Dress Sandal,0,N2,SHOES,,ood_far
+B07YFGHH9M_pos,B07YFGHH9M,small/70/700f407c.jpg,"Concept 3 by Skechers Women's to Top it Off Lace-up Fashion Sneaker, Black/Rose Gold, 8.5 Medium US",1,pos,SHOES,,ood_far
+B07YFGHH9M_N1,B07MHHS2PS,small/66/665b0ffb.jpg,"Concept 3 by Skechers Women's to Top it Off Lace-up Fashion Sneaker, Black/Rose Gold, 8.5 Medium US",0,N1,SHOES,,ood_far
+B07YFGHH9M_N2,B07YFGN76W,small/67/67b9af04.jpg,"Concept 3 by Skechers Women's to Top it Off Lace-up Fashion Sneaker, Black/Rose Gold, 8.5 Medium US",0,N2,SHOES,,ood_far
+B07VQ8KTTD_pos,B07VQ8KTTD,small/02/0224f081.jpg,"find. Unlined Leather Western Cowboy Boots, Brown, 8 UK",1,pos,BOOT,,ood_far
+B07VQ8KTTD_N1,B01MTEI3IP,small/eb/eb121256.jpg,"find. Unlined Leather Western Cowboy Boots, Brown, 8 UK",0,N1,BOOT,,ood_far
+B07VQ8KTTD_N2,B07TL53LYZ,small/95/950ff680.jpg,"find. Unlined Leather Western Cowboy Boots, Brown, 8 UK",0,N2,BOOT,,ood_far
+B07RW5HMJY_pos,B07RW5HMJY,small/ba/baf0bb54.jpg,"Amazon Brand - find. Men's Moffat, Beige Sand), US 11",1,pos,BOOT,,ood_far
+B07RW5HMJY_N1,B077TR1P29,small/9e/9ec99895.jpg,"Amazon Brand - find. Men's Moffat, Beige Sand), US 11",0,N1,BOOT,,ood_far
+B07RW5HMJY_N2,B06XC5XTDL,small/9b/9bd44216.jpg,"Amazon Brand - find. Men's Moffat, Beige Sand), US 11",0,N2,BOOT,,ood_far
+B01N2B34Z0_pos,B01N2B34Z0,small/e0/e0cb5691.jpg,Amazon Brand - 206 Collective Women's Everett High Heel Ankle Bootie,1,pos,SHOES,,ood_far
+B01N2B34Z0_N1,B07TGKFX2C,small/72/72828a3d.jpg,Amazon Brand - 206 Collective Women's Everett High Heel Ankle Bootie,0,N1,SHOES,,ood_far
+B01N2B34Z0_N2,B07R4CSP73,small/a6/a675602f.jpg,Amazon Brand - 206 Collective Women's Everett High Heel Ankle Bootie,0,N2,SHOES,,ood_far
+B07Q2R4FBS_pos,B07Q2R4FBS,small/8a/8a2aa338.jpg,Amazon Brand - find. Men's Chukka Boots Ankle,1,pos,SHOES,,ood_far
+B07Q2R4FBS_N1,B07HH61PZT,small/6a/6abbc356.jpg,Amazon Brand - find. Men's Chukka Boots Ankle,0,N1,SHOES,,ood_far
+B07Q2R4FBS_N2,B07R4CSP73,small/a6/a675602f.jpg,Amazon Brand - find. Men's Chukka Boots Ankle,0,N2,SHOES,,ood_far
+B082QFJ72D_pos,B082QFJ72D,small/01/01c1f0f4.jpg,"Amazon Essentials Women's Casual Slip On Canvas Flat with Sport Bottom Sneaker, Taupe, 5.5 B US",1,pos,SHOES,,ood_far
+B082QFJ72D_N1,B07FR8GJDS,small/62/6202baf2.jpg,"Amazon Essentials Women's Casual Slip On Canvas Flat with Sport Bottom Sneaker, Taupe, 5.5 B US",0,N1,SHOES,,ood_far
+B082QFJ72D_N2,B07YFGN762,small/54/54168bcf.jpg,"Amazon Essentials Women's Casual Slip On Canvas Flat with Sport Bottom Sneaker, Taupe, 5.5 B US",0,N2,SHOES,,ood_far
+B082MV4Q6X_pos,B082MV4Q6X,small/ca/caf4d550.jpg,"find. Connie Leather Closed Toe Heels, Beige (Nude), 7 UK",1,pos,SHOES,,ood_far
+B082MV4Q6X_N1,B07L6KL3P4,small/40/4016fb3b.jpg,"find. Connie Leather Closed Toe Heels, Beige (Nude), 7 UK",0,N1,SHOES,,ood_far
+B082MV4Q6X_N2,B082MV4Q4T,small/ba/ba6681ec.jpg,"find. Connie Leather Closed Toe Heels, Beige (Nude), 7 UK",0,N2,SHOES,,ood_far
+B0732TNV2W_pos,B0732TNV2W,small/bf/bf136700.jpg,Amazon Brand - find. Men's Mansall Smart Strap,1,pos,BOOT,,ood_far
+B0732TNV2W_N1,B06X989ZYF,small/9d/9d72c834.jpg,Amazon Brand - find. Men's Mansall Smart Strap,0,N1,BOOT,,ood_far
+B0732TNV2W_N2,B071KPV8YT,small/4f/4f8b115d.jpg,Amazon Brand - find. Men's Mansall Smart Strap,0,N2,BOOT,,ood_far
+B077TR1P29_pos,B077TR1P29,small/9e/9ec99895.jpg,"Amazon Brand - find. Men’s Suede Derby Shoes, Brown (Chocolate), US 7",1,pos,SHOES,,ood_far
+B077TR1P29_N1,B07R47ZJYT,small/ac/acd1f3c4.jpg,"Amazon Brand - find. Men’s Suede Derby Shoes, Brown (Chocolate), US 7",0,N1,SHOES,,ood_far
+B077TR1P29_N2,B07NC3QW16,small/a9/a9d64762.jpg,"Amazon Brand - find. Men’s Suede Derby Shoes, Brown (Chocolate), US 7",0,N2,SHOES,,ood_far
+B072MTNFWL_pos,B072MTNFWL,small/cd/cd475893.jpg,"RED WAGON Pop Flower, Girls’ Mary Jane Yellow 9 UK Child (26.5 EU)",1,pos,SHOES,,ood_far
+B072MTNFWL_N1,B06XC5XTDL,small/9b/9bd44216.jpg,"RED WAGON Pop Flower, Girls’ Mary Jane Yellow 9 UK Child (26.5 EU)",0,N1,SHOES,,ood_far
+B072MTNFWL_N2,B071K1FF2Q,small/d0/d012290c.jpg,"RED WAGON Pop Flower, Girls’ Mary Jane Yellow 9 UK Child (26.5 EU)",0,N2,SHOES,,ood_far
+B071JM37NH_pos,B071JM37NH,small/cb/cb64d319.jpg,"Red Wagon Boys' Triple Strap Chukka Hi-Top Trainers, Blue Navy, 7 us Little Kid",1,pos,SHOES,,ood_far
+B071JM37NH_N1,B074JPC2P8,small/64/641e4201.jpg,"Red Wagon Boys' Triple Strap Chukka Hi-Top Trainers, Blue Navy, 7 us Little Kid",0,N1,SHOES,,ood_far
+B071JM37NH_N2,B071G178W1,small/11/11be6210.jpg,"Red Wagon Boys' Triple Strap Chukka Hi-Top Trainers, Blue Navy, 7 us Little Kid",0,N2,SHOES,,ood_far
+B06XH4MS2C_pos,B06XH4MS2C,small/da/dad7c657.jpg,"Amazon Brand - The Fix Women's Rosalee Peep Toe Platform Stiletto Dress Pump, Pink Multi, 7 B US",1,pos,SHOES,,ood_far
+B06XH4MS2C_N1,B071KPV8YT,small/4f/4f8b115d.jpg,"Amazon Brand - The Fix Women's Rosalee Peep Toe Platform Stiletto Dress Pump, Pink Multi, 7 B US",0,N1,SHOES,,ood_far
+B06XH4MS2C_N2,B075DNSLG7,small/cb/cb26e3b4.jpg,"Amazon Brand - The Fix Women's Rosalee Peep Toe Platform Stiletto Dress Pump, Pink Multi, 7 B US",0,N2,SHOES,,ood_far
+B072V81JKL_pos,B072V81JKL,small/2f/2f972888.jpg,"Amazon Brand - The Fix Women's Evelyn Studded Ballet Flat, Black, 7.5 M US",1,pos,SHOES,,ood_far
+B072V81JKL_N1,B082QFJ72D,small/01/01c1f0f4.jpg,"Amazon Brand - The Fix Women's Evelyn Studded Ballet Flat, Black, 7.5 M US",0,N1,SHOES,,ood_far
+B072V81JKL_N2,B075DNSLG7,small/cb/cb26e3b4.jpg,"Amazon Brand - The Fix Women's Evelyn Studded Ballet Flat, Black, 7.5 M US",0,N2,SHOES,,ood_far
+B07MJLPRZL_pos,B07MJLPRZL,small/0a/0a82668e.jpg,"Amazon Brand - find. Women's Weave Leather, Beige Tan, US 8",1,pos,SHOES,,ood_far
+B07MJLPRZL_N1,B07W7ZCC2L,small/73/739e6219.jpg,"Amazon Brand - find. Women's Weave Leather, Beige Tan, US 8",0,N1,SHOES,,ood_far
+B07MJLPRZL_N2,B07L6KL3P4,small/40/4016fb3b.jpg,"Amazon Brand - find. Women's Weave Leather, Beige Tan, US 8",0,N2,SHOES,,ood_far
+B079FXXMRP_pos,B079FXXMRP,small/42/4243bb12.jpg,"Amazon Brand - find. Leather Western Ankle Boots, Black (Black), US 5",1,pos,BOOT,,ood_far
+B079FXXMRP_N1,B07HPVMHV6,small/dd/dddfbbbb.jpg,"Amazon Brand - find. Leather Western Ankle Boots, Black (Black), US 5",0,N1,BOOT,,ood_far
+B079FXXMRP_N2,B07RCY3Z8N,small/a8/a85a4e49.jpg,"Amazon Brand - find. Leather Western Ankle Boots, Black (Black), US 5",0,N2,BOOT,,ood_far
+B07W7ZCC2L_pos,B07W7ZCC2L,small/73/739e6219.jpg,"find. Mule Leather Peep-Toe Courts, Elfenbein (Bone), 40 EU",1,pos,SHOES,,ood_far
+B07W7ZCC2L_N1,B06X9XF23R,small/4d/4dfe5a87.jpg,"find. Mule Leather Peep-Toe Courts, Elfenbein (Bone), 40 EU",0,N1,SHOES,,ood_far
+B07W7ZCC2L_N2,B07W4QPMPR,small/b4/b4c4c6a3.jpg,"find. Mule Leather Peep-Toe Courts, Elfenbein (Bone), 40 EU",0,N2,SHOES,,ood_far
+B01MTEI7V1_pos,B01MTEI7V1,small/e0/e08c74c2.jpg,"Amazon Brand - The Fix Women's Bonilla Block Heel Cutout Tribal Dress Sandal, Black, 11 B US",1,pos,SHOES,,ood_far
+B01MTEI7V1_N1,B07TGKFX2C,small/72/72828a3d.jpg,"Amazon Brand - The Fix Women's Bonilla Block Heel Cutout Tribal Dress Sandal, Black, 11 B US",0,N1,SHOES,,ood_far
+B01MTEI7V1_N2,B01NBYLUNG,small/16/16e48774.jpg,"Amazon Brand - The Fix Women's Bonilla Block Heel Cutout Tribal Dress Sandal, Black, 11 B US",0,N2,SHOES,,ood_far
+B073SZHH5R_pos,B073SZHH5R,small/52/527e4b00.jpg,Amazon Brand - find. Women's Block Heel Square Toe Ankle Boots,1,pos,BOOT,,ood_far
+B073SZHH5R_N1,B082TK5FJ9,small/3e/3e97147d.jpg,Amazon Brand - find. Women's Block Heel Square Toe Ankle Boots,0,N1,BOOT,,ood_far
+B073SZHH5R_N2,B074KPGTB1,small/77/77d6bd98.jpg,Amazon Brand - find. Women's Block Heel Square Toe Ankle Boots,0,N2,BOOT,,ood_far
+B07YV7BTXH_pos,B07YV7BTXH,small/da/da1858f7.jpg,"find. Women's Dalia Low-Top Slippers, Elfenbein Bone, 10",1,pos,SHOES,,ood_far
+B07YV7BTXH_N1,B072N7HZFL,small/23/2380fc54.jpg,"find. Women's Dalia Low-Top Slippers, Elfenbein Bone, 10",0,N1,SHOES,,ood_far
+B07YV7BTXH_N2,B08CHZY3H7,small/9b/9bd45e82.jpg,"find. Women's Dalia Low-Top Slippers, Elfenbein Bone, 10",0,N2,SHOES,,ood_far
+B07VQ8K2JW_pos,B07VQ8K2JW,small/91/91ebfe43.jpg,find. Hem & Seam Men's Aiden Loafer Flats Brown Size: 12 UK,1,pos,SHOES,,ood_far
+B07VQ8K2JW_N1,B078GTNSR4,small/f8/f86a3d4e.jpg,find. Hem & Seam Men's Aiden Loafer Flats Brown Size: 12 UK,0,N1,SHOES,,ood_far
+B07VQ8K2JW_N2,B07WHTR647,small/5f/5f83dfef.jpg,find. Hem & Seam Men's Aiden Loafer Flats Brown Size: 12 UK,0,N2,SHOES,,ood_far
+B07H5YY9PN_pos,B07H5YY9PN,small/4d/4d85fd7f.jpg,"Jenny Leather Espadrille, Men’s Shoes & Bags Shoes & Bags, Blue (Blue Blue), 8 UK (42 EU)",1,pos,SHOES,,ood_far
+B07H5YY9PN_N1,B071JM37NH,small/cb/cb64d319.jpg,"Jenny Leather Espadrille, Men’s Shoes & Bags Shoes & Bags, Blue (Blue Blue), 8 UK (42 EU)",0,N1,SHOES,,ood_far
+B07H5YY9PN_N2,B082MV4Q4T,small/ba/ba6681ec.jpg,"Jenny Leather Espadrille, Men’s Shoes & Bags Shoes & Bags, Blue (Blue Blue), 8 UK (42 EU)",0,N2,SHOES,,ood_far
+B07NC3QW16_pos,B07NC3QW16,small/a9/a9d64762.jpg,"Amazon Brand - find. Women's Chelsea Boots, Brown Chocolate), US 9.5",1,pos,SHOES,,ood_far
+B07NC3QW16_N1,B07R8GBR97,small/55/5503359a.jpg,"Amazon Brand - find. Women's Chelsea Boots, Brown Chocolate), US 9.5",0,N1,SHOES,,ood_far
+B07NC3QW16_N2,B07R4CSP73,small/a6/a675602f.jpg,"Amazon Brand - find. Women's Chelsea Boots, Brown Chocolate), US 9.5",0,N2,SHOES,,ood_far
+B07W5VV562_pos,B07W5VV562,small/7e/7e821528.jpg,find. Womens^Women's Leather Brogues,1,pos,SHOES,,ood_far
+B07W5VV562_N1,B07896K6CR,small/ea/ea0c872a.jpg,find. Womens^Women's Leather Brogues,0,N1,SHOES,,ood_far
+B07W5VV562_N2,B07WJYHL4B,small/d0/d0934019.jpg,find. Womens^Women's Leather Brogues,0,N2,SHOES,,ood_far
+B07N28CL6M_pos,B07N28CL6M,small/fe/fe269380.jpg,"Amazon Brand - find. Men's Leather, Braun (Dark Chestnut), US 8",1,pos,BOOT,,ood_far
+B07N28CL6M_N1,B07TL53LYZ,small/95/950ff680.jpg,"Amazon Brand - find. Men's Leather, Braun (Dark Chestnut), US 8",0,N1,BOOT,,ood_far
+B07N28CL6M_N2,B071GFDG1X,small/9e/9e9752b5.jpg,"Amazon Brand - find. Men's Leather, Braun (Dark Chestnut), US 8",0,N2,BOOT,,ood_far
+B074JPC2P8_pos,B074JPC2P8,small/64/641e4201.jpg,Amazon Brand - The Fix Women's Dakoda Silver Head Stud Loafer Flat,1,pos,SHOES,,ood_far
+B074JPC2P8_N1,B06XCGVH9L,small/8d/8dfac694.jpg,Amazon Brand - The Fix Women's Dakoda Silver Head Stud Loafer Flat,0,N1,SHOES,,ood_far
+B074JPC2P8_N2,B072V88KHV,small/92/927cd580.jpg,Amazon Brand - The Fix Women's Dakoda Silver Head Stud Loafer Flat,0,N2,SHOES,,ood_far
+B06VX45T42_pos,B06VX45T42,small/98/98e3d748.jpg,"find. Women's B06gl5002r T-Bar Sandals, Multicolour Black Champagne, 8 US",1,pos,SHOES,,ood_far
+B06VX45T42_N1,B0869PF5XK,small/53/53b6f371.jpg,"find. Women's B06gl5002r T-Bar Sandals, Multicolour Black Champagne, 8 US",0,N1,SHOES,,ood_far
+B06VX45T42_N2,B06XRX1H42,small/0a/0a2472fa.jpg,"find. Women's B06gl5002r T-Bar Sandals, Multicolour Black Champagne, 8 US",0,N2,SHOES,,ood_far
+B06X9WMJL2_pos,B06X9WMJL2,small/6f/6fbeafbe.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Black US 8.5,1,pos,SHOES,,ood_far
+B06X9WMJL2_N1,B072236D4W,small/b4/b4aae5b4.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Black US 8.5,0,N1,SHOES,,ood_far
+B06X9WMJL2_N2,B06X9XF23R,small/4d/4dfe5a87.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Black US 8.5,0,N2,SHOES,,ood_far
+B07Z9LD5TN_pos,B07Z9LD5TN,small/b5/b5121ed6.jpg,"find. Mens^Men's Chelsea Boots, Charcoal Suede Look, US 7",1,pos,BOOT,,ood_far
+B07Z9LD5TN_N1,B082TK5FJ9,small/3e/3e97147d.jpg,"find. Mens^Men's Chelsea Boots, Charcoal Suede Look, US 7",0,N1,BOOT,,ood_far
+B07Z9LD5TN_N2,B077XK79YR,small/f2/f24e2582.jpg,"find. Mens^Men's Chelsea Boots, Charcoal Suede Look, US 7",0,N2,BOOT,,ood_far
+B07FR8GJDS_pos,B07FR8GJDS,small/62/6202baf2.jpg,Amazon Essentials Women's Casual Strappy Sandal,1,pos,SANDAL,,ood_far
+B07FR8GJDS_N1,B079LK3GTS,small/93/935e4b2e.jpg,Amazon Essentials Women's Casual Strappy Sandal,0,N1,SANDAL,,ood_far
+B07FR8GJDS_N2,B082TK5FJ9,small/3e/3e97147d.jpg,Amazon Essentials Women's Casual Strappy Sandal,0,N2,SANDAL,,ood_far
+B071K1FF2Q_pos,B071K1FF2Q,small/d0/d012290c.jpg,"Red Wagon Cadete, Girls’ Mary Jane Purple 8 UK Child (25.5 EU)",1,pos,SHOES,,ood_far
+B071K1FF2Q_N1,B07D45P6TX,small/c8/c8570f06.jpg,"Red Wagon Cadete, Girls’ Mary Jane Purple 8 UK Child (25.5 EU)",0,N1,SHOES,,ood_far
+B071K1FF2Q_N2,B072N7HZFL,small/23/2380fc54.jpg,"Red Wagon Cadete, Girls’ Mary Jane Purple 8 UK Child (25.5 EU)",0,N2,SHOES,,ood_far
+B01MZI9SSK_pos,B01MZI9SSK,small/70/70122e6f.jpg,Amazon Brand - 206 Collective Men's Pike Driving Slip-on Loafer,1,pos,SHOES,,ood_far
+B01MZI9SSK_N1,B07RW5HMJY,small/ba/baf0bb54.jpg,Amazon Brand - 206 Collective Men's Pike Driving Slip-on Loafer,0,N1,SHOES,,ood_far
+B01MZI9SSK_N2,B07MMG13G9,small/32/3225aad4.jpg,Amazon Brand - 206 Collective Men's Pike Driving Slip-on Loafer,0,N2,SHOES,,ood_far
+B07PK126JM_pos,B07PK126JM,small/5d/5df21d46.jpg,"Amazon Essentials Women's June Mule, Leopard, 12 B US",1,pos,SHOES,,ood_far
+B07PK126JM_N1,B07D4593MG,small/c0/c082a8df.jpg,"Amazon Essentials Women's June Mule, Leopard, 12 B US",0,N1,SHOES,,ood_far
+B07PK126JM_N2,B07NSQJ4DY,small/6c/6cbd67c6.jpg,"Amazon Essentials Women's June Mule, Leopard, 12 B US",0,N2,SHOES,,ood_far
+B07MHY7Y5C_pos,B07MHY7Y5C,small/ba/badc896e.jpg,Amazon Brand - 206 Collective Women's Soler Leather Flat Sandal,1,pos,SANDAL,,ood_far
+B07MHY7Y5C_N1,B07NZP182R,small/e4/e468719d.jpg,Amazon Brand - 206 Collective Women's Soler Leather Flat Sandal,0,N1,SANDAL,,ood_far
+B07MHY7Y5C_N2,B078B281PS,small/d3/d3879721.jpg,Amazon Brand - 206 Collective Women's Soler Leather Flat Sandal,0,N2,SANDAL,,ood_far
+B07NC445X2_pos,B07NC445X2,small/fd/fdfc1d9b.jpg,Amazon Brand - find. Women's Leather Chunky Gumsole Chelsea Boots,1,pos,BOOT,,ood_far
+B07NC445X2_N1,B08BVNLDFV,small/41/4156f812.jpg,Amazon Brand - find. Women's Leather Chunky Gumsole Chelsea Boots,0,N1,BOOT,,ood_far
+B07NC445X2_N2,B072DXJYNY,small/5f/5f854cc6.jpg,Amazon Brand - find. Women's Leather Chunky Gumsole Chelsea Boots,0,N2,BOOT,,ood_far
+B082TJLTF3_pos,B082TJLTF3,small/19/196a5c8f.jpg,"Amazon Essentials Women's Ivy Sandal, Black, 7 Medium US",1,pos,SANDAL,,ood_far
+B082TJLTF3_N1,B07H5YY9PN,small/4d/4d85fd7f.jpg,"Amazon Essentials Women's Ivy Sandal, Black, 7 Medium US",0,N1,SANDAL,,ood_far
+B082TJLTF3_N2,B082TK5FJ9,small/3e/3e97147d.jpg,"Amazon Essentials Women's Ivy Sandal, Black, 7 Medium US",0,N2,SANDAL,,ood_far
+B07XPP2HW5_pos,B07XPP2HW5,small/01/01c2803f.jpg,"find. Women's Espadrilles, Orange Terracotta, US 6",1,pos,SHOES,,ood_far
+B07XPP2HW5_N1,B07WHTR647,small/5f/5f83dfef.jpg,"find. Women's Espadrilles, Orange Terracotta, US 6",0,N1,SHOES,,ood_far
+B07XPP2HW5_N2,B07L95D8W7,small/f4/f4e63fc9.jpg,"find. Women's Espadrilles, Orange Terracotta, US 6",0,N2,SHOES,,ood_far
+B074JPC2PH_pos,B074JPC2PH,small/b9/b9168d0e.jpg,"Amazon Brand - The Fix Women's Hazel 4-Buckle Strap Ankle Boot, Black, 6.5 B US",1,pos,BOOT,,ood_far
+B074JPC2PH_N1,B07W7TWP3Q,small/7c/7cd26aaa.jpg,"Amazon Brand - The Fix Women's Hazel 4-Buckle Strap Ankle Boot, Black, 6.5 B US",0,N1,BOOT,,ood_far
+B074JPC2PH_N2,B074KPGTB1,small/77/77d6bd98.jpg,"Amazon Brand - The Fix Women's Hazel 4-Buckle Strap Ankle Boot, Black, 6.5 B US",0,N2,BOOT,,ood_far
+B01NBYLUNG_pos,B01NBYLUNG,small/16/16e48774.jpg,Amazon Brand - The Fix Women's Bonilla Block Heel Triangle Cutout Dress Sandal,1,pos,SHOES,,ood_far
+B01NBYLUNG_N1,B07Z59MNTP,small/5a/5a44a697.jpg,Amazon Brand - The Fix Women's Bonilla Block Heel Triangle Cutout Dress Sandal,0,N1,SHOES,,ood_far
+B01NBYLUNG_N2,B01MTEI7V1,small/e0/e08c74c2.jpg,Amazon Brand - The Fix Women's Bonilla Block Heel Triangle Cutout Dress Sandal,0,N2,SHOES,,ood_far
+B082MVCWGJ_pos,B082MVCWGJ,small/b0/b0ab4e8d.jpg,"find. Thora Loafers, Black (Black), 3 UK",1,pos,SHOES,,ood_far
+B082MVCWGJ_N1,B082MV4Q6X,small/ca/caf4d550.jpg,"find. Thora Loafers, Black (Black), 3 UK",0,N1,SHOES,,ood_far
+B082MVCWGJ_N2,B07TJ1D7LB,small/d6/d64e6f49.jpg,"find. Thora Loafers, Black (Black), 3 UK",0,N2,SHOES,,ood_far
+B08CHZY3H7_pos,B08CHZY3H7,small/9b/9bd45e82.jpg,Solefit Women's Black Slippers-7 UK (41 EU) (SLFT-0067),1,pos,SHOES,,ood_far
+B08CHZY3H7_N1,B06XRX1H42,small/0a/0a2472fa.jpg,Solefit Women's Black Slippers-7 UK (41 EU) (SLFT-0067),0,N1,SHOES,,ood_far
+B08CHZY3H7_N2,B08BVNLDFV,small/41/4156f812.jpg,Solefit Women's Black Slippers-7 UK (41 EU) (SLFT-0067),0,N2,SHOES,,ood_far
+B0794P473N_pos,B0794P473N,small/61/610ee9fe.jpg,"Simple Joys by Carter's Baby Boys' 2 Pack Crib Shoe Set: Soft Sole High Top Slip Sneaker, Navy/Chambray/Heathered Grey/Navy, 9-12 Months Regular US Infant",1,pos,SHOES,,ood_far
+B0794P473N_N1,B07H5YY9PN,small/4d/4d85fd7f.jpg,"Simple Joys by Carter's Baby Boys' 2 Pack Crib Shoe Set: Soft Sole High Top Slip Sneaker, Navy/Chambray/Heathered Grey/Navy, 9-12 Months Regular US Infant",0,N1,SHOES,,ood_far
+B0794P473N_N2,B07W5R75YP,small/d9/d9a56c4b.jpg,"Simple Joys by Carter's Baby Boys' 2 Pack Crib Shoe Set: Soft Sole High Top Slip Sneaker, Navy/Chambray/Heathered Grey/Navy, 9-12 Months Regular US Infant",0,N2,SHOES,,ood_far
+B07HKC3S4T_pos,B07HKC3S4T,small/8c/8c532d49.jpg,"Amazon Brand – Rivet Modern Shelving/Storage Space Floor Lamp with USB and Bulb, 59""H, White",1,pos,LAMP,,ood_near
+B07HKC3S4T_N1,B082JHTTL9,small/04/0478acba.jpg,"Amazon Brand – Rivet Modern Shelving/Storage Space Floor Lamp with USB and Bulb, 59""H, White",0,N1,LAMP,,ood_near
+B07HKC3S4T_N2,B07B4Z2YVW,small/73/739a7737.jpg,"Amazon Brand – Rivet Modern Shelving/Storage Space Floor Lamp with USB and Bulb, 59""H, White",0,N2,LAMP,,ood_near
+B071HSMXCB_pos,B071HSMXCB,small/94/94ada569.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Indoor Wall Mount Cage Sconce Fixture With Light Bulb - 5.5 x 74.75 x 11 Inches, Black",1,pos,LIGHT_FIXTURE,,ood_near
+B071HSMXCB_N1,B07MBF93P1,small/55/55b69fab.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Indoor Wall Mount Cage Sconce Fixture With Light Bulb - 5.5 x 74.75 x 11 Inches, Black",0,N1,LIGHT_FIXTURE,,ood_near
+B071HSMXCB_N2,B07JQB4S6S,small/48/4820d4df.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Indoor Wall Mount Cage Sconce Fixture With Light Bulb - 5.5 x 74.75 x 11 Inches, Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07MBF93P1_pos,B07MBF93P1,small/55/55b69fab.jpg,"Amazon Brand – Ravenna Home Contemporary Banker's Desk Lamp with LED Light Bulb, 13.5""H, Dark Bronze",1,pos,LAMP,,ood_near
+B07MBF93P1_N1,B07HK5LXFG,small/17/1732e076.jpg,"Amazon Brand – Ravenna Home Contemporary Banker's Desk Lamp with LED Light Bulb, 13.5""H, Dark Bronze",0,N1,LAMP,,ood_near
+B07MBF93P1_N2,B07DBDV67C,small/5e/5ef464d8.jpg,"Amazon Brand – Ravenna Home Contemporary Banker's Desk Lamp with LED Light Bulb, 13.5""H, Dark Bronze",0,N2,LAMP,,ood_near
+B07QHJZLR9_pos,B07QHJZLR9,small/46/4647066f.jpg,"Amazon Brand – Stone & Beam Table Lamp, 16""H, White and Brown Stripe",1,pos,LAMP,,ood_near
+B07QHJZLR9_N1,B071F6WJ9V,small/6d/6d3a5fb1.jpg,"Amazon Brand – Stone & Beam Table Lamp, 16""H, White and Brown Stripe",0,N1,LAMP,,ood_near
+B07QHJZLR9_N2,B07MBFG1D2,small/35/350ef17f.jpg,"Amazon Brand – Stone & Beam Table Lamp, 16""H, White and Brown Stripe",0,N2,LAMP,,ood_near
+B082JHTTL9_pos,B082JHTTL9,small/04/0478acba.jpg,"Amazon Brand – Stone & Beam Contemporary Outdoor Pendant Light with Clear Seeded Glass Shade, Vintage Edison Bulb Included, 6""H, Matte Black",1,pos,LIGHT_FIXTURE,,ood_near
+B082JHTTL9_N1,B07B4ZXKFQ,small/01/01311450.jpg,"Amazon Brand – Stone & Beam Contemporary Outdoor Pendant Light with Clear Seeded Glass Shade, Vintage Edison Bulb Included, 6""H, Matte Black",0,N1,LIGHT_FIXTURE,,ood_near
+B082JHTTL9_N2,B082JHN9V9,small/e8/e85c7daf.jpg,"Amazon Brand – Stone & Beam Contemporary Outdoor Pendant Light with Clear Seeded Glass Shade, Vintage Edison Bulb Included, 6""H, Matte Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07HKFXCNC_pos,B07HKFXCNC,small/ac/acdd1761.jpg,"Amazon Brand – Rivet Modern Geometric Table Lamp with Bulb, 21""H, White",1,pos,LAMP,,ood_near
+B07HKFXCNC_N1,B07374SBFL,small/91/91b1ee86.jpg,"Amazon Brand – Rivet Modern Geometric Table Lamp with Bulb, 21""H, White",0,N1,LAMP,,ood_near
+B07HKFXCNC_N2,B07HK68BXK,small/cb/cb115819.jpg,"Amazon Brand – Rivet Modern Geometric Table Lamp with Bulb, 21""H, White",0,N2,LAMP,,ood_near
+B0825CXG9G_pos,B0825CXG9G,small/dd/dd7ca2db.jpg,"Amazon Brand – Rivet Scandinavian Single-Light Blonde-Wood Adjustable Pendant, LED Bulb Included, 7""–180""H, White",1,pos,LIGHT_FIXTURE,,ood_near
+B0825CXG9G_N1,B07QC74RX4,small/b8/b8139f7e.jpg,"Amazon Brand – Rivet Scandinavian Single-Light Blonde-Wood Adjustable Pendant, LED Bulb Included, 7""–180""H, White",0,N1,LIGHT_FIXTURE,,ood_near
+B0825CXG9G_N2,B07HKGHSNW,small/f5/f59702c4.jpg,"Amazon Brand – Rivet Scandinavian Single-Light Blonde-Wood Adjustable Pendant, LED Bulb Included, 7""–180""H, White",0,N2,LIGHT_FIXTURE,,ood_near
+B0813ZT5TV_pos,B0813ZT5TV,small/75/75afeba4.jpg,"AmazonCommercial LED ECO UFO Highbay, 150 Watt, 30000 Hours, Dimmable 0-10V, 15000 Lumens, ETL Certified, Daylight, 1-Pack",1,pos,LIGHT_FIXTURE,,ood_near
+B0813ZT5TV_N1,B07HKGHSQT,small/41/41f13c62.jpg,"AmazonCommercial LED ECO UFO Highbay, 150 Watt, 30000 Hours, Dimmable 0-10V, 15000 Lumens, ETL Certified, Daylight, 1-Pack",0,N1,LIGHT_FIXTURE,,ood_near
+B0813ZT5TV_N2,B083P6SC2C,small/4e/4e6ee190.jpg,"AmazonCommercial LED ECO UFO Highbay, 150 Watt, 30000 Hours, Dimmable 0-10V, 15000 Lumens, ETL Certified, Daylight, 1-Pack",0,N2,LIGHT_FIXTURE,,ood_near
+B0853P1XBK_pos,B0853P1XBK,small/e4/e44c1d67.jpg,"AmazonBasics 24W Waterproof LED Outdoor Motion Sensor Security Light with 2 Adjustable Metal Heads - 5000K Daylight, 2400 Lumen, ETL Certified",1,pos,LIGHT_FIXTURE,,ood_near
+B0853P1XBK_N1,B07DBCN3KB,small/8b/8b6b3fa7.jpg,"AmazonBasics 24W Waterproof LED Outdoor Motion Sensor Security Light with 2 Adjustable Metal Heads - 5000K Daylight, 2400 Lumen, ETL Certified",0,N1,LIGHT_FIXTURE,,ood_near
+B0853P1XBK_N2,B0853PKBRV,small/a7/a770bb0c.jpg,"AmazonBasics 24W Waterproof LED Outdoor Motion Sensor Security Light with 2 Adjustable Metal Heads - 5000K Daylight, 2400 Lumen, ETL Certified",0,N2,LIGHT_FIXTURE,,ood_near
+B0824F7DCK_pos,B0824F7DCK,small/16/16c32deb.jpg,"Amazon Brand – Ravenna Home Contemporary Metal Table Lamp with Acrylic Accents, LED Bulb Included, 19.5""H, Antique Brass",1,pos,LAMP,,ood_near
+B0824F7DCK_N1,B071LD87KZ,small/54/54ce6eb3.jpg,"Amazon Brand – Ravenna Home Contemporary Metal Table Lamp with Acrylic Accents, LED Bulb Included, 19.5""H, Antique Brass",0,N1,LAMP,,ood_near
+B0824F7DCK_N2,B07DBCMTCS,small/b6/b67a4a85.jpg,"Amazon Brand – Ravenna Home Contemporary Metal Table Lamp with Acrylic Accents, LED Bulb Included, 19.5""H, Antique Brass",0,N2,LAMP,,ood_near
+B07374SBFL_pos,B07374SBFL,small/91/91b1ee86.jpg,"Amazon Brand – Rivet Adjustable Arm Mid-Century Modern Living Room Standing Floor Lamp - 59 Inches, Brushed Nickel",1,pos,LAMP,,ood_near
+B07374SBFL_N1,B07HK5LXFG,small/17/1732e076.jpg,"Amazon Brand – Rivet Adjustable Arm Mid-Century Modern Living Room Standing Floor Lamp - 59 Inches, Brushed Nickel",0,N1,LAMP,,ood_near
+B07374SBFL_N2,B07B4Z2YVW,small/73/739a7737.jpg,"Amazon Brand – Rivet Adjustable Arm Mid-Century Modern Living Room Standing Floor Lamp - 59 Inches, Brushed Nickel",0,N2,LAMP,,ood_near
+B07HKGHSR7_pos,B07HKGHSR7,small/72/7267bf33.jpg,"Amazon Brand – Rivet Modern Two Tone Table Desk Lamp with LED Light Bulb and Drum Shade - 12 x 12 x 15.88 Inches, Matte Black and Antique Brass",1,pos,LAMP,,ood_near
+B07HKGHSR7_N1,B0828F62FS,small/e5/e544eb91.jpg,"Amazon Brand – Rivet Modern Two Tone Table Desk Lamp with LED Light Bulb and Drum Shade - 12 x 12 x 15.88 Inches, Matte Black and Antique Brass",0,N1,LAMP,,ood_near
+B07HKGHSR7_N2,B07374M818,small/f4/f4abab47.jpg,"Amazon Brand – Rivet Modern Two Tone Table Desk Lamp with LED Light Bulb and Drum Shade - 12 x 12 x 15.88 Inches, Matte Black and Antique Brass",0,N2,LAMP,,ood_near
+B082JHN9VW_pos,B082JHN9VW,small/99/99d312b8.jpg,"Amazon Brand – Stone & Beam Traditional Floor Lamp with Faux Wood Accent, LED Bulb Included, 65""H, Dark Bronze",1,pos,LAMP,,ood_near
+B082JHN9VW_N1,B07DBCN3KB,small/8b/8b6b3fa7.jpg,"Amazon Brand – Stone & Beam Traditional Floor Lamp with Faux Wood Accent, LED Bulb Included, 65""H, Dark Bronze",0,N1,LAMP,,ood_near
+B082JHN9VW_N2,B07MBFG1D2,small/35/350ef17f.jpg,"Amazon Brand – Stone & Beam Traditional Floor Lamp with Faux Wood Accent, LED Bulb Included, 65""H, Dark Bronze",0,N2,LAMP,,ood_near
+B071F6VV2T_pos,B071F6VV2T,small/36/3695bd1d.jpg,"Amazon Brand – Rivet Mid-Century Modern Caf&eacute; Ceiling Pendant Light Chandelier Fixture, 10.75""W x 58.75"" Cord, Matte Black and Chrome",1,pos,LIGHT_FIXTURE,,ood_near
+B071F6VV2T_N1,B07HK8MLP6,small/06/0612154e.jpg,"Amazon Brand – Rivet Mid-Century Modern Caf&eacute; Ceiling Pendant Light Chandelier Fixture, 10.75""W x 58.75"" Cord, Matte Black and Chrome",0,N1,LIGHT_FIXTURE,,ood_near
+B071F6VV2T_N2,B0711Q7WK7,small/4b/4bf05f8b.jpg,"Amazon Brand – Rivet Mid-Century Modern Caf&eacute; Ceiling Pendant Light Chandelier Fixture, 10.75""W x 58.75"" Cord, Matte Black and Chrome",0,N2,LIGHT_FIXTURE,,ood_near
+B0825D3547_pos,B0825D3547,small/c5/c5774ee5.jpg,"Amazon Brand – Rivet Mid-Century Modern Wall Sconce with Novelty Bulb, 5.25""H, Matte Black",1,pos,LIGHT_FIXTURE,,ood_near
+B0825D3547_N1,B073P25SXR,small/ae/ae489ca0.jpg,"Amazon Brand – Rivet Mid-Century Modern Wall Sconce with Novelty Bulb, 5.25""H, Matte Black",0,N1,LIGHT_FIXTURE,,ood_near
+B0825D3547_N2,B07HK8YHNY,small/c1/c10bacd5.jpg,"Amazon Brand – Rivet Mid-Century Modern Wall Sconce with Novelty Bulb, 5.25""H, Matte Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07QBB4WRM_pos,B07QBB4WRM,small/34/343be3fe.jpg,"Ravenna Home Classic Vanity Light, 8.31""H, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07QBB4WRM_N1,B07HK5MXZ3,small/b0/b0c0767f.jpg,"Ravenna Home Classic Vanity Light, 8.31""H, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07QBB4WRM_N2,B07QJ766RB,small/fd/fd27e37f.jpg,"Ravenna Home Classic Vanity Light, 8.31""H, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B0828DHVWJ_pos,B0828DHVWJ,small/73/731b6480.jpg,"Amazon Brand - Ravenna Home Single-Light Flush-Mount Ceiling Light with Seeded Glass Shade, Vintage Edison Bulb Included, 3.8""H, Oil-Rubbed Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B0828DHVWJ_N1,B07MBFDHMH,small/93/93809081.jpg,"Amazon Brand - Ravenna Home Single-Light Flush-Mount Ceiling Light with Seeded Glass Shade, Vintage Edison Bulb Included, 3.8""H, Oil-Rubbed Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B0828DHVWJ_N2,B0828F62FS,small/e5/e544eb91.jpg,"Amazon Brand - Ravenna Home Single-Light Flush-Mount Ceiling Light with Seeded Glass Shade, Vintage Edison Bulb Included, 3.8""H, Oil-Rubbed Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B0825DNRXL_pos,B0825DNRXL,small/a0/a0aa5965.jpg,"Amazon Brand – Rivet Scandinavian Striped Table Lamp, LED Bulb Included, 25.25""H, Black and Blond Wood",1,pos,LAMP,,ood_near
+B0825DNRXL_N1,B07MF1RKM3,small/f6/f6ddf948.jpg,"Amazon Brand – Rivet Scandinavian Striped Table Lamp, LED Bulb Included, 25.25""H, Black and Blond Wood",0,N1,LAMP,,ood_near
+B0825DNRXL_N2,B07HKFXCNC,small/ac/acdd1761.jpg,"Amazon Brand – Rivet Scandinavian Striped Table Lamp, LED Bulb Included, 25.25""H, Black and Blond Wood",0,N2,LAMP,,ood_near
+B082DNK5ML_pos,B082DNK5ML,small/d5/d58384a9.jpg,"Amazon Brand – Rivet Double-Light Outdoor Wall Sconce with Clear Glass Shade, Vintage Edison Bulbs Included, 15.7""H, Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B082DNK5ML_N1,B07DBHC39X,small/56/56ba597b.jpg,"Amazon Brand – Rivet Double-Light Outdoor Wall Sconce with Clear Glass Shade, Vintage Edison Bulbs Included, 15.7""H, Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B082DNK5ML_N2,B07HK8YHNY,small/c1/c10bacd5.jpg,"Amazon Brand – Rivet Double-Light Outdoor Wall Sconce with Clear Glass Shade, Vintage Edison Bulbs Included, 15.7""H, Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07QD5RGPB_pos,B07QD5RGPB,small/10/109a0f1e.jpg,"Amazon Brand – Rivet Mid-Century Vanity Light, 10""H, Dark Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07QD5RGPB_N1,B07QJKFLS4,small/46/46e7a634.jpg,"Amazon Brand – Rivet Mid-Century Vanity Light, 10""H, Dark Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07QD5RGPB_N2,B082DP79DN,small/2b/2bf1619d.jpg,"Amazon Brand – Rivet Mid-Century Vanity Light, 10""H, Dark Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07QJL73XD_pos,B07QJL73XD,small/91/916924de.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp, 18""H, Crackle Cream",1,pos,LAMP,,ood_near
+B07QJL73XD_N1,B0719H3LG2,small/47/4725939d.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp, 18""H, Crackle Cream",0,N1,LAMP,,ood_near
+B07QJL73XD_N2,B07MBFDHMH,small/93/93809081.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp, 18""H, Crackle Cream",0,N2,LAMP,,ood_near
+B0825DG9QL_pos,B0825DG9QL,small/62/62ca5030.jpg,"Amazon Brand – Stone & Beam Contemporary Metal Wall Sconce with Adjustable Knobs, LED Bulb Included, 13.5""H, Dark Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B0825DG9QL_N1,B07HKGHSQT,small/41/41f13c62.jpg,"Amazon Brand – Stone & Beam Contemporary Metal Wall Sconce with Adjustable Knobs, LED Bulb Included, 13.5""H, Dark Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B0825DG9QL_N2,B0825DWB3W,small/0c/0c5e2e70.jpg,"Amazon Brand – Stone & Beam Contemporary Metal Wall Sconce with Adjustable Knobs, LED Bulb Included, 13.5""H, Dark Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07HKGY4F2_pos,B07HKGY4F2,small/96/9656ad8c.jpg,"Amazon Brand – Rivet Modern Concrete Cubic Outdoor Porch Light Wall Sconce with Integrated LED Light - 4.75 x 5.63 x 4.75 Inches, Black Base",1,pos,LIGHT_FIXTURE,,ood_near
+B07HKGY4F2_N1,B07B4SC9N7,small/2d/2d9c8739.jpg,"Amazon Brand – Rivet Modern Concrete Cubic Outdoor Porch Light Wall Sconce with Integrated LED Light - 4.75 x 5.63 x 4.75 Inches, Black Base",0,N1,LIGHT_FIXTURE,,ood_near
+B07HKGY4F2_N2,B07HK5CDRQ,small/ce/ce0b55a2.jpg,"Amazon Brand – Rivet Modern Concrete Cubic Outdoor Porch Light Wall Sconce with Integrated LED Light - 4.75 x 5.63 x 4.75 Inches, Black Base",0,N2,LIGHT_FIXTURE,,ood_near
+B07QC76NLP_pos,B07QC76NLP,small/d1/d11616c3.jpg,"Amazon Brand – Stone & Beam Modern 5-Piece Vanity Wall Sconce Light and Bathroom Hardware Set, 13.28""H, Chrome",1,pos,LIGHT_FIXTURE,,ood_near
+B07QC76NLP_N1,B07MPFZPQJ,small/ec/ec2ff778.jpg,"Amazon Brand – Stone & Beam Modern 5-Piece Vanity Wall Sconce Light and Bathroom Hardware Set, 13.28""H, Chrome",0,N1,LIGHT_FIXTURE,,ood_near
+B07QC76NLP_N2,B0825DWB3W,small/0c/0c5e2e70.jpg,"Amazon Brand – Stone & Beam Modern 5-Piece Vanity Wall Sconce Light and Bathroom Hardware Set, 13.28""H, Chrome",0,N2,LIGHT_FIXTURE,,ood_near
+B073751DMJ_pos,B073751DMJ,small/bc/bcd28126.jpg,"Amazon Brand – Rivet Gold Bedside Table Desk Lamp with Light Bulb - 18 Inches, Linen Shade",1,pos,LAMP,,ood_near
+B073751DMJ_N1,B07DBJLZ7T,small/25/25fe950d.jpg,"Amazon Brand – Rivet Gold Bedside Table Desk Lamp with Light Bulb - 18 Inches, Linen Shade",0,N1,LAMP,,ood_near
+B073751DMJ_N2,B07374VCVN,small/6a/6a87a075.jpg,"Amazon Brand – Rivet Gold Bedside Table Desk Lamp with Light Bulb - 18 Inches, Linen Shade",0,N2,LAMP,,ood_near
+B07DT4GYP3_pos,B07DT4GYP3,small/d1/d1c01a9f.jpg,"Amazon Brand – Stone & Beam Modern Glass Table Lamp With Light Bulb And White Shade - 15 x 15x 28 Inches, White",1,pos,LAMP,,ood_near
+B07DT4GYP3_N1,B07DBCN3KB,small/8b/8b6b3fa7.jpg,"Amazon Brand – Stone & Beam Modern Glass Table Lamp With Light Bulb And White Shade - 15 x 15x 28 Inches, White",0,N1,LAMP,,ood_near
+B07DT4GYP3_N2,B0825D87LB,small/99/9913f3e9.jpg,"Amazon Brand – Stone & Beam Modern Glass Table Lamp With Light Bulb And White Shade - 15 x 15x 28 Inches, White",0,N2,LAMP,,ood_near
+B07HK68BXK_pos,B07HK68BXK,small/cb/cb115819.jpg,"Amazon Brand – Rivet Modern Glass Table Lamp with Bulb, 16.63""H, Smoked Gray and Brass",1,pos,LAMP,,ood_near
+B07HK68BXK_N1,B07DT6MDK8,small/3d/3d23222c.jpg,"Amazon Brand – Rivet Modern Glass Table Lamp with Bulb, 16.63""H, Smoked Gray and Brass",0,N1,LAMP,,ood_near
+B07HK68BXK_N2,B07HK8MLP6,small/06/0612154e.jpg,"Amazon Brand – Rivet Modern Glass Table Lamp with Bulb, 16.63""H, Smoked Gray and Brass",0,N2,LAMP,,ood_near
+B07WC6LZ34_pos,B07WC6LZ34,small/33/33002255.jpg,"Stone & Beam Industrial Farmhouse Barn Outdoor Wall Sconce with Light Bulb - 10 x 12.72 x 9.72 Inches, Antique Bronze (Renewed)",1,pos,LIGHT_FIXTURE,,ood_near
+B07WC6LZ34_N1,B07MBFDHMH,small/93/93809081.jpg,"Stone & Beam Industrial Farmhouse Barn Outdoor Wall Sconce with Light Bulb - 10 x 12.72 x 9.72 Inches, Antique Bronze (Renewed)",0,N1,LIGHT_FIXTURE,,ood_near
+B07WC6LZ34_N2,B07WN8HV6Y,small/8d/8d2bb797.jpg,"Stone & Beam Industrial Farmhouse Barn Outdoor Wall Sconce with Light Bulb - 10 x 12.72 x 9.72 Inches, Antique Bronze (Renewed)",0,N2,LIGHT_FIXTURE,,ood_near
+B0828F59QW_pos,B0828F59QW,small/bb/bbc1f73c.jpg,"Amazon Brand - Ravenna Home 2-Light Semiflush-Mount Ceiling Light with Frosted Glass Shade, 8.3""H, Dark Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B0828F59QW_N1,B07HK5CDRQ,small/ce/ce0b55a2.jpg,"Amazon Brand - Ravenna Home 2-Light Semiflush-Mount Ceiling Light with Frosted Glass Shade, 8.3""H, Dark Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B0828F59QW_N2,B0828F62FS,small/e5/e544eb91.jpg,"Amazon Brand - Ravenna Home 2-Light Semiflush-Mount Ceiling Light with Frosted Glass Shade, 8.3""H, Dark Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B073P25SXR_pos,B073P25SXR,small/ae/ae489ca0.jpg,"Rivet Mid-Century Modern Theory 5-Arm Living Room Floor Lamp with Edison Light Bulbs, 60""H, Black and Brass Finish",1,pos,LAMP,,ood_near
+B073P25SXR_N1,B0828DHVWJ,small/73/731b6480.jpg,"Rivet Mid-Century Modern Theory 5-Arm Living Room Floor Lamp with Edison Light Bulbs, 60""H, Black and Brass Finish",0,N1,LAMP,,ood_near
+B073P25SXR_N2,B07B4SC9N7,small/2d/2d9c8739.jpg,"Rivet Mid-Century Modern Theory 5-Arm Living Room Floor Lamp with Edison Light Bulbs, 60""H, Black and Brass Finish",0,N2,LAMP,,ood_near
+B07MBFCRBJ_pos,B07MBFCRBJ,small/c9/c98fcce8.jpg,"Amazon Brand – Ravenna Home Table Lamp with Ceramic Cyclinder Base and LED Light Bulb, 19.75""H, Dark Denim Blue",1,pos,LAMP,,ood_near
+B07MBFCRBJ_N1,B07HK68BTZ,small/23/23f74cf9.jpg,"Amazon Brand – Ravenna Home Table Lamp with Ceramic Cyclinder Base and LED Light Bulb, 19.75""H, Dark Denim Blue",0,N1,LAMP,,ood_near
+B07MBFCRBJ_N2,B07MPFZPQJ,small/ec/ec2ff778.jpg,"Amazon Brand – Ravenna Home Table Lamp with Ceramic Cyclinder Base and LED Light Bulb, 19.75""H, Dark Denim Blue",0,N2,LAMP,,ood_near
+B082JH9VWG_pos,B082JH9VWG,small/ab/abd274e1.jpg,"Amazon Brand – Stone & Beam Contemporary Vanity Light with Metal Cage Shades, Vintage Edison Bulbs Included, 10""H, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B082JH9VWG_N1,B07B4YZWKD,small/28/28279e3e.jpg,"Amazon Brand – Stone & Beam Contemporary Vanity Light with Metal Cage Shades, Vintage Edison Bulbs Included, 10""H, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B082JH9VWG_N2,B07B4YBVN9,small/36/36f60820.jpg,"Amazon Brand – Stone & Beam Contemporary Vanity Light with Metal Cage Shades, Vintage Edison Bulbs Included, 10""H, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B0825D147R_pos,B0825D147R,small/73/7365b8a7.jpg,"Amazon Brand - Stone & Beam Traditional Rectangular Chinoiserie Ceramic Table Lamp, LED Bulb Included, 24""H, Blue Circle",1,pos,LAMP,,ood_near
+B0825D147R_N1,B07ML7J579,small/6b/6b48e8fe.jpg,"Amazon Brand - Stone & Beam Traditional Rectangular Chinoiserie Ceramic Table Lamp, LED Bulb Included, 24""H, Blue Circle",0,N1,LAMP,,ood_near
+B0825D147R_N2,B0825DBY45,small/e6/e6b769f3.jpg,"Amazon Brand - Stone & Beam Traditional Rectangular Chinoiserie Ceramic Table Lamp, LED Bulb Included, 24""H, Blue Circle",0,N2,LAMP,,ood_near
+B0824FFQL3_pos,B0824FFQL3,small/37/3715e3d2.jpg,"Amazon Brand – Ravenna Home Contemporary Metal Floor Lamp with Mercury Glass Accent, LED Bulb Included, 59""H, Dark Bronze",1,pos,LAMP,,ood_near
+B0824FFQL3_N1,B0828FN2YH,small/7b/7b761400.jpg,"Amazon Brand – Ravenna Home Contemporary Metal Floor Lamp with Mercury Glass Accent, LED Bulb Included, 59""H, Dark Bronze",0,N1,LAMP,,ood_near
+B0824FFQL3_N2,B0824DVF9J,small/ee/eea0bd4f.jpg,"Amazon Brand – Ravenna Home Contemporary Metal Floor Lamp with Mercury Glass Accent, LED Bulb Included, 59""H, Dark Bronze",0,N2,LAMP,,ood_near
+B07QGHVG48_pos,B07QGHVG48,small/a1/a1a236ee.jpg,"Rivet Modern Wall Sconce, 11""H, Aged Brass",1,pos,LIGHT_FIXTURE,,ood_near
+B07QGHVG48_N1,B07DT153M1,small/61/6138372f.jpg,"Rivet Modern Wall Sconce, 11""H, Aged Brass",0,N1,LIGHT_FIXTURE,,ood_near
+B07QGHVG48_N2,B0825D3547,small/c5/c5774ee5.jpg,"Rivet Modern Wall Sconce, 11""H, Aged Brass",0,N2,LIGHT_FIXTURE,,ood_near
+B07B4ZXKFQ_pos,B07B4ZXKFQ,small/01/01311450.jpg,"Amazon Brand – Stone & Beam Modern Art Deco Living Room Table Desk Lamp With Light Bulb - 6 x 6 x 24 Inches, Brass with Linen Shade",1,pos,LAMP,,ood_near
+B07B4ZXKFQ_N1,B082JHN9V9,small/e8/e85c7daf.jpg,"Amazon Brand – Stone & Beam Modern Art Deco Living Room Table Desk Lamp With Light Bulb - 6 x 6 x 24 Inches, Brass with Linen Shade",0,N1,LAMP,,ood_near
+B07B4ZXKFQ_N2,B07374M818,small/f4/f4abab47.jpg,"Amazon Brand – Stone & Beam Modern Art Deco Living Room Table Desk Lamp With Light Bulb - 6 x 6 x 24 Inches, Brass with Linen Shade",0,N2,LAMP,,ood_near
+B07B4YY8G1_pos,B07B4YY8G1,small/4b/4b3153c9.jpg,Amazon Brand – Stone & Beam Northside Wall Sconce,1,pos,LIGHT_FIXTURE,,ood_near
+B07B4YY8G1_N1,B07QJL73XD,small/91/916924de.jpg,Amazon Brand – Stone & Beam Northside Wall Sconce,0,N1,LIGHT_FIXTURE,,ood_near
+B07B4YY8G1_N2,B07QC76NLP,small/d1/d11616c3.jpg,Amazon Brand – Stone & Beam Northside Wall Sconce,0,N2,LIGHT_FIXTURE,,ood_near
+B073755HVV_pos,B073755HVV,small/d7/d78f2aca.jpg,"Amazon Brand – Stone & Beam Industrial Round Concrete Table Desk Lamp with Light Bulb and Beige Shade, 16""H, Brushed Nickel",1,pos,LAMP,,ood_near
+B073755HVV_N1,B082XLGHKK,small/7e/7ef51dd0.jpg,"Amazon Brand – Stone & Beam Industrial Round Concrete Table Desk Lamp with Light Bulb and Beige Shade, 16""H, Brushed Nickel",0,N1,LAMP,,ood_near
+B073755HVV_N2,B073776MSB,small/bc/bc79aa12.jpg,"Amazon Brand – Stone & Beam Industrial Round Concrete Table Desk Lamp with Light Bulb and Beige Shade, 16""H, Brushed Nickel",0,N2,LAMP,,ood_near
+B075X2YJGK_pos,B075X2YJGK,small/ef/efda2f8f.jpg,"Amazon Brand – Rivet Mid Century Modern Marble Table Decor Lamp With LED Light Bulb - 14 Inches, White Marble and Brass",1,pos,LAMP,,ood_near
+B075X2YJGK_N1,B07374K539,small/ba/ba7a184e.jpg,"Amazon Brand – Rivet Mid Century Modern Marble Table Decor Lamp With LED Light Bulb - 14 Inches, White Marble and Brass",0,N1,LAMP,,ood_near
+B075X2YJGK_N2,B073763W7G,small/42/42c085fd.jpg,"Amazon Brand – Rivet Mid Century Modern Marble Table Decor Lamp With LED Light Bulb - 14 Inches, White Marble and Brass",0,N2,LAMP,,ood_near
+B07MBFDQG8_pos,B07MBFDQG8,small/dd/ddb2d783.jpg,"Amazon Brand – Ravenna Home Classic 4 Light Semi-flush Mount Chandelier, Bulbs Included, 14.5""H, Silver",1,pos,LIGHT_FIXTURE,,ood_near
+B07MBFDQG8_N1,B07QC76NLP,small/d1/d11616c3.jpg,"Amazon Brand – Ravenna Home Classic 4 Light Semi-flush Mount Chandelier, Bulbs Included, 14.5""H, Silver",0,N1,LIGHT_FIXTURE,,ood_near
+B07MBFDQG8_N2,B0828DHVWJ,small/73/731b6480.jpg,"Amazon Brand – Ravenna Home Classic 4 Light Semi-flush Mount Chandelier, Bulbs Included, 14.5""H, Silver",0,N2,LIGHT_FIXTURE,,ood_near
+B07WN8HV6Y_pos,B07WN8HV6Y,small/8d/8d2bb797.jpg,"Stone & Beam Industrial Farmhouse Outdoor Wall Sconce Fixture with Light Bulb - 7.29 x 8.15 x 12.51 Inches, Black Iron (Renewed)",1,pos,LIGHT_FIXTURE,,ood_near
+B07WN8HV6Y_N1,B07HK5LXFG,small/17/1732e076.jpg,"Stone & Beam Industrial Farmhouse Outdoor Wall Sconce Fixture with Light Bulb - 7.29 x 8.15 x 12.51 Inches, Black Iron (Renewed)",0,N1,LIGHT_FIXTURE,,ood_near
+B07WN8HV6Y_N2,B07JQB4S6S,small/48/4820d4df.jpg,"Stone & Beam Industrial Farmhouse Outdoor Wall Sconce Fixture with Light Bulb - 7.29 x 8.15 x 12.51 Inches, Black Iron (Renewed)",0,N2,LIGHT_FIXTURE,,ood_near
+B083P6SC2C_pos,B083P6SC2C,small/4e/4e6ee190.jpg,"AmazonCommercial Linkable LED Utility Shop Light, 4-Foot, 4500 Lumens, 40 Watt, Energy Star and ETL Certified | Daylight, 4-Pack (Renewed)",1,pos,LIGHT_FIXTURE,,ood_near
+B083P6SC2C_N1,B07DT8F9D3,small/3a/3aaae9fb.jpg,"AmazonCommercial Linkable LED Utility Shop Light, 4-Foot, 4500 Lumens, 40 Watt, Energy Star and ETL Certified | Daylight, 4-Pack (Renewed)",0,N1,LIGHT_FIXTURE,,ood_near
+B083P6SC2C_N2,B0813ZT5TV,small/75/75afeba4.jpg,"AmazonCommercial Linkable LED Utility Shop Light, 4-Foot, 4500 Lumens, 40 Watt, Energy Star and ETL Certified | Daylight, 4-Pack (Renewed)",0,N2,LIGHT_FIXTURE,,ood_near
+B07B4ZXKBD_pos,B07B4ZXKBD,small/df/df18d3f5.jpg,"Amazon Brand – Stone & Beam Contemporary Ribbed Glass Shade Ceiling Pendant Fixture With Light Bulb - 13 x 13 x 11.8 Inches, Oil Rubbed Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4ZXKBD_N1,B082DP8455,small/16/16e98d5a.jpg,"Amazon Brand – Stone & Beam Contemporary Ribbed Glass Shade Ceiling Pendant Fixture With Light Bulb - 13 x 13 x 11.8 Inches, Oil Rubbed Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4ZXKBD_N2,B07374K539,small/ba/ba7a184e.jpg,"Amazon Brand – Stone & Beam Contemporary Ribbed Glass Shade Ceiling Pendant Fixture With Light Bulb - 13 x 13 x 11.8 Inches, Oil Rubbed Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07DBHCKML_pos,B07DBHCKML,small/70/708e411d.jpg,"Amazon Brand – Ravenna Home Traditional Standing Floor Lamp with Reading Light and LED Light Bulb - 69.75 Inches, Brushed Nickel with Frosted Glass",1,pos,LAMP,,ood_near
+B07DBHCKML_N1,B07JQB4S6S,small/48/4820d4df.jpg,"Amazon Brand – Ravenna Home Traditional Standing Floor Lamp with Reading Light and LED Light Bulb - 69.75 Inches, Brushed Nickel with Frosted Glass",0,N1,LAMP,,ood_near
+B07DBHCKML_N2,B07DBCN3KB,small/8b/8b6b3fa7.jpg,"Amazon Brand – Ravenna Home Traditional Standing Floor Lamp with Reading Light and LED Light Bulb - 69.75 Inches, Brushed Nickel with Frosted Glass",0,N2,LAMP,,ood_near
+B07DBHLG78_pos,B07DBHLG78,small/ef/ef2ff632.jpg,"Ravenna Home Metal Living Room Standing Floor Lamp With LED Light Bulb - 59.25 Inches, Matte Black With Beige Shade",1,pos,LAMP,,ood_near
+B07DBHLG78_N1,B07DTFBDTL,small/18/18caf37e.jpg,"Ravenna Home Metal Living Room Standing Floor Lamp With LED Light Bulb - 59.25 Inches, Matte Black With Beige Shade",0,N1,LAMP,,ood_near
+B07DBHLG78_N2,B07DBCN3KB,small/8b/8b6b3fa7.jpg,"Ravenna Home Metal Living Room Standing Floor Lamp With LED Light Bulb - 59.25 Inches, Matte Black With Beige Shade",0,N2,LAMP,,ood_near
+B072LKKM3W_pos,B072LKKM3W,small/5c/5c46a84c.jpg,"Amazon Brand – Rivet Modern Pendant Light With Bulb, 19""-60""H, Chrome and Glass",1,pos,LIGHT_FIXTURE,,ood_near
+B072LKKM3W_N1,B07QJL73XD,small/91/916924de.jpg,"Amazon Brand – Rivet Modern Pendant Light With Bulb, 19""-60""H, Chrome and Glass",0,N1,LIGHT_FIXTURE,,ood_near
+B072LKKM3W_N2,B07HK85JV8,small/3b/3bd0fa5d.jpg,"Amazon Brand – Rivet Modern Pendant Light With Bulb, 19""-60""H, Chrome and Glass",0,N2,LIGHT_FIXTURE,,ood_near
+B082DP4YX5_pos,B082DP4YX5,small/53/539c4b3f.jpg,"Amazon Brand – Rivet Single-Light Outdoor Pendant Light with Clear Glass Shade, Vintage Edison Bulb Included, 40.3""H, Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B082DP4YX5_N1,B0825D147R,small/73/7365b8a7.jpg,"Amazon Brand – Rivet Single-Light Outdoor Pendant Light with Clear Glass Shade, Vintage Edison Bulb Included, 40.3""H, Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B082DP4YX5_N2,B072LKKM3W,small/5c/5c46a84c.jpg,"Amazon Brand – Rivet Single-Light Outdoor Pendant Light with Clear Glass Shade, Vintage Edison Bulb Included, 40.3""H, Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07B4YZ7VL_pos,B07B4YZ7VL,small/a6/a68cc6fa.jpg,"Amazon Brand – Stone & Beam Alexa -Enabled Lamp, 10.5"" x 6.0"" x 18.0"", Marble & Antique Brass",1,pos,LAMP,,ood_near
+B07B4YZ7VL_N1,B07HK5LXFG,small/17/1732e076.jpg,"Amazon Brand – Stone & Beam Alexa -Enabled Lamp, 10.5"" x 6.0"" x 18.0"", Marble & Antique Brass",0,N1,LAMP,,ood_near
+B07B4YZ7VL_N2,B07B4YYC31,small/67/677bac66.jpg,"Amazon Brand – Stone & Beam Alexa -Enabled Lamp, 10.5"" x 6.0"" x 18.0"", Marble & Antique Brass",0,N2,LAMP,,ood_near
+B07HK3TNDP_pos,B07HK3TNDP,small/89/89ee9b66.jpg,"Amazon Brand – Stone & Beam Vintage Indoor Outdoor Flush Mount Ceiling Chandelier Fixture with Light Bulb - 10.6 x 10.6 x 9.24 Inches, Antique Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK3TNDP_N1,B07HK5MXZ3,small/b0/b0c0767f.jpg,"Amazon Brand – Stone & Beam Vintage Indoor Outdoor Flush Mount Ceiling Chandelier Fixture with Light Bulb - 10.6 x 10.6 x 9.24 Inches, Antique Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK3TNDP_N2,B07HK5JJP2,small/41/41dc9d08.jpg,"Amazon Brand – Stone & Beam Vintage Indoor Outdoor Flush Mount Ceiling Chandelier Fixture with Light Bulb - 10.6 x 10.6 x 9.24 Inches, Antique Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07DBJLZ7T_pos,B07DBJLZ7T,small/25/25fe950d.jpg,"Amazon Brand – Ravenna Home Open Round Ceiling Pendant Chandelier With 4 LED Light Bulbs - 16 x 16 x 18.50 Inches, Silver",1,pos,LIGHT_FIXTURE,,ood_near
+B07DBJLZ7T_N1,B07B4VSTF6,small/21/215523ee.jpg,"Amazon Brand – Ravenna Home Open Round Ceiling Pendant Chandelier With 4 LED Light Bulbs - 16 x 16 x 18.50 Inches, Silver",0,N1,LIGHT_FIXTURE,,ood_near
+B07DBJLZ7T_N2,B07DBJ7P12,small/35/356a17a0.jpg,"Amazon Brand – Ravenna Home Open Round Ceiling Pendant Chandelier With 4 LED Light Bulbs - 16 x 16 x 18.50 Inches, Silver",0,N2,LIGHT_FIXTURE,,ood_near
+B08B8SV8DB_pos,B08B8SV8DB,small/25/256dd388.jpg,"Amazon Basics Poly Globe Pendant Light - 6"" x 6"" x 30"", Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B08B8SV8DB_N1,B0825DKP92,small/16/16b20edd.jpg,"Amazon Basics Poly Globe Pendant Light - 6"" x 6"" x 30"", Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B08B8SV8DB_N2,B07B4YS1QP,small/8e/8edf95e9.jpg,"Amazon Basics Poly Globe Pendant Light - 6"" x 6"" x 30"", Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B07HK8MLP6_pos,B07HK8MLP6,small/06/0612154e.jpg,"Amazon Brand – Rivet Smokey Glass and Brass Table Lamp, Modern, with Bulb, 16.63""H, Green",1,pos,LAMP,,ood_near
+B07HK8MLP6_N1,B07DT8F9D3,small/3a/3aaae9fb.jpg,"Amazon Brand – Rivet Smokey Glass and Brass Table Lamp, Modern, with Bulb, 16.63""H, Green",0,N1,LAMP,,ood_near
+B07HK8MLP6_N2,B07HK68BXK,small/cb/cb115819.jpg,"Amazon Brand – Rivet Smokey Glass and Brass Table Lamp, Modern, with Bulb, 16.63""H, Green",0,N2,LAMP,,ood_near
+B07DBCMTCS_pos,B07DBCMTCS,small/b6/b67a4a85.jpg,"Amazon Brand – Ravenna Home Classic Traditional Metallic Table Lamp with LED Light Bulb - 27.5 Inches, Brushed Nickel",1,pos,LAMP,,ood_near
+B07DBCMTCS_N1,B07B4ZXKBD,small/df/df18d3f5.jpg,"Amazon Brand – Ravenna Home Classic Traditional Metallic Table Lamp with LED Light Bulb - 27.5 Inches, Brushed Nickel",0,N1,LAMP,,ood_near
+B07DBCMTCS_N2,B07DBDV67C,small/5e/5ef464d8.jpg,"Amazon Brand – Ravenna Home Classic Traditional Metallic Table Lamp with LED Light Bulb - 27.5 Inches, Brushed Nickel",0,N2,LAMP,,ood_near
+B08B8TV5PR_pos,B08B8TV5PR,small/5a/5a77199a.jpg,"Amazon Basics Pendant Lamp - 15.7"" x 15.7"" x 60"", Matte Black",1,pos,LIGHT_FIXTURE,,ood_near
+B08B8TV5PR_N1,B07374SBFL,small/91/91b1ee86.jpg,"Amazon Basics Pendant Lamp - 15.7"" x 15.7"" x 60"", Matte Black",0,N1,LIGHT_FIXTURE,,ood_near
+B08B8TV5PR_N2,B07HK85RQF,small/5a/5a442b21.jpg,"Amazon Basics Pendant Lamp - 15.7"" x 15.7"" x 60"", Matte Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07QC74RX4_pos,B07QC74RX4,small/b8/b8139f7e.jpg,"Amazon Brand – Ravenna Home Classic Wall Sconce Light, 9""H, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07QC74RX4_N1,B07HK8YHNY,small/c1/c10bacd5.jpg,"Amazon Brand – Ravenna Home Classic Wall Sconce Light, 9""H, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07QC74RX4_N2,B07QJKFLS4,small/46/46e7a634.jpg,"Amazon Brand – Ravenna Home Classic Wall Sconce Light, 9""H, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B0857NZ925_pos,B0857NZ925,small/b5/b5ce3840.jpg,"AmazonBasics Natural Himalayan Salt Lamp, Wood Base with Dimmer Switch - Cylinder Shape, Crystal Pink",1,pos,LAMP,,ood_near
+B0857NZ925_N1,B082DP4YX5,small/53/539c4b3f.jpg,"AmazonBasics Natural Himalayan Salt Lamp, Wood Base with Dimmer Switch - Cylinder Shape, Crystal Pink",0,N1,LAMP,,ood_near
+B0857NZ925_N2,B07HKFXCNC,small/ac/acdd1761.jpg,"AmazonBasics Natural Himalayan Salt Lamp, Wood Base with Dimmer Switch - Cylinder Shape, Crystal Pink",0,N2,LAMP,,ood_near
+B07B4YS1QP_pos,B07B4YS1QP,small/8e/8edf95e9.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5 x 10 Inches, Gold",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4YS1QP_N1,B07HKGHSR7,small/72/7267bf33.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5 x 10 Inches, Gold",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4YS1QP_N2,B07B4ZP62F,small/b1/b19ca854.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5 x 10 Inches, Gold",0,N2,LIGHT_FIXTURE,,ood_near
+B071HSMPHL_pos,B071HSMPHL,small/9f/9f4d8d94.jpg,"Amazon Brand – Rivet Hugh Mid-Century Modern 3-Light Pendant Chandelier Ceiling Light, Bulbs Included, 12-60""H Adjustable Cords, Chrome and Glass",1,pos,LIGHT_FIXTURE,,ood_near
+B071HSMPHL_N1,B071F6WJ9V,small/6d/6d3a5fb1.jpg,"Amazon Brand – Rivet Hugh Mid-Century Modern 3-Light Pendant Chandelier Ceiling Light, Bulbs Included, 12-60""H Adjustable Cords, Chrome and Glass",0,N1,LIGHT_FIXTURE,,ood_near
+B071HSMPHL_N2,B07HKGHSNW,small/f5/f59702c4.jpg,"Amazon Brand – Rivet Hugh Mid-Century Modern 3-Light Pendant Chandelier Ceiling Light, Bulbs Included, 12-60""H Adjustable Cords, Chrome and Glass",0,N2,LIGHT_FIXTURE,,ood_near
+B0853PKBRV_pos,B0853PKBRV,small/a7/a770bb0c.jpg,"AmazonBasics 40W Waterproof LED Outdoor Motion Sensor Security Light with 2 Adjustable Metal Heads - 5000K Daylight, 4000 Lumen, ETL Certified",1,pos,LIGHT_FIXTURE,,ood_near
+B0853PKBRV_N1,B07MBFDHMH,small/93/93809081.jpg,"AmazonBasics 40W Waterproof LED Outdoor Motion Sensor Security Light with 2 Adjustable Metal Heads - 5000K Daylight, 4000 Lumen, ETL Certified",0,N1,LIGHT_FIXTURE,,ood_near
+B0853PKBRV_N2,B0853P1XBK,small/e4/e44c1d67.jpg,"AmazonBasics 40W Waterproof LED Outdoor Motion Sensor Security Light with 2 Adjustable Metal Heads - 5000K Daylight, 4000 Lumen, ETL Certified",0,N2,LIGHT_FIXTURE,,ood_near
+B07MBFDQHP_pos,B07MBFDQHP,small/03/036011d6.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp, Bulb Included, 16""H, Tan",1,pos,LAMP,,ood_near
+B07MBFDQHP_N1,B071F6VV2T,small/36/3695bd1d.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp, Bulb Included, 16""H, Tan",0,N1,LAMP,,ood_near
+B07MBFDQHP_N2,B07MF1RKM3,small/f6/f6ddf948.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp, Bulb Included, 16""H, Tan",0,N2,LAMP,,ood_near
+B07B4YZWKD_pos,B07B4YZWKD,small/28/28279e3e.jpg,"Amazon Brand – Stone & Beam Schoolhouse Ceiling Pendant Chandelier Fixture With 2 Light Bulbs With Glass Milk White Shade - 21 x 8 x 53 Inches, 42 Inch Cord, Black",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4YZWKD_N1,B07B4YY8G1,small/4b/4b3153c9.jpg,"Amazon Brand – Stone & Beam Schoolhouse Ceiling Pendant Chandelier Fixture With 2 Light Bulbs With Glass Milk White Shade - 21 x 8 x 53 Inches, 42 Inch Cord, Black",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4YZWKD_N2,B07B4Z9C29,small/41/415b74db.jpg,"Amazon Brand – Stone & Beam Schoolhouse Ceiling Pendant Chandelier Fixture With 2 Light Bulbs With Glass Milk White Shade - 21 x 8 x 53 Inches, 42 Inch Cord, Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07FG2R4H7_pos,B07FG2R4H7,small/43/4365dcda.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Globe Plug-In Hanging Chandelier With LED Light Bulb - 6.25 x 6.25 x 9.75 Inches, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07FG2R4H7_N1,B073776MSB,small/bc/bc79aa12.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Globe Plug-In Hanging Chandelier With LED Light Bulb - 6.25 x 6.25 x 9.75 Inches, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07FG2R4H7_N2,B07HK5MXZ3,small/b0/b0c0767f.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Globe Plug-In Hanging Chandelier With LED Light Bulb - 6.25 x 6.25 x 9.75 Inches, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B07JQB4S6S_pos,B07JQB4S6S,small/48/4820d4df.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Wall Sconce Fixture With Light Bulb - 4.75 x 5.5 x 11 Inches, Silver, For Indoor Outdoor Use",1,pos,LIGHT_FIXTURE,,ood_near
+B07JQB4S6S_N1,B071HSMPHL,small/9f/9f4d8d94.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Wall Sconce Fixture With Light Bulb - 4.75 x 5.5 x 11 Inches, Silver, For Indoor Outdoor Use",0,N1,LIGHT_FIXTURE,,ood_near
+B07JQB4S6S_N2,B07WN8HV6Y,small/8d/8d2bb797.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Wall Sconce Fixture With Light Bulb - 4.75 x 5.5 x 11 Inches, Silver, For Indoor Outdoor Use",0,N2,LIGHT_FIXTURE,,ood_near
+B0824DY51D_pos,B0824DY51D,small/b6/b635bbe0.jpg,"Amazon Brand – Ravenna Home Traditional Ribbed Ceramic Table Lamp, LED Bulb Included, 22.5""H, Pink Sand",1,pos,LAMP,,ood_near
+B0824DY51D_N1,B0825D7SDV,small/de/de8afd41.jpg,"Amazon Brand – Ravenna Home Traditional Ribbed Ceramic Table Lamp, LED Bulb Included, 22.5""H, Pink Sand",0,N1,LAMP,,ood_near
+B0824DY51D_N2,B07MBFDJQ3,small/0c/0c84de5f.jpg,"Amazon Brand – Ravenna Home Traditional Ribbed Ceramic Table Lamp, LED Bulb Included, 22.5""H, Pink Sand",0,N2,LAMP,,ood_near
+B07MBFDJQ3_pos,B07MBFDJQ3,small/0c/0c84de5f.jpg,"Amazon Brand – Ravenna Home Textured Ceramic Base Table Lamp with LED Light Bulb, 18""H, Silver - 20465-002",1,pos,LAMP,,ood_near
+B07MBFDJQ3_N1,B0825DWB39,small/ea/eac2108d.jpg,"Amazon Brand – Ravenna Home Textured Ceramic Base Table Lamp with LED Light Bulb, 18""H, Silver - 20465-002",0,N1,LAMP,,ood_near
+B07MBFDJQ3_N2,B07MPFZPQJ,small/ec/ec2ff778.jpg,"Amazon Brand – Ravenna Home Textured Ceramic Base Table Lamp with LED Light Bulb, 18""H, Silver - 20465-002",0,N2,LAMP,,ood_near
+B07HK8YHNY_pos,B07HK8YHNY,small/c1/c10bacd5.jpg,"Amazon Brand – Rivet Mid-Century Clear Glass and Metal Wall Sconce with Bulb, 14""H, Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK8YHNY_N1,B07DBDV67C,small/5e/5ef464d8.jpg,"Amazon Brand – Rivet Mid-Century Clear Glass and Metal Wall Sconce with Bulb, 14""H, Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK8YHNY_N2,B0825D3547,small/c5/c5774ee5.jpg,"Amazon Brand – Rivet Mid-Century Clear Glass and Metal Wall Sconce with Bulb, 14""H, Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07B4ZP62F_pos,B07B4ZP62F,small/b1/b19ca854.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5x 10 Inches, Matte Black",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4ZP62F_N1,B0825DNRXL,small/a0/a0aa5965.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5x 10 Inches, Matte Black",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4ZP62F_N2,B07B4YS1QP,small/8e/8edf95e9.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5x 10 Inches, Matte Black",0,N2,LIGHT_FIXTURE,,ood_near
+B0711Q7WK7_pos,B0711Q7WK7,small/4b/4bf05f8b.jpg,"Amazon Brand – Rivet Modern Industrial Geometric Cage Pendant Chandelier Fixture With Light Bulb - 10.5 x 10.5 Inch, 14.75-62.75 Inch Cord, White",1,pos,LIGHT_FIXTURE,,ood_near
+B0711Q7WK7_N1,B07MBFDQG8,small/dd/ddb2d783.jpg,"Amazon Brand – Rivet Modern Industrial Geometric Cage Pendant Chandelier Fixture With Light Bulb - 10.5 x 10.5 Inch, 14.75-62.75 Inch Cord, White",0,N1,LIGHT_FIXTURE,,ood_near
+B0711Q7WK7_N2,B071F6VV2T,small/36/3695bd1d.jpg,"Amazon Brand – Rivet Modern Industrial Geometric Cage Pendant Chandelier Fixture With Light Bulb - 10.5 x 10.5 Inch, 14.75-62.75 Inch Cord, White",0,N2,LIGHT_FIXTURE,,ood_near
+B07DT8F9D3_pos,B07DT8F9D3,small/3a/3aaae9fb.jpg,"Amazon Brand – Ravenna Home Modern Stacked Ball Desk Table Lamp with LED Light Bulb - 23.25 Inches, Brushed Steel with Clear Glass",1,pos,LAMP,,ood_near
+B07DT8F9D3_N1,B07DBJLZ7T,small/25/25fe950d.jpg,"Amazon Brand – Ravenna Home Modern Stacked Ball Desk Table Lamp with LED Light Bulb - 23.25 Inches, Brushed Steel with Clear Glass",0,N1,LAMP,,ood_near
+B07DT8F9D3_N2,B07MBF93P1,small/55/55b69fab.jpg,"Amazon Brand – Ravenna Home Modern Stacked Ball Desk Table Lamp with LED Light Bulb - 23.25 Inches, Brushed Steel with Clear Glass",0,N2,LAMP,,ood_near
+B0825DWB39_pos,B0825DWB39,small/ea/eac2108d.jpg,"Amazon Brand – Stone & Beam Contemporary Rattan Table Lamp, LED Bulb Included, 22""H, Black",1,pos,LAMP,,ood_near
+B0825DWB39_N1,B07QJKFLS4,small/46/46e7a634.jpg,"Amazon Brand – Stone & Beam Contemporary Rattan Table Lamp, LED Bulb Included, 22""H, Black",0,N1,LAMP,,ood_near
+B0825DWB39_N2,B0825D147R,small/73/7365b8a7.jpg,"Amazon Brand – Stone & Beam Contemporary Rattan Table Lamp, LED Bulb Included, 22""H, Black",0,N2,LAMP,,ood_near
+B07XPDC686_pos,B07XPDC686,small/6d/6d67effc.jpg,"Rivet Modern Frosted Opal Glass Outdoor Wall Mount Sconce with Light Bulb - 5.91 x 6.97 x 14.97 Inches, Brushed Nickel (Renewed)",1,pos,LIGHT_FIXTURE,,ood_near
+B07XPDC686_N1,B0825CXG9G,small/dd/dd7ca2db.jpg,"Rivet Modern Frosted Opal Glass Outdoor Wall Mount Sconce with Light Bulb - 5.91 x 6.97 x 14.97 Inches, Brushed Nickel (Renewed)",0,N1,LIGHT_FIXTURE,,ood_near
+B07XPDC686_N2,B07HK8YHNY,small/c1/c10bacd5.jpg,"Rivet Modern Frosted Opal Glass Outdoor Wall Mount Sconce with Light Bulb - 5.91 x 6.97 x 14.97 Inches, Brushed Nickel (Renewed)",0,N2,LIGHT_FIXTURE,,ood_near
+B07HKGKSMM_pos,B07HKGKSMM,small/6a/6a23406e.jpg,"Amazon Brand – Stone & Beam Industrial Adjustable Pharmacy Living Room Floor Lamp with LED Light Bulb - 10 x 31 x 51 Inches, Oil-Rubbed Bronze",1,pos,LAMP,,ood_near
+B07HKGKSMM_N1,B082XLGHKK,small/7e/7ef51dd0.jpg,"Amazon Brand – Stone & Beam Industrial Adjustable Pharmacy Living Room Floor Lamp with LED Light Bulb - 10 x 31 x 51 Inches, Oil-Rubbed Bronze",0,N1,LAMP,,ood_near
+B07HKGKSMM_N2,B07DT153M1,small/61/6138372f.jpg,"Amazon Brand – Stone & Beam Industrial Adjustable Pharmacy Living Room Floor Lamp with LED Light Bulb - 10 x 31 x 51 Inches, Oil-Rubbed Bronze",0,N2,LAMP,,ood_near
+B07MBFDHMH_pos,B07MBFDHMH,small/93/93809081.jpg,"Amazon Brand – Stone & Beam Table Lamp with Textured Ceramic Base, Bulb Included, 15""H, Crackle White",1,pos,LAMP,,ood_near
+B07MBFDHMH_N1,B082DP4S94,small/e3/e33bc20f.jpg,"Amazon Brand – Stone & Beam Table Lamp with Textured Ceramic Base, Bulb Included, 15""H, Crackle White",0,N1,LAMP,,ood_near
+B07MBFDHMH_N2,B07MF1RKM3,small/f6/f6ddf948.jpg,"Amazon Brand – Stone & Beam Table Lamp with Textured Ceramic Base, Bulb Included, 15""H, Crackle White",0,N2,LAMP,,ood_near
+B07MBFDHP1_pos,B07MBFDHP1,small/74/74f5d35d.jpg,"Amazon Brand – Ravenna Home Table Lamp with Ceramic Base, Bulb Included, 16.5""H, Navy Blazer",1,pos,LAMP,,ood_near
+B07MBFDHP1_N1,B0719H3LG2,small/47/4725939d.jpg,"Amazon Brand – Ravenna Home Table Lamp with Ceramic Base, Bulb Included, 16.5""H, Navy Blazer",0,N1,LAMP,,ood_near
+B07MBFDHP1_N2,B07MBFDJQ3,small/0c/0c84de5f.jpg,"Amazon Brand – Ravenna Home Table Lamp with Ceramic Base, Bulb Included, 16.5""H, Navy Blazer",0,N2,LAMP,,ood_near
+B0719H3LG2_pos,B0719H3LG2,small/47/4725939d.jpg,"Amazon Brand – Stone & Beam Modern Industrial Round Ceiling Pendant Chandelier Fixture - 6.5 Inch Shade, 10 - 58 Inch Cord, Chrome and Black",1,pos,LIGHT_FIXTURE,,ood_near
+B0719H3LG2_N1,B07MBFDHMH,small/93/93809081.jpg,"Amazon Brand – Stone & Beam Modern Industrial Round Ceiling Pendant Chandelier Fixture - 6.5 Inch Shade, 10 - 58 Inch Cord, Chrome and Black",0,N1,LIGHT_FIXTURE,,ood_near
+B0719H3LG2_N2,B071F6VV2T,small/36/3695bd1d.jpg,"Amazon Brand – Stone & Beam Modern Industrial Round Ceiling Pendant Chandelier Fixture - 6.5 Inch Shade, 10 - 58 Inch Cord, Chrome and Black",0,N2,LIGHT_FIXTURE,,ood_near
+B082DP79DN_pos,B082DP79DN,small/2b/2bf1619d.jpg,"Amazon Brand – Rivet 3-Light Vanity with Seeded-Glass Shades, 7""H, Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B082DP79DN_N1,B07374K536,small/e2/e28b67a1.jpg,"Amazon Brand – Rivet 3-Light Vanity with Seeded-Glass Shades, 7""H, Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B082DP79DN_N2,B07QD5RGPB,small/10/109a0f1e.jpg,"Amazon Brand – Rivet 3-Light Vanity with Seeded-Glass Shades, 7""H, Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B0825D87LB_pos,B0825D87LB,small/99/9913f3e9.jpg,"Amazon Brand – Stone & Beam Contemporary Glass Table Lamp with Narrow-Necked Body, LED Bulb Included, 20.25""H, Clear",1,pos,LAMP,,ood_near
+B0825D87LB_N1,B073751DMJ,small/bc/bcd28126.jpg,"Amazon Brand – Stone & Beam Contemporary Glass Table Lamp with Narrow-Necked Body, LED Bulb Included, 20.25""H, Clear",0,N1,LAMP,,ood_near
+B0825D87LB_N2,B0825D7SDV,small/de/de8afd41.jpg,"Amazon Brand – Stone & Beam Contemporary Glass Table Lamp with Narrow-Necked Body, LED Bulb Included, 20.25""H, Clear",0,N2,LAMP,,ood_near
+B07HK85RQF_pos,B07HK85RQF,small/5a/5a442b21.jpg,"Amazon Brand – Stone & Beam Vintage Ceiling Pendant Lighting Fixture With Light Bulb And Clear Glass Shade - 7 x 7 x 17.25 Inches, 11.75 - 59.25 Inch Cord, Brush nickle",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK85RQF_N1,B07DT8F9D3,small/3a/3aaae9fb.jpg,"Amazon Brand – Stone & Beam Vintage Ceiling Pendant Lighting Fixture With Light Bulb And Clear Glass Shade - 7 x 7 x 17.25 Inches, 11.75 - 59.25 Inch Cord, Brush nickle",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK85RQF_N2,B07B4Z9C29,small/41/415b74db.jpg,"Amazon Brand – Stone & Beam Vintage Ceiling Pendant Lighting Fixture With Light Bulb And Clear Glass Shade - 7 x 7 x 17.25 Inches, 11.75 - 59.25 Inch Cord, Brush nickle",0,N2,LIGHT_FIXTURE,,ood_near
+B07HK8YHTB_pos,B07HK8YHTB,small/20/209f892d.jpg,"Amazon Brand – Stone & Beam Contemporary Chandelier Light with Bulb, 47.44""H, Gold",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK8YHTB_N1,B07B4YY8G1,small/4b/4b3153c9.jpg,"Amazon Brand – Stone & Beam Contemporary Chandelier Light with Bulb, 47.44""H, Gold",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK8YHTB_N2,B07HK5LXFG,small/17/1732e076.jpg,"Amazon Brand – Stone & Beam Contemporary Chandelier Light with Bulb, 47.44""H, Gold",0,N2,LIGHT_FIXTURE,,ood_near
+B07B4YYC31_pos,B07B4YYC31,small/67/677bac66.jpg,"Amazon Brand – Stone & Beam Alexa-Enabled Lamp, 76"" x 56"" x 15.5"", Brass",1,pos,LAMP,,ood_near
+B07B4YYC31_N1,B07B4VYKNF,small/ec/ec75a1ad.jpg,"Amazon Brand – Stone & Beam Alexa-Enabled Lamp, 76"" x 56"" x 15.5"", Brass",0,N1,LAMP,,ood_near
+B07B4YYC31_N2,B07B4YZ7VL,small/a6/a68cc6fa.jpg,"Amazon Brand – Stone & Beam Alexa-Enabled Lamp, 76"" x 56"" x 15.5"", Brass",0,N2,LAMP,,ood_near
+B07HK5LXFG_pos,B07HK5LXFG,small/17/1732e076.jpg,"Amazon Brand – Stone & Beam Vintage Large Format Pendant Light with Bulb, 26""H, Black",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK5LXFG_N1,B0825D3547,small/c5/c5774ee5.jpg,"Amazon Brand – Stone & Beam Vintage Large Format Pendant Light with Bulb, 26""H, Black",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK5LXFG_N2,B082JHTTL9,small/04/0478acba.jpg,"Amazon Brand – Stone & Beam Vintage Large Format Pendant Light with Bulb, 26""H, Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07B4YXR45_pos,B07B4YXR45,small/0d/0deac0a1.jpg,"Amazon Brand – Stone & Beam Modern Pully Adjustable Living Room Standing Floor Lamp With Light Bulb - 33 x 33 x 64 Inches, Brushed dark brown",1,pos,LAMP,,ood_near
+B07B4YXR45_N1,B07QC76NLP,small/d1/d11616c3.jpg,"Amazon Brand – Stone & Beam Modern Pully Adjustable Living Room Standing Floor Lamp With Light Bulb - 33 x 33 x 64 Inches, Brushed dark brown",0,N1,LAMP,,ood_near
+B07B4YXR45_N2,B07DT153M1,small/61/6138372f.jpg,"Amazon Brand – Stone & Beam Modern Pully Adjustable Living Room Standing Floor Lamp With Light Bulb - 33 x 33 x 64 Inches, Brushed dark brown",0,N2,LAMP,,ood_near
+B073776MSB_pos,B073776MSB,small/bc/bc79aa12.jpg,"Amazon Brand – Stone & Beam Glass Column Living Room Table Desk Lamp With Light Bulb and Linen Shade, 23""H, Brushed Nickel",1,pos,LAMP,,ood_near
+B073776MSB_N1,B0825D7SDV,small/de/de8afd41.jpg,"Amazon Brand – Stone & Beam Glass Column Living Room Table Desk Lamp With Light Bulb and Linen Shade, 23""H, Brushed Nickel",0,N1,LAMP,,ood_near
+B073776MSB_N2,B07B4ZXKFQ,small/01/01311450.jpg,"Amazon Brand – Stone & Beam Glass Column Living Room Table Desk Lamp With Light Bulb and Linen Shade, 23""H, Brushed Nickel",0,N2,LAMP,,ood_near
+B07B4SC6PQ_pos,B07B4SC6PQ,small/70/704a837a.jpg,"Amazon Brand – Stone & Beam Vintage Bathroom Vanity Fixture With 4 Light Bulbs And Glass Shade - 32.25 x 7 x 11.5 Inches, Matte Black",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4SC6PQ_N1,B07HKC3S4T,small/8c/8c532d49.jpg,"Amazon Brand – Stone & Beam Vintage Bathroom Vanity Fixture With 4 Light Bulbs And Glass Shade - 32.25 x 7 x 11.5 Inches, Matte Black",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4SC6PQ_N2,B07B4Z9C39,small/f1/f1ad733f.jpg,"Amazon Brand – Stone & Beam Vintage Bathroom Vanity Fixture With 4 Light Bulbs And Glass Shade - 32.25 x 7 x 11.5 Inches, Matte Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07DBCN3KB_pos,B07DBCN3KB,small/8b/8b6b3fa7.jpg,"Amazon Brand – Ravenna Home Torchiere Living Room Standing Floor Lamp with LED Light Bulbs - 69.75 Inches, Dark Bronze with Frosted Glass Shade",1,pos,LAMP,,ood_near
+B07DBCN3KB_N1,B07DBJ7P12,small/35/356a17a0.jpg,"Amazon Brand – Ravenna Home Torchiere Living Room Standing Floor Lamp with LED Light Bulbs - 69.75 Inches, Dark Bronze with Frosted Glass Shade",0,N1,LAMP,,ood_near
+B07DBCN3KB_N2,B07DBHCKML,small/70/708e411d.jpg,"Amazon Brand – Ravenna Home Torchiere Living Room Standing Floor Lamp with LED Light Bulbs - 69.75 Inches, Dark Bronze with Frosted Glass Shade",0,N2,LAMP,,ood_near
+B0828FB1HB_pos,B0828FB1HB,small/85/853cb376.jpg,"Amazon Brand - Ravenna Home 3-Light Cascading Pendant Light with Clear Glass Shades, Vintage Edison Bulbs Included, 70.2""H, Dark Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B0828FB1HB_N1,B071F6VV2T,small/36/3695bd1d.jpg,"Amazon Brand - Ravenna Home 3-Light Cascading Pendant Light with Clear Glass Shades, Vintage Edison Bulbs Included, 70.2""H, Dark Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B0828FB1HB_N2,B0828DHVWJ,small/73/731b6480.jpg,"Amazon Brand - Ravenna Home 3-Light Cascading Pendant Light with Clear Glass Shades, Vintage Edison Bulbs Included, 70.2""H, Dark Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07374P5NP_pos,B07374P5NP,small/67/670c21b4.jpg,"Amazon Brand – Rivet Eclipse Mid Century Modern 5-Globe Hanging Ceiling Pendant Chandelier Fixture - 20 x 20 x 48 Inches, Black Metal With Frosted Glass Globes",1,pos,LIGHT_FIXTURE,,ood_near
+B07374P5NP_N1,B08B8SV8DB,small/25/256dd388.jpg,"Amazon Brand – Rivet Eclipse Mid Century Modern 5-Globe Hanging Ceiling Pendant Chandelier Fixture - 20 x 20 x 48 Inches, Black Metal With Frosted Glass Globes",0,N1,LIGHT_FIXTURE,,ood_near
+B07374P5NP_N2,B07B4ZP62F,small/b1/b19ca854.jpg,"Amazon Brand – Rivet Eclipse Mid Century Modern 5-Globe Hanging Ceiling Pendant Chandelier Fixture - 20 x 20 x 48 Inches, Black Metal With Frosted Glass Globes",0,N2,LIGHT_FIXTURE,,ood_near
+B0825DKP92_pos,B0825DKP92,small/16/16b20edd.jpg,"Amazon Brand – Stone & Beam Contemporary 2-Tone Textured Ceramic Table Lamp, LED Bulb Included, 17.75""H, Gray",1,pos,LAMP,,ood_near
+B0825DKP92_N1,B07MBFDKTH,small/d3/d30d25ef.jpg,"Amazon Brand – Stone & Beam Contemporary 2-Tone Textured Ceramic Table Lamp, LED Bulb Included, 17.75""H, Gray",0,N1,LAMP,,ood_near
+B0825DKP92_N2,B07MBFG1D2,small/35/350ef17f.jpg,"Amazon Brand – Stone & Beam Contemporary 2-Tone Textured Ceramic Table Lamp, LED Bulb Included, 17.75""H, Gray",0,N2,LAMP,,ood_near
+B07B4VSTF6_pos,B07B4VSTF6,small/21/215523ee.jpg,"Amazon Brand – Stone & Beam Rustic Rectangular Beam Ceiling Chandelier With 8 Edison Light Bulbs - 32 x 14,25 x 27.5 Inches, Oil Rubbed Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4VSTF6_N1,B07DBHC39X,small/56/56ba597b.jpg,"Amazon Brand – Stone & Beam Rustic Rectangular Beam Ceiling Chandelier With 8 Edison Light Bulbs - 32 x 14,25 x 27.5 Inches, Oil Rubbed Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4VSTF6_N2,B07HK3TNDP,small/89/89ee9b66.jpg,"Amazon Brand – Stone & Beam Rustic Rectangular Beam Ceiling Chandelier With 8 Edison Light Bulbs - 32 x 14,25 x 27.5 Inches, Oil Rubbed Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07MPFZPQJ_pos,B07MPFZPQJ,small/ec/ec2ff778.jpg,"Amazon Brand – Ravenna Home Table Lamp with Diamond Patterned Ceramic Base and LED Light Bulb, 18.25""H, Dark Denim Blue",1,pos,LAMP,,ood_near
+B07MPFZPQJ_N1,B073751DMJ,small/bc/bcd28126.jpg,"Amazon Brand – Ravenna Home Table Lamp with Diamond Patterned Ceramic Base and LED Light Bulb, 18.25""H, Dark Denim Blue",0,N1,LAMP,,ood_near
+B07MPFZPQJ_N2,B07MBFCRBJ,small/c9/c98fcce8.jpg,"Amazon Brand – Ravenna Home Table Lamp with Diamond Patterned Ceramic Base and LED Light Bulb, 18.25""H, Dark Denim Blue",0,N2,LAMP,,ood_near
+B082XLGHKK_pos,B082XLGHKK,small/7e/7ef51dd0.jpg,"Amazon Brand – Rivet Scandinavian Task Lamp, 19""H, Matte White",1,pos,LAMP,,ood_near
+B082XLGHKK_N1,B07B4SC9N7,small/2d/2d9c8739.jpg,"Amazon Brand – Rivet Scandinavian Task Lamp, 19""H, Matte White",0,N1,LAMP,,ood_near
+B082XLGHKK_N2,B07HKFXCNC,small/ac/acdd1761.jpg,"Amazon Brand – Rivet Scandinavian Task Lamp, 19""H, Matte White",0,N2,LAMP,,ood_near
+B082DP8455_pos,B082DP8455,small/16/16e98d5a.jpg,"Amazon Brand – Rivet Modern Ultrathin LED-Integrated Table Lamp, 20""H, Matte Brass",1,pos,LAMP,,ood_near
+B082DP8455_N1,B071HSMXCB,small/94/94ada569.jpg,"Amazon Brand – Rivet Modern Ultrathin LED-Integrated Table Lamp, 20""H, Matte Brass",0,N1,LAMP,,ood_near
+B082DP8455_N2,B07DTFBDTL,small/18/18caf37e.jpg,"Amazon Brand – Rivet Modern Ultrathin LED-Integrated Table Lamp, 20""H, Matte Brass",0,N2,LAMP,,ood_near
+B07374VCVN_pos,B07374VCVN,small/6a/6a87a075.jpg,"Amazon Brand – Rivet Copper Geometric Bedside Table Desk Lamp With Light Bulb - 16.75 Inches, Copper",1,pos,LAMP,,ood_near
+B07374VCVN_N1,B0825D7SDV,small/de/de8afd41.jpg,"Amazon Brand – Rivet Copper Geometric Bedside Table Desk Lamp With Light Bulb - 16.75 Inches, Copper",0,N1,LAMP,,ood_near
+B07374VCVN_N2,B073751DMJ,small/bc/bcd28126.jpg,"Amazon Brand – Rivet Copper Geometric Bedside Table Desk Lamp With Light Bulb - 16.75 Inches, Copper",0,N2,LAMP,,ood_near
+B07HKGHSNW_pos,B07HKGHSNW,small/f5/f59702c4.jpg,"Amazon Brand – Rivet Tubular Pendant Chandelier, Modern 6-Light Brass and Glass, with Bulb, 18.13""H, Satin Brass",1,pos,LIGHT_FIXTURE,,ood_near
+B07HKGHSNW_N1,B07HK5JJP2,small/41/41dc9d08.jpg,"Amazon Brand – Rivet Tubular Pendant Chandelier, Modern 6-Light Brass and Glass, with Bulb, 18.13""H, Satin Brass",0,N1,LIGHT_FIXTURE,,ood_near
+B07HKGHSNW_N2,B072LKKM3W,small/5c/5c46a84c.jpg,"Amazon Brand – Rivet Tubular Pendant Chandelier, Modern 6-Light Brass and Glass, with Bulb, 18.13""H, Satin Brass",0,N2,LIGHT_FIXTURE,,ood_near
+B07DBJ7P12_pos,B07DBJ7P12,small/35/356a17a0.jpg,"Amazon Brand – Ravenna Home Flush Mount Pendant Ceiling Light with Opal Glass Shade and LED Light Bulb - 7.75 x 7.75 x 10 Inches, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07DBJ7P12_N1,B075X2YJGK,small/ef/efda2f8f.jpg,"Amazon Brand – Ravenna Home Flush Mount Pendant Ceiling Light with Opal Glass Shade and LED Light Bulb - 7.75 x 7.75 x 10 Inches, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07DBJ7P12_N2,B07DBJMFZ2,small/d5/d5fd3560.jpg,"Amazon Brand – Ravenna Home Flush Mount Pendant Ceiling Light with Opal Glass Shade and LED Light Bulb - 7.75 x 7.75 x 10 Inches, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B073763W7G_pos,B073763W7G,small/42/42c085fd.jpg,"Amazon Brand – Rivet Mid-Century Modern Rectangle Living Room Table Lamp with LED Light Bulb, 17""H, White Marble and Brass",1,pos,LAMP,,ood_near
+B073763W7G_N1,B07JQB4S6S,small/48/4820d4df.jpg,"Amazon Brand – Rivet Mid-Century Modern Rectangle Living Room Table Lamp with LED Light Bulb, 17""H, White Marble and Brass",0,N1,LAMP,,ood_near
+B073763W7G_N2,B075X2YJGK,small/ef/efda2f8f.jpg,"Amazon Brand – Rivet Mid-Century Modern Rectangle Living Room Table Lamp with LED Light Bulb, 17""H, White Marble and Brass",0,N2,LAMP,,ood_near
+B07DBDV67C_pos,B07DBDV67C,small/5e/5ef464d8.jpg,"Amazon Brand – Ravenna Home Accent Table Lamp with LED Light Bulb -18.5 Inches, Brushed Nickel with White Shade",1,pos,LAMP,,ood_near
+B07DBDV67C_N1,B07HK5MXZ3,small/b0/b0c0767f.jpg,"Amazon Brand – Ravenna Home Accent Table Lamp with LED Light Bulb -18.5 Inches, Brushed Nickel with White Shade",0,N1,LAMP,,ood_near
+B07DBDV67C_N2,B07DBCMTCS,small/b6/b67a4a85.jpg,"Amazon Brand – Ravenna Home Accent Table Lamp with LED Light Bulb -18.5 Inches, Brushed Nickel with White Shade",0,N2,LAMP,,ood_near
+B0825D7SDV_pos,B0825D7SDV,small/de/de8afd41.jpg,"Amazon Brand – Stone & Beam Contemporary Curved Glass Table Lamp, LED Bulb Included, 19.25""H, Seafoam Green",1,pos,LAMP,,ood_near
+B0825D7SDV_N1,B07MBF93P1,small/55/55b69fab.jpg,"Amazon Brand – Stone & Beam Contemporary Curved Glass Table Lamp, LED Bulb Included, 19.25""H, Seafoam Green",0,N1,LAMP,,ood_near
+B0825D7SDV_N2,B0825D87LB,small/99/9913f3e9.jpg,"Amazon Brand – Stone & Beam Contemporary Curved Glass Table Lamp, LED Bulb Included, 19.25""H, Seafoam Green",0,N2,LAMP,,ood_near
+B07B4Z2YVW_pos,B07B4Z2YVW,small/73/739a7737.jpg,"Amazon Brand – Rivet Mid Century Modern Crystal Glam Living Room Floor Lamp With Light Bulb - 58 Inches, Brass with Linen Shade",1,pos,LAMP,,ood_near
+B07B4Z2YVW_N1,B07MBFCRBJ,small/c9/c98fcce8.jpg,"Amazon Brand – Rivet Mid Century Modern Crystal Glam Living Room Floor Lamp With Light Bulb - 58 Inches, Brass with Linen Shade",0,N1,LAMP,,ood_near
+B07B4Z2YVW_N2,B07B4SC9N7,small/2d/2d9c8739.jpg,"Amazon Brand – Rivet Mid Century Modern Crystal Glam Living Room Floor Lamp With Light Bulb - 58 Inches, Brass with Linen Shade",0,N2,LAMP,,ood_near
+B07MF1SFGP_pos,B07MF1SFGP,small/4f/4fd62009.jpg,"Amazon Brand – Ravenna Home Global Ceramic Table Lamp with LED Light Bulb, 20""H, Blue and White Stylized Feather Design",1,pos,LAMP,,ood_near
+B07MF1SFGP_N1,B07QC76NMH,small/61/61eec8dc.jpg,"Amazon Brand – Ravenna Home Global Ceramic Table Lamp with LED Light Bulb, 20""H, Blue and White Stylized Feather Design",0,N1,LAMP,,ood_near
+B07MF1SFGP_N2,B07MPFZPQJ,small/ec/ec2ff778.jpg,"Amazon Brand – Ravenna Home Global Ceramic Table Lamp with LED Light Bulb, 20""H, Blue and White Stylized Feather Design",0,N2,LAMP,,ood_near
+B07374K536_pos,B07374K536,small/e2/e28b67a1.jpg,"Amazon Brand – Rivet Caden Adjustable Task Floor Lamp with Bulb, 60""H, Black and Brass",1,pos,LAMP,,ood_near
+B07374K536_N1,B07B4ZXKBD,small/df/df18d3f5.jpg,"Amazon Brand – Rivet Caden Adjustable Task Floor Lamp with Bulb, 60""H, Black and Brass",0,N1,LAMP,,ood_near
+B07374K536_N2,B075X3S2X5,small/2d/2d5c0b86.jpg,"Amazon Brand – Rivet Caden Adjustable Task Floor Lamp with Bulb, 60""H, Black and Brass",0,N2,LAMP,,ood_near
+B07ML7PPZC_pos,B07ML7PPZC,small/42/42235536.jpg,"Amazon Brand – Ravenna Home Floor Lamp with Shelves, LED Light Bulb included, 62.75""H, White",1,pos,LAMP,,ood_near
+B07ML7PPZC_N1,B07HK8YHTB,small/20/209f892d.jpg,"Amazon Brand – Ravenna Home Floor Lamp with Shelves, LED Light Bulb included, 62.75""H, White",0,N1,LAMP,,ood_near
+B07ML7PPZC_N2,B0824DVF9J,small/ee/eea0bd4f.jpg,"Amazon Brand – Ravenna Home Floor Lamp with Shelves, LED Light Bulb included, 62.75""H, White",0,N2,LAMP,,ood_near
+B07374M818_pos,B07374M818,small/f4/f4abab47.jpg,"Amazon Brand – Rivet Modern Table Desk Lamp With Light Bulb - 8 x 8 x 16 Inches, Marble and Brass",1,pos,LAMP,,ood_near
+B07374M818_N1,B07HK68BTZ,small/23/23f74cf9.jpg,"Amazon Brand – Rivet Modern Table Desk Lamp With Light Bulb - 8 x 8 x 16 Inches, Marble and Brass",0,N1,LAMP,,ood_near
+B07374M818_N2,B07HKGHSR7,small/72/7267bf33.jpg,"Amazon Brand – Rivet Modern Table Desk Lamp With Light Bulb - 8 x 8 x 16 Inches, Marble and Brass",0,N2,LAMP,,ood_near
+B07QJKFLS4_pos,B07QJKFLS4,small/46/46e7a634.jpg,"Amazon Brand – Ravenna Home Classic Wall Sconce Light, 9""H, Dark Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07QJKFLS4_N1,B07B4SC9N7,small/2d/2d9c8739.jpg,"Amazon Brand – Ravenna Home Classic Wall Sconce Light, 9""H, Dark Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07QJKFLS4_N2,B07QC76NMH,small/61/61eec8dc.jpg,"Amazon Brand – Ravenna Home Classic Wall Sconce Light, 9""H, Dark Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B082JHZPV5_pos,B082JHZPV5,small/84/84055de2.jpg,"Amazon Brand – Stone & Beam Contemporary Wall Sconce with Plug-In or Hardwire Options, Vintage Edison Bulb Included, 10.2""H, Chrome",1,pos,LIGHT_FIXTURE,,ood_near
+B082JHZPV5_N1,B07MF1SFGP,small/4f/4fd62009.jpg,"Amazon Brand – Stone & Beam Contemporary Wall Sconce with Plug-In or Hardwire Options, Vintage Edison Bulb Included, 10.2""H, Chrome",0,N1,LIGHT_FIXTURE,,ood_near
+B082JHZPV5_N2,B082JHN9V9,small/e8/e85c7daf.jpg,"Amazon Brand – Stone & Beam Contemporary Wall Sconce with Plug-In or Hardwire Options, Vintage Edison Bulb Included, 10.2""H, Chrome",0,N2,LIGHT_FIXTURE,,ood_near
+B07374K53B_pos,B07374K53B,small/13/13ca9ada.jpg,"Amazon Brand – Stone & Beam Modern Metal Wall Mount Sconce Fixture With Light Bulb And Glass Shade - 16 x 8 x 10 Inches, Brushed Brass",1,pos,LIGHT_FIXTURE,,ood_near
+B07374K53B_N1,B07HK5MXZ3,small/b0/b0c0767f.jpg,"Amazon Brand – Stone & Beam Modern Metal Wall Mount Sconce Fixture With Light Bulb And Glass Shade - 16 x 8 x 10 Inches, Brushed Brass",0,N1,LIGHT_FIXTURE,,ood_near
+B07374K53B_N2,B07WN8HV6Y,small/8d/8d2bb797.jpg,"Amazon Brand – Stone & Beam Modern Metal Wall Mount Sconce Fixture With Light Bulb And Glass Shade - 16 x 8 x 10 Inches, Brushed Brass",0,N2,LIGHT_FIXTURE,,ood_near
+B07QB7HXY1_pos,B07QB7HXY1,small/96/96a23fb3.jpg,"Amazon Brand – Ravenna Home Farmhouse Wall Sconce Light, 17.93""H, White",1,pos,LIGHT_FIXTURE,,ood_near
+B07QB7HXY1_N1,B07ML7N7LX,small/0c/0c5ee716.jpg,"Amazon Brand – Ravenna Home Farmhouse Wall Sconce Light, 17.93""H, White",0,N1,LIGHT_FIXTURE,,ood_near
+B07QB7HXY1_N2,B07QC76NMH,small/61/61eec8dc.jpg,"Amazon Brand – Ravenna Home Farmhouse Wall Sconce Light, 17.93""H, White",0,N2,LIGHT_FIXTURE,,ood_near
+B0824FLNHN_pos,B0824FLNHN,small/ba/ba3e8c99.jpg,"Amazon Brand – Ravenna Home Traditional Wall Sconce with Linen Shade, LED Bulb Included, 18.25""H, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B0824FLNHN_N1,B07374K53B,small/13/13ca9ada.jpg,"Amazon Brand – Ravenna Home Traditional Wall Sconce with Linen Shade, LED Bulb Included, 18.25""H, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B0824FLNHN_N2,B0828FN2YH,small/7b/7b761400.jpg,"Amazon Brand – Ravenna Home Traditional Wall Sconce with Linen Shade, LED Bulb Included, 18.25""H, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B0825DBY45_pos,B0825DBY45,small/e6/e6b769f3.jpg,"Amazon Brand - SStone & Beam Traditional Rectangular Chinoiserie Ceramic Table Lamp, LED Bulb Included, 24""H, Blue Paisley",1,pos,LAMP,,ood_near
+B0825DBY45_N1,B07MF1RKM3,small/f6/f6ddf948.jpg,"Amazon Brand - SStone & Beam Traditional Rectangular Chinoiserie Ceramic Table Lamp, LED Bulb Included, 24""H, Blue Paisley",0,N1,LAMP,,ood_near
+B0825DBY45_N2,B0825D147R,small/73/7365b8a7.jpg,"Amazon Brand - SStone & Beam Traditional Rectangular Chinoiserie Ceramic Table Lamp, LED Bulb Included, 24""H, Blue Paisley",0,N2,LAMP,,ood_near
+B07ML7N7LX_pos,B07ML7N7LX,small/0c/0c5ee716.jpg,"Amazon Brand – Ravenna Home Glass Table Lamp, Bulb Included, 16.5""H, Clear",1,pos,LAMP,,ood_near
+B07ML7N7LX_N1,B07B4YS1QP,small/8e/8edf95e9.jpg,"Amazon Brand – Ravenna Home Glass Table Lamp, Bulb Included, 16.5""H, Clear",0,N1,LAMP,,ood_near
+B07ML7N7LX_N2,B0825D87LB,small/99/9913f3e9.jpg,"Amazon Brand – Ravenna Home Glass Table Lamp, Bulb Included, 16.5""H, Clear",0,N2,LAMP,,ood_near
+B0824DVF9J_pos,B0824DVF9J,small/ee/eea0bd4f.jpg,"Amazon Brand – Ravenna Home Traditional Metal Torchiere Floor Lamp with Reading Light, LED Bulbs Included, 72""H, Silver",1,pos,LAMP,,ood_near
+B0824DVF9J_N1,B07HKC3S4T,small/8c/8c532d49.jpg,"Amazon Brand – Ravenna Home Traditional Metal Torchiere Floor Lamp with Reading Light, LED Bulbs Included, 72""H, Silver",0,N1,LAMP,,ood_near
+B0824DVF9J_N2,B07DBCN3KB,small/8b/8b6b3fa7.jpg,"Amazon Brand – Ravenna Home Traditional Metal Torchiere Floor Lamp with Reading Light, LED Bulbs Included, 72""H, Silver",0,N2,LAMP,,ood_near
+B07B4VYKNF_pos,B07B4VYKNF,small/ec/ec75a1ad.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Globe Ceiling Pendant Chandelier With 6 Light Bulbs - 40.5 x 14 x 6.75 Inches, 6-48 Inch Cord, Gold",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4VYKNF_N1,B0825DWB39,small/ea/eac2108d.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Globe Ceiling Pendant Chandelier With 6 Light Bulbs - 40.5 x 14 x 6.75 Inches, 6-48 Inch Cord, Gold",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4VYKNF_N2,B07HK5MXZ3,small/b0/b0c0767f.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Globe Ceiling Pendant Chandelier With 6 Light Bulbs - 40.5 x 14 x 6.75 Inches, 6-48 Inch Cord, Gold",0,N2,LIGHT_FIXTURE,,ood_near
+B07MF1RKM3_pos,B07MF1RKM3,small/f6/f6ddf948.jpg,"Amazon Brand – Stone & Beam Textured Ceramic Table Lamp, Bulb Included, 16.75""H, Blue",1,pos,LAMP,,ood_near
+B07MF1RKM3_N1,B071F6WJ9V,small/6d/6d3a5fb1.jpg,"Amazon Brand – Stone & Beam Textured Ceramic Table Lamp, Bulb Included, 16.75""H, Blue",0,N1,LAMP,,ood_near
+B07MF1RKM3_N2,B07MBFDQHP,small/03/036011d6.jpg,"Amazon Brand – Stone & Beam Textured Ceramic Table Lamp, Bulb Included, 16.75""H, Blue",0,N2,LAMP,,ood_near
+B07MBFDKTH_pos,B07MBFDKTH,small/d3/d30d25ef.jpg,"Amazon Brand – Rivet Cement-Textured Table Lamp, Bulb Included, 16.5""H, Dark Gray on Gray",1,pos,LAMP,,ood_near
+B07MBFDKTH_N1,B07DBDV67C,small/5e/5ef464d8.jpg,"Amazon Brand – Rivet Cement-Textured Table Lamp, Bulb Included, 16.5""H, Dark Gray on Gray",0,N1,LAMP,,ood_near
+B07MBFDKTH_N2,B0825DNRXL,small/a0/a0aa5965.jpg,"Amazon Brand – Rivet Cement-Textured Table Lamp, Bulb Included, 16.5""H, Dark Gray on Gray",0,N2,LAMP,,ood_near
+B07HK85JV8_pos,B07HK85JV8,small/3b/3bd0fa5d.jpg,"Amazon Brand – Rivet Rustic Natural Material Construction Pendant Light with Bulb, 60""H, Brown",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK85JV8_N1,B07374K53B,small/13/13ca9ada.jpg,"Amazon Brand – Rivet Rustic Natural Material Construction Pendant Light with Bulb, 60""H, Brown",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK85JV8_N2,B072LKKM3W,small/5c/5c46a84c.jpg,"Amazon Brand – Rivet Rustic Natural Material Construction Pendant Light with Bulb, 60""H, Brown",0,N2,LIGHT_FIXTURE,,ood_near
+B07DBJMFZ2_pos,B07DBJMFZ2,small/d5/d5fd3560.jpg,"Amazon Brand – Ravenna Home Clear Glass Semi-Flush Mount Pendant Ceiling Light Fixture with LED Bulb - 8.5 x 8.5 x 14.75 Inches, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07DBJMFZ2_N1,B07DBHLG78,small/ef/ef2ff632.jpg,"Amazon Brand – Ravenna Home Clear Glass Semi-Flush Mount Pendant Ceiling Light Fixture with LED Bulb - 8.5 x 8.5 x 14.75 Inches, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07DBJMFZ2_N2,B07DBJ7P12,small/35/356a17a0.jpg,"Amazon Brand – Ravenna Home Clear Glass Semi-Flush Mount Pendant Ceiling Light Fixture with LED Bulb - 8.5 x 8.5 x 14.75 Inches, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B07MBFG1D2_pos,B07MBFG1D2,small/35/350ef17f.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp with LED Light Bulb, 16""H, Grey",1,pos,LAMP,,ood_near
+B07MBFG1D2_N1,B07QB7HXY1,small/96/96a23fb3.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp with LED Light Bulb, 16""H, Grey",0,N1,LAMP,,ood_near
+B07MBFG1D2_N2,B0825DKP92,small/16/16b20edd.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp with LED Light Bulb, 16""H, Grey",0,N2,LAMP,,ood_near
+B082JHN9V9_pos,B082JHN9V9,small/e8/e85c7daf.jpg,"Amazon Brand – Stone & Beam Contemporary Outdoor Wall Sconce with Clear Seeded Glass Shade, Vintage Edison Bulb Included, 9.1""H, Matte Black",1,pos,LIGHT_FIXTURE,,ood_near
+B082JHN9V9_N1,B0719H3LG2,small/47/4725939d.jpg,"Amazon Brand – Stone & Beam Contemporary Outdoor Wall Sconce with Clear Seeded Glass Shade, Vintage Edison Bulb Included, 9.1""H, Matte Black",0,N1,LIGHT_FIXTURE,,ood_near
+B082JHN9V9_N2,B082JHTTL9,small/04/0478acba.jpg,"Amazon Brand – Stone & Beam Contemporary Outdoor Wall Sconce with Clear Seeded Glass Shade, Vintage Edison Bulb Included, 9.1""H, Matte Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07HK6MTMC_pos,B07HK6MTMC,small/b2/b25f69ff.jpg,"Amazon Brand – Rivet Modern Pull Chain Switch for Each Socket Table Lamp with Bulb, 22.8""H, Matte Black",1,pos,LAMP,,ood_near
+B07HK6MTMC_N1,B071HSMXCB,small/94/94ada569.jpg,"Amazon Brand – Rivet Modern Pull Chain Switch for Each Socket Table Lamp with Bulb, 22.8""H, Matte Black",0,N1,LAMP,,ood_near
+B07HK6MTMC_N2,B07HKFXCNC,small/ac/acdd1761.jpg,"Amazon Brand – Rivet Modern Pull Chain Switch for Each Socket Table Lamp with Bulb, 22.8""H, Matte Black",0,N2,LAMP,,ood_near
+B07DT4GYNL_pos,B07DT4GYNL,small/45/45f8567e.jpg,"Amazon Brand – Rivet Mid-Century Modern Double Circle Plug-In Hanging Pendant Chandelier With LED Light Bulb - 11.5 x 10 x 13.25 Inches, Gold Satin Brass",1,pos,LIGHT_FIXTURE,,ood_near
+B07DT4GYNL_N1,B082JHN9V9,small/e8/e85c7daf.jpg,"Amazon Brand – Rivet Mid-Century Modern Double Circle Plug-In Hanging Pendant Chandelier With LED Light Bulb - 11.5 x 10 x 13.25 Inches, Gold Satin Brass",0,N1,LIGHT_FIXTURE,,ood_near
+B07DT4GYNL_N2,B07FG2R4H7,small/43/4365dcda.jpg,"Amazon Brand – Rivet Mid-Century Modern Double Circle Plug-In Hanging Pendant Chandelier With LED Light Bulb - 11.5 x 10 x 13.25 Inches, Gold Satin Brass",0,N2,LIGHT_FIXTURE,,ood_near
+B07B4Z9C29_pos,B07B4Z9C29,small/41/415b74db.jpg,"Amazon Brand – Stone & Beam Schoolhouse Ceiling Pendant Fixture With Light Bulb And Clear Glass Shade - 11 x 11 x 18 Inches, 6 - 48 Inch Cord, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4Z9C29_N1,B07MF1RKM3,small/f6/f6ddf948.jpg,"Amazon Brand – Stone & Beam Schoolhouse Ceiling Pendant Fixture With Light Bulb And Clear Glass Shade - 11 x 11 x 18 Inches, 6 - 48 Inch Cord, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4Z9C29_N2,B07HK85RQF,small/5a/5a442b21.jpg,"Amazon Brand – Stone & Beam Schoolhouse Ceiling Pendant Fixture With Light Bulb And Clear Glass Shade - 11 x 11 x 18 Inches, 6 - 48 Inch Cord, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B07DT6BB62_pos,B07DT6BB62,small/49/498ef030.jpg,"Amazon Brand – Rivet Modern Glam Glass Beads Uplight Table Desk Accent Lamp With LED Light Bulb - 5.5 x 5.5 x 9 Inches, Chrome",1,pos,LAMP,,ood_near
+B07DT6BB62_N1,B07HK5LXFG,small/17/1732e076.jpg,"Amazon Brand – Rivet Modern Glam Glass Beads Uplight Table Desk Accent Lamp With LED Light Bulb - 5.5 x 5.5 x 9 Inches, Chrome",0,N1,LAMP,,ood_near
+B07DT6BB62_N2,B07374M818,small/f4/f4abab47.jpg,"Amazon Brand – Rivet Modern Glam Glass Beads Uplight Table Desk Accent Lamp With LED Light Bulb - 5.5 x 5.5 x 9 Inches, Chrome",0,N2,LAMP,,ood_near
+B07ML7J579_pos,B07ML7J579,small/6b/6b48e8fe.jpg,"Amazon Brand – Ravenna Home Smooth Ceramic Table Lamp, Bulb Included, 14""H, Cannoli Cream",1,pos,LAMP,,ood_near
+B07ML7J579_N1,B075X2R3BX,small/88/886fbc9d.jpg,"Amazon Brand – Ravenna Home Smooth Ceramic Table Lamp, Bulb Included, 14""H, Cannoli Cream",0,N1,LAMP,,ood_near
+B07ML7J579_N2,B07MBFDHP1,small/74/74f5d35d.jpg,"Amazon Brand – Ravenna Home Smooth Ceramic Table Lamp, Bulb Included, 14""H, Cannoli Cream",0,N2,LAMP,,ood_near
+B07HK68BTZ_pos,B07HK68BTZ,small/23/23f74cf9.jpg,"Amazon Brand – Stone & Beam Pharmacy Articulating Task Table Desk Lamp with LED Light Bulb And USB Port - 28.75 x 22 x 8.5 Inches, Oil-Rubbed Bronze",1,pos,LAMP,,ood_near
+B07HK68BTZ_N1,B073755HVV,small/d7/d78f2aca.jpg,"Amazon Brand – Stone & Beam Pharmacy Articulating Task Table Desk Lamp with LED Light Bulb And USB Port - 28.75 x 22 x 8.5 Inches, Oil-Rubbed Bronze",0,N1,LAMP,,ood_near
+B07HK68BTZ_N2,B07B4ZXKFQ,small/01/01311450.jpg,"Amazon Brand – Stone & Beam Pharmacy Articulating Task Table Desk Lamp with LED Light Bulb And USB Port - 28.75 x 22 x 8.5 Inches, Oil-Rubbed Bronze",0,N2,LAMP,,ood_near
+B07QD5SDWK_pos,B07QD5SDWK,small/d1/d1194094.jpg,"Amazon Brand – Stone & Beam Vintage Floor Lamp with Linen Burlap Shade, 60.5""H, Whitewash",1,pos,LAMP,,ood_near
+B07QD5SDWK_N1,B0825DG9QL,small/62/62ca5030.jpg,"Amazon Brand – Stone & Beam Vintage Floor Lamp with Linen Burlap Shade, 60.5""H, Whitewash",0,N1,LAMP,,ood_near
+B07QD5SDWK_N2,B07B4Z2YVW,small/73/739a7737.jpg,"Amazon Brand – Stone & Beam Vintage Floor Lamp with Linen Burlap Shade, 60.5""H, Whitewash",0,N2,LAMP,,ood_near
+B07DBHC39X_pos,B07DBHC39X,small/56/56ba597b.jpg,"Ravenna Home Classic Linen Fabric Flushmount Ceiling Pendant Light Fixture with 2 LED Light Bulbs - 13 x 13 x 7.5 Inches, Silver",1,pos,LIGHT_FIXTURE,,ood_near
+B07DBHC39X_N1,B07374VCVN,small/6a/6a87a075.jpg,"Ravenna Home Classic Linen Fabric Flushmount Ceiling Pendant Light Fixture with 2 LED Light Bulbs - 13 x 13 x 7.5 Inches, Silver",0,N1,LIGHT_FIXTURE,,ood_near
+B07DBHC39X_N2,B07DBJ7P12,small/35/356a17a0.jpg,"Ravenna Home Classic Linen Fabric Flushmount Ceiling Pendant Light Fixture with 2 LED Light Bulbs - 13 x 13 x 7.5 Inches, Silver",0,N2,LIGHT_FIXTURE,,ood_near
+B07HK5CDRQ_pos,B07HK5CDRQ,small/ce/ce0b55a2.jpg,"Amazon Brand – Stone & Beam Modern Indoor Outdoor Wall Mount Sconce with Light Bulb, 11.75""H, Black",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK5CDRQ_N1,B07MBFDQHP,small/03/036011d6.jpg,"Amazon Brand – Stone & Beam Modern Indoor Outdoor Wall Mount Sconce with Light Bulb, 11.75""H, Black",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK5CDRQ_N2,B082JHN9V9,small/e8/e85c7daf.jpg,"Amazon Brand – Stone & Beam Modern Indoor Outdoor Wall Mount Sconce with Light Bulb, 11.75""H, Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07QC76NMH_pos,B07QC76NMH,small/61/61eec8dc.jpg,"Amazon Brand – Ravenna Home Outdoor Wall Sconce Light, 11.73""H, Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07QC76NMH_N1,B07374P5NP,small/67/670c21b4.jpg,"Amazon Brand – Ravenna Home Outdoor Wall Sconce Light, 11.73""H, Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07QC76NMH_N2,B07QJKFLS4,small/46/46e7a634.jpg,"Amazon Brand – Ravenna Home Outdoor Wall Sconce Light, 11.73""H, Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07HK5JJP2_pos,B07HK5JJP2,small/41/41dc9d08.jpg,"Amazon Brand – Stone & Beam Traditional Textured Glass Flush Mount Ceiling Fixture with Light Bulb - 13 x 13 x 8.25 Inches, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK5JJP2_N1,B0828FB1HB,small/85/853cb376.jpg,"Amazon Brand – Stone & Beam Traditional Textured Glass Flush Mount Ceiling Fixture with Light Bulb - 13 x 13 x 8.25 Inches, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK5JJP2_N2,B07DBJMFZ2,small/d5/d5fd3560.jpg,"Amazon Brand – Stone & Beam Traditional Textured Glass Flush Mount Ceiling Fixture with Light Bulb - 13 x 13 x 8.25 Inches, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B075X2R3BX_pos,B075X2R3BX,small/88/886fbc9d.jpg,"Amazon Brand – Rivet Mid-Century Modern Square Pillar Living Room Table Lamp With LED Light Bulb - 10.5 x 10.5 x 18 Inches, White Marble and Brass",1,pos,LAMP,,ood_near
+B075X2R3BX_N1,B0828DHVWJ,small/73/731b6480.jpg,"Amazon Brand – Rivet Mid-Century Modern Square Pillar Living Room Table Lamp With LED Light Bulb - 10.5 x 10.5 x 18 Inches, White Marble and Brass",0,N1,LAMP,,ood_near
+B075X2R3BX_N2,B073763W7G,small/42/42c085fd.jpg,"Amazon Brand – Rivet Mid-Century Modern Square Pillar Living Room Table Lamp With LED Light Bulb - 10.5 x 10.5 x 18 Inches, White Marble and Brass",0,N2,LAMP,,ood_near
+B082DP4S94_pos,B082DP4S94,small/e3/e33bc20f.jpg,"Amazon Brand – Rivet Single-Light Domed Metal Pendant Light, 63""H, Soft Matte Gray",1,pos,LIGHT_FIXTURE,,ood_near
+B082DP4S94_N1,B07MBFDKTH,small/d3/d30d25ef.jpg,"Amazon Brand – Rivet Single-Light Domed Metal Pendant Light, 63""H, Soft Matte Gray",0,N1,LIGHT_FIXTURE,,ood_near
+B082DP4S94_N2,B072LKKM3W,small/5c/5c46a84c.jpg,"Amazon Brand – Rivet Single-Light Domed Metal Pendant Light, 63""H, Soft Matte Gray",0,N2,LIGHT_FIXTURE,,ood_near
+B07374SBFM_pos,B07374SBFM,small/44/44bd8d56.jpg,Amazon Brand – Rivet Mid Century Modern Diamond Cut Concrete Bedside Table Desk Lamp With Light Bulb - 20 Inches,1,pos,LAMP,,ood_near
+B07374SBFM_N1,B071HSMXCB,small/94/94ada569.jpg,Amazon Brand – Rivet Mid Century Modern Diamond Cut Concrete Bedside Table Desk Lamp With Light Bulb - 20 Inches,0,N1,LAMP,,ood_near
+B07374SBFM_N2,B07374M818,small/f4/f4abab47.jpg,Amazon Brand – Rivet Mid Century Modern Diamond Cut Concrete Bedside Table Desk Lamp With Light Bulb - 20 Inches,0,N2,LAMP,,ood_near
+B07B4YBVN9_pos,B07B4YBVN9,small/36/36f60820.jpg,"Amazon Brand – Stone & Beam Contemporary 3 Shade Bathroom Vanity Fixture With Light Bulbs - 24.25 x 7.5 x 9.25 Inches, Oil Rubbed Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4YBVN9_N1,B07QD5RGPB,small/10/109a0f1e.jpg,"Amazon Brand – Stone & Beam Contemporary 3 Shade Bathroom Vanity Fixture With Light Bulbs - 24.25 x 7.5 x 9.25 Inches, Oil Rubbed Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4YBVN9_N2,B07B4Z9C39,small/f1/f1ad733f.jpg,"Amazon Brand – Stone & Beam Contemporary 3 Shade Bathroom Vanity Fixture With Light Bulbs - 24.25 x 7.5 x 9.25 Inches, Oil Rubbed Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B071LD87KZ_pos,B071LD87KZ,small/54/54ce6eb3.jpg,"Amazon Brand – Rivet Glass Mid Century Modern 3 Pendant Chandelier Fixture With 3 Vintage Light Bulbs - 14.25-60 Inch Cord, Brown and Black",1,pos,LIGHT_FIXTURE,,ood_near
+B071LD87KZ_N1,B0711Q7WK7,small/4b/4bf05f8b.jpg,"Amazon Brand – Rivet Glass Mid Century Modern 3 Pendant Chandelier Fixture With 3 Vintage Light Bulbs - 14.25-60 Inch Cord, Brown and Black",0,N1,LIGHT_FIXTURE,,ood_near
+B071LD87KZ_N2,B071HSMPHL,small/9f/9f4d8d94.jpg,"Amazon Brand – Rivet Glass Mid Century Modern 3 Pendant Chandelier Fixture With 3 Vintage Light Bulbs - 14.25-60 Inch Cord, Brown and Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07DTFBDTL_pos,B07DTFBDTL,small/18/18caf37e.jpg,"Amazon Brand – Rivet Modern Gold Globe Table Lamp 22"" H, Integrated LED Light",1,pos,LAMP,,ood_near
+B07DTFBDTL_N1,B08B8TV5PR,small/5a/5a77199a.jpg,"Amazon Brand – Rivet Modern Gold Globe Table Lamp 22"" H, Integrated LED Light",0,N1,LAMP,,ood_near
+B07DTFBDTL_N2,B082DP8455,small/16/16e98d5a.jpg,"Amazon Brand – Rivet Modern Gold Globe Table Lamp 22"" H, Integrated LED Light",0,N2,LAMP,,ood_near
+B075X3S2X5_pos,B075X3S2X5,small/2d/2d5c0b86.jpg,"Amazon Brand – Rivet Mid-Century Modern Concrete Task Floor Lamp With Light Bulb - 57 Inches, Matte White",1,pos,LAMP,,ood_near
+B075X3S2X5_N1,B0853PKBRV,small/a7/a770bb0c.jpg,"Amazon Brand – Rivet Mid-Century Modern Concrete Task Floor Lamp With Light Bulb - 57 Inches, Matte White",0,N1,LAMP,,ood_near
+B075X3S2X5_N2,B07374K536,small/e2/e28b67a1.jpg,"Amazon Brand – Rivet Mid-Century Modern Concrete Task Floor Lamp With Light Bulb - 57 Inches, Matte White",0,N2,LAMP,,ood_near
+B07B4SC9N7_pos,B07B4SC9N7,small/2d/2d9c8739.jpg,"Amazon Brand – Rivet Mid Century Modern 2 Light Living Room Floor Lamp With Integrated LED - 61 Inches, Matte Black &amp; Antique Brass",1,pos,LAMP,,ood_near
+B07B4SC9N7_N1,B07MPFZPQJ,small/ec/ec2ff778.jpg,"Amazon Brand – Rivet Mid Century Modern 2 Light Living Room Floor Lamp With Integrated LED - 61 Inches, Matte Black &amp; Antique Brass",0,N1,LAMP,,ood_near
+B07B4SC9N7_N2,B07B4Z2YVW,small/73/739a7737.jpg,"Amazon Brand – Rivet Mid Century Modern 2 Light Living Room Floor Lamp With Integrated LED - 61 Inches, Matte Black &amp; Antique Brass",0,N2,LAMP,,ood_near
+B07B4Z9C39_pos,B07B4Z9C39,small/f1/f1ad733f.jpg,"Amazon Brand – Stone & Beam Vintage Bathroom Vanity Fixture With 3 Light Bulbs And Glass Shade - 25 x 7 x 11.5 Inches, Matte Black",1,pos,LIGHT_FIXTURE,,ood_near
+B07B4Z9C39_N1,B07QD5SDWK,small/d1/d1194094.jpg,"Amazon Brand – Stone & Beam Vintage Bathroom Vanity Fixture With 3 Light Bulbs And Glass Shade - 25 x 7 x 11.5 Inches, Matte Black",0,N1,LIGHT_FIXTURE,,ood_near
+B07B4Z9C39_N2,B07B4SC6PQ,small/70/704a837a.jpg,"Amazon Brand – Stone & Beam Vintage Bathroom Vanity Fixture With 3 Light Bulbs And Glass Shade - 25 x 7 x 11.5 Inches, Matte Black",0,N2,LIGHT_FIXTURE,,ood_near
+B07QJ766RB_pos,B07QJ766RB,small/fd/fd27e37f.jpg,"Amazon Brand – Ravenna Home Casual Vanity Light, 7.80""H, Brushed Nickel",1,pos,LIGHT_FIXTURE,,ood_near
+B07QJ766RB_N1,B07QJL73XD,small/91/916924de.jpg,"Amazon Brand – Ravenna Home Casual Vanity Light, 7.80""H, Brushed Nickel",0,N1,LIGHT_FIXTURE,,ood_near
+B07QJ766RB_N2,B07QBB4WRM,small/34/343be3fe.jpg,"Amazon Brand – Ravenna Home Casual Vanity Light, 7.80""H, Brushed Nickel",0,N2,LIGHT_FIXTURE,,ood_near
+B07DT153M1_pos,B07DT153M1,small/61/6138372f.jpg,"Amazon Brand – Stone & Beam Modern Farmhouse Wood Base Adjustable Living Room Floor Lamp With LED Light Bulb And White Shade- 16 x 16 x 66.25 Inches, Black",1,pos,LAMP,,ood_near
+B07DT153M1_N1,B071LD87KZ,small/54/54ce6eb3.jpg,"Amazon Brand – Stone & Beam Modern Farmhouse Wood Base Adjustable Living Room Floor Lamp With LED Light Bulb And White Shade- 16 x 16 x 66.25 Inches, Black",0,N1,LAMP,,ood_near
+B07DT153M1_N2,B07B4YXR45,small/0d/0deac0a1.jpg,"Amazon Brand – Stone & Beam Modern Farmhouse Wood Base Adjustable Living Room Floor Lamp With LED Light Bulb And White Shade- 16 x 16 x 66.25 Inches, Black",0,N2,LAMP,,ood_near
+B0828FN2YH_pos,B0828FN2YH,small/7b/7b761400.jpg,"Amazon Brand - Ravenna Home Single-Light Swing-Arm Wall Sconce with White Linen Shade, LED Bulb Included, 15.5""H, Dark Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B0828FN2YH_N1,B07B4YBVN9,small/36/36f60820.jpg,"Amazon Brand - Ravenna Home Single-Light Swing-Arm Wall Sconce with White Linen Shade, LED Bulb Included, 15.5""H, Dark Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B0828FN2YH_N2,B0824FLNHN,small/ba/ba3e8c99.jpg,"Amazon Brand - Ravenna Home Single-Light Swing-Arm Wall Sconce with White Linen Shade, LED Bulb Included, 15.5""H, Dark Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B07HK5MXZ3_pos,B07HK5MXZ3,small/b0/b0c0767f.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Sphere Chandelier with 5 Light Bulbs - 26 x 26 x 9.5 Inches, 20 - 55 Inch Cord, Soft Brass",1,pos,LIGHT_FIXTURE,,ood_near
+B07HK5MXZ3_N1,B07B4SC9N7,small/2d/2d9c8739.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Sphere Chandelier with 5 Light Bulbs - 26 x 26 x 9.5 Inches, 20 - 55 Inch Cord, Soft Brass",0,N1,LIGHT_FIXTURE,,ood_near
+B07HK5MXZ3_N2,B07B4VYKNF,small/ec/ec75a1ad.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Sphere Chandelier with 5 Light Bulbs - 26 x 26 x 9.5 Inches, 20 - 55 Inch Cord, Soft Brass",0,N2,LIGHT_FIXTURE,,ood_near
+B07DT6MDK8_pos,B07DT6MDK8,small/3d/3d23222c.jpg,Amazon Brand – Stone & Beam Modern Rustic Farmhouse Rope Wagon Wheel Ceiling Pendant Chandelier Fixture With 5 Dimmable Vintage Light Bulbs - 22 x 22x 27.5 Inches,1,pos,LIGHT_FIXTURE,,ood_near
+B07DT6MDK8_N1,B0825DWB3W,small/0c/0c5e2e70.jpg,Amazon Brand – Stone & Beam Modern Rustic Farmhouse Rope Wagon Wheel Ceiling Pendant Chandelier Fixture With 5 Dimmable Vintage Light Bulbs - 22 x 22x 27.5 Inches,0,N1,LIGHT_FIXTURE,,ood_near
+B07DT6MDK8_N2,B07B4YZWKD,small/28/28279e3e.jpg,Amazon Brand – Stone & Beam Modern Rustic Farmhouse Rope Wagon Wheel Ceiling Pendant Chandelier Fixture With 5 Dimmable Vintage Light Bulbs - 22 x 22x 27.5 Inches,0,N2,LIGHT_FIXTURE,,ood_near
+B07HKGHSQT_pos,B07HKGHSQT,small/41/41f13c62.jpg,"Amazon Brand – Stone & Beam Mid-Century Modern Henley Living Room Standing Arc Floor Lamp with LED Light Bulb - 10.5 x 16.5 x 58 Inches, Matte Black and Antique Brass",1,pos,LAMP,,ood_near
+B07HKGHSQT_N1,B07B4YZWKD,small/28/28279e3e.jpg,"Amazon Brand – Stone & Beam Mid-Century Modern Henley Living Room Standing Arc Floor Lamp with LED Light Bulb - 10.5 x 16.5 x 58 Inches, Matte Black and Antique Brass",0,N1,LAMP,,ood_near
+B07HKGHSQT_N2,B07B4YXR45,small/0d/0deac0a1.jpg,"Amazon Brand – Stone & Beam Mid-Century Modern Henley Living Room Standing Arc Floor Lamp with LED Light Bulb - 10.5 x 16.5 x 58 Inches, Matte Black and Antique Brass",0,N2,LAMP,,ood_near
+B0828F62FS_pos,B0828F62FS,small/e5/e544eb91.jpg,"Amazon Brand - Ravenna Home Single-Light Flush-Mount Ceiling Light with Frosted Glass Shade, 5.3""H, Brushed Steel",1,pos,LIGHT_FIXTURE,,ood_near
+B0828F62FS_N1,B082DP4S94,small/e3/e33bc20f.jpg,"Amazon Brand - Ravenna Home Single-Light Flush-Mount Ceiling Light with Frosted Glass Shade, 5.3""H, Brushed Steel",0,N1,LIGHT_FIXTURE,,ood_near
+B0828F62FS_N2,B0828F59QW,small/bb/bbc1f73c.jpg,"Amazon Brand - Ravenna Home Single-Light Flush-Mount Ceiling Light with Frosted Glass Shade, 5.3""H, Brushed Steel",0,N2,LIGHT_FIXTURE,,ood_near
+B07DT63QZX_pos,B07DT63QZX,small/80/8049fb16.jpg,"Amazon Brand – Stone & Beam Modern Farmhouse Round Wood Bead Cage Chandelier Ceiling Fixture With 4 LED Light Bulbs - 23 x 23 x 33 Inches, Natural",1,pos,LIGHT_FIXTURE,,ood_near
+B07DT63QZX_N1,B07HKGHSQT,small/41/41f13c62.jpg,"Amazon Brand – Stone & Beam Modern Farmhouse Round Wood Bead Cage Chandelier Ceiling Fixture With 4 LED Light Bulbs - 23 x 23 x 33 Inches, Natural",0,N1,LIGHT_FIXTURE,,ood_near
+B07DT63QZX_N2,B07B4VSTF6,small/21/215523ee.jpg,"Amazon Brand – Stone & Beam Modern Farmhouse Round Wood Bead Cage Chandelier Ceiling Fixture With 4 LED Light Bulbs - 23 x 23 x 33 Inches, Natural",0,N2,LIGHT_FIXTURE,,ood_near
+B071F6WJ9V_pos,B071F6WJ9V,small/6d/6d3a5fb1.jpg,"Amazon Brand – Rivet Mid-Century Modern Sputnik Hanging Ceiling Chandelier With 12 Light Bulbs - 35 x 34 Inches, 25 - 61 Inch Cord, Chrome",1,pos,LIGHT_FIXTURE,,ood_near
+B071F6WJ9V_N1,B07374P5NP,small/67/670c21b4.jpg,"Amazon Brand – Rivet Mid-Century Modern Sputnik Hanging Ceiling Chandelier With 12 Light Bulbs - 35 x 34 Inches, 25 - 61 Inch Cord, Chrome",0,N1,LIGHT_FIXTURE,,ood_near
+B071F6WJ9V_N2,B07B4VYKNF,small/ec/ec75a1ad.jpg,"Amazon Brand – Rivet Mid-Century Modern Sputnik Hanging Ceiling Chandelier With 12 Light Bulbs - 35 x 34 Inches, 25 - 61 Inch Cord, Chrome",0,N2,LIGHT_FIXTURE,,ood_near
+B07374K539_pos,B07374K539,small/ba/ba7a184e.jpg,"Amazon Brand – Stone & Beam Modern Ceiling Pendant Light Chandelier Fixture With Glass Shade - 11.5 x 11.5 x 42 Inches, Black",1,pos,LIGHT_FIXTURE,,ood_near
+B07374K539_N1,B071LD87KZ,small/54/54ce6eb3.jpg,"Amazon Brand – Stone & Beam Modern Ceiling Pendant Light Chandelier Fixture With Glass Shade - 11.5 x 11.5 x 42 Inches, Black",0,N1,LIGHT_FIXTURE,,ood_near
+B07374K539_N2,B07B4YZWKD,small/28/28279e3e.jpg,"Amazon Brand – Stone & Beam Modern Ceiling Pendant Light Chandelier Fixture With Glass Shade - 11.5 x 11.5 x 42 Inches, Black",0,N2,LIGHT_FIXTURE,,ood_near
+B0825DWB3W_pos,B0825DWB3W,small/0c/0c5e2e70.jpg,"Amazon Brand – Stone & Beam Contemporary Single-Light Black Marble Wall Sconce with Linen Shade, LED Bulb Included, 13.5""H, Dark Bronze",1,pos,LIGHT_FIXTURE,,ood_near
+B0825DWB3W_N1,B0853P1XBK,small/e4/e44c1d67.jpg,"Amazon Brand – Stone & Beam Contemporary Single-Light Black Marble Wall Sconce with Linen Shade, LED Bulb Included, 13.5""H, Dark Bronze",0,N1,LIGHT_FIXTURE,,ood_near
+B0825DWB3W_N2,B0825DG9QL,small/62/62ca5030.jpg,"Amazon Brand – Stone & Beam Contemporary Single-Light Black Marble Wall Sconce with Linen Shade, LED Bulb Included, 13.5""H, Dark Bronze",0,N2,LIGHT_FIXTURE,,ood_near
+B0716WLY2Y_pos,B0716WLY2Y,small/13/13b77ba4.jpg,"Amazon Brand – Stone & Beam Industrial Farmhouse Double Pendant Ceiling Chandelier with Pulley, Light Bulbs Included, Adjustable 40""-65"" Cord, Black",1,pos,LIGHT_FIXTURE,,ood_near
+B0716WLY2Y_N1,B07HK85JV8,small/3b/3bd0fa5d.jpg,"Amazon Brand – Stone & Beam Industrial Farmhouse Double Pendant Ceiling Chandelier with Pulley, Light Bulbs Included, Adjustable 40""-65"" Cord, Black",0,N1,LIGHT_FIXTURE,,ood_near
+B0716WLY2Y_N2,B0719H3LG2,small/47/4725939d.jpg,"Amazon Brand – Stone & Beam Industrial Farmhouse Double Pendant Ceiling Chandelier with Pulley, Light Bulbs Included, Adjustable 40""-65"" Cord, Black",0,N2,LIGHT_FIXTURE,,ood_near
+B01MTEI7V1_N3,B01MTEI7V1,small/e0/e08c74c2.jpg,"Amazon Brand - The Fix Women's Bonilla Block Heel Cutout Tribal Dress Sandal, Red, 11 B US",0,N3,SHOES,,ood_far
+B06X9WMJL2_N3,B06X9WMJL2,small/6f/6fbeafbe.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Green US 8.5,0,N3,SHOES,,ood_far
+B06X9XF23R_N3,B06X9XF23R,small/4d/4dfe5a87.jpg,Amazon Brand - find. Women's Sneakers Pull-on Basic Red US 10.5,0,N3,SHOES,,ood_far
+B06XGZPP8T_N3,B06XGZPP8T,small/7e/7e70bd65.jpg,"Amazon Brand - The Fix Women's Dolly Block Heel Buckle Gladiator Sandal,Green,11 B US",0,N3,SHOES,,ood_far
+B06XH6SMBN_N3,B06XH6SMBN,small/e5/e562bc27.jpg,"Amazon Brand - The Fix Women's Ursula Faux Fur Slide Sandal, Red, 8 B US",0,N3,SHOES,,ood_far
+B06XRX1H42_N3,B06XRX1H42,small/0a/0a2472fa.jpg,"find. Women's 10311 Open-Toe Sandals, Blue, 8 US",0,N3,SHOES,,ood_far
+B0711Q7WK7_N3,B0711Q7WK7,small/4b/4bf05f8b.jpg,"Amazon Brand – Rivet Modern Industrial Geometric Cage Pendant Chandelier Fixture With Light Bulb - 10.5 x 10.5 Inch, 14.75-62.75 Inch Cord, Green",0,N3,LIGHT_FIXTURE,,ood_near
+B071GFDG1X_N3,B071GFDG1X,small/9e/9e9752b5.jpg,"Amazon Brand - find. Men's Classic Casual, Yellow, US 8",0,N3,BOOT,,ood_far
+B071KPV8YT_N3,B071KPV8YT,small/4f/4f8b115d.jpg,"Amazon Brand - find. Men's Mansall Smart Strap, Red, US 12",0,N3,BOOT,,ood_far
+B072DXJYNY_N3,B072DXJYNY,small/5f/5f854cc6.jpg,"Amazon Brand - find. Women's Amazon Brand - find. Women's Chelsea Boots in Leather with Gum Sole and Rand Boot, Green, US 6.5",0,N3,BOOT,,ood_far
+B07374K539_N3,B07374K539,small/ba/ba7a184e.jpg,"Amazon Brand – Stone & Beam Modern Ceiling Pendant Light Chandelier Fixture With Glass Shade - 11.5 x 11.5 x 42 Inches, Yellow",0,N3,LIGHT_FIXTURE,,ood_near
+B07374P5NP_N3,B07374P5NP,small/67/670c21b4.jpg,"Amazon Brand – Rivet Eclipse Mid Century Modern 5-Globe Hanging Ceiling Pendant Chandelier Fixture - 20 x 20 x 48 Inches, Red Metal With Frosted Glass Globes",0,N3,LIGHT_FIXTURE,,ood_near
+B073751DMJ_N3,B073751DMJ,small/bc/bcd28126.jpg,"Amazon Brand – Rivet Blue Bedside Table Desk Lamp with Light Bulb - 18 Inches, Linen Shade",0,N3,LAMP,,ood_near
+B075ZZQHN7_N3,B075ZZQHN7,small/00/00fca538.jpg,"Amazon Brand - 206 Collective Women's Linden Mid Rain Boot, Blue, 7 B US",0,N3,BOOT,,ood_far
+B07B4VYKNF_N3,B07B4VYKNF,small/ec/ec75a1ad.jpg,"Amazon Brand – Rivet Mid-Century Modern Glass Globe Ceiling Pendant Chandelier With 6 Light Bulbs - 40.5 x 14 x 6.75 Inches, 6-48 Inch Cord, Red",0,N3,LIGHT_FIXTURE,,ood_near
+B07B4YS1QP_N3,B07B4YS1QP,small/8e/8edf95e9.jpg,"Amazon Brand – Rivet Mid-Century Modern Ceiling Hanging Glass Globe Pendant Fixture With Light Bulb - 5 x 5 x 10 Inches, Blue",0,N3,LIGHT_FIXTURE,,ood_near
+B07D6DPY1Y_N3,B07D6DPY1Y,small/94/9411e28d.jpg,"find. Women's Contrast Heel, Red, US 10.5",0,N3,BOOT,,ood_far
+B07D942QW9_N3,B07D942QW9,small/69/6912629e.jpg,"find. Women's Contrast Heel, Blue, US 7.5",0,N3,BOOT,,ood_far
+B07DBHC39X_N3,B07DBHC39X,small/56/56ba597b.jpg,"Ravenna Home Classic Linen Fabric Flushmount Ceiling Pendant Light Fixture with 2 LED Light Bulbs - 13 x 13 x 7.5 Inches, Blue",0,N3,LIGHT_FIXTURE,,ood_near
+B07DBJLZ7T_N3,B07DBJLZ7T,small/25/25fe950d.jpg,"Amazon Brand – Ravenna Home Open Round Ceiling Pendant Chandelier With 4 LED Light Bulbs - 16 x 16 x 18.50 Inches, Yellow",0,N3,LIGHT_FIXTURE,,ood_near
+B07HK5CDRQ_N3,B07HK5CDRQ,small/ce/ce0b55a2.jpg,"Amazon Brand – Stone & Beam Modern Indoor Outdoor Wall Mount Sconce with Light Bulb, 11.75""H, Green",0,N3,LIGHT_FIXTURE,,ood_near
+B07HK5LXFG_N3,B07HK5LXFG,small/17/1732e076.jpg,"Amazon Brand – Stone & Beam Vintage Large Format Pendant Light with Bulb, 26""H, Yellow",0,N3,LIGHT_FIXTURE,,ood_near
+B07HK6MTMC_N3,B07HK6MTMC,small/b2/b25f69ff.jpg,"Amazon Brand – Rivet Modern Pull Chain Switch for Each Socket Table Lamp with Bulb, 22.8""H, Matte Red",0,N3,LAMP,,ood_near
+B07HK85JV8_N3,B07HK85JV8,small/3b/3bd0fa5d.jpg,"Amazon Brand – Rivet Rustic Natural Material Construction Pendant Light with Bulb, 60""H, Green",0,N3,LIGHT_FIXTURE,,ood_near
+B07HK8MLP6_N3,B07HK8MLP6,small/06/0612154e.jpg,"Amazon Brand – Rivet Smokey Glass and Brass Table Lamp, Modern, with Bulb, 16.63""H, Yellow",0,N3,LAMP,,ood_near
+B07HK8YHTB_N3,B07HK8YHTB,small/20/209f892d.jpg,"Amazon Brand – Stone & Beam Contemporary Chandelier Light with Bulb, 47.44""H, Red",0,N3,LIGHT_FIXTURE,,ood_near
+B07HKC3S4T_N3,B07HKC3S4T,small/8c/8c532d49.jpg,"Amazon Brand – Rivet Modern Shelving/Storage Space Floor Lamp with USB and Bulb, 59""H, Blue",0,N3,LAMP,,ood_near
+B07HKFXCNC_N3,B07HKFXCNC,small/ac/acdd1761.jpg,"Amazon Brand – Rivet Modern Geometric Table Lamp with Bulb, 21""H, Blue",0,N3,LAMP,,ood_near
+B07HKGY4F2_N3,B07HKGY4F2,small/96/9656ad8c.jpg,"Amazon Brand – Rivet Modern Concrete Cubic Outdoor Porch Light Wall Sconce with Integrated LED Light - 4.75 x 5.63 x 4.75 Inches, Green Base",0,N3,LIGHT_FIXTURE,,ood_near
+B07JQB4S6S_N3,B07JQB4S6S,small/48/4820d4df.jpg,"Amazon Brand – Stone & Beam Jordan Industrial Farmhouse Wall Sconce Fixture With Light Bulb - 4.75 x 5.5 x 11 Inches, Blue, For Indoor Outdoor Use",0,N3,LIGHT_FIXTURE,,ood_near
+B07MBFDJQ3_N3,B07MBFDJQ3,small/0c/0c84de5f.jpg,"Amazon Brand – Ravenna Home Textured Ceramic Base Table Lamp with LED Light Bulb, 18""H, Red - 20465-002",0,N3,LAMP,,ood_near
+B07MBFDQG8_N3,B07MBFDQG8,small/dd/ddb2d783.jpg,"Amazon Brand – Ravenna Home Classic 4 Light Semi-flush Mount Chandelier, Bulbs Included, 14.5""H, Yellow",0,N3,LIGHT_FIXTURE,,ood_near
+B07MBFDQHP_N3,B07MBFDQHP,small/03/036011d6.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp, Bulb Included, 16""H, Green",0,N3,LAMP,,ood_near
+B07MBFG1D2_N3,B07MBFG1D2,small/35/350ef17f.jpg,"Amazon Brand – Stone & Beam Ceramic Table Lamp with LED Light Bulb, 16""H, Green",0,N3,LAMP,,ood_near
+B07MF1RKM3_N3,B07MF1RKM3,small/f6/f6ddf948.jpg,"Amazon Brand – Stone & Beam Textured Ceramic Table Lamp, Bulb Included, 16.75""H, Yellow",0,N3,LAMP,,ood_near
+B07MHHS2PS_N3,B07MHHS2PS,small/66/665b0ffb.jpg,"Amazon Brand - find. Women's Tie Up Sandal With Kitten Heel, Red, US 6.5",0,N3,SANDAL,,ood_far
+B07ML7PPZC_N3,B07ML7PPZC,small/42/42235536.jpg,"Amazon Brand – Ravenna Home Floor Lamp with Shelves, LED Light Bulb included, 62.75""H, Blue",0,N3,LAMP,,ood_near
+B07NSQJ4DY_N3,B07NSQJ4DY,small/6c/6cbd67c6.jpg,"Amazon Essentials Men's Watson Oxford, Yellow, 9 B US",0,N3,SHOES,,ood_far
+B07PJ7QGWJ_N3,B07PJ7QGWJ,small/80/80be2fb6.jpg,"Amazon Essentials Women's Aola Ankle Boot, Yellow, 12 B US",0,N3,BOOT,,ood_far
+B07QB7HXY1_N3,B07QB7HXY1,small/96/96a23fb3.jpg,"Amazon Brand – Ravenna Home Farmhouse Wall Sconce Light, 17.93""H, Blue",0,N3,LIGHT_FIXTURE,,ood_near
+B07R47ZJYT_N3,B07R47ZJYT,small/ac/acd1f3c4.jpg,"Amazon Brand - find. Lace Up Wedge Bootie Ankle Boots, Red, US 6.5",0,N3,SHOES,,ood_far
+B07R7BGVF1_N3,B07R7BGVF1,small/b1/b16d86c2.jpg,"CARE OF by PUMA Women’s Leather Platform Low-Top Trainers, Blue, US 8",0,N3,SHOES,,ood_far
+B07VZJYHTG_N3,B07VZJYHTG,small/7b/7b3c9f07.jpg,"Amazon Essentials Girls' Mixie Ankle Boot, Green, 11 Toddler US Toddler",0,N3,BOOT,,ood_far
+B07W5R75YP_N3,B07W5R75YP,small/d9/d9a56c4b.jpg,"Amazon Essentials Girls' Aeron Sneaker, Red, 6 Medium US Toddler",0,N3,SHOES,,ood_far
+B07Y5X8G7G_N3,B07Y5X8G7G,small/2d/2d54094e.jpg,"find. Women's Weave Slingback Leather Open Toe Sandals, Red, 2",0,N3,SANDAL,,ood_far
+B07YCHPN2H_N3,B07YCHPN2H,small/72/72b5024f.jpg,"find. Women's N-7976 Open Toe Sandals, Green, US-0 / Asia Size s",0,N3,SANDAL,,ood_far
+B07Z59BQ57_N3,B07Z59BQ57,small/8c/8c21ce00.jpg,"find. Women's Mule Wedge Leather Open Toe Heels, Yellow, US-0 / Asia Size s",0,N3,SHOES,,ood_far
+B0824DVF9J_N3,B0824DVF9J,small/ee/eea0bd4f.jpg,"Amazon Brand – Ravenna Home Traditional Metal Torchiere Floor Lamp with Reading Light, LED Bulbs Included, 72""H, Blue",0,N3,LAMP,,ood_near
+B0825DKP92_N3,B0825DKP92,small/16/16b20edd.jpg,"Amazon Brand – Stone & Beam Contemporary 2-Tone Textured Ceramic Table Lamp, LED Bulb Included, 17.75""H, Yellow",0,N3,LAMP,,ood_near
+B0825DWB39_N3,B0825DWB39,small/ea/eac2108d.jpg,"Amazon Brand – Stone & Beam Contemporary Rattan Table Lamp, LED Bulb Included, 22""H, Red",0,N3,LAMP,,ood_near
+B082PM5XY6_N3,B082PM5XY6,small/a5/a5dae80a.jpg,"Amazon Essentials Girls' Strappy Sandal, Green, 7 Toddler US Toddler",0,N3,SANDAL,,ood_far
+B082PN4DBF_N3,B082PN4DBF,small/11/111f2f22.jpg,"Amazon Essentials Boys' Liam Flat Sandal, Yellow, 6 M US Big Kid",0,N3,SANDAL,,ood_far
+B082TJLTF3_N3,B082TJLTF3,small/19/196a5c8f.jpg,"Amazon Essentials Women's Ivy Sandal, Red, 7 Medium US",0,N3,SANDAL,,ood_far
+B082TK5FJ9_N3,B082TK5FJ9,small/3e/3e97147d.jpg,"Amazon Essentials Women's Heeled Sandal, Green, 8 M US",0,N3,SANDAL,,ood_far
+B082XLGHKK_N3,B082XLGHKK,small/7e/7ef51dd0.jpg,"Amazon Brand – Rivet Scandinavian Task Lamp, 19""H, Matte Red",0,N3,LAMP,,ood_near
+B0869PF5XK_N3,B0869PF5XK,small/53/53b6f371.jpg,Centrino Men's S5514 Green Loafers-10 UK (44 EU) (11 US) (S5514-01),0,N3,SHOES,,ood_far
+B08BVNLDFV_N3,B08BVNLDFV,small/41/4156f812.jpg,ELISE Women's Green Running Shoes-3 UK (36 EU) (4 US) (ES-S20-002),0,N3,SHOES,,ood_far
+B08CHZY3H7_N3,B08CHZY3H7,small/9b/9bd45e82.jpg,Solefit Women's Yellow Slippers-7 UK (41 EU) (SLFT-0067),0,N3,SHOES,,ood_far

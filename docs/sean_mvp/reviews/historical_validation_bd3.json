@@ -1,0 +1,52 @@
+{
+  "unit_tests": 10,
+  "unit_tests_passed": true,
+  "n3_rows": 1118,
+  "n3_image_split_preserved": true,
+  "n3_all_texts_changed": true,
+  "ood_items": 300,
+  "ood_pairs": 958,
+  "ood_image_or_item_overlap_with_kira": 0,
+  "ood_group_count": 300,
+  "ood_negative_within_split": true,
+  "ood_n2_same_product_type": true,
+  "review_sample": {
+    "N2": 100,
+    "N3": 100
+  },
+  "human_judgments_completed": 260,
+  "n3_target_colors": {
+    "green": 309,
+    "red": 354,
+    "yellow": 278,
+    "blue": 177
+  },
+  "id_review_images": {
+    "checked": 197,
+    "failures": 0
+  },
+  "ood_images": {
+    "checked": 300,
+    "failures": 0
+  },
+  "packages": {
+    "numpy": "2.3.5",
+    "onnxruntime": "1.31.0",
+    "tokenizers": "0.23.3",
+    "Pillow": "12.3.0",
+    "requests": "2.34.2"
+  },
+  "ui_dom_checks": [
+    "initial_render",
+    "type_filter",
+    "pagination",
+    "judgment_change",
+    "local_storage",
+    "CSV_export",
+    "JSON_export_restore",
+    "OOD_page_render"
+  ],
+  "browser_visual_check": "not performed; headless browser download unavailable",
+  "CSV_export_finalize_integration": "Original synthetic export test passed; 260 actual review records subsequently matched against sample IDs/text/images/categories/splits. Original judgments preserved.",
+  "review_stage": "INITIAL_REVIEW_PENDING_N2_ADJUDICATION"
+}
