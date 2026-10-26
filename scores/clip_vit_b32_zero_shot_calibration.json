@@ -1,0 +1,48 @@
+{
+  "selection_split": "val",
+  "objective": "accuracy",
+  "rule": "score >= threshold",
+  "tie_break": "smallest threshold among maximum-accuracy candidates",
+  "threshold": 0.30781579,
+  "val": {
+    "n": 1179,
+    "accuracy": 0.7625106022052587,
+    "auc": 0.8356026908558812,
+    "positive_recall": 0.7430025445292621,
+    "negative_recall": 0.772264631043257,
+    "balanced_accuracy": 0.7576335877862596,
+    "negatives_by_type": {
+      "N1": {
+        "n": 393,
+        "recall": 0.9516539440203562
+      },
+      "N2": {
+        "n": 393,
+        "recall": 0.5928753180661578
+      }
+    }
+  },
+  "test": {
+    "n": 1196,
+    "accuracy": 0.7525083612040134,
+    "auc": 0.8317940396788709,
+    "positive_recall": 0.7619047619047619,
+    "negative_recall": 0.7478042659974906,
+    "balanced_accuracy": 0.7548545139511262,
+    "negatives_by_type": {
+      "N1": {
+        "n": 399,
+        "recall": 0.9348370927318296
+      },
+      "N2": {
+        "n": 398,
+        "recall": 0.5603015075376885
+      }
+    }
+  },
+  "input_sha256": {
+    "docs/mini_version/pairs.csv": "6f96f2814fa87c72c0f3e5fb3fec7dd23d6e1da625961a8c22b21f3b52041842",
+    "scores/clip_vit_b32_zero_shot.csv": "45e8121939ccb672f2902be45249ed9f882fd75ce837c4551a999dbd56487f22"
+  },
+  "limitation": "Provisional WP5 check: two image paths cross splits; N2 labels remain noisy."
+}
