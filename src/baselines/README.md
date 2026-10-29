@@ -12,6 +12,12 @@ Aaron 的 `src/eval/eval.py` 算。从仓库根目录运行。
 
 ## 0. 准备
 
+WP8 一条命令跑完(建环境 → 下数据和图片 → 冒烟测试 → 4 个模型打分 → 评估):
+
+```bash
+bash src/baselines/run_wp8.sh
+```
+
 按 `src/models/README.md` 先下好家具小版本的图片(`data/images/small/...`)。
 
 ## WP7:GPT-6 Luna
