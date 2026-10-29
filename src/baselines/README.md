@@ -8,7 +8,7 @@ Aaron 的 `src/eval/eval.py` 算。从仓库根目录运行。
 | `common.py` | 读 pairs、写分数文件、选设备 |
 | `sample_subset.py` | 分层抽样子集(Luna 预算用),同一标题的 pos/N1/N2 保持在一起 |
 | `luna_baseline.py` | WP7:GPT-6 Luna 判断图文是否匹配,P1/P2 两版 prompt |
-| `zero_shot_baselines.py` | WP8:CLIP ViT-L/14、SigLIP、SigLIP2、BLIP ITM、BLIP-2 ITM 零样本 |
+| `zero_shot_baselines.py` | WP8:CLIP ViT-L/14、SigLIP、SigLIP2、ALIGN、BLIP ITM、BLIP-2 ITM 零样本 |
 
 ## 0. 准备
 
@@ -69,6 +69,7 @@ python src/eval/eval.py --pairs-csv docs/mini_version/pairs.csv \
 | `clip-l14` | `openai/clip-vit-large-patch14` | 图/文向量余弦相似度(与 WP5 同法,更大的模型) |
 | `siglip-b16` | `google/siglip-base-patch16-224` | 余弦相似度(sigmoid 训练的双塔;文本按训练时 pad 到 64) |
 | `siglip2-b16` | `google/siglip2-base-patch16-224` | 同上,SigLIP2 |
+| `align-b` | `kakaobrain/align-base` | 余弦相似度(ALIGN:EfficientNet + BERT 双塔,噪声网页图文训练) |
 | `blip-itm-b` | `Salesforce/blip-itm-base-coco` | 融合模型的图文匹配(ITM)头,score = P(匹配) |
 | `blip2-itm-g` | `Salesforce/blip2-itm-vit-g` | BLIP-2 Q-Former 的 ITM 头(大,Mac 上慢,可选) |
 
@@ -92,6 +93,20 @@ python src/eval/eval.py --pairs-csv docs/mini_version/pairs.csv \
 每个模型同时写一个 `*_meta.json`(Hugging Face id、revision、参数量、设备、耗时、库版本),
 就是工作包要求的「一行说明」的来源。结果定稿时用 `--revision <commit hash>` 固定权重版本。
 `--device auto` 依次选 CUDA / MPS / CPU。
+
+### 候选模型对比(调研结论)
+
+| 模型 | 开源权重 | 类型 | 适用于本任务 | 结论 |
+|---|---|---|---|---|
+| CLIP ViT-L/14 | 是(HF) | 双塔 | 是 | 已接入,看「加大模型」能提升多少 |
+| SigLIP / SigLIP2 | 是(HF) | 双塔 | 是 | 已接入,看「换训练目标」的效果 |
+| ALIGN | 是(HF,kakaobrain 复现版) | 双塔 | 是 | 已接入;注意不是 Google 原版权重 |
+| BLIP ITM | 是(HF) | 融合 | 是 | 已接入,看「双塔 vs 融合」 |
+| BLIP-2 ITM | 是(HF) | 融合 | 是 | 已接入,较大,算力允许再跑 |
+| Chinese-CLIP | 是(HF) | 双塔 | 否 | 只支持中文文本;本项目 pairs 是英文标题,不接入 |
+| GPT-6 Luna | 否(API) | 生成式 | 是 | WP7 |
+
+参数量不在这里手填,以每次运行写出的 `*_meta.json` 里的 `n_params` 为准。
 
 ## 已知局限
 

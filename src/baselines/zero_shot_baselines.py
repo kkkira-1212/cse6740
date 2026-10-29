@@ -34,6 +34,8 @@ MODELS = {
                        text_kwargs={"padding": "max_length", "max_length": 64}),
     "siglip2-b16": dict(hf_id="google/siglip2-base-patch16-224", family="dual",
                         text_kwargs={"padding": "max_length", "max_length": 64}),
+    "align-b": dict(hf_id="kakaobrain/align-base", family="dual",
+                    text_kwargs={"padding": "max_length", "max_length": 64}),
     "blip-itm-b": dict(hf_id="Salesforce/blip-itm-base-coco", family="itm", loader="blip"),
     "blip2-itm-g": dict(hf_id="Salesforce/blip2-itm-vit-g", family="itm", loader="blip2"),
 }
