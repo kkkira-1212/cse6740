@@ -7,7 +7,7 @@ Version: `abo-home-v2-20261103`. Status: **generated candidate data, awaiting hu
 - Main experiment data: [release README](../data/releases/abo-home-v2-20261103/README.md).
 - Generation configuration: [abo_home_v2.json](../configs/abo_home_v2.json).
 - Product/pair tables, counts, provenance and structural checks: `data/releases/abo-home-v2-20261103/`.
-- The 100-pair offline review package is a local/shareable artifact under `output/n2_home_v2_20261103` in the parent workspace. Embedded-image HTML and image ZIPs are intentionally not committed.
+- Download both deliverables from [the GitHub Release](https://github.com/kkkira-1212/cse6740/releases/tag/abo-home-v2-20261103). The [tracked review batch](../data/reviews/abo-home-v2-20261103/README.md) contains blank CSV inputs and provenance; image-embedded HTML and the full image ZIP are release assets, not Git blobs.
 
 ## What changed from the pilot
 

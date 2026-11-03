@@ -1,0 +1,9 @@
+{
+  "rows": 100,
+  "images": 100,
+  "image_failures": {},
+  "sample_by_type": {
+    "N2": 100
+  },
+  "dataset_id": "6f34fd22854c0ca8157f"
+}

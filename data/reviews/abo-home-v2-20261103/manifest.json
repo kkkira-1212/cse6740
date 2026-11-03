@@ -1,0 +1,19 @@
+{
+  "dataset_id": "6f34fd22854c0ca8157f",
+  "source_release": "abo-home-v2-20261103",
+  "status": "AWAITING_HUMAN_REVIEW",
+  "rows": 100,
+  "counts_by_type": {
+    "RUG": 19,
+    "CHAIR": 21,
+    "WALL_ART": 13,
+    "SOFA": 10,
+    "OTTOMAN": 5,
+    "TABLE": 13,
+    "PILLOW": 4,
+    "HOME": 3,
+    "HOME_FURNITURE_AND_DECOR": 7,
+    "STOOL_SEATING": 5
+  },
+  "note": "Sampled from exact train N2 pairs in the main candidate release; no fresh resampling of titles. No val/test judgments used."
+}

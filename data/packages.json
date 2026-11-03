@@ -1,0 +1,17 @@
+{
+  "release": "abo-home-v2-20261103",
+  "assets": [
+    {
+      "name": "abo-home-v2-20261103-full.zip",
+      "url": "https://github.com/kkkira-1212/cse6740/releases/download/abo-home-v2-20261103/abo-home-v2-20261103-full.zip",
+      "bytes": 31422884,
+      "sha256": "34bb4d4e0d2f76a05bcd61272ebbae5cb4a93fb1323527a7e96947d9de6a894d"
+    },
+    {
+      "name": "n2-home-v2-100-review.zip",
+      "url": "https://github.com/kkkira-1212/cse6740/releases/download/abo-home-v2-20261103/n2-home-v2-100-review.zip",
+      "bytes": 970394,
+      "sha256": "3adfdcf7c07d816f9403dbcf9afc21f3b70ce1ec1bb0c13e7c7f2b69e4b8c3a0"
+    }
+  ]
+}
