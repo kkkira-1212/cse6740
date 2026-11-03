@@ -1,0 +1,9 @@
+{
+  "source_commit": "bd3e1fad03e4931bbb1928ba0de5912ca7361fa5",
+  "source_pairs": "docs/mini_version/pairs.csv",
+  "n2_rows": 3978,
+  "cross_split_rows": 1342,
+  "same_source_image_rows": 47,
+  "identical_input_opposite_positive_label_rows": 69,
+  "note": "Counts overlap. This submission reports findings; upstream N2 generator and labels are not modified."
+}

@@ -1,0 +1,7 @@
+# CPU-only Sean MVP; no CLIP, GPU, torch or API key required.
+# requests is used by the imported Kira build_items module.
+requests>=2.31,<3
+numpy>=1.26,<3
+onnxruntime>=1.20,<2
+tokenizers>=0.20,<1
+Pillow>=10,<13

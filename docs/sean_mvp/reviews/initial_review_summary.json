@@ -1,0 +1,70 @@
+{
+  "ID": {
+    "stage": "INITIAL_REVIEW_PENDING_ADJUDICATION",
+    "interpretation": "N2 match/(match+mismatch) is an initial-review flag rate, not independently adjudicated ground truth. N3 acceptance does not establish absence of text-only shortcuts.",
+    "by_neg_type": {
+      "N2": {
+        "total": 100,
+        "counts": {
+          "match": 45,
+          "mismatch": 46,
+          "uncertain": 9
+        },
+        "determinate": 91,
+        "false_negative_rate": 0.4945054945054945,
+        "uncertain_rate": 0.09,
+        "denominator": "match + mismatch; pending and uncertain excluded"
+      },
+      "N3": {
+        "total": 100,
+        "counts": {
+          "mismatch": 100
+        },
+        "determinate": 100,
+        "false_negative_rate": 0.0,
+        "uncertain_rate": 0.0,
+        "denominator": "match + mismatch; pending and uncertain excluded"
+      }
+    }
+  },
+  "OOD": {
+    "stage": "INITIAL_REVIEW_PENDING_ADJUDICATION",
+    "interpretation": "N2 match/(match+mismatch) is an initial-review flag rate, not independently adjudicated ground truth. N3 acceptance does not establish absence of text-only shortcuts.",
+    "by_neg_type": {
+      "N1": {
+        "total": 20,
+        "counts": {
+          "mismatch": 15,
+          "match": 5
+        },
+        "determinate": 20,
+        "false_negative_rate": 0.25,
+        "uncertain_rate": 0.0,
+        "denominator": "match + mismatch; pending and uncertain excluded"
+      },
+      "N2": {
+        "total": 20,
+        "counts": {
+          "match": 9,
+          "mismatch": 10,
+          "uncertain": 1
+        },
+        "determinate": 19,
+        "false_negative_rate": 0.47368421052631576,
+        "uncertain_rate": 0.05,
+        "denominator": "match + mismatch; pending and uncertain excluded"
+      },
+      "N3": {
+        "total": 20,
+        "counts": {
+          "mismatch": 19,
+          "match": 1
+        },
+        "determinate": 20,
+        "false_negative_rate": 0.05,
+        "uncertain_rate": 0.0,
+        "denominator": "match + mismatch; pending and uncertain excluded"
+      }
+    }
+  }
+}

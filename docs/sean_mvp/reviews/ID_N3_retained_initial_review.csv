@@ -1,0 +1,101 @@
+pair_id,item_id,image_path,text,label,neg_type,category,year,split
+B07PC11SF6_N3,B07PC11SF6,small/8d/8dca8bfa.jpg,"Amazon Brand – Rivet Aiden Mid-Century Sofa with Tapered Wood Legs, 87""W, Red",0,N3,SOFA,,train
+B072PZC1L3_N3,B072PZC1L3,small/80/802b829e.jpg,"Amazon Brand – Rivet Cove Modern Tufted Loveseat with Tapered Legs, Mid-Century, 56""W, Green",0,N3,SOFA,,train
+B085FJR497_N3,B085FJR497,small/36/369c2f4c.jpg,"Ravenna Home Viewridge Upholstered Rocking Recliner Chair, 42""W, Yellow",0,N3,CHAIR,,train
+B07HGGVRCZ_N3,B07HGGVRCZ,small/44/445c450f.jpg,AmazonBasics Multi-Purpose Office Drafting Spa Stool with Adjustable Foot Rest and Wheels - Red,0,N3,CHAIR,,train
+B08555N6YQ_N3,B08555N6YQ,small/d2/d2f8517e.jpg,"Amazon Brand - Rivet Modern Wood Counter-Height Kitchen Bar Stool, 24"" H, Green",0,N3,STOOL_SEATING,,train
+B083H3WMT3_N3,B083H3WMT3,small/ba/babca323.jpg,AmazonBasics Classic Faux Leather Extra Padded Recliner Chair - Green (Renewed),0,N3,CHAIR,,test
+B075QL3X3L_N3,B075QL3X3L,small/f9/f91db3b2.jpg,"Amazon Brand – Stone & Beam Delano Nailhead Trim Full/Queen Headboard, 65""W, Yellow",0,N3,HEADBOARD,,train
+B07N2Z2WQV_N3,B07N2Z2WQV,small/ce/ce64a301.jpg,AmazonBasics Classic Faux Leather Extra Padded Recliner Chair - Green,0,N3,CHAIR,,train
+B07BW8QV48_N3,B07BW8QV48,small/0b/0b50be26.jpg,"Amazon Brand – Rivet Edgewest Low Back Modern Left Sofa Chaise Sectional, 115""W, Red",0,N3,SOFA,,train
+B075X467QG_N3,B075X467QG,small/fe/fe50759c.jpg,"Amazon Brand – Stone & Beam Hillsboro Modern Wingback Living Room Accent Chair With Nailhead Trim, 29""W, Green",0,N3,CHAIR,,train
+B082KVVQH1_N3,B082KVVQH1,small/ff/ff067d8c.jpg,"Amazon Brand – Rivet Mid-Century Bonded Leather Swivel Office Chair with Chrome Metal Base, 22.8""W, Saddle Blue",0,N3,CHAIR,,train
+B07HZ5RM1P_N3,B07HZ5RM1P,small/ec/ec1ac2ee.jpg,"Amazon Brand – Stone & Beam Blaine Modern Sectional Sofa, 79.5""W, Red",0,N3,SOFA,,train
+B0857JWY13_N3,B0857JWY13,small/fe/fe825b78.jpg,"Amazon Brand – Stone & Beam Wood and Rattan Dining Chair with Arms, 24.8""W, Yellow",0,N3,CHAIR,,train
+B07DBJJ6Y6_N3,B07DBJJ6Y6,small/0a/0a333997.jpg,"Amazon Brand – Ravenna Home Ryleigh Rounded Mid-Century Barrel Accent Chair, 27.5""W, Yellow",0,N3,CHAIR,,val
+B082Q8N8BY_N3,B082Q8N8BY,small/80/806f0115.jpg,"Amazon Brand – Stone & Beam Cedar Upholstered Sofa Couch with Nailheads, 91""W, Midnight Yellow",0,N3,SOFA,,val
+B0853Q3Z93_N3,B0853Q3Z93,small/cd/cdc35f17.jpg,"Amazon Brand – Rivet Noah Round Modern Ash Dining Table, 35.4""W, Green",0,N3,TABLE,,train
+B0853JPW6W_N3,B0853JPW6W,small/66/663678ac.jpg,"Amazon Brand – Rivet Curved Upholstered Headboard, Queen, 60""W, Red",0,N3,HEADBOARD,,val
+B07B4CZQDS_N3,B07B4CZQDS,small/8d/8d8c0391.jpg,"Amazon Brand – Stone & Beam Edmunds Traditional Recliner, 30""W, Yellow",0,N3,CHAIR,,train
+B075YP38J2_N3,B075YP38J2,small/c3/c3ddd122.jpg,"Amazon Brand – Stone & Beam Sophia Modern Swivel Kitchen Bar Stool, 43.3""H, Yellow",0,N3,STOOL_SEATING,,train
+B082VFZD5K_N3,B082VFZD5K,small/a3/a389748f.jpg,"Amazon Brand - Ravenna Home Archer Steel-Framed Outdoor Patio Dining Chairs, Set of 2, 35""H, Red",0,N3,CHAIR,,train
+B084MXWPF3_N3,B084MXWPF3,small/7d/7dfa9747.jpg,"Amazon Brand - Stone & Beam Modern Farmhouse Solid Wood Headboard, Queen, 64""W, Charcoal Green",0,N3,HEADBOARD,,train
+B07B4W5TQZ_N3,B07B4W5TQZ,small/40/4046fb70.jpg,"Amazon Brand – Stone & Beam Mid-Century Modern Wood Nightstand, 24"", Green, Metal Base",0,N3,TABLE,,val
+B07H3F7CXP_N3,B07H3F7CXP,small/59/5992206f.jpg,"Stone & Beam Collective Design Transitional Bryan Keith-Santa Monica Circle Bookcase, green",0,N3,CABINET,,train
+B07MHM99BS_N3,B07MHM99BS,small/bd/bdd91243.jpg,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, Green, Set of 2",0,N3,CHAIR,,train
+B082VLWBGD_N3,B082VLWBGD,small/f6/f6d6a1e3.jpg,"Amazon Brand – Stone & Beam Westview Extra-Deep Down-Filled Leather Accent Chair, 43.3""W, Blue",0,N3,CHAIR,,train
+B07HSLKKXG_N3,B07HSLKKXG,small/6b/6b3bc239.jpg,"Amazon Brand – Stone & Beam Leon Modern Farmhouse Dining Room Kitchen Chairs, Set of 2, 36.5""H, Dove Green",0,N3,STOOL_SEATING,,test
+B0853L3W72_N3,B0853L3W72,small/a6/a66c5c3d.jpg,"Amazon Brand – Rivet Logan Mid-Century Modern Dining Chair, Set of 2, 20.1""W, Blue",0,N3,CHAIR,,train
+B07B4MRPTG_N3,B07B4MRPTG,small/7e/7eb11069.jpg,"Amazon Brand – Stone & Beam Brandeberry Farmhouse Charles of London Loveseat, 58""W, Yellow",0,N3,CHAIR,,train
+B085FJW18N_N3,B085FJW18N,small/db/dbd6fca6.jpg,"Ravenna Home Viewridge Upholstered Recliner Chair, 42""W, Red",0,N3,CHAIR,,train
+B085GX3LQV_N3,B085GX3LQV,small/13/13ffeaaf.jpg,"Amazon Brand - Stone & Beam Primrose Upholstered Rocking Recliner Chair, 33""W, Mocha Green",0,N3,CHAIR,,train
+B07P8SV5PV_N3,B07P8SV5PV,small/60/60f6a30f.jpg,"Amazon Brand – Rivet Aiden Mid-Century Leather Sofa with Tapered Wood Legs, 74""W, Green",0,N3,SOFA,,train
+B07BW8PWHT_N3,B07BW8PWHT,small/32/32c92087.jpg,"Amazon Brand – Stone & Beam Bradbury Chesterfield Tufted Leather Loveseat Sofa Couch, 78.7""W, Chestnut Blue",0,N3,SOFA,,train
+B07KSRKDXF_N3,B07KSRKDXF,small/4c/4cfd0427.jpg,"AmazonBasics Faux Linen Upholstered Tufted Headboard - King, Red",0,N3,HEADBOARD,,train
+B0010SLWUS_N3,B0010SLWUS,small/cf/cf71c784.jpg,"Strathwood St. Croix Chaise Lounge Cushion, Red",0,N3,CHAIR,,train
+B07B78LXZ1_N3,B07B78LXZ1,small/c4/c4718439.jpg,"Amazon Brand – Stone & Beam Alejandra Unfinished Wood Kitchen Island Bar Cart with Wheels, Green",0,N3,TABLE,,train
+B07DBDX446_N3,B07DBDX446,small/53/5354d150.jpg,"Amazon Brand – Ravenna Home Modern Faux Leather Loveseat Sofa, 86.5""W, Blue",0,N3,SOFA,,train
+B07HZ5XRNC_N3,B07HZ5XRNC,small/1e/1eec2415.jpg,"Amazon Brand – Rivet Goodwin Modern Sofa, 88.6""W, Yellow",0,N3,SOFA,,train
+B07J29V51Q_N3,B07J29V51Q,small/6f/6f4c84bd.jpg,"AmazonBasics Lift-Top Storage Coffee Table, Yellow",0,N3,TABLE,,train
+B07DBDZ3XV_N3,B07DBDZ3XV,small/f3/f3e86715.jpg,"Amazon Brand – Ravenna Home Justin Round Tufted Storage Pouf Ottoman Bench, 24""W, Red",0,N3,OTTOMAN,,train
+B07SQWPC7Z_N3,B07SQWPC7Z,small/01/01a8bc51.jpg,"AmazonBasics Metal Twin Loft Bed, Easy Assembly, Red",0,N3,BED,,train
+B075YV7V1P_N3,B075YV7V1P,small/db/dbce5b17.jpg,"Amazon Brand – Rivet Ray Mid-Century Modern Kitchen Dining Room Chairs, Set of 2, 34.3""H, Green Faux Leather",0,N3,CHAIR,,train
+B07B4GQBV2_N3,B07B4GQBV2,small/3e/3eecf9d4.jpg,"Amazon Brand – Stone & Beam Andover Modern Living Room Accent Chair, 38""W, Green",0,N3,CHAIR,,train
+B07QJ1WX64_N3,B07QJ1WX64,small/40/40742d26.jpg,"Amazon Brand – Ravenna Home Haraden Modern Curved-Top Queen Bed Headboard with Nailhead Trim, 62""W, Red",0,N3,HEADBOARD,,train
+B07BWJCBS6_N3,B07BWJCBS6,small/19/19b149e4.jpg,"Amazon Brand – Stone & Beam Andover Modern Right U-Sectional Sofa, 134""W, Red",0,N3,SOFA,,val
+B07DBFG16Z_N3,B07DBFG16Z,small/ec/eca098bf.jpg,"Amazon Brand – Ravenna Home Anne Marie Wood Round Shelf Storage Curved Leg Entry Table, 36""W, Blue",0,N3,TABLE,,train
+B07DMLG8Y4_N3,B07DMLG8Y4,small/6e/6eb8615f.jpg,"2L Lifestyle Fairbank L-Shaped Executive Desk Red Finish, Large",0,N3,DESK,,train
+B07TPMXMBF_N3,B07TPMXMBF,small/d0/d0c67dd4.jpg,"AmazonBasics LeatherSoft Kids/Youth Recliner with Armrest Storage, 5+ Age Group, Blue",0,N3,CHAIR,,train
+B000W7AF2Y_N3,B000W7AF2Y,small/43/43c1833b.jpg,"Strathwood All-Weather Wicker Side Chair, Yellow",0,N3,CHAIR,,val
+B08555TMQ8_N3,B08555TMQ8,small/5b/5b9d01c1.jpg,"Amazon Brand - Rivet Modern Wood Kitchen Counter Bar Stool, 29.5"" H, Red",0,N3,STOOL_SEATING,,train
+B0853KMNVT_N3,B0853KMNVT,small/5a/5a7ca13d.jpg,"Amazon Brand – Rivet Eli Modern Curved-Back Counter-Height Barstool, 38.2""H, Green",0,N3,STOOL_SEATING,,val
+B0886K87F9_N3,B0886K87F9,small/41/4163d9c4.jpg,"AmazonCommercial Ergonomic 500-pound Oversized Mesh Chair with Adjustable Armrests and Chrome Base- Red, BIFMA Certified (Renewed)",0,N3,CHAIR,,train
+B07QFRSC43_N3,B07QFRSC43,small/fe/fe8a5c92.jpg,"Amazon Brand – Rivet Modern High-Back Barstool, Set of 2, 43.5""H, Yellow",0,N3,CHAIR,,train
+B07TTHGW2H_N3,B07TTHGW2H,small/1f/1f360ef4.jpg,"Amazon Brand – Rivet Julie Mid-Century Modern Faux Leather Slope Accent Kitchen Dining Room Chair, 34""H, Green",0,N3,CHAIR,,test
+B07B4FZJP8_N3,B07B4FZJP8,small/3c/3c1d7adb.jpg,"Amazon Brand – Stone & Beam Andover Modern Right Chaise Sofa Sectional, 126""W, Green",0,N3,SOFA,,train
+B07B4M68JR_N3,B07B4M68JR,small/79/793737c2.jpg,"Amazon Brand – Stone & Beam Brandeberry Farmhouse Charles of London Accent Chair, 38""W, Red",0,N3,CHAIR,,train
+B07B4M2QSW_N3,B07B4M2QSW,small/b2/b2a21e69.jpg,"Amazon Brand – Stone & Beam Isabel Traditional Sofa, 84""W, Green",0,N3,OTTOMAN,,train
+B07N2YBT92_N3,B07N2YBT92,small/7a/7a552175.jpg,AmazonBasics Classic Faux Leather Arm Push Recliner Chair - Yellow,0,N3,CHAIR,,train
+B07B519FDQ_N3,B07B519FDQ,small/50/5045b0c2.jpg,"Amazon Brand – Rivet Hillmoor Mid-Century King Bed with Headboard, 82""W, Green",0,N3,HEADBOARD,,train
+B07TZRKTC9_N3,B07TZRKTC9,small/f3/f33b44f6.jpg,"Amazon Brand – Stone & Beam Elden Nailhead-Trim Saddle Kitchen Counter Backless Bar Stool, 30""H, Yellow",0,N3,STOOL_SEATING,,train
+B075QLD8DW_N3,B075QLD8DW,small/f9/f91db3b2.jpg,"Amazon Brand – Stone & Beam Delano Nailhead Trim King Headboard, 63.25""H, Red",0,N3,HEADBOARD,,train
+B07CPQP34D_N3,B07CPQP34D,small/cb/cb521883.jpg,First Hill Altair Square Faux-Leather Ottoman - Moonlight Red,0,N3,OTTOMAN,,train
+B07DBFT2YG_N3,B07DBFT2YG,small/e0/e0f6cb9c.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Leg Wood Shelf Storage Coffee Table, 44""W, Red",0,N3,TABLE,,train
+B07B51N75G_N3,B07B51N75G,small/c6/c64ef965.jpg,"Stone & Beam Brecken Modern Wood Bedroom Dresser, 55"", Brass Hardware, Blue",0,N3,BED,,train
+B07QF9Y248_N3,B07QF9Y248,small/e7/e7fe9fc4.jpg,"Amazon Brand – Rivet Modern Upholstered Swivel Office Chair, 25""W, Green",0,N3,CHAIR,,train
+B07DMHP1ZY_N3,B07DMHP1ZY,small/a4/a430c5e5.jpg,"2L Lifestyle Harbor Modern Wedge Side End Table,Green",0,N3,TABLE,,train
+B07RGR6XYT_N3,B07RGR6XYT,small/c1/c185460a.jpg,"Max & Finn Twin Floor Bunk Bed, Yellow",0,N3,BED,,val
+B08FGH14HD_N3,B08FGH14HD,small/ba/bad96d84.jpg,"AmazonBasics Fabric 3-Drawer Storage Organizer Unit for Closet, Green (Renewed)",0,N3,DRESSER,,val
+B07QJZ2N42_N3,B07QJZ2N42,small/cf/cf0bfaca.jpg,"Amazon Brand – Ravenna Home Pritchard Classic Recliner, 29.1""W, Red",0,N3,CHAIR,,train
+B085GXS8JG_N3,B085GXS8JG,small/22/22032b67.jpg,"Amazon Brand - Stone & Beam Primrose Upholstered Rocking Recliner Chair, 33""W, Green",0,N3,CHAIR,,train
+B08568W12Z_N3,B08568W12Z,small/81/8179bd20.jpg,"Amazon Brand – Rivet Vermont Modern Faux Leather Diamond Accent Dining Chair, 20""W, Set of 2, Red",0,N3,CHAIR,,train
+B08F4JPXQC_N3,B08F4JPXQC,small/f5/f5626c1d.jpg,AmazonBasics Classic Linen Recliner & Ottoman Set - For Living Room or RV - Yellow (Renewed),0,N3,OTTOMAN,,train
+B07DBGHSN7_N3,B07DBGHSN7,small/5a/5a4f28e9.jpg,"Amazon Brand – Ravenna Home Anne Marie Small Curved Leg Shelf Storage Side End Table, 20""W, Green",0,N3,TABLE,,train
+B07B4CZRMJ_N3,B07B4CZRMJ,small/e4/e41ecbc4.jpg,"Amazon Brand – Stone & Beam Edmunds Traditional Recliner, 30""W, Yellow",0,N3,CHAIR,,train
+B075YQXRD4_N3,B075YQXRD4,small/3f/3facae68.jpg,"Amazon Brand – Rivet Julian Minimalist Modern Tufted Kitchen Bar Height Stools, Set of 2, 37.8 Inch Height, Synthetic Leather, Yellow",0,N3,STOOL_SEATING,,val
+B07P65599S_N3,B07P65599S,small/9b/9b03a751.jpg,"AmazonBasics Functional Bookcase Storage Headboard - Queen, Blue",0,N3,HEADBOARD,,train
+B07B8F6V9M_N3,B07B8F6V9M,small/34/34ddd3fa.jpg,"Rivet Stevie Mid-Century Modern Bar Stool, 30""H, Pack of 2, Yellow",0,N3,STOOL_SEATING,,train
+B07DBHC33B_N3,B07DBHC33B,small/69/69ff39a3.jpg,"Amazon Brand – Ravenna Home Sage Diamond Tufted Ottoman, 36""W, Yellow",0,N3,OTTOMAN,,train
+B08568HG2X_N3,B08568HG2X,small/90/90362fc5.jpg,"Amazon Brand – Rivet Decatur Modern Faux Leather Kitchen Counter-Height Stool, 37""H, Green",0,N3,STOOL_SEATING,,train
+B082VMMBJY_N3,B082VMMBJY,small/79/79771272.jpg,"Amazon Brand – Rivet Brooke Contemporary Mid-Century Modern Tufted Leather Living Room Chair, 35""W, Yellow",0,N3,CHAIR,,train
+B07B8445B5_N3,B07B8445B5,small/0c/0cfdcf0a.jpg,"Rivet Stevie Mid-Century Modern Bar Stool, 30""H, Pack of 2, Blue",0,N3,STOOL_SEATING,,train
+B07P5LMFPN_N3,B07P5LMFPN,small/51/51a565be.jpg,"Amazon Brand – Rivet Revolve Modern Leather Loveseat Sofa, 56""W, Green",0,N3,SOFA,,train
+B07QK2GTTH_N3,B07QK2GTTH,small/88/8803664f.jpg,"Stone & Beam Counter Stool, 39""H, Moss Yellow",0,N3,STOOL_SEATING,,train
+B07QJXMX23_N3,B07QJXMX23,small/c8/c86a715d.jpg,"Amazon Brand – Ravenna Home Maynard Contemporary Recliner, 27.6""W, Agate Beach Red",0,N3,CHAIR,,train
+B07HMTJ2HB_N3,B07HMTJ2HB,small/79/79604af0.jpg,"AmazonBasics Foldable Rocking Chair with Canopy, Yellow",0,N3,CHAIR,,train
+B07KW12DWX_N3,B07KW12DWX,small/cc/ccd0a654.jpg,"AmazonBasics Modern Tufted Vinyl Upholstered Headboard - Full, Green",0,N3,HEADBOARD,,train
+B07B79WSKT_N3,B07B79WSKT,small/79/795a58b9.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Buffet Sideboard, Cabinet Credenza, Storage, Green",0,N3,CABINET,,train
+B07B78LY2F_N3,B07B78LY2F,small/d5/d5f2d26b.jpg,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Bar Stool, 43""H, Red",0,N3,STOOL_SEATING,,train
+B075YQ8Q2K_N3,B075YQ8Q2K,small/22/22663bae.jpg,"Amazon Brand – Rivet Florence Mid-Century Modern Wide Open-Back Accent Kitchen Dining Chairs, 18.8""W, Yellow, Set of 2",0,N3,CHAIR,,train
+B075X43FQZ_N3,B075X43FQZ,small/7a/7a1afaee.jpg,"Amazon Brand – Stone & Beam Larkin Living Room Accent Swivel Chair, 30""W, Red",0,N3,CHAIR,,train
+B073G6DCF9_N3,B073G6DCF9,small/ba/badf431b.jpg,"Amazon Brand – Stone & Beam Modern Sweeping Arm Accent Chair, 28""W, Damask Red",0,N3,CHAIR,,train
+B075Z8PMML_N3,B075Z8PMML,small/8e/8e74f9e6.jpg,"Amazon Brand – Stone & Beam Bateman Casual Rustic Wood Platform Bed Frame with Tall Headboard, Queen, 65""W, Green",0,N3,BED,,val
+B082QD6R9M_N3,B082QD6R9M,small/bb/bb58770c.jpg,"Amazon Brand – Rivet Maple Channel Tufted Upholstered Storage Ottoman with a Soft-Close Hinge, 45.3""W, Green",0,N3,OTTOMAN,,test
+B07QV37J6B_N3,B07QV37J6B,small/ee/ee07d94b.jpg,"AmazonBasics Gaming Computer Desk with Storage for Controller, Headphone & Speaker - Blue",0,N3,DESK,,train
+B07DBF73HJ_N3,B07DBF73HJ,small/15/1503e4cd.jpg,"Amazon Brand – Ravenna Home Pull Recliner with 360 Rotating Swivel Glider, Living Room Chair, 39""W, Yellow",0,N3,CHAIR,,train
+B085FJY5SW_N3,B085FJY5SW,small/31/31ce9d4a.jpg,"Ravenna Home Viewridge Upholstered Recliner Chair, 42""W, Green",0,N3,CHAIR,,train
+B01D7P5JW8_N3,B01D7P5JW8,small/7d/7d4517cb.jpg,"AmazonBasics Low-Back, Upholstered Mesh, Adjustable, Swivel Computer Office Desk Chair, Red",0,N3,CHAIR,,train
+B082VLYP6B_N3,B082VLYP6B,small/ff/ff78c30a.jpg,"Amazon Brand – Rivet Alonzo Contemporary Velvet Livingroom Accent Chair, 39""W, Yellow",0,N3,CHAIR,,test
+B07HZ48ZRY_N3,B07HZ48ZRY,small/f6/f683a935.jpg,"Amazon Brand – Rivet Goodwin Modern Living Room Accent Chair, 32.3""W x 35.8""H, Green",0,N3,CHAIR,,train
+B07DBDPMWN_N3,B07DBDPMWN,small/37/37ee7b65.jpg,"Amazon Brand – Ravenna Home Naomi 3-Drawer Storage End Table Nightstand, 17.7""W, Yellow",0,N3,TABLE,,train
+B07L6KPT9P_N3,B07L6KPT9P,small/38/383bbe0c.jpg,"AmazonBasics Classic Solid Wood Saddle-Seat Kitchen Counter Stool with Foot Plate 29 Inch, Green, Set of 2",0,N3,STOOL_SEATING,,train
