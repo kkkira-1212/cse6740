@@ -1,0 +1,68 @@
+{
+  "version": "abo-home-v2-20261103",
+  "seed": 20261103,
+  "furniture_types": [
+    "CHAIR",
+    "SOFA",
+    "TABLE",
+    "STOOL_SEATING",
+    "OTTOMAN",
+    "HEADBOARD",
+    "BED",
+    "BED_FRAME",
+    "SHELF",
+    "DESK",
+    "CABINET",
+    "DRESSER",
+    "BENCH",
+    "FURNITURE",
+    "AV_FURNITURE",
+    "BEAN_BAG_CHAIR"
+  ],
+  "decor_types": [
+    "RUG",
+    "WALL_ART",
+    "PILLOW",
+    "PLANTER",
+    "VASE",
+    "PICTURE_FRAME",
+    "CLOCK",
+    "CANDLE",
+    "CANDLE_HOLDER",
+    "FIGURINE",
+    "SCULPTURE",
+    "MIRROR"
+  ],
+  "mixed_types_require_node": [
+    "HOME",
+    "HOME_FURNITURE_AND_DECOR",
+    "HOME_BED_AND_BATH"
+  ],
+  "allowed_node_segments": [
+    "furniture",
+    "home decor"
+  ],
+  "held_out_types": [
+    "LAMP",
+    "LIGHT_FIXTURE",
+    "HOME_LIGHTING_AND_LAMPS",
+    "SHOES",
+    "SANDAL",
+    "BOOT"
+  ],
+  "max_shared_image_records": 4,
+  "min_total_groups": 100,
+  "min_groups_by_split": {
+    "train": 50,
+    "val": 10,
+    "test": 10
+  },
+  "split_ratios": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "title_group_soft_limit": 3,
+  "audit_size": 100,
+  "policy": "One representative per global near-duplicate group; one positive and one negative per anchor. N3 is color-only using Sean's raw-metadata checks, at most floor(split anchors/3). Remaining anchors split approximately equally into N1 and N2. Fixed image, replacement title. All generated negatives remain unreviewed candidates."
+}

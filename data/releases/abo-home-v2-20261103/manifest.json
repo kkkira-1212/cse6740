@@ -1,0 +1,74 @@
+{
+  "version": "abo-home-v2-20261103",
+  "status": "UNREVIEWED_CANDIDATE_RELEASE",
+  "raw_records": 147702,
+  "english_image_records": 26218,
+  "scope_groups": 3969,
+  "retained_groups": 3335,
+  "pairs": 6670,
+  "allocations": [
+    {
+      "split": "train",
+      "anchors": 2664,
+      "N3_eligible": 603,
+      "N3": 603,
+      "N2": 1031,
+      "N1": 1030
+    },
+    {
+      "split": "val",
+      "anchors": 328,
+      "N3_eligible": 80,
+      "N3": 80,
+      "N2": 124,
+      "N1": 124
+    },
+    {
+      "split": "test",
+      "anchors": 343,
+      "N3_eligible": 87,
+      "N3": 87,
+      "N2": 128,
+      "N1": 128
+    }
+  ],
+  "source_sha256": {
+    "data/raw/listings/metadata/listings_0.json.gz": "c5e7723f4a4afa3da4f35c497ab30ac0f8ee5b3e473ec0ffa897511e127e9324",
+    "data/raw/listings/metadata/listings_1.json.gz": "3c1b0d27a008d7db96b22baac53f613cba3322ae1bddca3da90f92c2834550c2",
+    "data/raw/listings/metadata/listings_2.json.gz": "90efc22137ddff87db5889d807b60c19e39f157d74ae7f4e8e95270223cbbf3c",
+    "data/raw/listings/metadata/listings_3.json.gz": "72ffc22271d1ce3e091731c12a24d6875c9864a11fc1966272248b018e25a291",
+    "data/raw/listings/metadata/listings_4.json.gz": "7ff0d40dbfa23c6f0972e1814177f15aa866511f96e4720e5c860c9d314719c5",
+    "data/raw/listings/metadata/listings_5.json.gz": "06b88440b35b47a1924ba15e4b2a7b86b62069fd3a02b79bbf361ef9371d8f7f",
+    "data/raw/listings/metadata/listings_6.json.gz": "2cea3adb5f6d8680f62676e6bbb5e3585a08e089687199755dbfe97d23e60376",
+    "data/raw/listings/metadata/listings_7.json.gz": "8a1a5a4c7c8b426cc081baeb51c84e934218934faffd439732bafd567d4e4c1c",
+    "data/raw/listings/metadata/listings_8.json.gz": "5bcaf1ed85c34f204da3d3e787730ad228a96c410565a4fdb57826a297d868cc",
+    "data/raw/listings/metadata/listings_9.json.gz": "e1a8d0ce00d7d1b858db7bcc384e3301a939f449ded3c04aa8e1ef6bd2a123ae",
+    "data/raw/listings/metadata/listings_a.json.gz": "1655cdb9b83e46f3d5bf870bb92ba4259cb3ba85c7e3fc19786f4da1ba60d648",
+    "data/raw/listings/metadata/listings_b.json.gz": "73df50844054d7f33553012f6f606e8128bc83762acadf9a63440ee39f55349b",
+    "data/raw/listings/metadata/listings_c.json.gz": "6339e61243aa6c9ea88c29cfc72e1e005a7c6c2152185e21ceabe8c8046271c6",
+    "data/raw/listings/metadata/listings_d.json.gz": "b7e252bbff66da0084420ccbbec6d36ed251cadefb1daababd3709114a07e299",
+    "data/raw/listings/metadata/listings_e.json.gz": "9240ddbe9f1712c2179ca8eb2f70efa4053a243bbb2609df3609d4933524a45a",
+    "data/raw/listings/metadata/listings_f.json.gz": "0ef3dd735b0542d017c45d7feb939eeeb01d4d1b37398d17b031fd84d8f5bb1b",
+    "data/raw/images/metadata/images.csv.gz": "915263ef354d7a5d3503e899e610082f510c0011cccd5b4dc4f4c5efa86ef539"
+  },
+  "generator_sha256": "6502471b082481f007fee016d59caa83896024918a1a3c5e1c8ab2ca9871a7d7",
+  "n3_rule_sha256": "5eea1bf274d225cc030925bc2e83de49b4492f8b05d9228fd6b4e84563356ad7",
+  "images_complete": true,
+  "scope": "All 16 official shards scanned; explicit type/node scope, group and size filters applied. Not all Amazon home products.",
+  "legacy_note": "Old pilot/train/val/test have already been inspected. v2 is a new candidate split, not independently pristine of earlier project exploration.",
+  "image_failures": 0,
+  "handoff_python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "handoff_code_sha256": {
+    "src/data/build_home_release.py": "6502471b082481f007fee016d59caa83896024918a1a3c5e1c8ab2ca9871a7d7",
+    "src/data/abo_io.py": "7dee7fa15ea61c109ea1a678966e848d4660527460a9f71a9466a847012f2bdf",
+    "src/data/build_items.py": "2bd6df743564ecf2d5e13724da48bf12b4881786d538446192954cf658d0bde9",
+    "src/negatives/build_n3.py": "5eea1bf274d225cc030925bc2e83de49b4492f8b05d9228fd6b4e84563356ad7",
+    "src/negatives/build_n2_audit.py": "fe80b6ec380d29840ef343e5bbcdc07e4d2bf59d78457e2df2fcba84fb563b66",
+    "src/negatives/build_review.py": "8f037b23300f3267fef7d9f58d03c3d65c1e998afdb5ef1b989b7f70b3fba392",
+    "src/negatives/review_template.html": "9168dd1776bd7ef69ccebb6e12143e9b85c76ad50492029eef40481c1b180e47"
+  },
+  "evaluator_source": "Aaron PR #4 original head 4e3d9f73eaf498d3e707bd26eb2a27a2499f66c1; vendored with --r-at-1 explicitly blocked.",
+  "reproduction_check": "12 generated data/provenance tables reproduced byte-for-byte in an independent output directory.",
+  "generator_at_initial_build_sha256": "6c303b9c25f2685ec3abec02699d2fa9ed8642e9d9f8d18016d9723c44b5185a",
+  "portability_note": "Only the default audit output path changed from absolute to repository-relative after the byte-identical table reproduction check; generation logic and tables unchanged."
+}

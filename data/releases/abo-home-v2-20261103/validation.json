@@ -1,0 +1,10 @@
+{
+  "status": "STRUCTURAL_CHECKS_PASSED_NOT_SEMANTIC_CERTIFICATION",
+  "items": 3335,
+  "pairs": 6670,
+  "cross_split_images": 0,
+  "cross_split_groups": 0,
+  "duplicate_pairs": 0,
+  "positive_input_collisions": 0,
+  "one_positive_and_one_negative_per_anchor": true
+}

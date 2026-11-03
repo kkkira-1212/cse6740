@@ -1,5 +1,12 @@
 # 电商图文匹配(Multimodal Image-Text Matching)
 
+## Current data handoff — 2026-11-03
+
+The furniture + home-decor v2 candidate release is ready for preliminary experiments and human N2 review. Start with [the v2 data guide](docs/home_v2.md) and [release quickstart](data/releases/abo-home-v2-20261103/README.md). Do not mix it with the older image-swapped pilot or its scores. Generated labels are not yet human-certified.
+
+The historical project overview below describes the original pilot plan.
+
+
 课程项目(Prof. Tuo Zhao):判断电商商品的**主图**与**英文标题**是否匹配(二分类,可选 R@1 检索)。
 主线:零样本 CLIP → LoRA 微调(参考 e-CLIP / EI-CLIP)→ 全量微调对照,并加入 OOD、跨时间测试和 GPT-6 Luna 等更多基线。
 
