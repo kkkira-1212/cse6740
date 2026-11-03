@@ -1,0 +1,18 @@
+{
+  "model_key": "blip-itm-b",
+  "hf_id": "Salesforce/blip-itm-base-coco",
+  "revision": "main",
+  "family": "itm",
+  "score": "softmax P(match) from ITM head",
+  "n_params": 223744258,
+  "device": "mps",
+  "seconds": 635.8,
+  "pairs_csv": "docs/mini_version/pairs.csv",
+  "splits": [
+    "val",
+    "test"
+  ],
+  "n_pairs": 2375,
+  "torch": "2.14.1",
+  "transformers": "5.21.0"
+}

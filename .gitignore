@@ -8,6 +8,10 @@ data/processed/
 __pycache__/
 .ipynb_checkpoints/
 .env
+data/luna_logs/
+data/processed/sean/
+.venv/
+.DS_Store
 wandb/
 runs/
 paper/*.aux
