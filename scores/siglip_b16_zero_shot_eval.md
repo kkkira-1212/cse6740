@@ -8,19 +8,19 @@
 - Test splits: `test`
 - Pairs: val 1161, test 1188
 - Excluded pairs: cross-split image: 145 (test 8, train 119, val 18)
-- Confidence intervals: 1000 cluster-bootstrap resamples by text-source item (seed 0); shown for test overall and per-test-split rows.
+- Confidence intervals: 1000 cluster-bootstrap resamples by text_source_item (seed 0); shown for test overall and per-test-split rows.
 
 ## Validation
 
 | Split | n | Accuracy | AUC | Pos recall | Neg recall | Balanced | N1 recall | N2 recall | N3 recall | R@1 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| val | 1161 | 83.81% | 0.9193 | 88.31% | 81.57% | 84.94% | 98.72% | 64.25% | — | 84.42% |
+| val | 1161 | 83.81% | 0.9193 | 88.31% | 81.57% | 84.94% | 98.72% | 64.25% | — | 84.00% |
 
 ## Main results
 
 | Split | n | Accuracy | AUC | Pos recall | Neg recall | Balanced | N1 recall | N2 recall | N3 recall | R@1 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| All selected | 1188 | 83.42% [81.56%, 85.14%] | 0.9149 [0.9013, 0.9282] | 88.61% [85.64%, 91.67%] | 80.83% [78.44%, 83.23%] | 84.72% [82.83%, 86.42%] | 98.99% | 62.72% | — | 86.08% [83.60%, 88.58%] |
+| All selected | 1188 | 83.42% [81.56%, 85.14%] | 0.9149 [0.9013, 0.9282] | 88.61% [85.64%, 91.67%] | 80.83% [78.44%, 83.23%] | 84.72% [82.83%, 86.42%] | 98.99% | 62.72% | — | 85.90% [82.31%, 89.34%] |
 
 ## By negative type
 
@@ -34,12 +34,12 @@
 
 | Category | n | Accuracy | AUC | Pos recall | Neg recall | Balanced | R@1 |
 |---|---|---|---|---|---|---|---|
-| AV_FURNITURE | 2 | 100.00% | 1.0000 | 100.00% | 100.00% | 100.00% | 100.00% |
+| AV_FURNITURE | 2 | 100.00% | 1.0000 | 100.00% | 100.00% | 100.00% | — |
 | BED | 60 | 80.00% | 0.9463 | 80.00% | 80.00% | 80.00% | 100.00% |
-| BED_FRAME | 4 | 75.00% | 1.0000 | 100.00% | 66.67% | 83.33% | 100.00% |
+| BED_FRAME | 4 | 75.00% | 1.0000 | 100.00% | 66.67% | 83.33% | — |
 | BENCH | 24 | 66.67% | 0.8203 | 62.50% | 68.75% | 65.62% | 50.00% |
 | CABINET | 15 | 100.00% | 1.0000 | 100.00% | 100.00% | 100.00% | 100.00% |
-| CHAIR | 401 | 85.04% | 0.9174 | 91.04% | 82.02% | 86.53% | 88.06% |
+| CHAIR | 401 | 85.04% | 0.9174 | 91.04% | 82.02% | 86.53% | 87.79% |
 | DESK | 18 | 88.89% | 0.9167 | 66.67% | 100.00% | 83.33% | 100.00% |
 | DRESSER | 6 | 100.00% | 1.0000 | 100.00% | 100.00% | 100.00% | 100.00% |
 | HEADBOARD | 57 | 82.46% | 0.9529 | 100.00% | 73.68% | 86.84% | 94.74% |
@@ -58,4 +58,5 @@ No non-empty values in the selected test split(s).
 - Metrics are pair-level. Positive recall is TPR; negative recall is TNR.
 - AUC is undefined for single-class groups and is shown as —.
 - R@1 is within-title 3-way ranking: the positive image must outrank the title's own
-  N1/N2 images. It is not global image retrieval; ties count as failures.
+  N1/N2 images, using complete triplets only and excluding N3 title rewrites.
+  It is not global image retrieval; ties count as failures.
