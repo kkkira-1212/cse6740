@@ -1,8 +1,9 @@
 """Draw a stratified subset of a pairs table for expensive models (e.g. Luna).
 
-Sampling unit is the text-source item: all of its rows (pos / N1 / N2 / N3)
-are kept together, so per-type recall stays balanced and the evaluator's
-3-way R@1 still works. Items are sampled per category in proportion to the
+Sampling unit is the image-anchor group for v2, or the source-title query
+for the legacy pilot. All rows of that unit stay together. This preserves
+positive/negative pairs but does not guarantee exact negative-type quotas.
+Legacy three-way ranking is not enabled for v2. Items are sampled per category in proportion to the
 category's size, with a fixed seed.
 
 Every model that is compared with Luna must be evaluated on the same subset
@@ -20,7 +21,7 @@ import random
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from common import text_item_id
+from common import source_query_key
 
 
 def main():
@@ -31,6 +32,8 @@ def main():
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--out-csv", default="data/processed/luna_subset_test.csv")
     args = ap.parse_args()
+    if args.target_pairs < 1:
+        ap.error("--target-pairs must be positive")
 
     with open(args.pairs_csv, newline="", encoding="utf-8-sig") as stream:
         reader = csv.DictReader(stream)
@@ -39,17 +42,17 @@ def main():
     if not rows:
         raise SystemExit(f"no rows with split in {args.splits}")
 
-    # Group rows by text-source item, then items by category.
+    # Group source queries within each split, then allocate by category.
     by_item = defaultdict(list)
     for row in rows:
-        by_item[text_item_id(row)].append(row)
+        by_item[source_query_key(row)].append(row)
     by_category = defaultdict(list)
     for item, item_rows in by_item.items():
         by_category[item_rows[0]["category"]].append(item)
 
     total_items = len(by_item)
     rows_per_item = len(rows) / total_items
-    target_items = min(total_items, round(args.target_pairs / rows_per_item))
+    target_items = min(total_items, max(1, round(args.target_pairs / rows_per_item)))
 
     rng = random.Random(args.seed)
     chosen = []
@@ -65,7 +68,7 @@ def main():
         chosen.extend(items[: alloc[cat]])
 
     keep = set(chosen)
-    subset = [row for row in rows if text_item_id(row) in keep]
+    subset = [row for row in rows if source_query_key(row) in keep]
     out = Path(args.out_csv)
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", newline="", encoding="utf-8") as stream:

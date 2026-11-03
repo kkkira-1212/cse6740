@@ -1,3 +1,22 @@
+# v2 data compatibility (2026-11-03)
+
+The scorer consumes arbitrary image/title pairs, so the new fixed-image construction needs new inputs and fresh scores, not a model-architecture change. Provide the v2 pairs file and its own image root explicitly:
+
+```bash
+python src/baselines/zero_shot_baselines.py --model siglip-b16 \
+  --pairs-csv data/releases/abo-home-v2-20261103/pairs.csv \
+  --image-root data/releases/abo-home-v2-20261103/images \
+  --out-csv scores/abo_home_v2_siglip.csv
+python src/eval/eval.py --pairs-csv data/releases/abo-home-v2-20261103/pairs.csv \
+  --scores-csv scores/abo_home_v2_siglip.csv --bootstrap 1000
+```
+
+Do not pass the legacy `--r-at-1` flag for v2. Stratified subset sampling keeps explicit image-anchor groups together; a v2 donor title ID is not the grouping key. API resume fingerprints bind exact rows, image bytes, complete prompts, model, endpoint and settings, preventing stale judgments after dataset updates.
+
+No paid API run or v2 model inference is part of this compatibility update. The original model/pricing notes below are historical project assumptions, not newly verified API availability or a current price quote. Verify access/settings/pricing before a paid pilot. The JSONL journal stores response metadata, parsed content and usage, not a complete raw response copy. Baseline pilot tables below remain provisional and refer to the old dataset; regenerated R@1 reports use the corrected evaluator.
+
+---
+
 # WP7 Luna + WP8 更多基线
 
 负责人:Jane。所有脚本都输出统一的分数文件 `pair_id,score`(分数越高越匹配),指标一律用

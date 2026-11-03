@@ -48,6 +48,16 @@ def text_item_id(row):
     return pair_id[: -len(suffix)] if pair_id.endswith(suffix) else pair_id
 
 
+def source_query_key(row):
+    """Keep each image-anchor group (v2) or source-title query (pilot) intact.
+
+    Explicit title-source IDs are donor provenance in v2 and must NOT be used
+    to join its positive and negative pairs for subset selection.
+    """
+    query = row.get("anchor_group_id") or row.get("anchor_item_id") or text_item_id(row)
+    return row.get("split", ""), query
+
+
 def pick_device(requested):
     """Resolve auto -> cuda / mps / cpu, failing loudly if the request is impossible."""
     import torch
