@@ -25,6 +25,7 @@ Full run on the stratified subset:
 """
 import argparse
 import base64
+import hashlib
 import json
 import os
 import random
@@ -205,6 +206,28 @@ def load_log(path, key, retry_parse_failures):
     return done, all_calls
 
 
+def run_key(rows, args):
+    """Bind resumable results to exact inputs, prompts and endpoint settings.
+
+    Pair IDs are reused when N2 is regenerated. Matching only model/prompt
+    names would silently reuse a judgment for an older image-title pair.
+    """
+    image_hashes = {}
+    for row in rows:
+        path = row["image_path"]
+        if path not in image_hashes:
+            image_hashes[path] = hashlib.sha256(
+                (Path(args.image_root) / path).read_bytes()
+            ).hexdigest()
+    payload = {
+        "version": 2, "rows": rows, "image_sha256": image_hashes,
+        "model": args.model, "prompt": PROMPTS[args.prompt],
+        "reasoning_effort": args.reasoning_effort, "detail": args.detail,
+        "base_url": args.base_url.rstrip("/"),
+    }
+    return hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
+
+
 def cost_usd(usage):
     if not usage:
         return 0.0
@@ -240,7 +263,6 @@ def main():
 
     rows = read_pairs(args.pairs_csv, splits=args.splits, limit=args.limit)
     name = f"luna_{args.prompt.lower()}_effort-{args.reasoning_effort}" + (f"_{args.tag}" if args.tag else "")
-    key = f"{args.model}|{args.prompt}|{args.reasoning_effort}|{args.detail}"
 
     if args.dry_run:
         body = build_request(rows[0], args)
@@ -249,6 +271,8 @@ def main():
         return
     if not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit("set OPENAI_API_KEY first")
+
+    key = run_key(rows, args)
 
     log_path = Path(args.log_dir) / f"{name}.jsonl"
     log_path.parent.mkdir(parents=True, exist_ok=True)
@@ -305,6 +329,7 @@ def main():
                     p2_checks[field][value] += 1
     summary = {
         "model": args.model, "prompt": args.prompt, "reasoning_effort": args.reasoning_effort,
+        "run_key": key,
         "detail": args.detail, "pairs_csv": args.pairs_csv, "splits": args.splits, "n_pairs": len(rows),
         "retry_parse_failures": args.retry_parse_failures, "n_api_calls": len(used),
         "n_scored": len(scores), "n_parse_failures": len(failed),
