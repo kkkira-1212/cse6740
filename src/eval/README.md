@@ -1,3 +1,20 @@
+# v2 compatibility (2026-11-03)
+
+Classification calibration is unchanged: maximize the selected objective on val, then apply the fixed threshold to test. Fixed-image v2 uses explicit `anchor_item_id`, `anchor_group_id` and `text_item_id`; pair-ID prefixes are image anchors, not title sources. Bootstrap clusters use image-anchor groups for v2 and source-title queries for the legacy pilot. Reused donor titles can introduce additional dependence not captured by one-way clustering.
+
+For v2, run without `--r-at-1`:
+
+```bash
+python src/eval/eval.py --pairs-csv data/releases/abo-home-v2-20261103/pairs.csv \
+  --scores-csv scores/abo_home_v2_clip_b32.csv --bootstrap 1000
+```
+
+`--r-at-1` is explicitly rejected for fixed-image v2, whose one-negative-per-image layout is not the legacy three-way task. Legacy R@1 remains available on complete pos/N1/N2 triplets, excludes rewritten N3 queries, separates splits and retains multiplicity for repeated bootstrap draws. Earlier pilot R@1 reports are historical and superseded by the corrected evaluator; their classification metrics are unchanged.
+
+Regression checks cover explicit source identity, threshold independence from test scores, v2 ranking rejection and legacy bootstrap/ranking edge cases. The remainder below documents the original pilot interface.
+
+---
+
 # WP4 评估脚本
 
 负责人:Aaron。脚本:[`src/eval/eval.py`](eval.py)。
@@ -109,6 +126,6 @@ python src/eval/eval.py \
 | Balanced accuracy | 76.39% | 75.87% |
 | N1 recall | 95.13% | 93.43% |
 | N2 recall | 58.55% | 56.17% |
-| R@1(标题内 3-way) | 72.47% | 75.95% |
+| R@1(标题内 3-way) | 71.73% | 75.90% |
 
 `src/models/calibrate_clip.py` 保留为 WP5 的临时检查;跨模型对比以本脚本为准。

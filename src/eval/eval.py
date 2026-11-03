@@ -92,6 +92,12 @@ def load_pairs(path):
             raise ValueError(f"{path}:{line}: label 1 must have neg_type 'pos', got {neg_type!r}")
         if label == 0 and neg_type == "pos":
             raise ValueError(f"{path}:{line}: label 0 must not have neg_type 'pos'")
+        anchor = (row.get("anchor_item_id") or "").strip()
+        if anchor:
+            if pair_id != f"{anchor}_{neg_type}":
+                raise ValueError(f"{path}:{line}: v2 pair ID must identify the image anchor")
+            if not (row.get("anchor_group_id") and row.get("text_item_id")):
+                raise ValueError(f"{path}:{line}: v2 needs explicit anchor group and title source")
         seen.add(pair_id)
         pairs.append({
             "pair_id": pair_id,
@@ -101,10 +107,15 @@ def load_pairs(path):
             "category": (row.get("category") or "").strip(),
             "year": (row.get("year") or "").strip(),
             "image_path": (row.get("image_path") or "").strip(),
-            "text_item_id": text_item_id(pair_id, neg_type),
+            "text_item_id": (row.get("text_item_id") or text_item_id(pair_id, neg_type)).strip(),
+            "query_id": anchor or text_item_id(pair_id, neg_type),
+            "cluster_id": (row.get("anchor_group_id") or anchor or text_item_id(pair_id, neg_type)).strip(),
+            "pair_layout": "fixed_image_v2" if anchor else "legacy_fixed_title",
         })
     if not pairs:
         raise ValueError(f"{path}: no rows")
+    if len({row["pair_layout"] for row in pairs}) != 1:
+        raise ValueError("Do not mix legacy and fixed-image v2 pairs in one evaluation.")
     return pairs
 
 
@@ -235,10 +246,17 @@ def within_title_r_at_1(rows):
     """
     grouped = defaultdict(list)
     for row in rows:
-        grouped[row["text_item_id"]].append(row)
+        if row.get("pair_layout") == "fixed_image_v2":
+            raise ValueError("Legacy three-way R@1 is not defined for fixed-image v2 pairs.")
+        if row["neg_type"] in ("pos", "N1", "N2"):
+            key = (row.get("split", ""), row.get("_bootstrap_draw"),
+                   row.get("query_id", row["text_item_id"]))
+            grouped[key].append(row)
     eligible = 0
     correct = 0
     for group in grouped.values():
+        if {row["neg_type"] for row in group} != {"pos", "N1", "N2"}:
+            continue
         positives = [row["score"] for row in group if row["label"] == 1]
         negatives = [row["score"] for row in group if row["label"] == 0]
         if not positives or not negatives:
@@ -310,20 +328,24 @@ def build_records(rows, threshold, include_r_at_1=False):
 
 
 def bootstrap_ci(rows, threshold, n_resamples, seed, include_r_at_1=False):
-    """Percentile CI from a cluster bootstrap over text-source items."""
+    """Percentile CI by v2 image-anchor group or legacy title query.
+
+    This conditions on the selected validation threshold. Reused donor titles
+    may introduce additional dependence not modeled by this one-way bootstrap.
+    """
     if n_resamples <= 0 or not rows:
         return None
     clusters = defaultdict(list)
     for row in rows:
-        clusters[row["text_item_id"]].append(row)
+        clusters[(row.get("split", ""), row.get("cluster_id", row["text_item_id"]))].append(row)
     keys = list(clusters)
     rng = np.random.default_rng(seed)
     names = list(METRIC_NAMES) + (["r_at_1"] if include_r_at_1 else [])
     samples = {name: [] for name in names}
     for _ in range(n_resamples):
         resampled = []
-        for key in rng.choice(keys, size=len(keys), replace=True):
-            resampled.extend(clusters[str(key)])
+        for draw, index in enumerate(rng.choice(len(keys), size=len(keys), replace=True)):
+            resampled.extend({**row, "_bootstrap_draw": draw} for row in clusters[keys[int(index)]])
         result = compute_metrics(resampled, threshold, include_r_at_1)
         for name in names:
             value = result.get(name)
@@ -447,12 +469,12 @@ def write_markdown(path, meta, records):
     if meta["cross_split_images"] and not meta["drop_cross_split_images"]:
         lines.append(
             f"- **WARNING:** {len(meta['cross_split_images'])} image paths occur in multiple splits; "
-            "re-run with `--drop-cross-split-images` for leak-free test numbers."
+            "re-run with `--drop-cross-split-images` to exclude shared-image paths."
         )
     if meta["bootstrap"]:
         lines.append(
             f"- Confidence intervals: {meta['bootstrap']['n_resamples']} cluster-bootstrap resamples "
-            f"by text-source item (seed {meta['bootstrap']['seed']}); "
+            f"by {meta['bootstrap']['cluster']} (seed {meta['bootstrap']['seed']}); "
             "shown for test overall and per-test-split rows."
         )
     lines.append("")
@@ -556,7 +578,8 @@ def write_markdown(path, meta, records):
     if include_r_at_1:
         lines.extend([
             "- R@1 is within-title 3-way ranking: the positive image must outrank the title's own",
-            "  N1/N2 images. It is not global image retrieval; ties count as failures.",
+            "  N1/N2 images, using complete triplets only and excluding N3 title rewrites.",
+            "  It is not global image retrieval; ties count as failures.",
         ])
     else:
         lines.append("- R@1 was not computed (pass `--r-at-1` to enable it).")
@@ -610,6 +633,10 @@ def main(argv=None):
     test_splits = list(dict.fromkeys(args.test_splits))
 
     pairs = load_pairs(args.pairs_csv)
+    pair_layout = pairs[0]["pair_layout"]
+    if args.r_at_1 and pair_layout == "fixed_image_v2":
+        parser.error("--r-at-1 is legacy three-way ranking; v2 has one negative per image. Use classification metrics.")
+    cluster_unit = "image_anchor_group" if pair_layout == "fixed_image_v2" else "text_source_item"
     scores = load_scores(args.scores_csv)
     pairs = merge_scores(pairs, scores)
     n_before = len(pairs)
@@ -623,7 +650,7 @@ def main(argv=None):
     pairs, dropped, dropped_by_split = apply_exclusions(pairs, drop_paths, excluded_ids)
     if cross_split_images and not args.drop_cross_split_images:
         warn(f"{len(cross_split_images)} image paths occur in multiple splits; "
-             "pass --drop-cross-split-images for leak-free test numbers")
+             "pass --drop-cross-split-images to exclude shared-image paths")
     if args.exclude_pair_list and dropped.get("excluded_pair"):
         warn(f"excluded {dropped['excluded_pair']} pairs from --exclude-pair-list")
 
@@ -673,7 +700,7 @@ def main(argv=None):
         attach_ci(records, ci_by_key)
         bootstrap = {
             "n_resamples": args.bootstrap,
-            "cluster": "text_source_item",
+            "cluster": cluster_unit,
             "seed": args.seed,
             "overall": overall_ci,
             "by_split": by_split,
@@ -711,6 +738,7 @@ def main(argv=None):
 
     result = {
         "tool": "src/eval/eval.py",
+        "pair_layout": pair_layout,
         "pairs_csv": args.pairs_csv,
         "scores_csv": args.scores_csv,
         "selection_split": selection_split,

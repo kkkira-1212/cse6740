@@ -1,0 +1,13 @@
+{
+  "rows": 200,
+  "images": 197,
+  "image_failures": {},
+  "sample_by_type": {
+    "N2": 100,
+    "N3": 100
+  },
+  "dataset_id": "a0da3ace6db6689fdd89",
+  "seed": 7,
+  "status": "AWAITING_HUMAN_REVIEW",
+  "sampling": "deterministic uniform hash sample per neg_type"
+}

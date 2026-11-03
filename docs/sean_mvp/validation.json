@@ -1,0 +1,74 @@
+{
+  "unit_tests": 10,
+  "unit_tests_passed": true,
+  "n3_rows": 1118,
+  "n3_image_split_preserved": true,
+  "n3_all_texts_changed": true,
+  "ood_items": 300,
+  "ood_pairs": 958,
+  "ood_image_or_item_overlap_with_kira": 0,
+  "ood_group_count": 300,
+  "ood_negative_within_split": true,
+  "ood_n2_same_product_type": true,
+  "review_sample": {
+    "N2": 100,
+    "N3": 100
+  },
+  "human_judgments_completed": 299,
+  "n3_target_colors": {
+    "green": 309,
+    "red": 354,
+    "yellow": 278,
+    "blue": 177
+  },
+  "id_review_images": {
+    "checked": 197,
+    "failures": 0
+  },
+  "ood_images": {
+    "checked": 300,
+    "failures": 0
+  },
+  "packages": {
+    "numpy": "2.3.5",
+    "onnxruntime": "1.31.0",
+    "tokenizers": "0.23.3",
+    "Pillow": "12.3.0",
+    "requests": "2.34.2"
+  },
+  "ui_dom_checks": [
+    "initial_render",
+    "type_filter",
+    "pagination",
+    "judgment_change",
+    "local_storage",
+    "CSV_export",
+    "JSON_export_restore",
+    "OOD_page_render"
+  ],
+  "browser_visual_check": "not performed; headless browser download unavailable",
+  "CSV_export_finalize_integration": "39 recheck records match embedded sample version and immutable fields; current 200 ID records validated by finalize_review; 100 N3 retained. Historical 260 reviews preserved.",
+  "review_stage": "RECHECK_COMPLETE_N2_ADJUDICATION_PENDING",
+  "upstream_commit": "d40b8f3495487c885947bac0a8be5f4df6a984e3",
+  "current_ID_review_records": 200,
+  "new_N2_recheck_records": 39,
+  "n3_split_updates": 108,
+  "upstream_structural_diagnostics": {
+    "N1": {
+      "rows": 3978,
+      "cross_split": 0,
+      "same_image": 0,
+      "positive_input_collision": 0,
+      "same_group": 0
+    },
+    "N2": {
+      "rows": 3977,
+      "cross_split": 0,
+      "same_image": 0,
+      "positive_input_collision": 0,
+      "same_group": 0
+    }
+  },
+  "residual_image_paths_across_splits": 2,
+  "ood_selection_rerun_identical": true
+}

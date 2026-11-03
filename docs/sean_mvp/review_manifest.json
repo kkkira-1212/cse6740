@@ -1,0 +1,14 @@
+{
+  "rows": 200,
+  "sample_by_type": {
+    "N2": 100,
+    "N3": 100
+  },
+  "upstream_commit": "d40b8f3495487c885947bac0a8be5f4df6a984e3",
+  "status": "REVIEW_COMPLETE_WITH_N2_ADJUDICATION_PENDING",
+  "sampling": "Original 100 N2 + 100 N3 source IDs; changed N2 inputs re-reviewed; unchanged image/text judgments reused",
+  "sample_csv_sha256": "b5a556e9550e7481bbec71cf65726016bcf930c011feb37c52e4bb3c5d4a4898",
+  "historical_offline_dataset_id": "a0da3ace6db6689fdd89",
+  "recheck_dataset_id": "6ae79afd34dd0bc3bf3b",
+  "note": "Old offline page belongs to bd3; only the 39-row recheck page belongs to d40b8f3."
+}
