@@ -52,13 +52,13 @@ python src/models/zero_shot_clip.py \
 Evaluate classification using a threshold selected on validation data:
 
 ```bash
-python data/releases/abo-home-v2-20261103/tools/evaluate.py \
+python src/eval/eval.py \
   --pairs-csv data/releases/abo-home-v2-20261103/pairs.csv \
   --scores-csv scores/abo_home_v2_clip_b32.csv \
   --bootstrap 1000
 ```
 
-The bundled evaluator accepts complete val+test scores without train scores. It reports Accuracy, AUC, balanced accuracy and per-negative-type/category recalls. The legacy three-way R@1 flag is disabled because v2 has one negative per anchor. Model inference requires checkpoint downloads and the documented environment; it was not rerun during dataset construction.
+The shared evaluator accepts complete val+test scores without train scores and clusters v2 bootstrap intervals by explicit image-anchor group. The ZIP also contains a frozen standalone classification evaluator with matching classification metrics. It reports Accuracy, AUC, balanced accuracy and per-negative-type/category recalls. The legacy three-way R@1 flag is disabled because v2 has one negative per anchor. Model inference requires checkpoint downloads and the documented environment; it was not rerun during dataset construction.
 
 ## Negative construction
 
@@ -92,7 +92,7 @@ The generator refuses to overwrite an existing release. Use `--resume-images` to
 
 The old [furniture pilot](docs/mini_version/README.md) contains 3,978 product records and uses image-swapped N1/N2 negatives. Its source tables, scores and human-review records are preserved. **Do not mix pilot scores, thresholds, pair-ID interpretations or API caches with v2.** In v2, the pair-ID prefix identifies the image anchor; title provenance is explicit in `text_item_id`.
 
-CLIP pilot scores are on main. [Aaron's shared evaluator PR #4](https://github.com/kkkira-1212/cse6740/pull/4) and [Jane's additional baseline PR #5](https://github.com/kkkira-1212/cse6740/pull/5) remain separate review work. The data release bundles a classification-only copy of Aaron's evaluator for immediate use. LoRA, full fine-tuning, API-judge results, shortcut controls and cross-time experiments are not completed by this release.
+[Aaron's shared evaluator PR #4](https://github.com/kkkira-1212/cse6740/pull/4) and [Jane's additional baseline PR #5](https://github.com/kkkira-1212/cse6740/pull/5) are merged with fixed-image v2 compatibility. Five models have historical pilot scores; there are no new v2 model-performance results. API resume keys bind exact inputs and prompts, and subset sampling preserves explicit image-anchor pairs. LoRA, full fine-tuning, API-judge results, shortcut controls and cross-time experiments remain outstanding.
 
 ## Repository guide
 

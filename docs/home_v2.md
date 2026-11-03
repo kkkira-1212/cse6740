@@ -42,6 +42,8 @@ python src/data/build_home_release.py \
 
 Existing releases are not overwritten. To finish/retry image verification without regenerating pairs, add `--resume-images`. Changing selection rules, seed or metadata requires a new release path/version. Raw images, image-embedded HTML, caches and API logs stay outside Git.
 
-## Relationship to pending PRs
+## Shared model and evaluation code
 
-This work does not merge or modify Aaron/Jane PRs. A copy of Aaron's PR #4 evaluator is bundled under release `tools/` for immediate classification use, with the legacy ranking flag explicitly disabled. Main repository evaluator consolidation, API-resume fixes, broader documentation cleanup and AI-attribution history changes remain separate work.
+Aaron PR #4 and Jane PR #5 are merged with v2 source/anchor compatibility. Prefer `src/eval/eval.py` in the repository for current classification evaluation; it uses explicit v2 source fields, image-anchor group bootstrap clusters and rejects legacy three-way R@1 on v2. Baseline subset sampling keeps v2 anchor pairs together, and API cache fingerprints include exact input/prompt contents.
+
+The data ZIP's standalone evaluator is a frozen snapshot from the data build, retained for independent use. Its classification metrics match the shared evaluator; its ranking flag is blocked. This immutable data ZIP does not contain subsequent main-branch changes. No new model inference or paid API result is included. Broader documentation cleanup and AI-attribution history changes remain separate work.
