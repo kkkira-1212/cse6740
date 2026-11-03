@@ -25,6 +25,8 @@
 - [docs/schema.md](docs/schema.md) 统一数据字段和分数文件格式(**WP0 已冻结**)
 - [docs/work-packages.md](docs/work-packages.md) 每人工作包详解
 - [docs/open-decisions.md](docs/open-decisions.md) 待组内拍板的事项与备选方案
+- [docs/environment_setup.md](docs/environment_setup.md) 虚拟环境安装和维护
+- [environment.yml](environment.yml) 虚拟环境dependencies
 - [CONTRIBUTING.md](CONTRIBUTING.md) 协作约定
 
 ## 目录
