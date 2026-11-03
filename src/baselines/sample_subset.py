@@ -76,7 +76,7 @@ def main():
         writer.writeheader()
         writer.writerows(subset)
 
-    print(f"wrote {len(subset)} pairs from {len(keep)} text items to {out}")
+    print(f"wrote {len(subset)} pairs from {len(keep)} source queries to {out}")
     print("neg_type counts:", dict(sorted(Counter(r["neg_type"] for r in subset).items())))
     print("split counts:", dict(sorted(Counter(r["split"] for r in subset).items())))
 
