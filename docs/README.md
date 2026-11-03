@@ -6,6 +6,7 @@
 - [Release quickstart and contract](../data/releases/abo-home-v2-20261103/README.md): data tables, images, scoring and classification evaluation.
 - [100-pair human-review batch](../data/reviews/abo-home-v2-20261103/README.md): review/download instructions and provenance.
 - [Generation configuration](../configs/abo_home_v2.json): the exact parameters used by the release builder.
+- [Experiment entry points and status](experiments.md): current scoring and evaluation interfaces, plus pending model PRs.
 - [Environment setup](environment_setup.md): the shared project environment.
 
 ## Historical pilot and planning
