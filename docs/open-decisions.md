@@ -1,3 +1,5 @@
+> **Historical pilot/planning document.** For current furniture/decor data, use the [v2 guide](home_v2.md) and [version-specific contract](../data/releases/abo-home-v2-20261103/README.md). Negative direction, allocation and pair-ID semantics differ.
+
 # 待组内拍板的事项与备选方案
 建议讨论顺序:先定 1(类别)和 2(N2),它们影响 WP1/WP2。
 

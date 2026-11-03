@@ -1,3 +1,5 @@
+> **Historical pilot/planning document.** For current furniture/decor data, use the [v2 guide](home_v2.md) and [version-specific contract](../data/releases/abo-home-v2-20261103/README.md). Negative direction, allocation and pair-ID semantics differ.
+
 # 统一数据格式(WP0 已冻结 —— 字段名不再改,如需改动请先在组里提出)
 
 ## pairs 表字段

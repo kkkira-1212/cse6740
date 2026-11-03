@@ -19,3 +19,6 @@ paper/*.log
 paper/*.out
 paper/*.bbl
 paper/*.blg
+
+# Images are distributed separately from versioned release tables.
+data/releases/*/images/

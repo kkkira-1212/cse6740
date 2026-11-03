@@ -1,6 +1,17 @@
-负责人:Kira(WP2 N1/N2)、Sean(WP3 N3 属性替换 + 假负例审查,WP10 OOD 测试集)。
+# Negative Construction and Review
 
-# Sean MVP (WP3 / WP10)
+## Current release
 
-See [docs/sean_mvp/README.md](../../docs/sean_mvp/README.md) for generated
-candidates, review instructions, reproduction commands, and remaining decisions.
+`src/data/build_home_release.py` is the canonical v2 orchestration entry point. It keeps images fixed, selects a different-type real title for N1 or same-type real title for N2, and reuses `build_n3.py` for conservative color substitutions. Pairing stays within splits and excludes the same near-duplicate group and existing positive-input conflicts.
+
+`build_n2_audit.py` provides versioned review fields, validation, rendering and summary helpers used by the release builder. Its standalone CLI also supports the earlier furniture-only exploratory audit; use the release builder for the expanded furniture/decor batch.
+
+## Preserved pilot/MVP utilities
+
+- `build_pairs.py`: legacy pilot image-swapped N1/N2 construction, including title-nearest-neighbor N2. Do not use it to regenerate v2.
+- `build_n3.py`: Sean's color-only candidate rules and audit trail.
+- `build_ood.py`, `minilm_onnx.py`: Sean's provisional OOD MVP.
+- `build_review.py`, `review_template.html`: original offline review tooling reused by v2.
+- `finalize_review.py`: original MVP N3 finalizer; use the v2 review package's summarizer for its new batch schema.
+
+See [current data rules](../../docs/home_v2.md), [v2 review instructions](../../data/reviews/abo-home-v2-20261103/README.md), and [original MVP records](../../docs/sean_mvp/README.md). Generated candidate labels are not automatically human-confirmed mismatches.

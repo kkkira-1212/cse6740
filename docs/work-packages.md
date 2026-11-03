@@ -1,3 +1,5 @@
+> **Historical pilot/planning document.** For current furniture/decor data, use the [v2 guide](home_v2.md) and [version-specific contract](../data/releases/abo-home-v2-20261103/README.md). Negative direction, allocation and pair-ID semantics differ.
+
 # 工作包详解
 
 每个工作包(WP):做什么 → 交什么 → 怎样算完成 → 依赖谁。标「建议」的内容尚未定,以 [open-decisions.md](open-decisions.md) 的结论为准。这一阶段不要求写完整流水线,先把每人的输入、输出、文件格式对齐。
