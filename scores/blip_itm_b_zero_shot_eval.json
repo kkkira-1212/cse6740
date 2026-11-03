@@ -1,0 +1,679 @@
+{
+  "tool": "src/eval/eval.py",
+  "pair_layout": "legacy_fixed_title",
+  "pairs_csv": "docs/mini_version/pairs.csv",
+  "scores_csv": "scores/blip_itm_b_zero_shot.csv",
+  "selection_split": "val",
+  "objective": "accuracy",
+  "rule": "score >= threshold",
+  "tie_break": "smallest threshold among maximum-accuracy candidates",
+  "threshold": 0.75372261,
+  "test_splits": [
+    "test"
+  ],
+  "input_sha256": {
+    "docs/mini_version/pairs.csv": "6f96f2814fa87c72c0f3e5fb3fec7dd23d6e1da625961a8c22b21f3b52041842",
+    "scores/blip_itm_b_zero_shot.csv": "0a01a1c69ca16c3bc1842f2ef3b66313f293e2d25c652bc995f44da87670947a"
+  },
+  "n_pairs": {
+    "before_exclusions": 11933,
+    "after_exclusions": 11788,
+    "n_scores": 2375,
+    "val": 1161,
+    "val_scored": 1161,
+    "test": 1188,
+    "test_scored": 1188,
+    "by_test_split": {
+      "test": 1188
+    }
+  },
+  "exclusions": {
+    "cross_split_image_paths": {
+      "small/87/874f86c4.jpg": [
+        "test",
+        "train",
+        "val"
+      ],
+      "small/35/3595924e.jpg": [
+        "test",
+        "train",
+        "val"
+      ]
+    },
+    "drop_cross_split_images": true,
+    "dropped": {
+      "cross_split_image": 145
+    },
+    "dropped_by_split": {
+      "cross_split_image": {
+        "train": 119,
+        "val": 18,
+        "test": 8
+      }
+    },
+    "exclude_pair_list": null,
+    "unknown_excluded_pair_ids": []
+  },
+  "bootstrap": {
+    "n_resamples": 1000,
+    "cluster": "text_source_item",
+    "seed": 0,
+    "overall": {
+      "accuracy": {
+        "low": 0.8254923487675053,
+        "high": 0.8623034757324226,
+        "valid_resamples": 1000
+      },
+      "auc": {
+        "low": 0.9061038642616761,
+        "high": 0.9309918539809346,
+        "valid_resamples": 1000
+      },
+      "positive_recall": {
+        "low": 0.8020304568527918,
+        "high": 0.8737373737373737,
+        "valid_resamples": 1000
+      },
+      "negative_recall": {
+        "low": 0.8236720231496628,
+        "high": 0.8699535949023653,
+        "valid_resamples": 1000
+      },
+      "balanced_accuracy": {
+        "low": 0.821155259318912,
+        "high": 0.8621217435769326,
+        "valid_resamples": 1000
+      },
+      "r_at_1": {
+        "low": 0.820761025606784,
+        "high": 0.8877622423015007,
+        "valid_resamples": 1000
+      }
+    },
+    "by_split": {
+      "test": {
+        "accuracy": {
+          "low": 0.8254923487675053,
+          "high": 0.8623034757324226,
+          "valid_resamples": 1000
+        },
+        "auc": {
+          "low": 0.9061038642616761,
+          "high": 0.9309918539809346,
+          "valid_resamples": 1000
+        },
+        "positive_recall": {
+          "low": 0.8020304568527918,
+          "high": 0.8737373737373737,
+          "valid_resamples": 1000
+        },
+        "negative_recall": {
+          "low": 0.8236720231496628,
+          "high": 0.8699535949023653,
+          "valid_resamples": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.821155259318912,
+          "high": 0.8621217435769326,
+          "valid_resamples": 1000
+        },
+        "r_at_1": {
+          "low": 0.820761025606784,
+          "high": 0.8877622423015007,
+          "valid_resamples": 1000
+        }
+      }
+    }
+  },
+  "val": {
+    "n": 1161,
+    "n_pos": 385,
+    "n_neg": 776,
+    "accuracy": 0.8656330749354005,
+    "auc": 0.9310382916053019,
+    "positive_recall": 0.8623376623376623,
+    "negative_recall": 0.8672680412371134,
+    "balanced_accuracy": 0.8648028517873878,
+    "negatives_by_type": {
+      "N1": {
+        "n": 390,
+        "recall": 0.9923076923076923
+      },
+      "N2": {
+        "n": 386,
+        "recall": 0.7409326424870466
+      }
+    },
+    "r_at_1": 0.88
+  },
+  "test": {
+    "n": 1188,
+    "n_pos": 395,
+    "n_neg": 793,
+    "accuracy": 0.8434343434343434,
+    "auc": 0.9184286558015547,
+    "positive_recall": 0.8379746835443038,
+    "negative_recall": 0.8461538461538461,
+    "balanced_accuracy": 0.842064264849075,
+    "negatives_by_type": {
+      "N1": {
+        "n": 396,
+        "recall": 0.9949494949494949
+      },
+      "N2": {
+        "n": 397,
+        "recall": 0.6977329974811083
+      }
+    },
+    "r_at_1": 0.8538461538461538
+  },
+  "test_by_split": {
+    "test": {
+      "n": 1188,
+      "n_pos": 395,
+      "n_neg": 793,
+      "accuracy": 0.8434343434343434,
+      "auc": 0.9184286558015547,
+      "positive_recall": 0.8379746835443038,
+      "negative_recall": 0.8461538461538461,
+      "balanced_accuracy": 0.842064264849075,
+      "negatives_by_type": {
+        "N1": {
+          "n": 396,
+          "recall": 0.9949494949494949
+        },
+        "N2": {
+          "n": 397,
+          "recall": 0.6977329974811083
+        }
+      },
+      "r_at_1": 0.8538461538461538
+    }
+  },
+  "groups": [
+    {
+      "dimension": "overall",
+      "value": "all",
+      "n": 1188,
+      "n_pos": 395,
+      "n_neg": 793,
+      "accuracy": 0.8434343434343434,
+      "auc": 0.9184286558015547,
+      "positive_recall": 0.8379746835443038,
+      "negative_recall": 0.8461538461538461,
+      "balanced_accuracy": 0.842064264849075,
+      "negatives_by_type": {
+        "N1": {
+          "n": 396,
+          "recall": 0.9949494949494949
+        },
+        "N2": {
+          "n": 397,
+          "recall": 0.6977329974811083
+        }
+      },
+      "r_at_1": 0.8538461538461538,
+      "ci": {
+        "accuracy": {
+          "low": 0.8254923487675053,
+          "high": 0.8623034757324226,
+          "valid_resamples": 1000
+        },
+        "auc": {
+          "low": 0.9061038642616761,
+          "high": 0.9309918539809346,
+          "valid_resamples": 1000
+        },
+        "positive_recall": {
+          "low": 0.8020304568527918,
+          "high": 0.8737373737373737,
+          "valid_resamples": 1000
+        },
+        "negative_recall": {
+          "low": 0.8236720231496628,
+          "high": 0.8699535949023653,
+          "valid_resamples": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.821155259318912,
+          "high": 0.8621217435769326,
+          "valid_resamples": 1000
+        },
+        "r_at_1": {
+          "low": 0.820761025606784,
+          "high": 0.8877622423015007,
+          "valid_resamples": 1000
+        }
+      }
+    },
+    {
+      "dimension": "split",
+      "value": "test",
+      "n": 1188,
+      "n_pos": 395,
+      "n_neg": 793,
+      "accuracy": 0.8434343434343434,
+      "auc": 0.9184286558015547,
+      "positive_recall": 0.8379746835443038,
+      "negative_recall": 0.8461538461538461,
+      "balanced_accuracy": 0.842064264849075,
+      "negatives_by_type": {
+        "N1": {
+          "n": 396,
+          "recall": 0.9949494949494949
+        },
+        "N2": {
+          "n": 397,
+          "recall": 0.6977329974811083
+        }
+      },
+      "r_at_1": 0.8538461538461538,
+      "ci": {
+        "accuracy": {
+          "low": 0.8254923487675053,
+          "high": 0.8623034757324226,
+          "valid_resamples": 1000
+        },
+        "auc": {
+          "low": 0.9061038642616761,
+          "high": 0.9309918539809346,
+          "valid_resamples": 1000
+        },
+        "positive_recall": {
+          "low": 0.8020304568527918,
+          "high": 0.8737373737373737,
+          "valid_resamples": 1000
+        },
+        "negative_recall": {
+          "low": 0.8236720231496628,
+          "high": 0.8699535949023653,
+          "valid_resamples": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.821155259318912,
+          "high": 0.8621217435769326,
+          "valid_resamples": 1000
+        },
+        "r_at_1": {
+          "low": 0.820761025606784,
+          "high": 0.8877622423015007,
+          "valid_resamples": 1000
+        }
+      }
+    },
+    {
+      "dimension": "neg_type",
+      "value": "N1",
+      "n": 396,
+      "n_pos": 0,
+      "n_neg": 396,
+      "accuracy": 0.9949494949494949,
+      "auc": null,
+      "positive_recall": null,
+      "negative_recall": 0.9949494949494949,
+      "balanced_accuracy": null,
+      "negatives_by_type": {
+        "N1": {
+          "n": 396,
+          "recall": 0.9949494949494949
+        }
+      },
+      "r_at_1": null
+    },
+    {
+      "dimension": "neg_type",
+      "value": "N2",
+      "n": 397,
+      "n_pos": 0,
+      "n_neg": 397,
+      "accuracy": 0.6977329974811083,
+      "auc": null,
+      "positive_recall": null,
+      "negative_recall": 0.6977329974811083,
+      "balanced_accuracy": null,
+      "negatives_by_type": {
+        "N2": {
+          "n": 397,
+          "recall": 0.6977329974811083
+        }
+      },
+      "r_at_1": null
+    },
+    {
+      "dimension": "neg_type",
+      "value": "pos",
+      "n": 395,
+      "n_pos": 395,
+      "n_neg": 0,
+      "accuracy": 0.8379746835443038,
+      "auc": null,
+      "positive_recall": 0.8379746835443038,
+      "negative_recall": null,
+      "balanced_accuracy": null,
+      "negatives_by_type": {},
+      "r_at_1": null
+    },
+    {
+      "dimension": "category",
+      "value": "AV_FURNITURE",
+      "n": 2,
+      "n_pos": 1,
+      "n_neg": 1,
+      "accuracy": 1.0,
+      "auc": 1.0,
+      "positive_recall": 1.0,
+      "negative_recall": 1.0,
+      "balanced_accuracy": 1.0,
+      "negatives_by_type": {
+        "N1": {
+          "n": 1,
+          "recall": 1.0
+        }
+      },
+      "r_at_1": null
+    },
+    {
+      "dimension": "category",
+      "value": "BED",
+      "n": 60,
+      "n_pos": 20,
+      "n_neg": 40,
+      "accuracy": 0.8666666666666667,
+      "auc": 0.92625,
+      "positive_recall": 0.7,
+      "negative_recall": 0.95,
+      "balanced_accuracy": 0.825,
+      "negatives_by_type": {
+        "N1": {
+          "n": 20,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 20,
+          "recall": 0.9
+        }
+      },
+      "r_at_1": 0.8
+    },
+    {
+      "dimension": "category",
+      "value": "BED_FRAME",
+      "n": 4,
+      "n_pos": 1,
+      "n_neg": 3,
+      "accuracy": 0.75,
+      "auc": 1.0,
+      "positive_recall": 1.0,
+      "negative_recall": 0.6666666666666666,
+      "balanced_accuracy": 0.8333333333333333,
+      "negatives_by_type": {
+        "N1": {
+          "n": 2,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 1,
+          "recall": 0.0
+        }
+      },
+      "r_at_1": null
+    },
+    {
+      "dimension": "category",
+      "value": "BENCH",
+      "n": 24,
+      "n_pos": 8,
+      "n_neg": 16,
+      "accuracy": 0.75,
+      "auc": 0.890625,
+      "positive_recall": 0.75,
+      "negative_recall": 0.75,
+      "balanced_accuracy": 0.75,
+      "negatives_by_type": {
+        "N1": {
+          "n": 8,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 8,
+          "recall": 0.5
+        }
+      },
+      "r_at_1": 0.75
+    },
+    {
+      "dimension": "category",
+      "value": "CABINET",
+      "n": 15,
+      "n_pos": 5,
+      "n_neg": 10,
+      "accuracy": 1.0,
+      "auc": 1.0,
+      "positive_recall": 1.0,
+      "negative_recall": 1.0,
+      "balanced_accuracy": 1.0,
+      "negatives_by_type": {
+        "N1": {
+          "n": 5,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 5,
+          "recall": 1.0
+        }
+      },
+      "r_at_1": 1.0
+    },
+    {
+      "dimension": "category",
+      "value": "CHAIR",
+      "n": 401,
+      "n_pos": 134,
+      "n_neg": 267,
+      "accuracy": 0.8653366583541147,
+      "auc": 0.9276370954217676,
+      "positive_recall": 0.9104477611940298,
+      "negative_recall": 0.8426966292134831,
+      "balanced_accuracy": 0.8765721952037564,
+      "negatives_by_type": {
+        "N1": {
+          "n": 132,
+          "recall": 0.9924242424242424
+        },
+        "N2": {
+          "n": 135,
+          "recall": 0.6962962962962963
+        }
+      },
+      "r_at_1": 0.8702290076335878
+    },
+    {
+      "dimension": "category",
+      "value": "DESK",
+      "n": 18,
+      "n_pos": 6,
+      "n_neg": 12,
+      "accuracy": 0.9444444444444444,
+      "auc": 1.0,
+      "positive_recall": 0.8333333333333334,
+      "negative_recall": 1.0,
+      "balanced_accuracy": 0.9166666666666667,
+      "negatives_by_type": {
+        "N1": {
+          "n": 6,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 6,
+          "recall": 1.0
+        }
+      },
+      "r_at_1": 1.0
+    },
+    {
+      "dimension": "category",
+      "value": "DRESSER",
+      "n": 6,
+      "n_pos": 2,
+      "n_neg": 4,
+      "accuracy": 1.0,
+      "auc": 1.0,
+      "positive_recall": 1.0,
+      "negative_recall": 1.0,
+      "balanced_accuracy": 1.0,
+      "negatives_by_type": {
+        "N1": {
+          "n": 2,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 2,
+          "recall": 1.0
+        }
+      },
+      "r_at_1": 1.0
+    },
+    {
+      "dimension": "category",
+      "value": "HEADBOARD",
+      "n": 57,
+      "n_pos": 19,
+      "n_neg": 38,
+      "accuracy": 0.7894736842105263,
+      "auc": 0.9127423822714682,
+      "positive_recall": 0.6842105263157895,
+      "negative_recall": 0.8421052631578947,
+      "balanced_accuracy": 0.763157894736842,
+      "negatives_by_type": {
+        "N1": {
+          "n": 19,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 19,
+          "recall": 0.6842105263157895
+        }
+      },
+      "r_at_1": 1.0
+    },
+    {
+      "dimension": "category",
+      "value": "OTTOMAN",
+      "n": 86,
+      "n_pos": 28,
+      "n_neg": 58,
+      "accuracy": 0.8488372093023255,
+      "auc": 0.9433497536945813,
+      "positive_recall": 0.8928571428571429,
+      "negative_recall": 0.8275862068965517,
+      "balanced_accuracy": 0.8602216748768473,
+      "negatives_by_type": {
+        "N1": {
+          "n": 29,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 29,
+          "recall": 0.6551724137931034
+        }
+      },
+      "r_at_1": 0.8571428571428571
+    },
+    {
+      "dimension": "category",
+      "value": "SHELF",
+      "n": 39,
+      "n_pos": 13,
+      "n_neg": 26,
+      "accuracy": 0.8717948717948718,
+      "auc": 0.9053254437869822,
+      "positive_recall": 0.7692307692307693,
+      "negative_recall": 0.9230769230769231,
+      "balanced_accuracy": 0.8461538461538463,
+      "negatives_by_type": {
+        "N1": {
+          "n": 13,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 13,
+          "recall": 0.8461538461538461
+        }
+      },
+      "r_at_1": 0.7692307692307693
+    },
+    {
+      "dimension": "category",
+      "value": "SOFA",
+      "n": 252,
+      "n_pos": 84,
+      "n_neg": 168,
+      "accuracy": 0.7777777777777778,
+      "auc": 0.8670634920634921,
+      "positive_recall": 0.7619047619047619,
+      "negative_recall": 0.7857142857142857,
+      "balanced_accuracy": 0.7738095238095237,
+      "negatives_by_type": {
+        "N1": {
+          "n": 84,
+          "recall": 0.9880952380952381
+        },
+        "N2": {
+          "n": 84,
+          "recall": 0.5833333333333334
+        }
+      },
+      "r_at_1": 0.7619047619047619
+    },
+    {
+      "dimension": "category",
+      "value": "STOOL_SEATING",
+      "n": 65,
+      "n_pos": 21,
+      "n_neg": 44,
+      "accuracy": 0.8615384615384616,
+      "auc": 0.9339826839826839,
+      "positive_recall": 0.9047619047619048,
+      "negative_recall": 0.8409090909090909,
+      "balanced_accuracy": 0.8728354978354979,
+      "negatives_by_type": {
+        "N1": {
+          "n": 22,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 22,
+          "recall": 0.6818181818181818
+        }
+      },
+      "r_at_1": 0.9523809523809523
+    },
+    {
+      "dimension": "category",
+      "value": "TABLE",
+      "n": 159,
+      "n_pos": 53,
+      "n_neg": 106,
+      "accuracy": 0.8679245283018868,
+      "auc": 0.9231043075827696,
+      "positive_recall": 0.8301886792452831,
+      "negative_recall": 0.8867924528301887,
+      "balanced_accuracy": 0.8584905660377359,
+      "negatives_by_type": {
+        "N1": {
+          "n": 53,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 53,
+          "recall": 0.7735849056603774
+        }
+      },
+      "r_at_1": 0.8867924528301887
+    }
+  ],
+  "notes": [
+    "Dropped 145 pairs using cross-split image paths.",
+    "No non-empty year values in the selected test split(s); year grouping omitted."
+  ]
+}
