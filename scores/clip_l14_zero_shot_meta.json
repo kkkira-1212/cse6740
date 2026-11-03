@@ -1,0 +1,18 @@
+{
+  "model_key": "clip-l14",
+  "hf_id": "openai/clip-vit-large-patch14",
+  "revision": "main",
+  "family": "dual",
+  "score": "cosine similarity",
+  "n_params": 427616513,
+  "device": "mps",
+  "seconds": 204.0,
+  "pairs_csv": "docs/mini_version/pairs.csv",
+  "splits": [
+    "val",
+    "test"
+  ],
+  "n_pairs": 2375,
+  "torch": "2.14.1",
+  "transformers": "5.21.0"
+}
