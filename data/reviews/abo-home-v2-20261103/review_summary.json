@@ -1,0 +1,121 @@
+{
+  "overall": {
+    "n": 100,
+    "counts": {
+      "match": 1,
+      "mismatch": 94,
+      "uncertain": 5
+    },
+    "determinate": 95,
+    "match_flag_rate": 0.010526315789473684,
+    "uncertain_rate": 0.05,
+    "note": "Reviewer judgments, not independently adjudicated ground truth."
+  },
+  "by_product_type": {
+    "CHAIR": {
+      "n": 21,
+      "counts": {
+        "mismatch": 21
+      },
+      "determinate": 21,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "HOME": {
+      "n": 3,
+      "counts": {
+        "mismatch": 3
+      },
+      "determinate": 3,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "HOME_FURNITURE_AND_DECOR": {
+      "n": 7,
+      "counts": {
+        "mismatch": 6,
+        "uncertain": 1
+      },
+      "determinate": 6,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.14285714285714285,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "OTTOMAN": {
+      "n": 5,
+      "counts": {
+        "mismatch": 5
+      },
+      "determinate": 5,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "PILLOW": {
+      "n": 4,
+      "counts": {
+        "mismatch": 4
+      },
+      "determinate": 4,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "RUG": {
+      "n": 19,
+      "counts": {
+        "match": 1,
+        "mismatch": 16,
+        "uncertain": 2
+      },
+      "determinate": 17,
+      "match_flag_rate": 0.058823529411764705,
+      "uncertain_rate": 0.10526315789473684,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "SOFA": {
+      "n": 10,
+      "counts": {
+        "mismatch": 10
+      },
+      "determinate": 10,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "STOOL_SEATING": {
+      "n": 5,
+      "counts": {
+        "mismatch": 4,
+        "uncertain": 1
+      },
+      "determinate": 4,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.2,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "TABLE": {
+      "n": 13,
+      "counts": {
+        "mismatch": 12,
+        "uncertain": 1
+      },
+      "determinate": 12,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.07692307692307693,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    },
+    "WALL_ART": {
+      "n": 13,
+      "counts": {
+        "mismatch": 13
+      },
+      "determinate": 13,
+      "match_flag_rate": 0.0,
+      "uncertain_rate": 0.0,
+      "note": "Reviewer judgments, not independently adjudicated ground truth."
+    }
+  }
+}

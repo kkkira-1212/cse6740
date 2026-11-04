@@ -1,0 +1,74 @@
+{
+  "version": "n3-reciprocal-dev-v1",
+  "status": "UNREVIEWED_DEVELOPMENT_CANDIDATES",
+  "source_commit": "32b552c0aa20bdf026403b8ebf29e277c3ca68c6",
+  "seed": 20261104,
+  "min_context_similarity": 0.45,
+  "eligible": 663,
+  "unmatched": 579,
+  "skips": {
+    "not_in_raw_checked_ledger": 2309,
+    "unparsed_color_modifier": 20
+  },
+  "candidates": 84,
+  "review_rows": 80,
+  "by_split": {
+    "train": 80,
+    "val": 4
+  },
+  "train_review_by_category": {
+    "CHAIR": 24,
+    "HOME_FURNITURE_AND_DECOR": 4,
+    "OTTOMAN": 2,
+    "PILLOW": 4,
+    "RUG": 24,
+    "SOFA": 2,
+    "STOOL_SEATING": 8,
+    "TABLE": 12
+  },
+  "color_counts": {
+    "source": {
+      "grey": 18,
+      "green": 4,
+      "blue": 6,
+      "ivory": 6,
+      "silver": 2,
+      "white": 11,
+      "black": 7,
+      "red": 5,
+      "gray": 2,
+      "beige": 11,
+      "navy": 4,
+      "brown": 1,
+      "cream": 3,
+      "tan": 1,
+      "orange": 1,
+      "purple": 1,
+      "yellow": 1
+    },
+    "target": {
+      "green": 4,
+      "grey": 18,
+      "ivory": 6,
+      "blue": 6,
+      "silver": 2,
+      "white": 11,
+      "black": 7,
+      "red": 5,
+      "beige": 11,
+      "gray": 2,
+      "navy": 4,
+      "brown": 1,
+      "cream": 3,
+      "tan": 1,
+      "orange": 1,
+      "purple": 1,
+      "yellow": 1
+    }
+  },
+  "note": "No test candidates generated. Color token balance does not guarantee absence of contextual text shortcuts. Human judgments pending.",
+  "input_sha256": {
+    "items.csv": "c2a205478ab359d0e6755482fb2f794cc2bc913f28804f117977d83e24c914ae",
+    "n3_audit.csv": "a1e6fba9023a31971cb35d3da788588912e8f48ee29f217d43b0dccbb3902431"
+  }
+}

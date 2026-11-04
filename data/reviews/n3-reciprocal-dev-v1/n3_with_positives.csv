@@ -1,0 +1,169 @@
+pair_id,anchor_item_id,image_path,text,label,neg_type,split,category
+B07B78LXYF_pos,B07B78LXYF,small/dd/dd24653f.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Room Kitchen Chairs, Set of 2, Grey",1,pos,train,CHAIR
+B07B78LXYF_N3R,B07B78LXYF,small/dd/dd24653f.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Room Kitchen Chairs, Set of 2, Green",0,N3R,train,CHAIR
+B07B7B9FH8_pos,B07B7B9FH8,small/e7/e7cabcf3.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Kitchen Chairs, Set of 2, Green",1,pos,train,CHAIR
+B07B7B9FH8_N3R,B07B7B9FH8,small/e7/e7cabcf3.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Kitchen Chairs, Set of 2, Grey",0,N3R,train,CHAIR
+B07B4ZLFYJ_pos,B07B4ZLFYJ,small/8f/8f01868d.jpg,"Amazon Brand – Rivet Modern Geometric Runner Rug, 2' 6"" x 8', Blue",1,pos,train,RUG
+B07B4ZLFYJ_N3R,B07B4ZLFYJ,small/8f/8f01868d.jpg,"Amazon Brand – Rivet Modern Geometric Runner Rug, 2' 6"" x 8', Ivory",0,N3R,train,RUG
+B07B515PZR_pos,B07B515PZR,small/cd/cd8deb28.jpg,"Amazon Brand – Rivet Modern Medallion Runner Rug, 7' 6"" x 2' 3"", Fringed, Ivory",1,pos,train,RUG
+B07B515PZR_N3R,B07B515PZR,small/cd/cd8deb28.jpg,"Amazon Brand – Rivet Modern Medallion Runner Rug, 7' 6"" x 2' 3"", Fringed, Blue",0,N3R,train,RUG
+B07QFRSG35_pos,B07QFRSG35,small/87/87cb1379.jpg,"Amazon Brand – Rivet Modern Foam-Padded Dining Chair, Set of 2, 35.25""H, Blue",1,pos,train,CHAIR
+B07QFRSG35_N3R,B07QFRSG35,small/87/87cb1379.jpg,"Amazon Brand – Rivet Modern Foam-Padded Dining Chair, Set of 2, 35.25""H, Silver",0,N3R,train,CHAIR
+B0853L3W72_pos,B0853L3W72,small/a6/a66c5c3d.jpg,"Amazon Brand – Rivet Logan Mid-Century Modern Dining Chair, Set of 2, 20.1""W, Silver",1,pos,train,CHAIR
+B0853L3W72_N3R,B0853L3W72,small/a6/a66c5c3d.jpg,"Amazon Brand – Rivet Logan Mid-Century Modern Dining Chair, Set of 2, 20.1""W, Blue",0,N3R,train,CHAIR
+B07DBDPMRS_pos,B07DBDPMRS,small/46/46e68dc4.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Leg Console Entry Table, 47.2""W, Grey",1,pos,train,TABLE
+B07DBDPMRS_N3R,B07DBDPMRS,small/46/46e68dc4.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Leg Console Entry Table, 47.2""W, White",0,N3R,train,TABLE
+B07DBDZMSS_pos,B07DBDZMSS,small/fc/fc4b0af6.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Leg Side Table, 20""W, White",1,pos,train,TABLE
+B07DBDZMSS_N3R,B07DBDZMSS,small/fc/fc4b0af6.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Leg Side Table, 20""W, Grey",0,N3R,train,TABLE
+B07DBFG16Z_pos,B07DBFG16Z,small/ec/eca098bf.jpg,"Amazon Brand – Ravenna Home Anne Marie Wood Round Shelf Storage Curved Leg Entry Table, 36""W, White",1,pos,train,TABLE
+B07DBFG16Z_N3R,B07DBFG16Z,small/ec/eca098bf.jpg,"Amazon Brand – Ravenna Home Anne Marie Wood Round Shelf Storage Curved Leg Entry Table, 36""W, Black",0,N3R,train,TABLE
+B07F3Y9BSC_pos,B07F3Y9BSC,small/61/61496122.jpg,"Amazon Brand – Ravenna Home Anne Marie Round Wood Shelf Storage Curved Leg Entry Console Table, 48""W, Black",1,pos,train,TABLE
+B07F3Y9BSC_N3R,B07F3Y9BSC,small/61/61496122.jpg,"Amazon Brand – Ravenna Home Anne Marie Round Wood Shelf Storage Curved Leg Entry Console Table, 48""W, White",0,N3R,train,TABLE
+B0732DWG63_pos,B0732DWG63,small/14/14e74f96.jpg,"Amazon Brand – Stone & Beam Contemporary Distressed Vintage Area Rug, 5 x 8 Foot, Blue",1,pos,train,RUG
+B0732DWG63_N3R,B0732DWG63,small/14/14e74f96.jpg,"Amazon Brand – Stone & Beam Contemporary Distressed Vintage Area Rug, 5 x 8 Foot, Ivory",0,N3R,train,RUG
+B07HSHMQ4Q_pos,B07HSHMQ4Q,small/f8/f8dde21d.jpg,"Amazon Brand – Stone & Beam Modern Vintage-Look Area Rug, 5 x 8 Foot, Ivory",1,pos,train,RUG
+B07HSHMQ4Q_N3R,B07HSHMQ4Q,small/f8/f8dde21d.jpg,"Amazon Brand – Stone & Beam Modern Vintage-Look Area Rug, 5 x 8 Foot, Blue",0,N3R,train,RUG
+B075YN3HPQ_pos,B075YN3HPQ,small/89/894c9aba.jpg,"Amazon Brand – Rivet Brianna Mid-Century Modern Kitchen Dining Room Set of 2 Removable Cushion Chairs, 34.2 Inch Height, Grey",1,pos,train,CHAIR
+B075YN3HPQ_N3R,B075YN3HPQ,small/89/894c9aba.jpg,"Amazon Brand – Rivet Brianna Mid-Century Modern Kitchen Dining Room Set of 2 Removable Cushion Chairs, 34.2 Inch Height, Red",0,N3R,train,CHAIR
+B075YPTG6M_pos,B075YPTG6M,small/5b/5b415b9d.jpg,"Amazon Brand – Rivet Brianna Mid-Century 2-Pack Removable Cushion Chairs, 34.2""H, Red",1,pos,train,CHAIR
+B075YPTG6M_N3R,B075YPTG6M,small/5b/5b415b9d.jpg,"Amazon Brand – Rivet Brianna Mid-Century 2-Pack Removable Cushion Chairs, 34.2""H, Grey",0,N3R,train,CHAIR
+B07QL9RTFQ_pos,B07QL9RTFQ,small/51/51f3427e.jpg,AmazonBasics Low-Back Task Chair with Swivel Casters - Black (Renewed),1,pos,train,CHAIR
+B07QL9RTFQ_N3R,B07QL9RTFQ,small/51/51f3427e.jpg,AmazonBasics Low-Back Task Chair with Swivel Casters - Green (Renewed),0,N3R,train,CHAIR
+B07W2VRFSW_pos,B07W2VRFSW,small/4d/4d07e810.jpg,AmazonBasics Low-Back Computer Task Office Desk Chair with Swivel Casters - Green (Renewed),1,pos,train,CHAIR
+B07W2VRFSW_N3R,B07W2VRFSW,small/4d/4d07e810.jpg,AmazonBasics Low-Back Computer Task Office Desk Chair with Swivel Casters - Black (Renewed),0,N3R,train,CHAIR
+B084MLZCXZ_pos,B084MLZCXZ,small/55/55f573b7.jpg,"Amazon Brand – Ravenna Home Classic Coffee Table with Storage Drawers, 42""W, Blue",1,pos,train,TABLE
+B084MLZCXZ_N3R,B084MLZCXZ,small/55/55f573b7.jpg,"Amazon Brand – Ravenna Home Classic Coffee Table with Storage Drawers, 42""W, White",0,N3R,train,TABLE
+B084MMGCWB_pos,B084MMGCWB,small/fa/fa83ed4a.jpg,"Amazon Brand – Ravenna Home Classic Coffee Table, 42""W, White",1,pos,train,TABLE
+B084MMGCWB_N3R,B084MMGCWB,small/fa/fa83ed4a.jpg,"Amazon Brand – Ravenna Home Classic Coffee Table, 42""W, Blue",0,N3R,train,TABLE
+B07GNCVKSG_pos,B07GNCVKSG,small/69/6982fbc0.jpg,"Pioneer Square BT3503-24-WH Counter Stool, 24"", White",1,pos,train,STOOL_SEATING
+B07GNCVKSG_N3R,B07GNCVKSG,small/69/6982fbc0.jpg,"Pioneer Square BT3503-24-WH Counter Stool, 24"", Silver",0,N3R,train,STOOL_SEATING
+B07GPF4GDL_pos,B07GPF4GDL,small/29/297ec6ab.jpg,"Pioneer Square BT3503-24-SI Counter Stool, 24"", Silver",1,pos,train,STOOL_SEATING
+B07GPF4GDL_N3R,B07GPF4GDL,small/29/297ec6ab.jpg,"Pioneer Square BT3503-24-SI Counter Stool, 24"", White",0,N3R,train,STOOL_SEATING
+B07QF9Y248_pos,B07QF9Y248,small/e7/e7fe9fc4.jpg,"Amazon Brand – Rivet Modern Upholstered Swivel Office Chair, 25""W, Gray",1,pos,train,CHAIR
+B07QF9Y248_N3R,B07QF9Y248,small/e7/e7fe9fc4.jpg,"Amazon Brand – Rivet Modern Upholstered Swivel Office Chair, 25""W, Beige",0,N3R,train,CHAIR
+B082BL45ZV_pos,B082BL45ZV,small/1d/1dc1ab63.jpg,"Amazon Brand – Rivet Modern Upholstered Swivel Home Office Task Chair, 25.5""W, Beige with Nickel Finish",1,pos,train,CHAIR
+B082BL45ZV_N3R,B082BL45ZV,small/1d/1dc1ab63.jpg,"Amazon Brand – Rivet Modern Upholstered Swivel Home Office Task Chair, 25.5""W, Gray with Nickel Finish",0,N3R,train,CHAIR
+B07JLGC7XN_pos,B07JLGC7XN,small/2f/2f887c9b.jpg,"Amazon Brand – Stone & Beam Classic Global Throw Pillow - 20 x 20 Inch, Red",1,pos,train,PILLOW
+B07JLGC7XN_N3R,B07JLGC7XN,small/2f/2f887c9b.jpg,"Amazon Brand – Stone & Beam Classic Global Throw Pillow - 20 x 20 Inch, Navy",0,N3R,train,PILLOW
+B07JXDPKBR_pos,B07JXDPKBR,small/4a/4a0a7288.jpg,"Amazon Brand – Stone & Beam Global Stripe Throw Pillow - 17 x 17 Inch, Navy",1,pos,train,PILLOW
+B07JXDPKBR_N3R,B07JXDPKBR,small/4a/4a0a7288.jpg,"Amazon Brand – Stone & Beam Global Stripe Throw Pillow - 17 x 17 Inch, Red",0,N3R,train,PILLOW
+B07GZMSRNF_pos,B07GZMSRNF,small/06/066df1d8.jpg,"First Hill Damara Wood Storage Ottoman Bench with Open Bottom and Faux-Leather Upholstery, Earthy Red",1,pos,train,OTTOMAN
+B07GZMSRNF_N3R,B07GZMSRNF,small/06/066df1d8.jpg,"First Hill Damara Wood Storage Ottoman Bench with Open Bottom and Faux-Leather Upholstery, Earthy Black",0,N3R,train,OTTOMAN
+B07GZW9PKJ_pos,B07GZW9PKJ,small/1d/1dae7b43.jpg,"First Hill Damara Wood Storage Ottoman Bench with Open Bottom and Faux-Leather Upholstery, Jet Black",1,pos,train,OTTOMAN
+B07GZW9PKJ_N3R,B07GZW9PKJ,small/1d/1dae7b43.jpg,"First Hill Damara Wood Storage Ottoman Bench with Open Bottom and Faux-Leather Upholstery, Jet Red",0,N3R,train,OTTOMAN
+B0723DGVR1_pos,B0723DGVR1,small/01/01ca3a73.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Area Rug, 7'6"" x 9'6"", Navy",1,pos,train,RUG
+B0723DGVR1_N3R,B0723DGVR1,small/01/01ca3a73.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Area Rug, 7'6"" x 9'6"", Beige",0,N3R,train,RUG
+B072LY33XR_pos,B072LY33XR,small/a7/a7981cfa.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Area Rug, 8 x 11 Foot, Beige",1,pos,train,RUG
+B072LY33XR_N3R,B072LY33XR,small/a7/a7981cfa.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Area Rug, 8 x 11 Foot, Navy",0,N3R,train,RUG
+B071FJZVPH_pos,B071FJZVPH,small/e1/e1e606da.jpg,"Amazon Brand – Rivet Modern Wave Cosmopolitan Area Rug, 8 x 10 Foot, Beige",1,pos,train,RUG
+B071FJZVPH_N3R,B071FJZVPH,small/e1/e1e606da.jpg,"Amazon Brand – Rivet Modern Wave Cosmopolitan Area Rug, 8 x 10 Foot, Green",0,N3R,train,RUG
+B07B519XQP_pos,B07B519XQP,small/9c/9c406b58.jpg,"Amazon Brand – Rivet Modern Geometric Area Rug, 4 x 6 Foot, Green",1,pos,train,RUG
+B07B519XQP_N3R,B07B519XQP,small/9c/9c406b58.jpg,"Amazon Brand – Rivet Modern Geometric Area Rug, 4 x 6 Foot, Beige",0,N3R,train,RUG
+B07DBDPMWN_pos,B07DBDPMWN,small/37/37ee7b65.jpg,"Amazon Brand – Ravenna Home Naomi 3-Drawer Storage End Table Nightstand, 17.7""W, Grey",1,pos,train,TABLE
+B07DBDPMWN_N3R,B07DBDPMWN,small/37/37ee7b65.jpg,"Amazon Brand – Ravenna Home Naomi 3-Drawer Storage End Table Nightstand, 17.7""W, White",0,N3R,train,TABLE
+B07DBDZC9N_pos,B07DBDZC9N,small/be/befccc09.jpg,"Amazon Brand – Ravenna Home Naomi 3-Drawer Storage Side End Table Nightstand, 17.7""W, White",1,pos,train,TABLE
+B07DBDZC9N_N3R,B07DBDZC9N,small/be/befccc09.jpg,"Amazon Brand – Ravenna Home Naomi 3-Drawer Storage Side End Table Nightstand, 17.7""W, Grey",0,N3R,train,TABLE
+B07DBF3VHW_pos,B07DBF3VHW,small/ce/ce702c54.jpg,"Amazon Brand – Ravenna Home Westly Corner Glass Storage TV Media Entertainment Cabinet Stand, 52""W, White",1,pos,train,HOME_FURNITURE_AND_DECOR
+B07DBF3VHW_N3R,B07DBF3VHW,small/ce/ce702c54.jpg,"Amazon Brand – Ravenna Home Westly Corner Glass Storage TV Media Entertainment Cabinet Stand, 52""W, Grey",0,N3R,train,HOME_FURNITURE_AND_DECOR
+B07DBFWCQ3_pos,B07DBFWCQ3,small/6c/6cd492e1.jpg,"Amazon Brand – Ravenna Home Westly Corner Glass Cabinet Storage TV Media Entertainment Stand, 52""W, Grey",1,pos,train,HOME_FURNITURE_AND_DECOR
+B07DBFWCQ3_N3R,B07DBFWCQ3,small/6c/6cd492e1.jpg,"Amazon Brand – Ravenna Home Westly Corner Glass Cabinet Storage TV Media Entertainment Stand, 52""W, White",0,N3R,train,HOME_FURNITURE_AND_DECOR
+B07B7B1HCM_pos,B07B7B1HCM,small/fa/fae3d857.jpg,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Counter Stool, 39""H, Grey",1,pos,train,STOOL_SEATING
+B07B7B1HCM_N3R,B07B7B1HCM,small/fa/fae3d857.jpg,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Counter Stool, 39""H, Beige",0,N3R,train,STOOL_SEATING
+B07QDNRB9M_pos,B07QDNRB9M,small/24/24835fea.jpg,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Counter Stool, 39""H, Beige",1,pos,train,STOOL_SEATING
+B07QDNRB9M_N3R,B07QDNRB9M,small/24/24835fea.jpg,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Counter Stool, 39""H, Grey",0,N3R,train,STOOL_SEATING
+B07DBGHXWQ_pos,B07DBGHXWQ,small/37/3750a6a1.jpg,"Amazon Brand – Ravenna Home English Rolled Arm Nailhead Trim Accent Chair, 29""W, Beige",1,pos,train,CHAIR
+B07DBGHXWQ_N3R,B07DBGHXWQ,small/37/3750a6a1.jpg,"Amazon Brand – Ravenna Home English Rolled Arm Nailhead Trim Accent Chair, 29""W, Gray",0,N3R,train,CHAIR
+B07DBGJ4XZ_pos,B07DBGJ4XZ,small/b1/b1ad9750.jpg,"Amazon Brand – Ravenna Home Valmay Wingback Nailhead Trim Accent Chair, 28""W, Gray",1,pos,train,CHAIR
+B07DBGJ4XZ_N3R,B07DBGJ4XZ,small/b1/b1ad9750.jpg,"Amazon Brand – Ravenna Home Valmay Wingback Nailhead Trim Accent Chair, 28""W, Beige",0,N3R,train,CHAIR
+B071LQHVQ8_pos,B071LQHVQ8,small/3f/3f694445.jpg,"Amazon Brand – Rivet Woven Bordered Sisal Area Rug, 5 x 7 Foot, Ivory",1,pos,train,RUG
+B071LQHVQ8_N3R,B071LQHVQ8,small/3f/3f694445.jpg,"Amazon Brand – Rivet Woven Bordered Sisal Area Rug, 5 x 7 Foot, Grey",0,N3R,train,RUG
+B072FRNXPN_pos,B072FRNXPN,small/85/85839548.jpg,"Amazon Brand – Rivet Woven Bordered Sisal Area Rug, 8 x 10 Foot, Grey",1,pos,train,RUG
+B072FRNXPN_N3R,B072FRNXPN,small/85/85839548.jpg,"Amazon Brand – Rivet Woven Bordered Sisal Area Rug, 8 x 10 Foot, Ivory",0,N3R,train,RUG
+B085FJPW9M_pos,B085FJPW9M,small/a5/a5e741a0.jpg,"Ravenna Home Breckenridge Upholstered Rocking Recliner Chair with Swivel, 37""W, Beige",1,pos,train,CHAIR
+B085FJPW9M_N3R,B085FJPW9M,small/a5/a5e741a0.jpg,"Ravenna Home Breckenridge Upholstered Rocking Recliner Chair with Swivel, 37""W, Grey",0,N3R,train,CHAIR
+B085FJR497_pos,B085FJR497,small/36/369c2f4c.jpg,"Ravenna Home Viewridge Upholstered Rocking Recliner Chair, 42""W, Grey",1,pos,train,CHAIR
+B085FJR497_N3R,B085FJR497,small/36/369c2f4c.jpg,"Ravenna Home Viewridge Upholstered Rocking Recliner Chair, 42""W, Beige",0,N3R,train,CHAIR
+B07Q4WFQHH_pos,B07Q4WFQHH,small/ba/ba34f5a4.jpg,"Amazon Basics Modern Plush Moroccan Trellis Shag Area Rug - 4x6 (3'11"" x 5'3""), Ivory",1,pos,train,RUG
+B07Q4WFQHH_N3R,B07Q4WFQHH,small/ba/ba34f5a4.jpg,"Amazon Basics Modern Plush Moroccan Trellis Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",0,N3R,train,RUG
+B07Q9TCY28_pos,B07Q9TCY28,small/cf/cffe2366.jpg,"Amazon Basics Modern Plush Moroccan Trellis Shag Area Rug - 5x8 (4'11"" x 7'8""), Grey",1,pos,train,RUG
+B07Q9TCY28_N3R,B07Q9TCY28,small/cf/cffe2366.jpg,"Amazon Basics Modern Plush Moroccan Trellis Shag Area Rug - 5x8 (4'11"" x 7'8""), Ivory",0,N3R,train,RUG
+B07Q9CS6C3_pos,B07Q9CS6C3,small/74/743ecf75.jpg,"Amazon Basics Modern Plush High-Pile Shag Area Rug - 8x10 (7'10"" x 9'10""), Ivory",1,pos,train,RUG
+B07Q9CS6C3_N3R,B07Q9CS6C3,small/74/743ecf75.jpg,"Amazon Basics Modern Plush High-Pile Shag Area Rug - 8x10 (7'10"" x 9'10""), Grey",0,N3R,train,RUG
+B07QBS4RKK_pos,B07QBS4RKK,small/6c/6c5253df.jpg,"Amazon Basics Modern Plush High-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",1,pos,train,RUG
+B07QBS4RKK_N3R,B07QBS4RKK,small/6c/6c5253df.jpg,"Amazon Basics Modern Plush High-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Ivory",0,N3R,train,RUG
+B07B7B3ZMF_pos,B07B7B3ZMF,small/e4/e4f67ce2.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Kitchen Chairs, Upholstered, Set of 2, Red",1,pos,train,CHAIR
+B07B7B3ZMF_N3R,B07B7B3ZMF,small/e4/e4f67ce2.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Kitchen Chairs, Upholstered, Set of 2, Black",0,N3R,train,CHAIR
+B07C9W437G_pos,B07C9W437G,small/d4/d4d47edc.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Room Kitchen Chairs, 36 Inch Height, Set of 2, Black",1,pos,train,CHAIR
+B07C9W437G_N3R,B07C9W437G,small/d4/d4d47edc.jpg,"Amazon Brand – Rivet Federal Mid-Century Modern Wood Dining Room Kitchen Chairs, 36 Inch Height, Set of 2, Red",0,N3R,train,CHAIR
+B07B82PXCM_pos,B07B82PXCM,small/3f/3fb4816b.jpg,"Amazon Brand – Stone & Beam Bradhurst Casual Farmhouse Wood Dining Kitchen Table, 61""-84""L, White",1,pos,train,TABLE
+B07B82PXCM_N3R,B07B82PXCM,small/3f/3fb4816b.jpg,"Amazon Brand – Stone & Beam Bradhurst Casual Farmhouse Wood Dining Kitchen Table, 61""-84""L, Brown",0,N3R,train,TABLE
+B07B85FJDF_pos,B07B85FJDF,small/e2/e2a0b4cd.jpg,"Amazon Brand – Stone & Beam Hughes Casual Farmhouse Wood Dining Kitchen Table, 60-80""L, Brown",1,pos,train,TABLE
+B07B85FJDF_N3R,B07B85FJDF,small/e2/e2a0b4cd.jpg,"Amazon Brand – Stone & Beam Hughes Casual Farmhouse Wood Dining Kitchen Table, 60-80""L, White",0,N3R,train,TABLE
+B07QBMQH3V_pos,B07QBMQH3V,small/fe/fe16deb6.jpg,"Amazon Brand – Ravenna Home Margaret Modern Living Room Chair, 28""W, Blue",1,pos,train,CHAIR
+B07QBMQH3V_N3R,B07QBMQH3V,small/fe/fe16deb6.jpg,"Amazon Brand – Ravenna Home Margaret Modern Living Room Chair, 28""W, Beige",0,N3R,train,CHAIR
+B085FGZVYY_pos,B085FGZVYY,small/b3/b3c6271d.jpg,"Amazon Brand – Ravenna Home Push-Back Recliner Living Room Chair, 33.9""W, Beige",1,pos,train,CHAIR
+B085FGZVYY_N3R,B085FGZVYY,small/b3/b3c6271d.jpg,"Amazon Brand – Ravenna Home Push-Back Recliner Living Room Chair, 33.9""W, Blue",0,N3R,train,CHAIR
+B0735RJPDH_pos,B0735RJPDH,small/80/80ae16b6.jpg,"Amazon Brand – Rivet Contemporary Linear Distressed Wool Area Rug, 5 x 8 Foot, Grey",1,pos,train,RUG
+B0735RJPDH_N3R,B0735RJPDH,small/80/80ae16b6.jpg,"Amazon Brand – Rivet Contemporary Linear Distressed Wool Area Rug, 5 x 8 Foot, Cream",0,N3R,train,RUG
+B0735V7FK6_pos,B0735V7FK6,small/bb/bb2826a5.jpg,"Amazon Brand – Rivet Geometric Boho Bohemian Wool Area Rug, 5 x 8 Foot, Cream",1,pos,train,RUG
+B0735V7FK6_N3R,B0735V7FK6,small/bb/bb2826a5.jpg,"Amazon Brand – Rivet Geometric Boho Bohemian Wool Area Rug, 5 x 8 Foot, Grey",0,N3R,train,RUG
+B07B4YVDFX_pos,B07B4YVDFX,small/57/57321312.jpg,"Amazon Brand – Rivet Contemporary Geometric Area Rug, 10' 6"" x 7' 10"", White",1,pos,train,RUG
+B07B4YVDFX_N3R,B07B4YVDFX,small/57/57321312.jpg,"Amazon Brand – Rivet Contemporary Geometric Area Rug, 10' 6"" x 7' 10"", Green",0,N3R,train,RUG
+B07B51XC8Z_pos,B07B51XC8Z,small/49/495d4806.jpg,"Amazon Brand – Rivet Modern Geometric Area Rug, 8 x 10, Green",1,pos,train,RUG
+B07B51XC8Z_N3R,B07B51XC8Z,small/49/495d4806.jpg,"Amazon Brand – Rivet Modern Geometric Area Rug, 8 x 10, White",0,N3R,train,RUG
+B07DBB7831_pos,B07DBB7831,small/f2/f20024e0.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Wood Leg Side Table Nightstand, 20""W, Grey",1,pos,train,TABLE
+B07DBB7831_N3R,B07DBB7831,small/f2/f20024e0.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Wood Leg Side Table Nightstand, 20""W, White",0,N3R,train,TABLE
+B07DBGJ5PM_pos,B07DBGJ5PM,small/12/127dae7d.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Wood Leg Console Entryway Table, 47.2""W, White",1,pos,train,TABLE
+B07DBGJ5PM_N3R,B07DBGJ5PM,small/12/127dae7d.jpg,"Amazon Brand – Ravenna Home Angela Modern Turned Wood Leg Console Entryway Table, 47.2""W, Grey",0,N3R,train,TABLE
+B07B4L589M_pos,B07B4L589M,small/ca/ca39e319.jpg,"Amazon Brand – Stone & Beam Andover Modern Loveseat, Sofa 67""W, Tan",1,pos,train,SOFA
+B07B4L589M_N3R,B07B4L589M,small/ca/ca39e319.jpg,"Amazon Brand – Stone & Beam Andover Modern Loveseat, Sofa 67""W, Grey",0,N3R,train,SOFA
+B07B4MHCDR_pos,B07B4MHCDR,small/f9/f92dd577.jpg,"Amazon Brand – Stone & Beam Andover Modern Sofa Couch, 93""W, Grey",1,pos,train,SOFA
+B07B4MHCDR_N3R,B07B4MHCDR,small/f9/f92dd577.jpg,"Amazon Brand – Stone & Beam Andover Modern Sofa Couch, 93""W, Tan",0,N3R,train,SOFA
+B07HSJJDWG_pos,B07HSJJDWG,small/6d/6dd03f04.jpg,"Amazon Brand – Rivet Modern Dining Room Kitchen Chair 32 Inch Height, Black",1,pos,train,CHAIR
+B07HSJJDWG_N3R,B07HSJJDWG,small/6d/6dd03f04.jpg,"Amazon Brand – Rivet Modern Dining Room Kitchen Chair 32 Inch Height, Orange",0,N3R,train,CHAIR
+B07HSKB7FP_pos,B07HSKB7FP,small/cd/cdd9530c.jpg,"Amazon Brand – Rivet Modern Dining Room Chair 32 Inch Height, Orange",1,pos,train,CHAIR
+B07HSKB7FP_N3R,B07HSKB7FP,small/cd/cdd9530c.jpg,"Amazon Brand – Rivet Modern Dining Room Chair 32 Inch Height, Black",0,N3R,train,CHAIR
+B0723DG6CM_pos,B0723DG6CM,small/14/148b180b.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Rug, 2'3"" x 7'6"", Beige",1,pos,train,RUG
+B0723DG6CM_N3R,B0723DG6CM,small/14/148b180b.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Rug, 2'3"" x 7'6"", Navy",0,N3R,train,RUG
+B072JC9KZ4_pos,B072JC9KZ4,small/14/14675450.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Runner Rug, 2' 3"" x 7' 6"", Navy",1,pos,train,RUG
+B072JC9KZ4_N3R,B072JC9KZ4,small/14/14675450.jpg,"Amazon Brand – Stone & Beam Contemporary Hourglass Wool Runner Rug, 2' 3"" x 7' 6"", Beige",0,N3R,train,RUG
+B07B82T39G_pos,B07B82T39G,small/2f/2f3b4634.jpg,"Amazon Brand – Rivet Dayton Modern Metal Bar Stool, 35""H, Pack of 2, Black",1,pos,train,STOOL_SEATING
+B07B82T39G_N3R,B07B82T39G,small/2f/2f3b4634.jpg,"Amazon Brand – Rivet Dayton Modern Metal Bar Stool, 35""H, Pack of 2, Beige",0,N3R,train,STOOL_SEATING
+B07B8445BB_pos,B07B8445BB,small/cb/cbccc903.jpg,"Amazon Brand – Rivet Dayton Mid-Century Modern Metal Bar Stool, 24""H, Pack of 2, Beige",1,pos,train,STOOL_SEATING
+B07B8445BB_N3R,B07B8445BB,small/cb/cbccc903.jpg,"Amazon Brand – Rivet Dayton Mid-Century Modern Metal Bar Stool, 24""H, Pack of 2, Black",0,N3R,train,STOOL_SEATING
+B07DBFT32K_pos,B07DBFT32K,small/d7/d74a2ab0.jpg,"Amazon Brand – Ravenna Home Sara Rustic Storage TV Media Entertainment Console Stand, 53""W, Grey",1,pos,train,HOME_FURNITURE_AND_DECOR
+B07DBFT32K_N3R,B07DBFT32K,small/d7/d74a2ab0.jpg,"Amazon Brand – Ravenna Home Sara Rustic Storage TV Media Entertainment Console Stand, 53""W, White",0,N3R,train,HOME_FURNITURE_AND_DECOR
+B07DBG1X9Z_pos,B07DBG1X9Z,small/2b/2bd875ea.jpg,"Amazon Brand – Ravenna Home Sara Rustic Storage TV Media Entertainment Stand, 53""W, White",1,pos,train,HOME_FURNITURE_AND_DECOR
+B07DBG1X9Z_N3R,B07DBG1X9Z,small/2b/2bd875ea.jpg,"Amazon Brand – Ravenna Home Sara Rustic Storage TV Media Entertainment Stand, 53""W, Grey",0,N3R,train,HOME_FURNITURE_AND_DECOR
+B0735SFWRS_pos,B0735SFWRS,small/b9/b9a03d6f.jpg,"Amazon Brand – Rivet Geometric Boho Bohemian Wool Area Rug, 8 x 10 Foot, Cream",1,pos,train,RUG
+B0735SFWRS_N3R,B0735SFWRS,small/b9/b9a03d6f.jpg,"Amazon Brand – Rivet Geometric Boho Bohemian Wool Area Rug, 8 x 10 Foot, Grey",0,N3R,train,RUG
+B0735VGDT3_pos,B0735VGDT3,small/5a/5ac6e62a.jpg,"Amazon Brand – Rivet Contemporary Linear Distressed Wool Area Rug, 4 x 6 Foot, Grey",1,pos,train,RUG
+B0735VGDT3_N3R,B0735VGDT3,small/5a/5ac6e62a.jpg,"Amazon Brand – Rivet Contemporary Linear Distressed Wool Area Rug, 4 x 6 Foot, Cream",0,N3R,train,RUG
+B07B7B2429_pos,B07B7B2429,small/59/599d72a4.jpg,"Amazon Brand – Stone & Beam Alejandra Casual Farmhouse Wood Dining Room Kitchen Chairs, 39""H, Set of 2, Grey",1,pos,train,CHAIR
+B07B7B2429_N3R,B07B7B2429,small/59/599d72a4.jpg,"Amazon Brand – Stone & Beam Alejandra Casual Farmhouse Wood Dining Room Kitchen Chairs, 39""H, Set of 2, Beige",0,N3R,train,CHAIR
+B07BTW5Y39_pos,B07BTW5Y39,small/d7/d71cc255.jpg,"Amazon Brand – Stone & Beam Alejandra Casual Farmhouse Wood Dining Kitchen Chairs, 39""H, Pack of 2, Beige",1,pos,train,CHAIR
+B07BTW5Y39_N3R,B07BTW5Y39,small/d7/d71cc255.jpg,"Amazon Brand – Stone & Beam Alejandra Casual Farmhouse Wood Dining Kitchen Chairs, 39""H, Pack of 2, Grey",0,N3R,train,CHAIR
+B07HMTJ2HB_pos,B07HMTJ2HB,small/79/79604af0.jpg,"AmazonBasics Foldable Rocking Chair with Canopy, Black",1,pos,train,CHAIR
+B07HMTJ2HB_N3R,B07HMTJ2HB,small/79/79604af0.jpg,"AmazonBasics Foldable Rocking Chair with Canopy, Red",0,N3R,train,CHAIR
+B07V4MH3C5_pos,B07V4MH3C5,small/9c/9c8c72cf.jpg,AmazonBasics Foldable Rocking Chair with Canopy - Red (Renewed),1,pos,train,CHAIR
+B07V4MH3C5_N3R,B07V4MH3C5,small/9c/9c8c72cf.jpg,AmazonBasics Foldable Rocking Chair with Canopy - Black (Renewed),0,N3R,train,CHAIR
+B07BMQ64HR_pos,B07BMQ64HR,small/51/51faab20.jpg,"Amazon Brand – Rivet Abstract Geometric Throw Pillow Cover, 20"" x 20"", Ivory",1,pos,train,PILLOW
+B07BMQ64HR_N3R,B07BMQ64HR,small/51/51faab20.jpg,"Amazon Brand – Rivet Abstract Geometric Throw Pillow Cover, 20"" x 20"", Purple",0,N3R,train,PILLOW
+B07BMT4F21_pos,B07BMT4F21,small/eb/eb076ee8.jpg,"Amazon Brand – Rivet Modern Abstract Geometric Decorative Throw Pillow, 20"" x 20"", Cover Only, Purple",1,pos,train,PILLOW
+B07BMT4F21_N3R,B07BMT4F21,small/eb/eb076ee8.jpg,"Amazon Brand – Rivet Modern Abstract Geometric Decorative Throw Pillow, 20"" x 20"", Cover Only, Ivory",0,N3R,train,PILLOW
+B075TZF1TT_pos,B075TZF1TT,small/4a/4afb9a74.jpg,"Stone & Beam Contemporary Rikki Border Jute Rug, 5' x 8' Oval, White",1,pos,train,RUG
+B075TZF1TT_N3R,B075TZF1TT,small/4a/4afb9a74.jpg,"Stone & Beam Contemporary Rikki Border Jute Rug, 5' x 8' Oval, Navy",0,N3R,train,RUG
+B075V35VPP_pos,B075V35VPP,small/8b/8b57af33.jpg,"Stone & Beam Contemporary Rikki Border Jute Rug, 5' x 8', Navy",1,pos,train,RUG
+B075V35VPP_N3R,B075V35VPP,small/8b/8b57af33.jpg,"Stone & Beam Contemporary Rikki Border Jute Rug, 5' x 8', White",0,N3R,train,RUG
+B07DBB1GX5_pos,B07DBB1GX5,small/4e/4e521361.jpg,"Amazon Brand – Ravenna Home Decorah Stackable Metal Kitchen Counter Bar Stools, 24""H, Yellow, Set of 4",1,pos,train,STOOL_SEATING
+B07DBB1GX5_N3R,B07DBB1GX5,small/4e/4e521361.jpg,"Amazon Brand – Ravenna Home Decorah Stackable Metal Kitchen Counter Bar Stools, 24""H, Blue, Set of 4",0,N3R,train,STOOL_SEATING
+B07DBD3G32_pos,B07DBD3G32,small/c1/c13af81c.jpg,"Amazon Brand – Ravenna Home Decorah Stackable Metal Kitchen Counter Bar Stools, 24""H, Blue, Set of 4",1,pos,train,STOOL_SEATING
+B07DBD3G32_N3R,B07DBD3G32,small/c1/c13af81c.jpg,"Amazon Brand – Ravenna Home Decorah Stackable Metal Kitchen Counter Bar Stools, 24""H, Yellow, Set of 4",0,N3R,train,STOOL_SEATING
+B0735T68YG_pos,B0735T68YG,small/93/93490311.jpg,"Amazon Brand – Rivet Geometric Boho Bohemian Wool Area Rug, 4 x 6 Foot, Cream",1,pos,val,RUG
+B0735T68YG_N3R,B0735T68YG,small/93/93490311.jpg,"Amazon Brand – Rivet Geometric Boho Bohemian Wool Area Rug, 4 x 6 Foot, Grey",0,N3R,val,RUG
+B0735THVQK_pos,B0735THVQK,small/e5/e5aacfac.jpg,"Amazon Brand – Rivet Contemporary Linear Distressed Wool Area Rug, 8 x 10 Foot, Grey",1,pos,val,RUG
+B0735THVQK_N3R,B0735THVQK,small/e5/e5aacfac.jpg,"Amazon Brand – Rivet Contemporary Linear Distressed Wool Area Rug, 8 x 10 Foot, Cream",0,N3R,val,RUG
+B07DBB1GVR_pos,B07DBB1GVR,small/2f/2fdb2c63.jpg,"Amazon Brand – Ravenna Home Larry Contemporary Tufted Round Ottoman, 33.46""W, Grey",1,pos,val,OTTOMAN
+B07DBB1GVR_N3R,B07DBB1GVR,small/2f/2fdb2c63.jpg,"Amazon Brand – Ravenna Home Larry Contemporary Tufted Round Ottoman, 33.46""W, Beige",0,N3R,val,OTTOMAN
+B07DBFQ4CT_pos,B07DBFQ4CT,small/48/484f4b99.jpg,"Ravenna Home Larry Contemporary Tufted Round Ottoman, 33.46""W, Beige",1,pos,val,OTTOMAN
+B07DBFQ4CT_N3R,B07DBFQ4CT,small/48/484f4b99.jpg,"Ravenna Home Larry Contemporary Tufted Round Ottoman, 33.46""W, Grey",0,N3R,val,OTTOMAN
