@@ -15,3 +15,11 @@
 - `finalize_review.py`: original MVP N3 finalizer; use the v2 review package's summarizer for its new batch schema.
 
 See [current data rules](../../docs/home_v2.md), [v2 review instructions](../../data/reviews/abo-home-v2-20261103/README.md), and [original MVP records](../../docs/sean_mvp/README.md). Generated candidate labels are not automatically human-confirmed mismatches.
+
+## Reciprocal N3 development experiment
+
+`reciprocal/` provides deterministic paired color swapping, train-only text-only
+diagnostics, an offline review renderer, and strict review summarization.
+[Results and reproduction](../../data/reviews/n3-reciprocal-dev-v1/README.md):
+80 train candidates reviewed, 60 retained in 30 fully accepted exchanges.
+The original v2 release is preserved; this is not a replacement benchmark.

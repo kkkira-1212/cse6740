@@ -6,14 +6,14 @@ A Georgia Tech CSE 6740 project studying whether an e-commerce product's main im
 
 **[ABO Furniture + Decor v2 — 2026-11-03](https://github.com/kkkira-1212/cse6740/releases/tag/abo-home-v2-20261103)** is available for preliminary experiments and human N2 review. It contains **3,335 image anchors and 6,670 image–title pairs** across 10 retained furniture/decor types.
 
-**Generated negative labels are candidates, not human-certified ground truth.** Human review and single-modality shortcut controls remain outstanding. No model performance on v2 is reported yet.
+**Generated negative labels are candidates, not human-certified ground truth.** A 100-pair train N2 audit is complete (94 mismatch, 1 match, 5 uncertain). A separate reciprocal-color N3 development audit retains 60 candidates in 30 fully accepted exchanges. See the [N2 review](data/reviews/abo-home-v2-20261103/README.md) and [N3 development results](data/reviews/n3-reciprocal-dev-v1/README.md). These sample reviews do not certify all release labels. No multimodal model performance on v2 is reported yet.
 
 | Deliverable | Download | Start here |
 |---|---|---|
 | Main experiment data, including all 3,335 images | [Full data ZIP · approximately 30 MiB](https://github.com/kkkira-1212/cse6740/releases/download/abo-home-v2-20261103/abo-home-v2-20261103-full.zip) | Release `README.md`, then `python tools/verify.py --images` |
 | 100-pair N2 human-review batch | [Offline review ZIP · approximately 0.93 MiB](https://github.com/kkkira-1212/cse6740/releases/download/abo-home-v2-20261103/n2-home-v2-100-review.zip) | Open `N2_v2_review.html`; images are embedded |
 
-The review batch is sampled from the exact **train N2** pairs in the main release, covering every retained type. It is not a separately generated set. Export completed judgments as CSV and back up progress as JSON.
+The N2 review batch is sampled from the exact **train N2** pairs in the main release, covering every retained type. It is not a separately generated set. Export completed judgments as CSV and back up progress as JSON.
 
 | Split | Anchors / positives | N1 | N2 | N3 | Total pairs |
 |---|---:|---:|---:|---:|---:|
@@ -92,7 +92,7 @@ The generator refuses to overwrite an existing release. Use `--resume-images` to
 
 The old [furniture pilot](docs/mini_version/README.md) contains 3,978 product records and uses image-swapped N1/N2 negatives. Its source tables, scores and human-review records are preserved. **Do not mix pilot scores, thresholds, pair-ID interpretations or API caches with v2.** In v2, the pair-ID prefix identifies the image anchor; title provenance is explicit in `text_item_id`.
 
-[Aaron's shared evaluator PR #4](https://github.com/kkkira-1212/cse6740/pull/4) and [Jane's additional baseline PR #5](https://github.com/kkkira-1212/cse6740/pull/5) are merged with fixed-image v2 compatibility. Five models have historical pilot scores; there are no new v2 model-performance results. API resume keys bind exact inputs and prompts, and subset sampling preserves explicit image-anchor pairs. LoRA, full fine-tuning, API-judge results, shortcut controls and cross-time experiments remain outstanding.
+[Aaron's shared evaluator PR #4](https://github.com/kkkira-1212/cse6740/pull/4) and [Jane's additional baseline PR #5](https://github.com/kkkira-1212/cse6740/pull/5) are merged with fixed-image v2 compatibility. Five models have historical pilot scores; there are no new v2 model-performance results. API resume keys bind exact inputs and prompts, and subset sampling preserves explicit image-anchor pairs. LoRA, full fine-tuning, API-judge results, full-dataset shortcut controls and cross-time experiments remain outstanding. Train-only text-only diagnostics for the separate reciprocal N3 development batch are recorded with its review results.
 
 ## Repository guide
 
@@ -104,7 +104,7 @@ The old [furniture pilot](docs/mini_version/README.md) contains 3,978 product re
 | `src/models/`, `src/baselines/` | Model scoring and adaptation work |
 | `src/eval/` | Shared evaluation work |
 | `data/releases/` | Versioned small tables, manifests and handoff tools; images distributed separately |
-| `data/reviews/` | Blank audit samples and batch provenance; no embedded images |
+| `data/reviews/` | Audit inputs, completed judgments, summaries and reviewed development candidates; no embedded images |
 | `docs/` | Current guides and clearly identified historical planning |
 | `scores/` | Model scores and evaluation artifacts, labeled by data version |
 | `tests/` | Data/review/evaluation safeguards |
