@@ -96,3 +96,12 @@ images, checks their release hashes, and embeds them for offline use. Keep
 generated HTML/images outside Git. It supports local progress, full-batch CSV
 export and JSON backup/restore. The summarizer rejects changed source fields,
 wrong batch IDs, duplicate or missing rows, and invalid decisions.
+
+## Follow-up
+
+The [expanded v2 batch](../n3-reciprocal-expanded-dev-v2/README.md) preserves
+this batch, adds 208 non-overlapping train candidates, and records a 100-row
+audit. Across both versions, the reviewed subset contains 158 negatives; a
+separate 266-row training pool additionally allows 108 explicitly unreviewed
+candidates after sample quality control. The known uncertain exchange is
+excluded. This changes training inclusion policy, not the original judgments.

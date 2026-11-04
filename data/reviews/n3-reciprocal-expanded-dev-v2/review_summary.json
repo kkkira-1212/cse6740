@@ -1,0 +1,43 @@
+{
+  "rows": 100,
+  "counts": {
+    "mismatch": 99,
+    "uncertain": 1
+  },
+  "by_category": {
+    "CHAIR": {
+      "mismatch": 30
+    },
+    "HOME": {
+      "mismatch": 4
+    },
+    "HOME_FURNITURE_AND_DECOR": {
+      "mismatch": 8
+    },
+    "OTTOMAN": {
+      "mismatch": 10
+    },
+    "PILLOW": {
+      "mismatch": 8
+    },
+    "RUG": {
+      "mismatch": 11,
+      "uncertain": 1
+    },
+    "SOFA": {
+      "mismatch": 8
+    },
+    "STOOL_SEATING": {
+      "mismatch": 8
+    },
+    "TABLE": {
+      "mismatch": 10
+    },
+    "WALL_ART": {
+      "mismatch": 2
+    }
+  },
+  "retained_complete_exchanges": 49,
+  "retained_candidates": 98,
+  "note": "Retain both directions only when each independently receives mismatch. Never approve pending/uncertain rows. Reviewer judgments are not independent adjudication."
+}

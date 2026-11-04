@@ -23,3 +23,10 @@ diagnostics, an offline review renderer, and strict review summarization.
 [Results and reproduction](../../data/reviews/n3-reciprocal-dev-v1/README.md):
 80 train candidates reviewed, 60 retained in 30 fully accepted exchanges.
 The original v2 release is preserved; this is not a replacement benchmark.
+
+The [expanded v2 guide](../../data/reviews/n3-reciprocal-expanded-dev-v2/README.md)
+adds 208 fresh train candidates and a completed 100-row audit (99 mismatch,
+1 uncertain). `build_training_pool.py` provides a 158-row reviewed subset and
+a 266-row partially reviewed training pool, excluding the known uncertain
+exchange and preserving explicit per-row review status. It does not replace
+the frozen main release or create validation/test data.
