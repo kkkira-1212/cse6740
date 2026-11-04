@@ -1,0 +1,66 @@
+{
+  "version": "n3-train-supplement-v2",
+  "split": "train",
+  "expanded_audit": {
+    "rows": 100,
+    "counts": {
+      "mismatch": 99,
+      "uncertain": 1
+    },
+    "by_category": {
+      "CHAIR": {
+        "mismatch": 30
+      },
+      "HOME": {
+        "mismatch": 4
+      },
+      "HOME_FURNITURE_AND_DECOR": {
+        "mismatch": 8
+      },
+      "OTTOMAN": {
+        "mismatch": 10
+      },
+      "PILLOW": {
+        "mismatch": 8
+      },
+      "RUG": {
+        "mismatch": 11,
+        "uncertain": 1
+      },
+      "SOFA": {
+        "mismatch": 8
+      },
+      "STOOL_SEATING": {
+        "mismatch": 8
+      },
+      "TABLE": {
+        "mismatch": 10
+      },
+      "WALL_ART": {
+        "mismatch": 2
+      }
+    },
+    "retained_complete_exchanges": 49,
+    "retained_candidates": 98,
+    "note": "Retain both directions only when each independently receives mismatch. Never approve pending/uncertain rows. Reviewer judgments are not independent adjudication."
+  },
+  "previous_reviewed": 60,
+  "expanded_reviewed": 98,
+  "reviewed_total": 158,
+  "training_negatives": 266,
+  "training_status_counts": {
+    "unreviewed": 108,
+    "reviewed_mismatch": 158
+  },
+  "excluded_expanded_rows": 2,
+  "note": "Unsampled candidates are allowed as generated training data after sample quality control; they are NOT human-approved. Known match/uncertain exchanges are excluded. No val/test pool.",
+  "paired_train_rows": 532,
+  "source_sha256": {
+    "data/reviews/n3-reciprocal-dev-v1/review_sample.csv": "f71fce14b56d570312c0fa919b8e5031699f8f053a0d32537474c314f7f2d453",
+    "data/reviews/n3-reciprocal-dev-v1/review_completed.csv": "51fa2007322ac4716e778ee8d80742f09098f2b7081eb2a045713c54ed79beda",
+    "data/reviews/n3-reciprocal-expanded-dev-v2/n3_candidates.csv": "002f7103041726fb30d2151d7b493ad290447734f944f9bfc845b31d4043006e",
+    "data/reviews/n3-reciprocal-expanded-dev-v2/review_sample.csv": "5a41efaa46c7fbf357f11bf177cec558aaf1e176219b27f2abdb95e50127edc3",
+    "data/reviews/n3-reciprocal-expanded-dev-v2/review_completed.csv": "f98ee525d9df5c56f3a7c7b0380547876138534ef853e3954710877c1cc6bedd",
+    "data/releases/abo-home-v2-20261103/items.csv": "c2a205478ab359d0e6755482fb2f794cc2bc913f28804f117977d83e24c914ae"
+  }
+}

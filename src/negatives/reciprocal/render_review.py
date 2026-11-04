@@ -36,13 +36,17 @@ def main():
     text=text.replace('CSE 6740 · SEAN / WP3 · HUMAN REVIEW','CSE 6740 · N3 RECIPROCAL · DEVELOPMENT REVIEW')
     text=text.replace('这里都是自动生成的候选负例，尚未通过人工审核。N2 换图片，N3 改颜色。原始记录仅供核查，最终以当前配对的图片和标题为准。',
         '相邻两条为一组双向颜色交换，请逐条独立判断。只改颜色；颜色不清、多色、近似色或原始关联有问题时可选「无法判断」并备注。')
-    text=text.replace('<option value="all">全部类型</option><option>N1</option><option>N2</option><option>N3</option>',
-        '<option value="all">全部样本</option><option value="N3R">N3 双向颜色交换</option>')
+    types=sorted({r['neg_type'] for r in rows})
+    options='<option value="all">全部样本</option>'+''.join(f'<option value="{kind}">{kind}</option>' for kind in types if kind in {'N3R','N3R2'})
+    if not set(types)<={'N3R','N3R2'}:raise ValueError('Unsupported reciprocal review type')
+    text=text.replace('<option value="all">全部类型</option><option>N1</option><option>N2</option><option>N3</option>',options)
     text=text.replace("key='sean-review-","key='n3-reciprocal-review-")
     old="const fields=['pair_id','neg_type','split','category','text_item_id','image_item_id','image_path','original_text','text','attribute','old_value','new_value','review_decision','reason','notes'];"
     if old not in text:raise ValueError('Review template export format changed')
     text=text.replace(old,'const fields='+json.dumps(FIELDS)+';')
     text=text.replace('sean_review_completed.csv','n3_reciprocal_review_completed.csv').replace('sean_review_backup.json','n3_reciprocal_review_backup.json')
+    if types==['N3R2']:
+        text=text.replace('n3_reciprocal_review_completed.csv','n3_expanded_review_completed.csv').replace('n3_reciprocal_review_backup.json','n3_expanded_review_backup.json')
     text=text.replace('假负例率：','本批匹配标记率：')
     text=text.replace("if(r.old_value)details.append(node('p',`替换：${r.old_value} → ${r.new_value}`));",
         "if(r.old_value)details.append(node('p',`颜色替换：${r.old_value} → ${r.new_value}`));details.append(node('p',`交换组：${r.exchange_id}`));details.append(node('p',`颜色表达来源标题：${r.donor_original_text}`));")

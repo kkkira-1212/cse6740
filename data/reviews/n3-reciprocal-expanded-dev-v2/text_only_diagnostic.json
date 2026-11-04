@@ -1,0 +1,23 @@
+{
+  "protocol": "Train-only 5-fold GroupKFold; both directions and positives of an exchange stay in the same fold. Fixed threshold .5; no val/test tuning. Small exploratory diagnostic.",
+  "n_train_rows": 416,
+  "n_exchange_groups": 104,
+  "results": {
+    "word_old_same_anchors": {
+      "accuracy": 0.9302884615384616,
+      "auc": 0.9552745931952663
+    },
+    "word_reciprocal": {
+      "accuracy": 0.5288461538461539,
+      "auc": 0.5404724482248522
+    },
+    "character_old_same_anchors": {
+      "accuracy": 0.8822115384615384,
+      "auc": 0.9496348002958578
+    },
+    "character_reciprocal": {
+      "accuracy": 0.5096153846153846,
+      "auc": 0.5311575443786982
+    }
+  }
+}
