@@ -1,0 +1,230 @@
+{
+  "tool": "src/eval/controls.py",
+  "pairs_csv": "data/releases/abo-home-v2-20261103/pairs.csv",
+  "dataset_versions": [
+    "abo-home-v2-20261103"
+  ],
+  "splits": {
+    "train": 5328,
+    "val": 656,
+    "test": 686
+  },
+  "anchors": 3335,
+  "environment": {
+    "python": "3.12.2",
+    "numpy": "1.26.4",
+    "sklearn": "1.7.2",
+    "torch": "2.4.0+cu124",
+    "transformers": "4.46.3",
+    "huggingface_hub": "0.36.2"
+  },
+  "text": {
+    "features": "tfidf word 1-2gram min_df=2 sublinear_tf",
+    "classifier": "logistic regression",
+    "seed": 0,
+    "train_rows": 5328,
+    "vocabulary": 9281,
+    "train_auc": 0.6705036962638313,
+    "top_features": {
+      "negative": [
+        [
+          "yellow",
+          -5.46279323154616
+        ],
+        [
+          "red",
+          -4.777602665480073
+        ],
+        [
+          "green",
+          -4.66045553040189
+        ],
+        [
+          "blue",
+          -1.5525641887076331
+        ],
+        [
+          "rug yellow",
+          -0.6571927968909205
+        ],
+        [
+          "of red",
+          -0.6326913438622309
+        ],
+        [
+          "foot red",
+          -0.5558668259339247
+        ],
+        [
+          "of yellow",
+          -0.5516539308744532
+        ],
+        [
+          "yellow renewed",
+          -0.5408360036868735
+        ],
+        [
+          "chair blue",
+          -0.5389208656013095
+        ],
+        [
+          "chair green",
+          -0.5110324926259315
+        ],
+        [
+          "faux",
+          -0.4991332057113772
+        ],
+        [
+          "24 red",
+          -0.4955519579993612
+        ],
+        [
+          "10 red",
+          -0.49303057377232035
+        ],
+        [
+          "29 green",
+          -0.48995552109479623
+        ]
+      ],
+      "positive": [
+        [
+          "brown",
+          1.4477797329846183
+        ],
+        [
+          "grey",
+          1.3101953652797567
+        ],
+        [
+          "black",
+          1.2317277447445745
+        ],
+        [
+          "strathwood",
+          1.2022854375899203
+        ],
+        [
+          "beige",
+          1.0869416901781404
+        ],
+        [
+          "white",
+          0.9691363419105612
+        ],
+        [
+          "ivory",
+          0.8620810486369631
+        ],
+        [
+          "navy",
+          0.8510824114860344
+        ],
+        [
+          "tan",
+          0.7987560727193207
+        ],
+        [
+          "cream",
+          0.7967958834657594
+        ],
+        [
+          "light",
+          0.7079276966851892
+        ],
+        [
+          "charcoal",
+          0.6766506275776347
+        ],
+        [
+          "brick",
+          0.6663014697561951
+        ],
+        [
+          "dark",
+          0.6532856474580552
+        ],
+        [
+          "gold",
+          0.652749661119667
+        ]
+      ]
+    }
+  },
+  "image": {
+    "mode": "clip",
+    "model": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "seed": 0,
+    "train_rows": 5328,
+    "train_auc": 0.5,
+    "images": 3335,
+    "image_root": "data/releases/abo-home-v2-20261103/images",
+    "cache": "data/processed/control_v2_clip_image_features.npz",
+    "cache_sha256": "08e393e4ef8da58cd4574406d41cf3794412ccf771bb85e49bbda6164e415cbb",
+    "unique_scores": 1
+  },
+  "score_files": {
+    "text-only tf-idf": "scores/control_v2_text_tfidf.csv",
+    "image-only CLIP": "scores/control_v2_image_clip.csv"
+  },
+  "score_sha256": {
+    "text-only tf-idf": "861b670f9a8c2578f352f9ba52f61397c1a62248adb228a013ceb296a996364a",
+    "image-only CLIP": "b2fa2da8cf7b79e60fe7899fe69347352a9b398f2867177b2df53c21e82d4866"
+  },
+  "eval_report_files": {
+    "text-only tf-idf": "scores/control_v2_text_tfidf_eval.json",
+    "image-only CLIP": "scores/control_v2_image_clip_eval.json"
+  },
+  "eval_reports": {
+    "text-only tf-idf": {
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.6122448979591837,
+      "auc": 0.6230397198446225,
+      "positive_recall": 0.967930029154519,
+      "negative_recall": 0.2565597667638484,
+      "balanced_accuracy": 0.6122448979591837,
+      "negatives_by_type": {
+        "N1": {
+          "n": 128,
+          "recall": 0.0390625
+        },
+        "N2": {
+          "n": 128,
+          "recall": 0.0234375
+        },
+        "N3": {
+          "n": 87,
+          "recall": 0.9195402298850575
+        }
+      }
+    },
+    "image-only CLIP": {
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.5,
+      "auc": 0.5,
+      "positive_recall": 1.0,
+      "negative_recall": 0.0,
+      "balanced_accuracy": 0.5,
+      "negatives_by_type": {
+        "N1": {
+          "n": 128,
+          "recall": 0.0
+        },
+        "N2": {
+          "n": 128,
+          "recall": 0.0
+        },
+        "N3": {
+          "n": 87,
+          "recall": 0.0
+        }
+      }
+    }
+  }
+}
