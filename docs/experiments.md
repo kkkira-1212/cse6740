@@ -17,3 +17,13 @@ Use identical versions, pairs and exclusions across compared models. One-negativ
 Jane's WP7/WP8 implementation was merged via [PR #5](https://github.com/kkkira-1212/cse6740/pull/5). It contains additional zero-shot encoders/ITM models and an experimental API judge. Availability of implementation does not imply completed API or v2 experiments. Do not reuse cached API judgments keyed only by stable pair IDs after inputs change.
 
 Both implementations include fixed-image v2 compatibility. API resume fingerprints bind exact inputs/prompts/settings; subset sampling keeps explicit image-anchor groups together. Historical pilot examples remain in model-owner documentation, so provide the v2 pair and image paths explicitly as shown in the release contract.
+
+## LoRA and full-tuning development
+
+Jack's [v2 adaptation protocol](jack_wp6_training.md) uses explicit negative
+titles in InfoNCE and validation AUC for checkpoint selection, including epoch
+0. The fixed 15-run LoRA rank/tower/seed matrix and a three-seed full-parameter
+control are complete. Rank-16 LoRA on both towers was selected for held-out
+comparison before test inference. Across three seeds its test AUC is 0.979260 ±
+0.000442; full tuning reaches 0.985267 ± 0.001034. The frozen N3 rules and their
+known shortcut are retained; the reciprocal training pool is not appended.

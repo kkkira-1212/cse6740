@@ -1,0 +1,22 @@
+{
+  "training_mode": "full",
+  "dataset_version": "abo-home-v2-20261103",
+  "pairs_csv": "data/releases/abo-home-v2-20261103/pairs.csv",
+  "image_root": "data/releases/abo-home-v2-20261103/images",
+  "model_id": "openai/clip-vit-base-patch32",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f026",
+  "rank": 1,
+  "alpha": 1,
+  "dropout": 0.0,
+  "towers": "both",
+  "seed": 2,
+  "epochs": 5,
+  "batch_size": 16,
+  "learning_rate": 0.00003,
+  "weight_decay": 0.01,
+  "warmup_fraction": 0.1,
+  "max_grad_norm": 1.0,
+  "temperature": 0.07,
+  "selection_metric": "val_auc",
+  "include_initial_checkpoint": true
+}

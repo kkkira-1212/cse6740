@@ -1,0 +1,63 @@
+{
+  "dataset_version": "abo-home-v2-20261103",
+  "pairs_csv": "data/releases/abo-home-v2-20261103/pairs.csv",
+  "selection_frozen_from": "validation only",
+  "selection_rule": "compare zero-shot with all three seeds of the best mean-AUC LoRA configuration (both towers, rank 16) and the definitive full-tuning control (both towers, learning rate 3e-5)",
+  "test_inference": true,
+  "models": [
+    {
+      "name": "clip_lora_v2_r16_both_seed0",
+      "kind": "lora",
+      "config": "configs/clip_lora_v2_r16_both_seed0.json",
+      "training_meta": "scores/clip_lora_v2_r16_both_seed0_meta.json",
+      "validation_scores": "scores/clip_lora_v2_r16_both_seed0_val.csv",
+      "checkpoint": "runs/clip_lora_v2_r16_both_seed0/best_adapter",
+      "checkpoint_sha256": "96d3e7fdc8d53d65df6e2cdb78ccb0a7e8464c02cebbeb2e82a3fb2255791e7b"
+    },
+    {
+      "name": "clip_lora_v2_r16_both_seed1",
+      "kind": "lora",
+      "config": "configs/clip_lora_v2_r16_both_seed1.json",
+      "training_meta": "scores/clip_lora_v2_r16_both_seed1_meta.json",
+      "validation_scores": "scores/clip_lora_v2_r16_both_seed1_val.csv",
+      "checkpoint": "runs/clip_lora_v2_r16_both_seed1/best_adapter",
+      "checkpoint_sha256": "004eebbb1f20a18a4779053f78f40736c4fc605dda529de5b196d435bafd6663"
+    },
+    {
+      "name": "clip_lora_v2_r16_both_seed2",
+      "kind": "lora",
+      "config": "configs/clip_lora_v2_r16_both_seed2.json",
+      "training_meta": "scores/clip_lora_v2_r16_both_seed2_meta.json",
+      "validation_scores": "scores/clip_lora_v2_r16_both_seed2_val.csv",
+      "checkpoint": "runs/clip_lora_v2_r16_both_seed2/best_adapter",
+      "checkpoint_sha256": "625bdd6d8684a8dd0c8aadbd9b02263f7f9e49f43c8b1cce7d0acd62f44c6876"
+    },
+    {
+      "name": "clip_full_v2_both_seed0_fair",
+      "kind": "full",
+      "config": "configs/clip_full_v2_both_seed0_fair.json",
+      "training_meta": "scores/clip_full_v2_both_seed0_fair_meta.json",
+      "validation_scores": "scores/clip_full_v2_both_seed0_fair_val.csv",
+      "checkpoint": "runs/clip_full_v2_both_seed0_fair/best_model",
+      "checkpoint_sha256": "36624f4f0c30469da6fbb7326d22cafa2261e2d4c8b626e48b22ddfce48c2927"
+    },
+    {
+      "name": "clip_full_v2_both_seed1_fair",
+      "kind": "full",
+      "config": "configs/clip_full_v2_both_seed1_fair.json",
+      "training_meta": "scores/clip_full_v2_both_seed1_fair_meta.json",
+      "validation_scores": "scores/clip_full_v2_both_seed1_fair_val.csv",
+      "checkpoint": "runs/clip_full_v2_both_seed1_fair/best_model",
+      "checkpoint_sha256": "f302af5028d127e1e0236761eb9c212788c448e32ba91c6db24a9cb4024fe2c9"
+    },
+    {
+      "name": "clip_full_v2_both_seed2_fair",
+      "kind": "full",
+      "config": "configs/clip_full_v2_both_seed2_fair.json",
+      "training_meta": "scores/clip_full_v2_both_seed2_fair_meta.json",
+      "validation_scores": "scores/clip_full_v2_both_seed2_fair_val.csv",
+      "checkpoint": "runs/clip_full_v2_both_seed2_fair/best_model",
+      "checkpoint_sha256": "e95c0264cc95702a5e752556ec4fdee9ed3c8ea7c969e414c08ea31251a1777c"
+    }
+  ]
+}

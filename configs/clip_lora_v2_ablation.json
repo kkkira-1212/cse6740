@@ -1,0 +1,85 @@
+{
+  "dataset_version": "abo-home-v2-20261103",
+  "scope": "15 validation-only runs: five configurations, three seeds each; reuse completed rank8 both seed0",
+  "alpha_over_rank": 2,
+  "selection": "best validation AUC including epoch0; earlier epoch wins ties",
+  "trainer_sha256": "3a84b91281a137cab3fde84e1165ded3ed1cbeec152b2f31876d50cadf779b07",
+  "test_inference": false,
+  "runs": [
+    {
+      "name": "clip_lora_v2_r8_both_seed0",
+      "config": "configs/clip_lora_v2_r8_both_seed0.json",
+      "run_dir": "runs/clip_lora_v2_r8_both_seed0"
+    },
+    {
+      "name": "clip_lora_v2_r8_both_seed1",
+      "config": "configs/clip_lora_v2_r8_both_seed1.json",
+      "run_dir": "runs/clip_lora_v2_r8_both_seed1"
+    },
+    {
+      "name": "clip_lora_v2_r8_both_seed2",
+      "config": "configs/clip_lora_v2_r8_both_seed2.json",
+      "run_dir": "runs/clip_lora_v2_r8_both_seed2"
+    },
+    {
+      "name": "clip_lora_v2_r4_both_seed0",
+      "config": "configs/clip_lora_v2_r4_both_seed0.json",
+      "run_dir": "runs/clip_lora_v2_r4_both_seed0"
+    },
+    {
+      "name": "clip_lora_v2_r4_both_seed1",
+      "config": "configs/clip_lora_v2_r4_both_seed1.json",
+      "run_dir": "runs/clip_lora_v2_r4_both_seed1"
+    },
+    {
+      "name": "clip_lora_v2_r4_both_seed2",
+      "config": "configs/clip_lora_v2_r4_both_seed2.json",
+      "run_dir": "runs/clip_lora_v2_r4_both_seed2"
+    },
+    {
+      "name": "clip_lora_v2_r16_both_seed0",
+      "config": "configs/clip_lora_v2_r16_both_seed0.json",
+      "run_dir": "runs/clip_lora_v2_r16_both_seed0"
+    },
+    {
+      "name": "clip_lora_v2_r16_both_seed1",
+      "config": "configs/clip_lora_v2_r16_both_seed1.json",
+      "run_dir": "runs/clip_lora_v2_r16_both_seed1"
+    },
+    {
+      "name": "clip_lora_v2_r16_both_seed2",
+      "config": "configs/clip_lora_v2_r16_both_seed2.json",
+      "run_dir": "runs/clip_lora_v2_r16_both_seed2"
+    },
+    {
+      "name": "clip_lora_v2_r8_text_seed0",
+      "config": "configs/clip_lora_v2_r8_text_seed0.json",
+      "run_dir": "runs/clip_lora_v2_r8_text_seed0"
+    },
+    {
+      "name": "clip_lora_v2_r8_text_seed1",
+      "config": "configs/clip_lora_v2_r8_text_seed1.json",
+      "run_dir": "runs/clip_lora_v2_r8_text_seed1"
+    },
+    {
+      "name": "clip_lora_v2_r8_text_seed2",
+      "config": "configs/clip_lora_v2_r8_text_seed2.json",
+      "run_dir": "runs/clip_lora_v2_r8_text_seed2"
+    },
+    {
+      "name": "clip_lora_v2_r8_vision_seed0",
+      "config": "configs/clip_lora_v2_r8_vision_seed0.json",
+      "run_dir": "runs/clip_lora_v2_r8_vision_seed0"
+    },
+    {
+      "name": "clip_lora_v2_r8_vision_seed1",
+      "config": "configs/clip_lora_v2_r8_vision_seed1.json",
+      "run_dir": "runs/clip_lora_v2_r8_vision_seed1"
+    },
+    {
+      "name": "clip_lora_v2_r8_vision_seed2",
+      "config": "configs/clip_lora_v2_r8_vision_seed2.json",
+      "run_dir": "runs/clip_lora_v2_r8_vision_seed2"
+    }
+  ]
+}
