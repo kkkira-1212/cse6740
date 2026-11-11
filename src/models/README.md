@@ -1,3 +1,13 @@
+# WP6: LoRA development on frozen v2
+
+The first train/validation-only experiment uses Q/V LoRA in both CLIP towers,
+rank 8, seed 0, and explicitly paired negative titles. See the
+[training protocol](../../docs/jack_wp6_training.md) and
+[configuration](../../configs/clip_lora_v2_r8_both_seed0.json).
+Run `train_clip_lora.py` from the repository root. It selects checkpoints by
+validation AUC and does not score test. Model weights are kept under ignored
+`runs/`; committed development results must be labeled as validation results.
+
 # WP5: zero-shot CLIP
 
 This baseline uses OpenAI CLIP ViT-B/32 (`openai/clip-vit-base-patch32`),
