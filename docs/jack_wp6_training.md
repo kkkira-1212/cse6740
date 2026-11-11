@@ -1,6 +1,6 @@
-# WP6: first LoRA experiment on frozen ABO home v2
+# WP6: LoRA ablation and full fine-tuning on frozen ABO home v2
 
-The first full run is complete. Validation AUC increased from 0.909448 to
+The first complete LoRA run increased validation AUC from 0.909448 to
 0.973453; epoch 5 was selected. It trained 491,520 adapter parameters on MPS in
 287.6 seconds including validation. The saved adapter reproduces its selected
 scores exactly after reload. See the [validation report](../scores/clip_lora_v2_r8_both_seed0_val.md),
@@ -78,3 +78,51 @@ No test inference is performed by this trainer. Plan and freeze the comparison
 matrix before scoring test: rank 4/8/16, text/vision/both towers, multiple seeds,
 and a full-fine-tuning control using the same data and loss. Validation results
 from the first run are development evidence, not final held-out performance.
+
+## Fixed 15-run ablation matrix
+
+The selected design has five configurations, each at seeds 0, 1 and 2:
+both towers at ranks 4, 8 and 16, plus text-only and vision-only at rank 8.
+This separates rank and tower ablations without running all nine combinations.
+Alpha is twice rank, preserving the original alpha/rank scaling of 2. All other
+training settings stay at the first run's values. Each run uses five epochs;
+the original rank-8/both/seed-0 run is reused after hash/config validation.
+
+```bash
+python src/models/run_lora_ablation.py \
+  --manifest configs/clip_lora_v2_ablation.json --device auto
+```
+
+The runner starts a separate process for each experiment, executes sequentially,
+checks the selected adapter hash and reload validation, verifies exact validation
+score coverage, and exports per-run CSV/JSON files to `scores/`. Partial and final
+summaries are written as `clip_lora_v2_ablation_runs.csv`,
+`clip_lora_v2_ablation_summary.csv` and `clip_lora_v2_ablation_summary.md`.
+The aggregate reports arithmetic means and sample standard deviations across
+seeds (ddof=1); these are validation-development statistics, not test confidence
+intervals. The checkpoint selected for each seed may come from a different epoch.
+
+## Full fine-tuning control
+
+The full-parameter control uses the same fixed data, objective, optimizer
+settings, five epochs, validation-only checkpoint selection and seeds 0, 1 and
+2. Both CLIP towers are trainable (151,277,313 parameters), rather than only
+the Q/V LoRA adapters. The smoke run completed successfully before the full
+controls. Full runs are configured in
+`configs/clip_full_v2_both_seed{0,1,2}_fair.json` and store complete checkpoints
+under ignored `runs/`.
+
+An initial control using the LoRA learning rate of 1e-4 was not a fair
+optimization comparison: its three-seed mean was 0.963852 ± 0.003077. A
+seed-0, three-epoch learning-rate pilot compared 1e-6, 3e-6, 1e-5 and 3e-5;
+the best pilot used 3e-5 and reached validation AUC 0.982191. Using that
+rate, the definitive five-epoch full-tuning runs reached 0.982981, 0.983027
+and 0.982191 for seeds 0, 1 and 2: mean 0.982733 ± 0.000470 (sample SD).
+This exceeds the rank-16 both-tower LoRA mean of 0.975545 ± 0.000187 on the
+development validation split. These are validation-only comparisons; no
+full-tuning test inference has been run.
+
+Logs and live progress remain under ignored `runs/lora_ablation/`. Re-running
+the command safely reuses completed runs only if configurations, trainer, dataset
+and adapter hashes match. An incomplete or mismatching directory stops the batch
+for investigation; it is not overwritten. This batch performs no test inference.

@@ -1,4 +1,4 @@
-"""Train CLIP Q/V LoRA on fixed-image v2 anchors, selecting on validation only.
+"""Train CLIP LoRA or all parameters on fixed-image v2, selecting on validation only.
 
 Image-to-text InfoNCE uses B original and B explicitly negative titles.
 Text-to-image InfoNCE uses only the B original titles and B original images.
@@ -108,6 +108,8 @@ def contrastive_loss(images, texts, masks, temperature):
 
 def make_model(config):
     model = CLIPModel.from_pretrained(config["model_id"], revision=config["model_revision"])
+    if config.get("training_mode", "lora") == "full":
+        return model, []
     targets = [name for name, _ in model.named_modules()
                if name.endswith(("q_proj", "v_proj"))
                and (config["towers"] == "both" or name.startswith(config["towers"] + "_model."))]
@@ -189,7 +191,8 @@ def train(config, run_dir, device, smoke=False):
         "train_anchors": len(train_anchors), "validation_pairs": len(val_rows),
         "negative_counts": dict(Counter(n["neg_type"] for _, n in train_anchors)),
         "objective": "mean(image-to-[positive+negative]-text multi-positive InfoNCE, positive-text-to-image InfoNCE)",
-        "checkpoint_selection": "highest val AUC, earlier epoch wins ties; includes initial adapter",
+        "checkpoint_selection": "highest val AUC, earlier epoch wins ties; includes initial checkpoint",
+        "training_mode": config.get("training_mode", "lora"),
         "test_evaluated": False, "status": "running", "history": [],
     }
     write_json(run_dir / "training.json", metadata)
@@ -228,7 +231,7 @@ def train(config, run_dir, device, smoke=False):
         auc = float(roc_auc_score([int(r["label"]) for r in val_rows], scores))
         if auc > best_auc:
             best_auc, best_epoch, best_scores = auc, epoch, scores
-            model.save_pretrained(run_dir / "best_adapter")
+            model.save_pretrained(run_dir / ("best_model" if config.get("training_mode", "lora") == "full" else "best_adapter"))
             write_scores(run_dir / "val_scores.csv", val_rows, scores)
         result = {"epoch": epoch, "val_auc": auc,
                   "train_loss": sum(loss * n for loss, n in losses) / sum(n for _, n in losses) if losses else None,
@@ -241,14 +244,21 @@ def train(config, run_dir, device, smoke=False):
     del optimizer, scheduler, parameters, model
     if device == "mps":
         torch.mps.empty_cache()
-    base = CLIPModel.from_pretrained(config["model_id"], revision=config["model_revision"])
-    restored = PeftModel.from_pretrained(base, run_dir / "best_adapter").to(device)
+    artifact = run_dir / ("best_model" if config.get("training_mode", "lora") == "full" else "best_adapter")
+    if config.get("training_mode", "lora") == "full":
+        restored = CLIPModel.from_pretrained(artifact).to(device)
+    else:
+        base = CLIPModel.from_pretrained(config["model_id"], revision=config["model_revision"])
+        restored = PeftModel.from_pretrained(base, artifact).to(device)
     reloaded = score_rows(restored, processor, val_rows, root, device, config["batch_size"] * 2)
     error = float(np.max(np.abs(np.array(reloaded) - np.array(best_scores))))
     if error > 1e-5:
-        raise ValueError(f"adapter reload changes predictions by {error}")
-    metadata.update(status="complete", adapter_reload_max_error=error,
-                    adapter_sha256=sha256(run_dir / "best_adapter" / "adapter_model.safetensors"))
+        raise ValueError(f"checkpoint reload changes predictions by {error}")
+    metadata.update(status="complete", reload_max_error=error,
+                    checkpoint_sha256=sha256(artifact / "model.safetensors" if config.get("training_mode", "lora") == "full"
+                                             else artifact / "adapter_model.safetensors"))
+    if config.get("training_mode", "lora") == "lora":
+        metadata["adapter_reload_max_error"] = error
     write_json(run_dir / "training.json", metadata)
     print(f"complete: best epoch {best_epoch}, validation AUC {best_auc:.6f}, reload error {error}", flush=True)
 
@@ -261,13 +271,19 @@ def main():
     parser.add_argument("--smoke", action="store_true", help="one epoch on 32 train anchors and 16 val anchors")
     args = parser.parse_args()
     config = json.loads(Path(args.config).read_text())
+    if config.get("training_mode", "lora") not in {"lora", "full"}:
+        parser.error("training_mode must be lora or full")
     if config["towers"] not in {"both", "text", "vision"}:
         parser.error("towers must be both, text or vision")
     if config["selection_metric"] != "val_auc" or not config["include_initial_checkpoint"]:
         parser.error("this protocol requires val_auc and inclusion of the initial checkpoint")
-    for key in ["rank", "alpha", "epochs", "batch_size", "learning_rate", "temperature", "max_grad_norm"]:
+    for key in ["epochs", "batch_size", "learning_rate", "temperature", "max_grad_norm"]:
         if config[key] <= 0:
             parser.error(f"{key} must be positive")
+    if config.get("training_mode", "lora") == "lora":
+        for key in ["rank", "alpha"]:
+            if config[key] <= 0:
+                parser.error(f"{key} must be positive")
     device = args.device
     if device == "auto":
         device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"

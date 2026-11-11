@@ -139,5 +139,10 @@
   "adapter_sha256": "3708d5cc5b920b6c3b643ac3d064568eea2e344829ddbab5ad529b34d0df9421",
   "validation_scores_sha256": "a961947b24f687117a4bbf0e96978c22e5bcb9bafae5fb34b6a66009ff573328",
   "checkpoint_path": "runs/clip_lora_v2_r8_both_seed0/best_adapter",
-  "verification": "51 tests passed; smoke training and exact saved-adapter reload verified; test not scored"
+  "validation_auc_by_type": {
+    "all": 0.9734533016061869,
+    "N1": 0.9972954366640441,
+    "N2": 0.9521046420141621,
+    "N3": 0.9695884146341462
+  }
 }

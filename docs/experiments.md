@@ -18,12 +18,12 @@ Jane's WP7/WP8 implementation was merged via [PR #5](https://github.com/kkkira-1
 
 Both implementations include fixed-image v2 compatibility. API resume fingerprints bind exact inputs/prompts/settings; subset sampling keeps explicit image-anchor groups together. Historical pilot examples remain in model-owner documentation, so provide the v2 pair and image paths explicitly as shown in the release contract.
 
-## LoRA development
+## LoRA and full-tuning development
 
-Jack's [first v2 LoRA protocol](jack_wp6_training.md) uses both CLIP towers' Q/V
-projections, rank 8, seed 0 and explicit negative titles in InfoNCE. The trainer
-uses train for gradients and val AUC for checkpoint selection, including the
-initial adapter. It performs no test inference. The frozen N3 rules and their
-known shortcut are retained; the reciprocal training pool is not appended.
-Rank/tower/seed comparisons and the full-fine-tuning control remain subsequent
-experiments. Development validation scores are not held-out test results.
+Jack's [v2 adaptation protocol](jack_wp6_training.md) uses explicit negative
+titles in InfoNCE and validation AUC for checkpoint selection, including epoch
+0. The fixed 15-run LoRA rank/tower/seed matrix and a three-seed full-parameter
+control are complete. Rank-16 LoRA on both towers was selected for held-out
+comparison. The frozen N3 rules and their known shortcut are retained; the
+reciprocal training pool is not appended. All reported adaptation results are
+still development validation scores, not held-out test results.

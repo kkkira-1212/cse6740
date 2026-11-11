@@ -4,6 +4,7 @@ import importlib.util
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import torch
 import torch.nn.functional as F
@@ -14,6 +15,23 @@ SPEC.loader.exec_module(training)
 
 
 class ContrastiveTests(unittest.TestCase):
+    def test_full_mode_keeps_every_parameter_trainable(self):
+        from transformers import CLIPConfig, CLIPModel
+        tiny = CLIPModel(CLIPConfig(
+            text_config={"vocab_size": 20, "hidden_size": 16, "intermediate_size": 32,
+                         "num_hidden_layers": 1, "num_attention_heads": 2, "max_position_embeddings": 8,
+                         "bos_token_id": 1, "eos_token_id": 2},
+            vision_config={"hidden_size": 16, "intermediate_size": 32, "num_hidden_layers": 1,
+                           "num_attention_heads": 2, "image_size": 8, "patch_size": 4},
+            projection_dim=8,
+        ))
+        with patch.object(training.CLIPModel, "from_pretrained", return_value=tiny):
+            model, targets = training.make_model({
+                "training_mode": "full", "model_id": "unused", "model_revision": "unused"
+            })
+        self.assertEqual(targets, [])
+        self.assertTrue(all(parameter.requires_grad for parameter in model.parameters()))
+
     def test_optimizer_changes_adapters_but_not_backbone(self):
         from transformers import CLIPConfig, CLIPModel
         from peft import LoraConfig, get_peft_model
