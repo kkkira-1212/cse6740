@@ -13,6 +13,25 @@ python src/eval/eval.py --pairs-csv data/releases/abo-home-v2-20261103/pairs.csv
 
 Regression checks cover explicit source identity, threshold independence from test scores, v2 ranking rejection and legacy bootstrap/ranking edge cases. The remainder below documents the original pilot interface.
 
+## Shortcut controls (v2)
+
+[`src/eval/controls.py`](controls.py) trains two train-only controls on the v2 release:
+
+- text-only: TF-IDF word 1-2gram + logistic regression
+- image-only: frozen CLIP ViT-B/32 image embeddings + logistic regression
+
+v2 is fixed-image: each anchor's positive and negative share the same image, so the
+image-only AUC is a structural 0.5. The text-only control is the substantive shortcut
+check, especially for N3 color substitutions.
+
+```bash
+python src/eval/controls.py --image-mode clip --bootstrap 1000
+```
+
+Outputs `scores/control_v2_*.csv`, `scores/control_v2_*_eval.{csv,md,json}`,
+`scores/control_v2_summary.md` and `scores/control_v2_meta.json`.
+Results and interpretation: [`docs/controls.md`](../../docs/controls.md).
+
 ---
 
 # WP4 评估脚本
