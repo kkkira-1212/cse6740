@@ -126,3 +126,21 @@ Logs and live progress remain under ignored `runs/lora_ablation/`. Re-running
 the command safely reuses completed runs only if configurations, trainer, dataset
 and adapter hashes match. An incomplete or mismatching directory stops the batch
 for investigation; it is not overwritten. This batch performs no test inference.
+
+## Frozen held-out comparison
+
+After all validation development was complete, the test manifest froze
+rank-16 both-tower LoRA and the definitive LR=3e-5 full control, each at seeds
+0, 1 and 2. The manifest and exact checkpoint hashes were committed before
+test inference. Zero-shot CLIP is the unchanged WP5 baseline. Each checkpoint
+uses a threshold selected on validation accuracy; the shared evaluator then
+reports test metrics with 1,000 image-anchor-group bootstrap resamples.
+
+Across seeds, LoRA reached test accuracy 0.937318 ± 0.001458 and AUC 0.979260 ±
+0.000442. Full tuning reached accuracy 0.948008 ± 0.001683 and AUC 0.985267 ±
+0.001034. Zero-shot accuracy/AUC were 0.793003/0.889400. These are the first
+and only held-out test evaluations of the adapted checkpoints. See
+`scores/clip_v2_selected_test_summary.md` for recalls and the individual
+reports for per-seed 95% bootstrap intervals. N3 remains subject to the known
+frozen text shortcut and must not be interpreted as clean visual color
+reasoning.

@@ -11,6 +11,11 @@ Use `run_lora_ablation.py` for the frozen 15-run matrix and
 weights are kept under ignored `runs/`; committed development results are
 labeled as validation results.
 
+The held-out comparison is frozen in `configs/clip_v2_selected_test.json`.
+`score_selected_checkpoints.py` scores test only for those six adapted
+checkpoints and combines the predictions with their already-frozen validation
+scores. `summarize_selected_test.py` aggregates the shared evaluator outputs.
+
 # WP5: zero-shot CLIP
 
 This baseline uses OpenAI CLIP ViT-B/32 (`openai/clip-vit-base-patch32`),

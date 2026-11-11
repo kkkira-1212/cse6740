@@ -24,6 +24,6 @@ Jack's [v2 adaptation protocol](jack_wp6_training.md) uses explicit negative
 titles in InfoNCE and validation AUC for checkpoint selection, including epoch
 0. The fixed 15-run LoRA rank/tower/seed matrix and a three-seed full-parameter
 control are complete. Rank-16 LoRA on both towers was selected for held-out
-comparison. The frozen N3 rules and their known shortcut are retained; the
-reciprocal training pool is not appended. All reported adaptation results are
-still development validation scores, not held-out test results.
+comparison before test inference. Across three seeds its test AUC is 0.979260 ±
+0.000442; full tuning reaches 0.985267 ± 0.001034. The frozen N3 rules and their
+known shortcut are retained; the reciprocal training pool is not appended.

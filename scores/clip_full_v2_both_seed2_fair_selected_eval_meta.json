@@ -1,0 +1,17 @@
+{
+  "name": "clip_full_v2_both_seed2_fair",
+  "kind": "full",
+  "seed": 2,
+  "selection": "frozen from validation before test inference",
+  "dataset_version": "abo-home-v2-20261103",
+  "pairs_sha256": "3c02d654d810c40751cad1128edcb10db69fcffe4cc2483095e14aab1b40ce77",
+  "training_metadata": "scores/clip_full_v2_both_seed2_fair_meta.json",
+  "training_metadata_sha256": "208bb9db8b25a0aa0c81482503013b7af316fe9893e4477483194417af0bd6e3",
+  "checkpoint": "runs/clip_full_v2_both_seed2_fair/best_model",
+  "checkpoint_sha256": "e95c0264cc95702a5e752556ec4fdee9ed3c8ea7c969e414c08ea31251a1777c",
+  "validation_scores": "scores/clip_full_v2_both_seed2_fair_val.csv",
+  "validation_scores_sha256": "61f262415f3b3f7de51b77e8a7a2f5c15a7d3afffd84260428ad495e90030ca6",
+  "test_pairs": 686,
+  "output_scores_sha256": "18c815ab4f1302ec7a25e4fd3316938dbd610042a55af40c2cbc1e134aaf0a5e",
+  "test_evaluated": true
+}
