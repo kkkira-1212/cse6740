@@ -25,7 +25,7 @@ Donor selection prefers the least-used legal title-source groups and randomizes 
 
 The 100 examples are sampled from the exact train N2 pairs in this release, across all retained types. Their titles are not independently regenerated. Test labels have not been manually inspected to tune the new random N2 rule. Earlier project exploration did inspect the old pilot, so this release is not claimed to be a wholly pristine new source-level holdout.
 
-N1/N2 mismatches are not guaranteed by swapping. N3 candidates are not automatically human-approved, and the four target colors can introduce text-only shortcuts. Run the planned human audit and text-only/image-only controls before interpreting results as final benchmark performance.
+N1/N2 mismatches are not guaranteed by swapping. N3 candidates are not automatically human-approved, and the four target colors can introduce text-only shortcuts. Run the planned human audit before interpreting results as final benchmark performance; the text-only/image-only controls are reported in [controls.md](controls.md).
 
 Do not apply the old pilot threshold or reuse old model/API scores. Every model must score the new exact pairs. The provided evaluator is classification-only; one negative per anchor is not the earlier three-way R@1 task.
 

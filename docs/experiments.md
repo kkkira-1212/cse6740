@@ -10,7 +10,7 @@ Each model writes unique `pair_id,score`, with higher values meaning stronger ma
 
 Aaron's shared evaluator was merged via [PR #4](https://github.com/kkkira-1212/cse6740/pull/4). Use `src/eval/eval.py` for the current shared entry point. The data ZIP also preserves a standalone classification-only snapshot, with matching classification metrics and the legacy three-way R@1 flag blocked. It selects thresholds on validation and evaluates test using fixed settings. Complete val+test scores suffice; train scores may be omitted.
 
-Use identical versions, pairs and exclusions across compared models. One-negative-per-image v2 should not be described as the earlier three-candidate retrieval task. Semantic audit, text-only/image-only controls and final quality certification remain outstanding.
+Use identical versions, pairs and exclusions across compared models. One-negative-per-image v2 should not be described as the earlier three-candidate retrieval task. Text-only/image-only controls are reported in [controls.md](controls.md); semantic audit and final quality certification remain outstanding.
 
 ## Additional baselines
 
