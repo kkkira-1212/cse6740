@@ -1,0 +1,4 @@
+# Versioned candidate hashes require stable text bytes on Windows checkouts.
+data/releases/abo-home-reciprocal-v3-candidate/*.csv text eol=lf
+data/releases/abo-home-reciprocal-v3-candidate/*.json text eol=lf
+data/reviews/reciprocal-v3-model-assisted/*.csv text eol=lf
