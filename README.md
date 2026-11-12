@@ -4,6 +4,12 @@ A Georgia Tech CSE 6740 project studying whether an e-commerce product's main im
 
 ## Current data release
 
+A proposed [reciprocal N3 full-split candidate](data/releases/abo-home-reciprocal-v3-candidate/README.md)
+is available for data-owner review and new shortcut controls. It preserves existing
+train QC and adds explicitly model-assisted held-out color judgments. It is not
+frozen or human-certified, and changes the evaluated population. The v2 release
+and historical results remain separate.
+
 **[ABO Furniture + Decor v2 — 2026-11-03](https://github.com/kkkira-1212/cse6740/releases/tag/abo-home-v2-20261103)** is available for preliminary experiments and human N2 review. It contains **3,335 image anchors and 6,670 image–title pairs** across 10 retained furniture/decor types.
 
 **Generated negative labels are candidates, not human-certified ground truth.** A 100-pair train N2 audit is complete (94 mismatch, 1 match, 5 uncertain). The reciprocal-color N3 audits now retain 158 individually reviewed negatives. An expanded training pool contains 266 N3 negatives: those 158 plus 108 unreviewed generated candidates, after excluding a known uncertain exchange. See the [expanded N3 training guide](data/reviews/n3-reciprocal-expanded-dev-v2/README.md). See the [N2 review](data/reviews/abo-home-v2-20261103/README.md) and [N3 development results](data/reviews/n3-reciprocal-dev-v1/README.md). These sample reviews do not certify all release or training-pool labels. No multimodal model performance on v2 is reported yet.

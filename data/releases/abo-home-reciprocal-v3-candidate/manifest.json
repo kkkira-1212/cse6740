@@ -1,0 +1,47 @@
+{
+  "version": "abo-home-reciprocal-v3-candidate",
+  "status": "CANDIDATE_NOT_FROZEN_NOT_HUMAN_CERTIFIED",
+  "construction": {
+    "eligible": 161,
+    "unmatched": 85,
+    "skips": {
+      "not_in_raw_checked_ledger": 504,
+      "unparsed_color_modifier": 6,
+      "previously_reviewed_anchors_excluded": 0
+    }
+  },
+  "counts": {
+    "train:pos": 2327,
+    "train:N1": 1030,
+    "train:N2": 1031,
+    "train:N3": 266,
+    "val:pos": 272,
+    "val:N2": 124,
+    "val:N1": 124,
+    "val:N3": 24,
+    "test:pos": 286,
+    "test:N3": 30,
+    "test:N2": 128,
+    "test:N1": 128
+  },
+  "excluded_anchors": {
+    "train": 337,
+    "val": 56,
+    "test": 57
+  },
+  "input_hash_policy": "SHA-256 of text bytes with CRLF normalized to LF",
+  "input_sha256": {
+    "data/releases/abo-home-v2-20261103/items.csv": "c2a205478ab359d0e6755482fb2f794cc2bc913f28804f117977d83e24c914ae",
+    "data/releases/abo-home-v2-20261103/pairs.csv": "3c02d654d810c40751cad1128edcb10db69fcffe4cc2483095e14aab1b40ce77",
+    "data/releases/abo-home-v2-20261103/n3_audit.csv": "a1e6fba9023a31971cb35d3da788588912e8f48ee29f217d43b0dccbb3902431",
+    "data/reviews/n3-reciprocal-expanded-dev-v2/training_negatives.csv": "45a400749f6a44fe166a2972a877d6ebc6bf5cba95d3ff29d53befe19ab23217",
+    "data/reviews/reciprocal-v3-model-assisted/decisions.csv": "e28e834039b64c217256189af7c75b9f5ed61e770500b1b270e5d243021b2b71"
+  },
+  "rejected_heldout_exchanges": 11,
+  "output_sha256": {
+    "excluded_anchors.csv": "07c901f077785a1dcbd297a5462b3d408434fe39909fe068239561d40e1b32cc",
+    "heldout_n3_candidates.csv": "7fa5df7fd1d157f77194032771a3c7e586a4eddd058a1e890b536589c19c3aec",
+    "n3_provenance.csv": "1664456fd59b9fd20328a0a580f0f2d2e3d8c46e21c802431fbb2d93bdd150ef",
+    "pairs.csv": "c35b8eb81681eb9a16bd5fcf7f4fa095c2a387cde2a0e200ce4f695ab0f5de3e"
+  }
+}
