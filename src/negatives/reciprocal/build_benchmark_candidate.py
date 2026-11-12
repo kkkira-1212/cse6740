@@ -68,7 +68,7 @@ def build(root, out):
                                   for p in [source/'items.csv', source/'pairs.csv', source/'n3_audit.csv', train_path, review_path]},
                     rejected_heldout_exchanges=len(rejected),
                     output_sha256={p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(out.glob('*.csv'))})
-    (out / 'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n', encoding='utf-8')
+    (out / 'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n', encoding='utf-8', newline='\n')
     print(json.dumps(manifest, indent=2))
 
 
