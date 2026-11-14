@@ -1,0 +1,98 @@
+{
+  "tool": "src/eval/controls.py",
+  "pairs_csv": "data/releases/abo-home-reciprocal-v3-candidate/pairs.csv",
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "dataset_version": "abo-home-reciprocal-v3-candidate",
+  "protocol": {
+    "fit_split": "train",
+    "selection_split": "val",
+    "objective": "accuracy",
+    "rule": "score >= threshold",
+    "tie_break": "smallest threshold among maximum-accuracy candidates",
+    "test_evaluated": false,
+    "per_type_auc": "matched_anchor_positives"
+  },
+  "controls": {
+    "text-only word": {
+      "threshold": 0.5222853016651217,
+      "metrics": {
+        "n": 656,
+        "n_pos": 328,
+        "n_neg": 328,
+        "accuracy": 0.510670731707317,
+        "auc": 0.5110146490184415,
+        "positive_recall": 0.3445121951219512,
+        "negative_recall": 0.676829268292683,
+        "balanced_accuracy": 0.5106707317073171,
+        "negatives_by_type": {
+          "N1": {
+            "n": 152,
+            "recall": 0.6447368421052632
+          },
+          "N2": {
+            "n": 152,
+            "recall": 0.6644736842105263
+          },
+          "N3": {
+            "n": 24,
+            "recall": 0.9583333333333334
+          }
+        }
+      }
+    },
+    "text-only char": {
+      "threshold": 0.49939115491504316,
+      "metrics": {
+        "n": 656,
+        "n_pos": 328,
+        "n_neg": 328,
+        "accuracy": 0.5121951219512195,
+        "auc": 0.5134592504461629,
+        "positive_recall": 0.6189024390243902,
+        "negative_recall": 0.4054878048780488,
+        "balanced_accuracy": 0.5121951219512195,
+        "negatives_by_type": {
+          "N1": {
+            "n": 152,
+            "recall": 0.375
+          },
+          "N2": {
+            "n": 152,
+            "recall": 0.3815789473684211
+          },
+          "N3": {
+            "n": 24,
+            "recall": 0.75
+          }
+        }
+      }
+    },
+    "image-only CLIP": {
+      "threshold": 0.5,
+      "metrics": {
+        "n": 656,
+        "n_pos": 328,
+        "n_neg": 328,
+        "accuracy": 0.5,
+        "auc": 0.5,
+        "positive_recall": 1.0,
+        "negative_recall": 0.0,
+        "balanced_accuracy": 0.5,
+        "negatives_by_type": {
+          "N1": {
+            "n": 152,
+            "recall": 0.0
+          },
+          "N2": {
+            "n": 152,
+            "recall": 0.0
+          },
+          "N3": {
+            "n": 24,
+            "recall": 0.0
+          }
+        }
+      }
+    }
+  }
+}
