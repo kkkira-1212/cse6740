@@ -104,24 +104,39 @@ image-anchor groups.
 | text-only char | 0.5649 [0.5026, 0.6301] (156/156, 156 groups) | 0.4874 [0.4242, 0.5520] (157/157, 157 groups) | 0.5056 [0.4800, 0.5411] (30/30, 15 exchanges) |
 | image-only CLIP | 0.5000 [0.5000, 0.5000] | 0.5000 [0.5000, 0.5000] | 0.5000 [0.5000, 0.5000] |
 
+### v2 matched-anchor reference (historical, same definition)
+
+For an apples-to-apples v2 -> v3 comparison, the v2 word scores were
+re-evaluated with the same matched-anchor definition. This is a historical
+reference only; no v2 score/cache/threshold was used in the v3 run.
+
+| control | N1 | N2 | N3 |
+|---|---|---|---|
+| v2 text-only word | 0.5738 (128/128) | 0.4729 (128/128) | 0.9941 (87/87) |
+
+N1/N2 are essentially unchanged from v2; the large change is N3.
+
 ### Key findings
 
 1. **The reciprocal N3 fix removed the v2 N3 text shortcut.**
-   v2 N3 text AUC was 0.9928; v3 is 0.5189 (word) / 0.5056 (char), and both
+   The v2 matched-anchor N3 AUC is 0.9941 (87/87; the old all-positives
+   definition gave 0.9928); v3 is 0.5189 (word) / 0.5056 (char), and both
    95% CIs include 0.5. The four target colors no longer dominate the text
    control: the word model's most negative features are `beige`, `navy`, `white`
    and size/color phrases, not `yellow`/`red`/`green`/`blue`. This is the main
    intended improvement of the candidate.
-2. **A modest N1 text signal remains.**
+2. **The N1 text signal is small and pre-existing.**
    Matched-anchor N1 AUC is 0.5698 (word, CI [0.5066, 0.6384]) and
-   0.5649 (char, CI [0.5026, 0.6301]). Both lower bounds are above 0.5, so
-   this is a small but detectable text-side signal; it may be related to the 450
-   new fallback N1 donor rows or to title-style differences between anchors and
-   donors. It is much weaker than the old N3 shortcut but should be reviewed
-   before freezing.
-3. **N2 is at or below chance.**
-   N2 AUC is 0.4687 (word) / 0.4874 (char); both CIs include 0.5. No strong
-   N2 text shortcut is evident.
+   0.5649 (char, CI [0.5026, 0.6301]). Both lower bounds are above 0.5, but the
+   same matched-anchor definition on the v2 word scores gives 0.5738
+   (128/128), essentially unchanged. The 450 fallback rows did not materially
+   change the N1 signal; it is a pre-existing N1 title/donor-distribution
+   effect and should be reviewed separately, not treated as a new v3
+   regression.
+3. **N2 is unchanged and near chance.**
+   N2 AUC is 0.4687 (word) / 0.4874 (char); both CIs include 0.5. The v2
+   matched-anchor reference is 0.4729, so this is stable. No strong N2 text
+   shortcut is evident.
 4. **Overall accuracy is near 50%, as expected after removing the N3 shortcut.**
    The v2 text-only overall 61.22% was driven by N3. v3 overall is 50.87%
    (word) / 51.60% (char), with CIs including 50%. Overall metrics are not
@@ -144,10 +159,10 @@ image-anchor groups.
 
 - The candidate achieves its primary goal: replacing one-directional color
   swaps with reciprocal N3 removes the extreme N3 text shortcut.
-- The remaining text-side risk is N1, at AUC ≈0.57. This is not a reason to
-  reject the candidate, but it should be investigated before freezing:
-  inspect fallback N1 donor titles for systematic length/brand/style cues, and
-  decide whether the fallback selection rule needs a new candidate version.
+- The remaining text-side risk is N1, at AUC ≈0.57. This signal is essentially
+  identical in v2 (0.5738), so it is not caused by the 450 fallback rows. It is
+  a pre-existing N1 title/donor-distribution effect; review it separately before
+  freezing, but do not attribute it to the reciprocal-v3 change.
 - Do not tune on test. Any rule change requires a new candidate release and a
   fresh protocol/control run.
 - The image-only null confirms the fixed-image layout; it is not evidence about
