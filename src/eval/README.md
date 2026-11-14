@@ -32,6 +32,33 @@ Outputs `scores/control_v2_*.csv`, `scores/control_v2_*_eval.{csv,md,json}`,
 `scores/control_v2_summary.md` and `scores/control_v2_meta.json`.
 Results and interpretation: [`docs/controls.md`](../../docs/controls.md).
 
+## Shortcut controls (v3 reciprocal candidate)
+
+The current candidate is `data/releases/abo-home-reciprocal-v3-candidate/pairs.csv`
+(image root: `data/releases/abo-home-v2-20261103/images`). The script defaults to
+this release and produces:
+
+- text-only word: TF-IDF word 1-2gram + logistic regression
+- text-only char: TF-IDF char 3-5gram + logistic regression (secondary)
+- image-only: frozen CLIP ViT-B/32 image embeddings + logistic regression
+
+Per-type AUC uses **matched-anchor positives** (each negative compared with the
+positive of its own `anchor_item_id`, not the donor `text_item_id`). N3 intervals
+resample reciprocal exchanges; N1/N2 intervals resample image-anchor groups.
+The CLIP cache is bound to the dataset version and pairs SHA-256, so a v2 cache
+is rejected even though v3 reuses v2 images.
+
+Freeze the protocol before test with `--splits val`; test scoring requires a
+protocol file containing the pairs SHA-256:
+
+```bash
+python src/eval/controls.py --splits val
+python src/eval/controls.py --splits val test --protocol-file docs/controls_v3.md
+```
+
+Outputs `scores/control_v3_*`; results and interpretation:
+[`docs/controls_v3.md`](../../docs/controls_v3.md).
+
 ---
 
 # WP4 评估脚本
