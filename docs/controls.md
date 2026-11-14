@@ -1,5 +1,8 @@
 # Text-only / Image-only 对照(ABO home v2)
 
+> 本文记录 v2 pilot 的对照结果。新版 reciprocal v3 candidate 的协议、结果和
+> 四条 uncertain 见 [`controls_v3.md`](controls_v3.md)。
+
 WP4 的 shortcut 对照,用于在解读 v2 模型结果前检查数据里有没有单模态捷径。
 统一评估口径见 [`src/eval/README.md`](../src/eval/README.md)。
 
