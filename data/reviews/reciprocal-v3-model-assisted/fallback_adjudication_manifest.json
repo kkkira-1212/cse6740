@@ -1,0 +1,18 @@
+{
+  "status": "APPENDED_MODEL_ASSISTED_PROPOSALS_NOT_HUMAN_CERTIFICATION",
+  "candidate_commit": "b1b0aaa7a6d2e999225f87e3b51af38df6252bb0",
+  "candidate_pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "source_review_url": "https://github.com/kkkira-1212/cse6740/pull/12#issuecomment-6881272896",
+  "source_ledger_sha256": "99aa1dc569f1b20b1e8bc9d9fefc017870faf75aa773f966a4c46770f57275b3",
+  "adjudications_sha256": "d81af90cf4f2c773a774d47244b5d04fb741e1fe8e46bd722f51a1220d541a0f",
+  "input_text_hash_policy": "SHA-256 with CRLF normalized to LF",
+  "records": 6,
+  "candidate_data_changed": false,
+  "original_ledger_changed": false,
+  "current_proposed_uncertain_pairs": [
+    "B07Q88MYL4_N1",
+    "B07TTCHRB2_N2",
+    "B07JD7RFRN_N2",
+    "B075H8JNZT_N2"
+  ]
+}

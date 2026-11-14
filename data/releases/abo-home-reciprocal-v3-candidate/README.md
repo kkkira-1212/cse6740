@@ -29,6 +29,12 @@ A model-assisted train spot check of 10 new N1 and 10 new N2 rows found 16 clear
 mismatches and 4 uncertain cases; the ledger is under
 `data/reviews/reciprocal-v3-model-assisted/fallback_train_spotcheck.csv`. It does
 not certify the fallback pool. No rows were resampled based on this check.
+Follow-up proposals after Kira's technical review are appended in
+`data/reviews/reciprocal-v3-model-assisted/fallback_train_adjudications.csv`:
+the chair's closed-back contradiction supports a proposed mismatch; the rod/rings
+case is now uncertain, and the framed-wall-art explanation is corrected. Original
+review records and all data rows/labels are unchanged. Carry the current four
+uncertainty flags with diagnostic controls; see the review README for exact IDs.
 
 Train uses the exact previous 266-negative supplemental pool (158 human-reviewed,
 108 generated/unreviewed); previous human judgments are unchanged. Held-out

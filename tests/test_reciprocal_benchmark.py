@@ -4,6 +4,8 @@ from collections import Counter, defaultdict
 from pathlib import Path
 import unittest
 import sys
+import hashlib
+import json
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src/negatives/reciprocal'))
@@ -16,6 +18,36 @@ def read(path):
 
 
 class ReciprocalBenchmarkTests(unittest.TestCase):
+    def test_followup_binds_original_inputs_without_changing_training_labels(self):
+        folder = ROOT/'data/reviews/reciprocal-v3-model-assisted'
+        manifest = json.loads((folder/'fallback_adjudication_manifest.json').read_text())
+        digest = lambda p: hashlib.sha256(p.read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+        self.assertEqual(digest(folder/'fallback_train_spotcheck.csv'), manifest['source_ledger_sha256'])
+        self.assertEqual(digest(folder/'fallback_train_adjudications.csv'), manifest['adjudications_sha256'])
+        pairs_path = ROOT/'data/releases/abo-home-reciprocal-v3-candidate/pairs.csv'
+        self.assertEqual(digest(pairs_path), manifest['candidate_pairs_sha256'])
+        original = {r['pair_id']:r for r in read(folder/'fallback_train_spotcheck.csv')}
+        pairs = {r['pair_id']:r for r in read(pairs_path)}
+        followup = read(folder/'fallback_train_adjudications.csv')
+        self.assertEqual(len(followup), 6)
+        self.assertEqual(len({r['pair_id'] for r in followup}), 6)
+        for r in followup:
+            old = original[r['pair_id']]
+            for key in ('text', 'split', 'image_path', 'image_sha256'):
+                self.assertEqual(r[key], old[key])
+            self.assertEqual(r['previous_decision'], old['decision'])
+            self.assertEqual(r['source_ledger_sha256'], manifest['source_ledger_sha256'])
+            self.assertEqual(r['candidate_commit'], manifest['candidate_commit'])
+            self.assertEqual(r['candidate_pairs_sha256'], manifest['candidate_pairs_sha256'])
+            self.assertEqual(r['reviewer_type'], 'model_assisted')
+            self.assertEqual(r['applied_to_training_labels'], 'false')
+            self.assertEqual(pairs[r['pair_id']]['label_status'], 'generated_unreviewed')
+        current = {k:r['decision'] for k,r in original.items()}
+        current.update({r['pair_id']:r['proposed_decision'] for r in followup})
+        self.assertEqual(sorted(k for k,v in current.items() if v == 'uncertain'),
+                         sorted(manifest['current_proposed_uncertain_pairs']))
+        self.assertEqual(Counter(current.values()), {'mismatch':16, 'uncertain':4})
+
     def test_all_anchors_positives_and_existing_n1_n2_preserved(self):
         old = read(ROOT/'data/releases/abo-home-v2-20261103/pairs.csv')
         new = read(ROOT/'data/releases/abo-home-reciprocal-v3-candidate/pairs.csv')
