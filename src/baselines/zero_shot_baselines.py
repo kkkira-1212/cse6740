@@ -16,6 +16,7 @@ Example:
     --scores-csv scores/siglip_b16_zero_shot.csv --drop-cross-split-images --r-at-1
 """
 import argparse
+import hashlib
 import json
 import time
 from pathlib import Path
@@ -155,6 +156,10 @@ def main():
         "n_params": sum(p.numel() for p in model.parameters()), "device": device,
         "seconds": round(elapsed, 1), "pairs_csv": args.pairs_csv, "splits": args.splits, "n_pairs": len(rows),
         "torch": torch.__version__, "transformers": __import__("transformers").__version__,
+        # Exact weights actually loaded and exact input table, so results bind to a data version.
+        "resolved_commit": getattr(model.config, "_commit_hash", None),
+        "pairs_sha256": hashlib.sha256(Path(args.pairs_csv).read_bytes()).hexdigest(),
+        "dataset_version": rows[0].get("dataset_version") or None,
     }
     Path(out).with_name(Path(out).stem + "_meta.json").write_text(json.dumps(meta, indent=2) + "\n")
     print(f"wrote {len(scores)} scores to {out} ({meta['n_params'] / 1e6:.0f}M params, {elapsed:.0f}s)")

@@ -1,11 +1,29 @@
 #!/usr/bin/env bash
-# WP8 end-to-end run on a local machine (macOS MPS, CUDA, or CPU).
-# Run from the repository root:  bash src/baselines/run_wp8.sh
-# Optional: MODELS="siglip-b16 clip-l14" bash src/baselines/run_wp8.sh
+# WP8 zero-shot baselines on a fixed-image release (v2 / v3), run from the repository root.
+#
+# Default MODE=val scores the val split only and prints threshold-free diagnostics;
+# it never touches test, so it is safe before the benchmark is frozen.
+#   bash src/baselines/run_wp8.sh
+#
+# MODE=final scores val + test and runs the shared evaluator. Use it only after the
+# team has frozen the data version:
+#   MODE=final CONFIRM_FROZEN=yes DATA_DIR=data/releases/<frozen-version> bash src/baselines/run_wp8.sh
+#
+# Optional: MODELS="siglip-b16 blip-itm-b" to choose models.
 set -euo pipefail
 
-MODELS="${MODELS:-siglip-b16 clip-l14 blip-itm-b align-b}"
-PAIRS="docs/mini_version/pairs.csv"
+MODE="${MODE:-val}"
+MODELS="${MODELS:-siglip-b16 blip-itm-b align-b}"
+DATA_DIR="${DATA_DIR:-data/releases/abo-home-reciprocal-v3-candidate}"
+IMAGE_ROOT="${IMAGE_ROOT:-data/releases/abo-home-v2-20261103/images}"
+PAIRS="$DATA_DIR/pairs.csv"
+VERSION="$(basename "$DATA_DIR")"
+
+if [ "$MODE" = "final" ] && [ "${CONFIRM_FROZEN:-}" != "yes" ]; then
+  echo "MODE=final reads test. Set CONFIRM_FROZEN=yes only after the data version is frozen." >&2
+  exit 2
+fi
+[ -f "$PAIRS" ] || { echo "missing $PAIRS (pull the latest main first)" >&2; exit 1; }
 
 # 1) Conda environment (shared team environment.yml).
 eval "$(conda shell.bash hook)"
@@ -17,28 +35,22 @@ fi
 conda activate cse6740
 python -c "import torch, transformers; print('torch', torch.__version__, 'transformers', transformers.__version__, 'mps', torch.backends.mps.is_available())"
 
-# 2) ABO metadata + furniture mini-version images (skipped when already present).
-if [ ! -d data/images/small ]; then
-  python src/data/fetch_raw.py --out-dir data/raw
-  python src/data/build_items.py \
-    --listings-dir data/raw/listings/metadata \
-    --images-csv data/raw/images/metadata/images.csv.gz \
-    --images-out data/images/small \
-    --out-csv data/processed/items.csv \
-    --out-counts-csv data/processed/items_counts.csv
-fi
+# 2) Release images (v3 reuses the v2 images). The downloader skips files whose hash already matches.
+python data/releases/abo-home-v2-20261103/tools/download_images.py
 
-# 3) Smoke test: 30 pairs, one model, scores written outside scores/.
-python src/baselines/zero_shot_baselines.py --model siglip-b16 --limit 30 \
-  --out-csv data/processed/siglip_smoke.csv
-
-# 4) Score val + test for each model, then evaluate with the shared WP4 evaluator.
+# 3) Score each model.
 for model in $MODELS; do
-  name="${model//-/_}_zero_shot"
-  python src/baselines/zero_shot_baselines.py --model "$model" --pairs-csv "$PAIRS" --batch-size 16
-  python src/eval/eval.py --pairs-csv "$PAIRS" --scores-csv "scores/${name}.csv" \
-    --drop-cross-split-images --r-at-1 --bootstrap 1000 \
-    --out-csv "scores/${name}_eval.csv" --out-md "scores/${name}_eval.md" --out-json "scores/${name}_eval.json"
+  name="${VERSION}_${model//-/_}"
+  if [ "$MODE" = "final" ]; then
+    python src/baselines/zero_shot_baselines.py --model "$model" --pairs-csv "$PAIRS" \
+      --image-root "$IMAGE_ROOT" --splits val test --batch-size 16 --out-csv "scores/${name}.csv"
+    python src/eval/eval.py --pairs-csv "$PAIRS" --scores-csv "scores/${name}.csv" --bootstrap 1000 \
+      --out-csv "scores/${name}_eval.csv" --out-md "scores/${name}_eval.md" --out-json "scores/${name}_eval.json"
+  else
+    python src/baselines/zero_shot_baselines.py --model "$model" --pairs-csv "$PAIRS" \
+      --image-root "$IMAGE_ROOT" --splits val --batch-size 16 --out-csv "scores/${name}_val.csv"
+    python src/baselines/val_diagnostics.py --pairs-csv "$PAIRS" --scores-csv "scores/${name}_val.csv"
+  fi
 done
 
-echo "Done. Reports: scores/*_zero_shot_eval.md"
+echo "Done (MODE=$MODE, data=$VERSION)."
