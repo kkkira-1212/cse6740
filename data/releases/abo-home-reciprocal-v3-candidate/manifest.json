@@ -11,24 +11,31 @@
     }
   },
   "counts": {
-    "train:pos": 2327,
-    "train:N1": 1030,
-    "train:N2": 1031,
+    "train:pos": 2664,
+    "train:N1": 1199,
+    "train:N2": 1199,
     "train:N3": 266,
-    "val:pos": 272,
-    "val:N2": 124,
-    "val:N1": 124,
+    "val:pos": 328,
+    "val:N2": 152,
+    "val:N1": 152,
     "val:N3": 24,
-    "test:pos": 286,
+    "test:pos": 343,
     "test:N3": 30,
-    "test:N2": 128,
-    "test:N1": 128
+    "test:N2": 157,
+    "test:N1": 156
   },
-  "excluded_anchors": {
-    "train": 337,
-    "val": 56,
-    "test": 57
+  "excluded_anchors": 0,
+  "fallback_seed": 20261114,
+  "fallback_counts": {
+    "train:N2": 168,
+    "train:N1": 169,
+    "val:N1": 28,
+    "val:N2": 28,
+    "test:N1": 28,
+    "test:N2": 29
   },
+  "max_title_donor_uses": 2,
+  "title_donor_soft_limit_exceedances": 0,
   "input_hash_policy": "SHA-256 of text bytes with CRLF normalized to LF",
   "input_sha256": {
     "data/releases/abo-home-v2-20261103/items.csv": "c2a205478ab359d0e6755482fb2f794cc2bc913f28804f117977d83e24c914ae",
@@ -39,9 +46,11 @@
   },
   "rejected_heldout_exchanges": 11,
   "output_sha256": {
-    "excluded_anchors.csv": "07c901f077785a1dcbd297a5462b3d408434fe39909fe068239561d40e1b32cc",
+    "excluded_anchors.csv": "6f7a7f9f3e97fab9a8867cbb2fdc9718f56e32a6b6b279e6b050b09112f9693a",
+    "fallback_provenance.csv": "eceba6cb750db98c5736fab152b4c48d4a26d7019399cb6341f6dbccf1fc5fbe",
     "heldout_n3_candidates.csv": "7fa5df7fd1d157f77194032771a3c7e586a4eddd058a1e890b536589c19c3aec",
     "n3_provenance.csv": "1664456fd59b9fd20328a0a580f0f2d2e3d8c46e21c802431fbb2d93bdd150ef",
-    "pairs.csv": "c35b8eb81681eb9a16bd5fcf7f4fa095c2a387cde2a0e200ce4f695ab0f5de3e"
+    "pairs.csv": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+    "title_donor_reuse.csv": "bc1756a1daaa6f5689d98174b065953020aa030a92b510c1a9cd9b96698b3767"
   }
 }

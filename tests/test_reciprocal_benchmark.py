@@ -3,8 +3,11 @@ import csv
 from collections import Counter, defaultdict
 from pathlib import Path
 import unittest
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src/negatives/reciprocal'))
+from build_benchmark_candidate import fallback_negatives
 
 
 def read(path):
@@ -13,6 +16,41 @@ def read(path):
 
 
 class ReciprocalBenchmarkTests(unittest.TestCase):
+    def test_all_anchors_positives_and_existing_n1_n2_preserved(self):
+        old = read(ROOT/'data/releases/abo-home-v2-20261103/pairs.csv')
+        new = read(ROOT/'data/releases/abo-home-reciprocal-v3-candidate/pairs.csv')
+        self.assertEqual(len(old), len(new))
+        self.assertEqual(Counter(r['anchor_item_id'] for r in old), Counter(r['anchor_item_id'] for r in new))
+        by_id = {r['pair_id']:r for r in new}
+        for r in old:
+            if r['neg_type'] in ('pos', 'N1', 'N2'):
+                self.assertEqual({k:v for k,v in r.items() if k != 'dataset_version'},
+                                 {k:v for k,v in by_id[r['pair_id']].items() if k != 'dataset_version'})
+
+    def test_fallback_donor_legality_and_split_isolation(self):
+        items = read(ROOT/'data/releases/abo-home-v2-20261103/items.csv')
+        rows = read(ROOT/'data/releases/abo-home-reciprocal-v3-candidate/pairs.csv')
+        ix = {r['item_id']:r for r in items}
+        by_id = {r['pair_id']:r for r in rows}
+        provenance = read(ROOT/'data/releases/abo-home-reciprocal-v3-candidate/fallback_provenance.csv')
+        self.assertEqual(len(provenance), 450)
+        for p in provenance:
+            row = by_id[p['pair_id']]
+            a, d = ix[p['anchor_item_id']], ix[p['donor_item_id']]
+            self.assertEqual(a['split'], d['split'])
+            self.assertNotEqual(a['group_id'], d['group_id'])
+            self.assertNotEqual(a['image_path'], d['image_path'])
+            self.assertNotEqual(a['title'].strip().casefold(), d['title'].strip().casefold())
+            self.assertEqual(a['product_type'] == d['product_type'], row['neg_type'] == 'N2')
+            self.assertEqual(row['text'], d['title'])
+
+    def test_no_legal_donor_fails_instead_of_cross_split_fallback(self):
+        items = [dict(item_id='a', split='train', group_id='a', product_type='CHAIR', image_path='a', title='chair'),
+                 dict(item_id='b', split='test', group_id='b', product_type='CHAIR', image_path='b', title='other chair')]
+        negatives = {r['item_id']:dict(neg_type='N3',split=r['split']) for r in items}
+        with self.assertRaisesRegex(ValueError, 'No legal'):
+            fallback_negatives(items, negatives, {})
+
     def test_exchanges_and_review_exclusions(self):
         release = ROOT/'data/releases/abo-home-reciprocal-v3-candidate'
         provenance = read(release/'n3_provenance.csv')

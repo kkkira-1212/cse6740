@@ -7,7 +7,8 @@ A Georgia Tech CSE 6740 project studying whether an e-commerce product's main im
 A proposed [reciprocal N3 full-split candidate](data/releases/abo-home-reciprocal-v3-candidate/README.md)
 is available for data-owner review and new shortcut controls. It preserves existing
 train QC and adds explicitly model-assisted held-out color judgments. It is not
-frozen or human-certified, and changes the evaluated population. The v2 release
+frozen or human-certified. It retains all v2 anchors and positives while changing
+negative titles/type proportions. The v2 release
 and historical results remain separate.
 
 **[ABO Furniture + Decor v2 — 2026-11-03](https://github.com/kkkira-1212/cse6740/releases/tag/abo-home-v2-20261103)** is available for preliminary experiments and human N2 review. It contains **3,335 image anchors and 6,670 image–title pairs** across 10 retained furniture/decor types.

@@ -7,13 +7,28 @@ controls remain necessary before selecting this as the final benchmark.
 
 ## Construction and population change
 
-Keep the original product groups and split assignments. Keep original N1/N2
-negatives where an anchor has no reciprocal replacement. Replace a selected
-anchor's negative with reciprocal N3. Remove old-rule N3 anchors lacking an
-accepted reciprocal replacement, including their positives. This explicit
-reduced-population policy avoids filling missing N3 with new, unreviewed N1/N2.
-It changes negative proportions and the evaluated population; v2 and this
-candidate's headline metrics are **not a controlled apples-to-apples comparison**.
+Keep ALL original image anchors, positives, product groups and split assignments.
+Keep original N1/N2 negatives unchanged. Replace old N3 with accepted reciprocal
+N3 where available; otherwise generate a legal N1/N2 title replacement. No
+anchor is removed. Compared with v2, the image/positive population is identical,
+but negative titles and type proportions change. Overall metrics still mix that
+change with model behavior; do not attribute differences solely to training.
+
+Fallback seed is 20261114. Final non-N3 negatives are split approximately equally
+between N1/N2 in each split; remaining N2 assignments are proportional to category
+using largest remainders. Donors stay within split, differ in group AND image,
+and have a different original title from the anchor (case-insensitive). N1 donors
+have a different product type; N2 donors have the same type. Among legal donors,
+choose least-used title groups (counting preserved N1/N2), with deterministic
+SHA-256 tie breaks. No similarity/model mining is used. All 450 fallback rows
+remain generated/unreviewed. `fallback_provenance.csv` records each old N3 ID and
+new donor; `title_donor_reuse.csv` records final counts (maximum 2, no soft-limit
+exceedances). `excluded_anchors.csv` is now header-only, superseding the earlier
+draft deletion policy. Structural legality does not establish semantic mismatch.
+A model-assisted train spot check of 10 new N1 and 10 new N2 rows found 16 clear
+mismatches and 4 uncertain cases; the ledger is under
+`data/reviews/reciprocal-v3-model-assisted/fallback_train_spotcheck.csv`. It does
+not certify the fallback pool. No rows were resampled based on this check.
 
 Train uses the exact previous 266-negative supplemental pool (158 human-reviewed,
 108 generated/unreviewed); previous human judgments are unchanged. Held-out
@@ -33,14 +48,17 @@ positives are not re-audited by this work.
 
 | Split | Positives | N1 | N2 | N3 | Total rows |
 |---|---:|---:|---:|---:|---:|
-| train | 2327 | 1030 | 1031 | 266 | 4654 |
-| val | 272 | 124 | 124 | 24 | 544 |
-| test | 286 | 128 | 128 | 30 | 572 |
+| train | 2664 | 1199 | 1199 | 266 | 5328 |
+| val | 328 | 152 | 152 | 24 | 656 |
+| test | 343 | 156 | 157 | 30 | 686 |
 
 Val/test N3 are small (12/15 reciprocal exchanges). Do not claim precise
 category/color generalization from these sample sizes. Each included anchor
 has one positive and one negative with identical images. No old-rule N3 remains.
-Review exclusions are semantic QC, not selection on held-out model performance.
+Review exclusions apply to N3 proposals only: their anchors remain with fallback
+N1/N2. Original-color ambiguity flags remain in the review ledger; keeping all
+original positives does not certify those titles. Review decisions use no model
+performance metrics. All 3,335 original image anchors and 6,670 pairs are retained.
 
 ## Reproduce and use
 
@@ -71,7 +89,7 @@ thresholds on val only. Do not reuse v2 thresholds or score caches.
 
 ## Before final adoption
 
-1. Data owners review the population/coverage policy and model-assisted ledger.
+1. Data owners review the fallback policy, generated N1/N2 quality and model-assisted ledger.
 2. Agree on shortcut-control criteria before running controls; report overall
    and per-negative-type results, including N3 versus its corresponding positives.
 3. Aaron runs text-only/image-only controls with train fitting and val thresholds.
