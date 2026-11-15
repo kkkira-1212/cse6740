@@ -6,3 +6,8 @@
 
 WP4 v2 shortcut controls 是 `control_v2_text_tfidf*` 和 `control_v2_image_clip*`;
 结果与解读见 [`docs/controls.md`](../docs/controls.md)。
+
+v3 reciprocal candidate 的 controls 是 `control_v3_text_word*`、
+`control_v3_text_char*` 和 `control_v3_image_clip*`;协议、结果与解读见
+[`docs/controls_v3.md`](../docs/controls_v3.md)。v3 的缓存绑定 dataset version +
+pairs SHA-256,不复用 v2 缓存。
