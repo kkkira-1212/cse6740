@@ -1,7 +1,10 @@
-"""Unit checks for the v2 shortcut controls."""
+"""Unit checks for the fixed-image shortcut controls."""
 import importlib.util
+import tempfile
 import unittest
 from pathlib import Path
+
+import numpy as np
 
 spec = importlib.util.spec_from_file_location(
     "controls", Path(__file__).resolve().parents[1] / "src/eval/controls.py"
@@ -95,6 +98,78 @@ class TextOnlyTests(unittest.TestCase):
         scores = controls.score_text(rows, vectorizer, classifier)
         self.assertAlmostEqual(scores["A_pos"], scores["A_N1"])
         self.assertAlmostEqual(scores["B_pos"], scores["B_N1"])
+
+
+class MatchedAnchorTests(unittest.TestCase):
+    def test_uses_own_anchor_positive_not_all_positives(self):
+        rows = [
+            row("A", "pos", 1, "A pos", "a.jpg"),
+            row("A", "N3", 0, "A neg", "a.jpg"),
+            row("B", "pos", 1, "B pos", "b.jpg"),
+            row("B", "N1", 0, "B neg", "b.jpg"),
+        ]
+        scores = {"A_pos": 0.9, "A_N3": 0.2, "B_pos": 0.1, "B_N1": 0.8}
+
+        n3 = controls.matched_auc(rows, scores, "N3", {}, 0, 0)
+        self.assertEqual(n3["auc"], 1.0)
+        self.assertEqual(n3["n_pos"], 1)
+        self.assertEqual(n3["n_neg"], 1)
+
+        n1 = controls.matched_auc(rows, scores, "N1", {}, 0, 0)
+        self.assertEqual(n1["auc"], 0.0)
+        self.assertEqual(n1["n_pos"], 1)
+
+    def test_n3_uses_exchange_clusters(self):
+        rows = [
+            row("A", "pos", 1, "A pos", "a.jpg"),
+            row("A", "N3", 0, "A neg", "a.jpg"),
+            row("B", "pos", 1, "B pos", "b.jpg"),
+            row("B", "N3", 0, "B neg", "b.jpg"),
+        ]
+        scores = {"A_pos": 0.9, "A_N3": 0.2, "B_pos": 0.8, "B_N3": 0.1}
+        exchange_map = {"A_N3": "exchange-1", "B_N3": "exchange-1"}
+        result = controls.matched_auc(rows, scores, "N3", exchange_map, 0, 0)
+        self.assertEqual(result["auc"], 1.0)
+        self.assertEqual(result["cluster"], "reciprocal_exchange")
+        self.assertEqual(result["n_clusters"], 1)
+        self.assertEqual(result["n_pos"], 2)
+
+
+class CacheBindingTests(unittest.TestCase):
+    def test_cache_must_match_dataset_and_pairs_hash(self):
+        with tempfile.TemporaryDirectory() as directory:
+            cache = Path(directory) / "cache.npz"
+            np.savez_compressed(
+                cache,
+                paths=np.array(["a.jpg"]),
+                features=np.array([[1.0, 2.0]], dtype=np.float32),
+                dataset_version=np.array("v3"),
+                pairs_sha256=np.array("abc"),
+            )
+            features, source = controls.load_or_compute_features(
+                ["a.jpg"], "unused", cache, 1, "cpu", False, "v3", "abc",
+            )
+            self.assertEqual(source, "cache")
+            self.assertEqual(features["a.jpg"].tolist(), [1.0, 2.0])
+            with self.assertRaises(ValueError):
+                controls.load_or_compute_features(
+                    ["a.jpg"], "unused", cache, 1, "cpu", False, "v2", "abc",
+                )
+            with self.assertRaises(ValueError):
+                controls.load_or_compute_features(
+                    ["a.jpg"], "unused", cache, 1, "cpu", False, "v3", "different",
+                )
+
+
+class UncertaintyTests(unittest.TestCase):
+    def test_v3_four_uncertain_cases(self):
+        cases = controls.load_uncertain_cases([])
+        self.assertEqual(
+            {case["pair_id"] for case in cases},
+            {"B07Q88MYL4_N1", "B07TTCHRB2_N2", "B07JD7RFRN_N2", "B075H8JNZT_N2"},
+        )
+        self.assertTrue(all(case["split"] == "train" for case in cases))
+        self.assertTrue(all(case["neg_type"] in {"N1", "N2"} for case in cases))
 
 
 if __name__ == "__main__":

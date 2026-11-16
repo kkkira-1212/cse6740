@@ -1,0 +1,617 @@
+{
+  "tool": "src/eval/controls.py",
+  "pairs_csv": "data/releases/abo-home-reciprocal-v3-candidate/pairs.csv",
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "manifest_sha256": "44e50e0ddcc760e61d1765632d4f65b4a3b1a5387b803e5ca9ad5dea4220fb21",
+  "dataset_version": "abo-home-reciprocal-v3-candidate",
+  "dataset_status": "CANDIDATE_NOT_FROZEN_NOT_HUMAN_CERTIFIED",
+  "git": {
+    "commit": "575a22dedfe88026f771c561727f734a2207bbc0",
+    "dirty": true
+  },
+  "splits": {
+    "train": 5328,
+    "val": 656,
+    "test": 686
+  },
+  "anchors": 3335,
+  "protocol": {
+    "fit_split": "train",
+    "selection_split": "val",
+    "objective": "accuracy",
+    "rule": "score >= threshold",
+    "tie_break": "smallest threshold among maximum-accuracy candidates",
+    "test_split": "test",
+    "test_evaluated": true,
+    "per_type_auc": "matched_anchor_positives",
+    "per_type_ci": "N3 reciprocal_exchange; N1/N2 image_anchor_group",
+    "bootstrap_resamples": 1000,
+    "seed": 0,
+    "protocol_file": "docs/controls_v3.md"
+  },
+  "environment": {
+    "python": "3.12.2",
+    "numpy": "1.26.4",
+    "sklearn": "1.7.2",
+    "torch": "2.4.0+cu124",
+    "transformers": "4.46.3",
+    "huggingface_hub": "0.36.2"
+  },
+  "text": {
+    "word": {
+      "features": "tfidf word 1-2gram min_df=2 sublinear_tf",
+      "classifier": "logistic regression",
+      "seed": 0,
+      "train_rows": 5328,
+      "vocabulary": 9616,
+      "train_auc": 0.5802936241421601,
+      "top_features": {
+        "negative": [
+          [
+            "beige",
+            -0.8018631680028679
+          ],
+          [
+            "navy",
+            -0.49493309392616275
+          ],
+          [
+            "28 beige",
+            -0.47975951984638326
+          ],
+          [
+            "36 black",
+            -0.4441903429605239
+          ],
+          [
+            "88 beige",
+            -0.4245494764131999
+          ],
+          [
+            "white",
+            -0.4112337423800603
+          ],
+          [
+            "leather ottoman",
+            -0.36149253427857303
+          ],
+          [
+            "height black",
+            -0.35832779973082324
+          ],
+          [
+            "blue",
+            -0.35468320721393937
+          ],
+          [
+            "38 beige",
+            -0.34284577200776295
+          ],
+          [
+            "beam contemporary",
+            -0.3389713116061408
+          ],
+          [
+            "amazonbasics",
+            -0.3299185317890422
+          ],
+          [
+            "beige renewed",
+            -0.30856822380877963
+          ],
+          [
+            "30 tan",
+            -0.3082123017246483
+          ],
+          [
+            "chair beige",
+            -0.30101286111579806
+          ]
+        ],
+        "positive": [
+          [
+            "linen",
+            0.5050878586236914
+          ],
+          [
+            "natural",
+            0.48472062071056454
+          ],
+          [
+            "strathwood",
+            0.41298688946691464
+          ],
+          [
+            "room accent",
+            0.39428249319538744
+          ],
+          [
+            "with",
+            0.3745462577503816
+          ],
+          [
+            "pewter",
+            0.37096390444240357
+          ],
+          [
+            "clayton",
+            0.34917575176819055
+          ],
+          [
+            "33",
+            0.34910502636990964
+          ],
+          [
+            "swivel chair",
+            0.3405660253793639
+          ],
+          [
+            "on",
+            0.33742010334084444
+          ],
+          [
+            "dark cherry",
+            0.3294289236304492
+          ],
+          [
+            "walnut",
+            0.3250520603627904
+          ],
+          [
+            "legs black",
+            0.3232363676662989
+          ],
+          [
+            "charcoal",
+            0.32245517434659293
+          ],
+          [
+            "brand solimo",
+            0.3219240154155215
+          ]
+        ]
+      }
+    },
+    "char": {
+      "features": "tfidf char 3-5gram min_df=2 sublinear_tf",
+      "classifier": "logistic regression",
+      "seed": 0,
+      "train_rows": 5328,
+      "vocabulary": 37362,
+      "train_auc": 0.574717806207108,
+      "top_features": {
+        "negative": [
+          [
+            "\"w, b",
+            -0.3096477286581561
+          ],
+          [
+            "w, b",
+            -0.3059721146630457
+          ],
+          [
+            "ige",
+            -0.2528056445801711
+          ],
+          [
+            "eige",
+            -0.24838295270579278
+          ],
+          [
+            "beige",
+            -0.24838295270579278
+          ],
+          [
+            "beig",
+            -0.24838295270579278
+          ],
+          [
+            "bei",
+            -0.2481893024202373
+          ],
+          [
+            " beig",
+            -0.2473945404592698
+          ],
+          [
+            " bei",
+            -0.2472002897957311
+          ],
+          [
+            ", nav",
+            -0.24376431408712818
+          ],
+          [
+            "avy",
+            -0.24253865532320396
+          ],
+          [
+            " navy",
+            -0.24253865532320396
+          ],
+          [
+            " nav",
+            -0.24253865532320396
+          ],
+          [
+            "nav",
+            -0.24253865532320396
+          ],
+          [
+            "navy",
+            -0.24253865532320396
+          ]
+        ],
+        "positive": [
+          [
+            ", c",
+            0.2503207946537617
+          ],
+          [
+            "d t",
+            0.1807729793175511
+          ],
+          [
+            "l ch",
+            0.17189409412365117
+          ],
+          [
+            "es ",
+            0.17095110003915523
+          ],
+          [
+            ", ch",
+            0.17047380624573671
+          ],
+          [
+            "nd t",
+            0.17026611691632715
+          ],
+          [
+            "w, li",
+            0.16703449368278203
+          ],
+          [
+            " li",
+            0.16596150714752067
+          ],
+          [
+            "nd ta",
+            0.16441851589229128
+          ],
+          [
+            "and m",
+            0.15904845935535922
+          ],
+          [
+            "atur",
+            0.1574302805796887
+          ],
+          [
+            "e co",
+            0.1569030700685088
+          ],
+          [
+            "\"w, l",
+            0.1567478014537533
+          ],
+          [
+            "d ta",
+            0.15627271929729614
+          ],
+          [
+            "atu",
+            0.15557200794198597
+          ]
+        ]
+      }
+    }
+  },
+  "image": {
+    "mode": "clip",
+    "model": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "seed": 0,
+    "train_rows": 5328,
+    "train_auc": 0.5,
+    "images": 3335,
+    "image_root": "data/releases/abo-home-v2-20261103/images",
+    "cache": "data/processed/control_v3_clip_image_features.npz",
+    "cache_sha256": "134b78fc556fdf488e3f65cdd2df612c148d71f289927fbfadfe9cc7b120ae62",
+    "unique_scores": 1
+  },
+  "n3": {
+    "counts_by_split": {
+      "test": 30,
+      "train": 266,
+      "val": 24
+    },
+    "retained_val_test": 54,
+    "exchanges_by_split": {
+      "test": 15,
+      "train": 133,
+      "val": 12
+    },
+    "total_exchanges": 160,
+    "label_status": {
+      "generated_unreviewed": 108,
+      "model_assisted_mismatch_not_human_verified": 54,
+      "reviewer_accepted": 158
+    },
+    "rejected_heldout_exchanges": 11
+  },
+  "uncertain_cases": [
+    {
+      "pair_id": "B07Q88MYL4_N1",
+      "split": "train",
+      "neg_type": "N1",
+      "previous_decision": "uncertain",
+      "proposed_decision": "uncertain",
+      "disposition": "retain_uncertainty",
+      "reason": "Lifestyle image visibly contains a gray upholstered armchair. The donor armchair title has a plausible visible referent; width, brand and fabric cannot be rejected from this image. Different anchor category alone does not establish mismatch.",
+      "label_status": "generated_unreviewed",
+      "included_in_training": true,
+      "applied_to_training_labels": "false",
+      "source": "data/reviews/reciprocal-v3-model-assisted/fallback_train_adjudications.csv"
+    },
+    {
+      "pair_id": "B07TTCHRB2_N2",
+      "split": "train",
+      "neg_type": "N2",
+      "previous_decision": "uncertain",
+      "proposed_decision": "uncertain",
+      "disposition": "retain_uncertainty",
+      "reason": "Image shows a narrow light-colored kitchen rug. Shape and apparent scale suggest a difference from the 8 x 11 Foot Beige wool rug title, but actual dimensions, material and color are not reliably established from this small perspective image.",
+      "label_status": "generated_unreviewed",
+      "included_in_training": true,
+      "applied_to_training_labels": "false",
+      "source": "data/reviews/reciprocal-v3-model-assisted/fallback_train_adjudications.csv"
+    },
+    {
+      "pair_id": "B07JD7RFRN_N2",
+      "split": "train",
+      "neg_type": "N2",
+      "previous_decision": "uncertain",
+      "proposed_decision": "uncertain",
+      "disposition": "retain_uncertainty",
+      "reason": "Visible light-gray upholstered sofa is compatible with a light-gray loveseat title. The isolated image cannot establish the stated 65-inch width or exact model/fabric. Different listing identity alone is insufficient.",
+      "label_status": "generated_unreviewed",
+      "included_in_training": true,
+      "applied_to_training_labels": "false",
+      "source": "data/reviews/reciprocal-v3-model-assisted/fallback_train_adjudications.csv"
+    },
+    {
+      "pair_id": "B075H8JNZT_N2",
+      "split": "train",
+      "neg_type": "N2",
+      "previous_decision": "mismatch",
+      "proposed_decision": "uncertain",
+      "disposition": "correct_reason_and_retain_uncertainty",
+      "reason": "Correction: the donor title explicitly includes BOTH a curtain rod and clip rings. The image is a close-up of a rod/finial; rings may be off-frame. The visible finial may differ from Cap Finials, but the limited detail does not securely establish that contradiction. The original rod-versus-rings reason is invalid; retain uncertainty.",
+      "label_status": "generated_unreviewed",
+      "included_in_training": true,
+      "applied_to_training_labels": "false",
+      "source": "data/reviews/reciprocal-v3-model-assisted/fallback_train_adjudications.csv"
+    }
+  ],
+  "label_status": {
+    "overall": {
+      "generated_unreviewed": 558,
+      "model_assisted_mismatch_not_human_verified": 54,
+      "original_listing_unverified": 3335,
+      "reviewer_accepted": 158,
+      "unreviewed_candidate": 2565
+    },
+    "by_neg_type": {
+      "N1": {
+        "generated_unreviewed": 225,
+        "unreviewed_candidate": 1282
+      },
+      "N2": {
+        "generated_unreviewed": 225,
+        "unreviewed_candidate": 1283
+      },
+      "N3": {
+        "generated_unreviewed": 108,
+        "model_assisted_mismatch_not_human_verified": 54,
+        "reviewer_accepted": 158
+      },
+      "pos": {
+        "original_listing_unverified": 3335
+      }
+    }
+  },
+  "score_files": {
+    "text-only word": "scores/control_v3_text_word.csv",
+    "text-only char": "scores/control_v3_text_char.csv",
+    "image-only CLIP": "scores/control_v3_image_clip.csv"
+  },
+  "score_sha256": {
+    "text-only word": "b450f07ff530d670d989053f87c71353db830504b678700eb0c44e656046cbe6",
+    "text-only char": "dc0b7b480e256b3b5e8a3da1b49c855b2bfe73e9161061d6f570d41d156e460a",
+    "image-only CLIP": "1ccee593cb64d17cffb886850fde839afeab7bc4c739393a362697d6050e1847"
+  },
+  "val_report": "scores/control_v3_val.json",
+  "eval_report_files": {
+    "text-only word": "scores/control_v3_text_word_eval.json",
+    "text-only char": "scores/control_v3_text_char_eval.json",
+    "image-only CLIP": "scores/control_v3_image_clip_eval.json"
+  },
+  "thresholds": {
+    "text-only word": 0.5222853,
+    "text-only char": 0.49939115,
+    "image-only CLIP": 0.5
+  },
+  "per_type_auc": {
+    "text-only word": {
+      "N1": {
+        "auc": 0.5697731755424064,
+        "ci_low": 0.5065905448717949,
+        "ci_high": 0.6384194197896121,
+        "n_pos": 156,
+        "n_neg": 156,
+        "n_clusters": 156,
+        "cluster": "image_anchor_group",
+        "n_resamples": 1000
+      },
+      "N2": {
+        "auc": 0.4687208406020528,
+        "ci_low": 0.4086357458720435,
+        "ci_high": 0.5301640025964542,
+        "n_pos": 157,
+        "n_neg": 157,
+        "n_clusters": 157,
+        "cluster": "image_anchor_group",
+        "n_resamples": 1000
+      },
+      "N3": {
+        "auc": 0.518888888888889,
+        "ci_low": 0.4611111111111111,
+        "ci_high": 0.5600277777777778,
+        "n_pos": 30,
+        "n_neg": 30,
+        "n_clusters": 15,
+        "cluster": "reciprocal_exchange",
+        "n_resamples": 1000
+      }
+    },
+    "text-only char": {
+      "N1": {
+        "auc": 0.5648833004602235,
+        "ci_low": 0.5026360124917817,
+        "ci_high": 0.6300619452662722,
+        "n_pos": 156,
+        "n_neg": 156,
+        "n_clusters": 156,
+        "cluster": "image_anchor_group",
+        "n_resamples": 1000
+      },
+      "N2": {
+        "auc": 0.4874234248853909,
+        "ci_low": 0.42424692685301635,
+        "ci_high": 0.5520005882591587,
+        "n_pos": 157,
+        "n_neg": 157,
+        "n_clusters": 157,
+        "cluster": "image_anchor_group",
+        "n_resamples": 1000
+      },
+      "N3": {
+        "auc": 0.5055555555555555,
+        "ci_low": 0.47997222222222213,
+        "ci_high": 0.5411111111111111,
+        "n_pos": 30,
+        "n_neg": 30,
+        "n_clusters": 15,
+        "cluster": "reciprocal_exchange",
+        "n_resamples": 1000
+      }
+    },
+    "image-only CLIP": {
+      "N1": {
+        "auc": 0.5,
+        "ci_low": 0.5,
+        "ci_high": 0.5,
+        "n_pos": 156,
+        "n_neg": 156,
+        "n_clusters": 156,
+        "cluster": "image_anchor_group",
+        "n_resamples": 1000
+      },
+      "N2": {
+        "auc": 0.5,
+        "ci_low": 0.5,
+        "ci_high": 0.5,
+        "n_pos": 157,
+        "n_neg": 157,
+        "n_clusters": 157,
+        "cluster": "image_anchor_group",
+        "n_resamples": 1000
+      },
+      "N3": {
+        "auc": 0.5,
+        "ci_low": 0.5,
+        "ci_high": 0.5,
+        "n_pos": 30,
+        "n_neg": 30,
+        "n_clusters": 15,
+        "cluster": "reciprocal_exchange",
+        "n_resamples": 1000
+      }
+    }
+  },
+  "eval_reports": {
+    "text-only word": {
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.5087463556851312,
+      "auc": 0.5159542367550936,
+      "positive_recall": 0.36443148688046645,
+      "negative_recall": 0.6530612244897959,
+      "balanced_accuracy": 0.5087463556851312,
+      "negatives_by_type": {
+        "N1": {
+          "n": 156,
+          "recall": 0.6538461538461539
+        },
+        "N2": {
+          "n": 157,
+          "recall": 0.6178343949044586
+        },
+        "N3": {
+          "n": 30,
+          "recall": 0.8333333333333334
+        }
+      }
+    },
+    "text-only char": {
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.5160349854227405,
+      "auc": 0.5203996634055538,
+      "positive_recall": 0.6239067055393586,
+      "negative_recall": 0.40816326530612246,
+      "balanced_accuracy": 0.5160349854227405,
+      "negatives_by_type": {
+        "N1": {
+          "n": 156,
+          "recall": 0.33974358974358976
+        },
+        "N2": {
+          "n": 157,
+          "recall": 0.4140127388535032
+        },
+        "N3": {
+          "n": 30,
+          "recall": 0.7333333333333333
+        }
+      }
+    },
+    "image-only CLIP": {
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.5,
+      "auc": 0.5,
+      "positive_recall": 1.0,
+      "negative_recall": 0.0,
+      "balanced_accuracy": 0.5,
+      "negatives_by_type": {
+        "N1": {
+          "n": 156,
+          "recall": 0.0
+        },
+        "N2": {
+          "n": 157,
+          "recall": 0.0
+        },
+        "N3": {
+          "n": 30,
+          "recall": 0.0
+        }
+      }
+    }
+  }
+}
