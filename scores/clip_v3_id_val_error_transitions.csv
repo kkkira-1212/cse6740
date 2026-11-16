@@ -1,0 +1,356 @@
+model,pair_id,anchor_item_id,neg_type,reference_score,candidate_score,transition,text,category,exchange_id
+clip_lora_v3_r16_both_seed0,B07DBCFM4R_N2,B07DBCFM4R,N2,0.29134244,0.13741769,wrong_to_correct,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, White, Set of 2",STOOL_SEATING,
+clip_lora_v3_r16_both_seed0,B001CZEWLU_N2,B001CZEWLU,N2,0.29120889,0.21333691,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Sofa Couch with Chaise, Sand",SOFA,
+clip_lora_v3_r16_both_seed0,B07F2M2VGG_N2,B07F2M2VGG,N2,0.30331272,0.30206689,wrong_to_correct,"Amazon Brand – Stone & Beam Bradbury Chesterfield Classic Ottoman, 30""W, Slate",OTTOMAN,
+clip_lora_v3_r16_both_seed0,B07HZ6X7ZF_N2,B07HZ6X7ZF,N2,0.30723953,0.3415001,wrong_to_correct,Stone & Beam Andover Andover Right Facing U Shape Sectional,SOFA,
+clip_lora_v3_r16_both_seed0,B07BW8QTXH_N2,B07BW8QTXH,N2,0.29726562,-0.011237,wrong_to_correct,"Amazon Brand – Ravenna Home Dunford Casual Rolled Arm Loveseat Sofa, 76""W, Dark Grey",SOFA,
+clip_lora_v3_r16_both_seed0,B07JLZJ9JM_N2,B07JLZJ9JM,N2,0.26688683,0.37747824,correct_to_wrong,"Amazon Brand – Stone & Beam Striated Velvet Linen-Look Decorative Throw Pillow, 17"" x 17"", Charcoal",PILLOW,
+clip_lora_v3_r16_both_seed0,B071PB2H8H_pos,B071PB2H8H,pos,0.26927942,0.37242922,wrong_to_correct,"Amazon Brand – Stone & Beam Traditional Regal Adornment Rug, 8' x 10', Burgundy",RUG,
+clip_lora_v3_r16_both_seed0,B07QFP4ZHX_N3,B07QFP4ZHX,N3,0.312621,0.21300718,wrong_to_correct,"Amazon Brand – Rivet Asher Modern Storage Ottoman, 15.75""W, Fabric, Beige",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_lora_v3_r16_both_seed0,B082VMWB4G_N2,B082VMWB4G,N2,0.30639842,0.29062515,wrong_to_correct,"Amazon Brand – Stone & Beam Hansberry Upholstered Swivel Chair, 34.4""W, Hemp",CHAIR,
+clip_lora_v3_r16_both_seed0,B075X4N3QJ_pos,B075X4N3QJ,pos,0.28868884,0.32582936,correct_to_wrong,"Amazon Brand – Rivet Lawson Mid-Century Modern Angled Upholstered Arm Chair, 33""W, Pearl",CHAIR,
+clip_lora_v3_r16_both_seed0,B07DB92L77_N3,B07DB92L77,N3,0.29818654,0.1633009,wrong_to_correct,"Amazon Brand – Ravenna Home Sherman Curved Faux Leather Accent Chair, 30.5""W, Blue",CHAIR,swap_6bec9f4a0abaf1e0
+clip_lora_v3_r16_both_seed0,B073NZGLLS_N2,B073NZGLLS,N2,0.2749303,0.39596567,correct_to_wrong,"Amazon Brand – Rivet Yellow and Purple Contrast Watercolor Print Wall Art in White Frame, 24"" x 28""",WALL_ART,
+clip_lora_v3_r16_both_seed0,B000W8RZF8_N3,B000W8RZF8,N3,0.30275017,0.24717557,wrong_to_correct,"Strathwood Folding Garden Arm Chair with Carry Bag, Grey",CHAIR,swap_55e01bcd9bac0a0b
+clip_lora_v3_r16_both_seed0,B07QHL6SYG_pos,B07QHL6SYG,pos,0.28044713,0.51328152,wrong_to_correct,"Amazon Brand – Rivet Contemporary Handtufted Cotton-and-Wool Area Rug with Geometric Feathered Pattern, 5' x 8', Purple and Cream",RUG,
+clip_lora_v3_r16_both_seed0,B07QHL6SYG_N2,B07QHL6SYG,N2,0.29327273,0.26063964,wrong_to_correct,"Ravenna Home Forsyth Rug, 8'W x 10'L, Geometric Medallion Design",RUG,
+clip_lora_v3_r16_both_seed0,B07B7B94L2_N3,B07B7B94L2,N3,0.30467564,0.32828027,wrong_to_correct,"Amazon Brand – Stone & Beam Hughes Modern Casual Wood Buffet Bar, Cabinet Credenza, White",TABLE,swap_f70e8517681510d0
+clip_lora_v3_r16_both_seed0,B07M6PKM8K_N3,B07M6PKM8K,N3,0.29564315,0.22833401,wrong_to_correct,"Amazon Brand – Ravenna Home Classic-Style Solid Pine Dining Chair, 40""H, Beige Finish, Set of 2",CHAIR,swap_22f75503c1914249
+clip_lora_v3_r16_both_seed0,B07B4GQ7M9_N2,B07B4GQ7M9,N2,0.30791566,0.35508576,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Loveseat, 63.5""W, Charcoal",SOFA,
+clip_lora_v3_r16_both_seed0,B07B7B1HCT_N3,B07B7B1HCT,N3,0.2911261,0.33772415,wrong_to_correct,"Amazon Brand – Rivet Eastern Modern Dining Room Kitchen Chairs, Velvet, 32 Inch Height, Set of 2, Beige, Bronze Metal",CHAIR,swap_5e280f6c0681f6e7
+clip_lora_v3_r16_both_seed0,B07QBQCG77_pos,B07QBQCG77,pos,0.27909189,0.43984419,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_lora_v3_r16_both_seed0,B08GJZYYRF_pos,B08GJZYYRF,pos,0.28099346,0.3853336,wrong_to_correct,"Amazon Brand - Ravenna Home Archer Outdoor Patio C-Shaped Steel Side Table with Panel Top, 16.54""W, Gray (Renewed)",TABLE,
+clip_lora_v3_r16_both_seed0,B08GJZYYRF_N2,B08GJZYYRF,N2,0.28830844,0.32125798,wrong_to_correct,"Amazon Brand – Ravenna Home Wood and Metal End Table, 44""W, Dark Oak, Black Metal",TABLE,
+clip_lora_v3_r16_both_seed0,B082VM4LMQ_N2,B082VM4LMQ,N2,0.28634912,-0.0571853,wrong_to_correct,"Amazon Brand – Stone & Beam Bagley Sectional Component, Left-Facing Sofa Chaise, Fabric, 41""W, Linen",SOFA,
+clip_lora_v3_r16_both_seed0,B07DBHBCXQ_N3,B07DBHBCXQ,N3,0.29948151,0.25493002,wrong_to_correct,"Amazon Brand – Ravenna Home Eddison Modern Slope Accent Chair, 32""W, Beige",CHAIR,swap_6bec9f4a0abaf1e0
+clip_lora_v3_r16_both_seed0,B07HSBJ1Q4_N2,B07HSBJ1Q4,N2,0.31244099,0.19144905,wrong_to_correct,"Amazon Brand – Rivet Decatur Modern Faux Leather Kitchen Bar Stool, 41""H, Black",STOOL_SEATING,
+clip_lora_v3_r16_both_seed0,B0011MZHA4_N2,B0011MZHA4,N2,0.30711442,0.26124302,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_lora_v3_r16_both_seed0,B07B7B4JTW_N3,B07B7B4JTW,N3,0.29782975,0.24116403,wrong_to_correct,"Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Chair, 40""H, Pack of 2, Navy",CHAIR,swap_b47c2cd584257233
+clip_lora_v3_r16_both_seed0,B07L6C51SC_N2,B07L6C51SC,N2,0.28082627,0.39885047,correct_to_wrong,"Amazon Brand – Ravenna Home Ferris Nailhead Detailed Wood Counter Stool, 26.75""H, Antique Walnut with Dark Brown Faux Leather (2 Pack)",STOOL_SEATING,
+clip_lora_v3_r16_both_seed0,B07DBHF15B_N3,B07DBHF15B,N3,0.28820741,0.27403778,wrong_to_correct,"Amazon Brand – Ravenna Home Morley Classic Round Pedestal Accent Side End Table Nightstand, 20""W, Brown",TABLE,swap_f70e8517681510d0
+clip_lora_v3_r16_both_seed0,B07HZ5DVV2_N2,B07HZ5DVV2,N2,0.32017887,0.28056169,wrong_to_correct,"Amazon Brand – Rivet Alonzo Contemporary Velvet Sofa Couch, 80""W, Blue",SOFA,
+clip_lora_v3_r16_both_seed0,B07QD6ZWQG_pos,B07QD6ZWQG,pos,0.30136934,0.28606814,correct_to_wrong,"Ravenna Home Modern Padded Square Memo Board, 16""H, Beige with Gold Ribbon",HOME,
+clip_lora_v3_r16_both_seed0,B07QHKRRZL_N2,B07QHKRRZL,N2,0.30059546,0.23225054,wrong_to_correct,"Amazon Basics - 4'X6' Plush Diamond Trellis Shag Rug, Grey",RUG,
+clip_lora_v3_r16_both_seed0,B07DBFFG9Z_N3,B07DBFFG9Z,N3,0.29849961,0.30705482,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Coffee Table, 23.6""W, White Walnut",TABLE,swap_7964b5b3aceca3e7
+clip_lora_v3_r16_both_seed0,B07HSHKHHB_pos,B07HSHKHHB,pos,0.27473897,0.38575822,wrong_to_correct,"Amazon Brand – Rivet Contemporary Runner Rug, 2' 10"" x 7' 10"", Taupe and Grey",RUG,
+clip_lora_v3_r16_both_seed0,B07QHKV52D_N2,B07QHKV52D,N2,0.30912572,0.11118071,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Medallion Area Rug, 7' 10"" x 10', Brick",RUG,
+clip_lora_v3_r16_both_seed0,B07Q5ZXRFC_pos,B07Q5ZXRFC,pos,0.27890021,0.54471809,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_lora_v3_r16_both_seed0,B07DBB1GVR_N2,B07DBB1GVR,N2,0.29375395,0.1701656,wrong_to_correct,First Hill Damara Square-Shaped Large Faux-Leather Storage Ottoman - Bittersweet Chocolate,OTTOMAN,
+clip_lora_v3_r16_both_seed0,B072FVHSZQ_N2,B072FVHSZQ,N2,0.32737967,0.23609889,wrong_to_correct,"Amazon Brand – Rivet Curved Tufted Velvet Accent Chair, Marina Mid-Century, 28.7""W, Grape",CHAIR,
+clip_lora_v3_r16_both_seed0,B075YP3BD8_pos,B075YP3BD8,pos,0.26344892,0.37215877,wrong_to_correct,"Amazon Brand – Stone & Beam Bergen Tufted Kitchen Dining Room Table Farmhouse Chairs, 38.6""H, Set of 2, Slate Grey, Wood Oak",CHAIR,
+clip_lora_v3_r16_both_seed0,B07P5LM39Q_N2,B07P5LM39Q,N2,0.32309055,0.20486368,wrong_to_correct,"Amazon Brand – Stone & Beam Kristin Round Arm Storage Ottoman, Stone, 43.5""W",OTTOMAN,
+clip_lora_v3_r16_both_seed0,B07CPH1V4Q_N2,B07CPH1V4Q,N2,0.30988914,0.14785442,wrong_to_correct,"Amazon Brand – Rivet Sloane Mid-Century Modern Ottoman with Tapered Legs, 31.9""W, Storm Gray",OTTOMAN,
+clip_lora_v3_r16_both_seed0,B073P16J7L_N2,B073P16J7L,N2,0.31262636,0.23979303,wrong_to_correct,"Amazon Brand – Rivet Canvas Print of Horses Grazing in Desert Southwest, 36"" x 24""",WALL_ART,
+clip_lora_v3_r16_both_seed0,B07DBFQ4CT_N3,B07DBFQ4CT,N3,0.34771359,0.35703892,wrong_to_correct,"Ravenna Home Larry Contemporary Tufted Round Ottoman, 33.46""W, Navy",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_lora_v3_r16_both_seed0,B001BQTX4Q_pos,B001BQTX4Q,pos,0.29545525,0.1666861,correct_to_wrong,Pinzon Renwick Furniture Collection,HOME_FURNITURE_AND_DECOR,
+clip_lora_v3_r16_both_seed0,B075ZBLWBH_N2,B075ZBLWBH,N2,0.31907329,0.16545403,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_lora_v3_r16_both_seed0,B07B4YVDH9_pos,B07B4YVDH9,pos,0.31993297,0.26804689,correct_to_wrong,"Amazon Brand – Rivet Contemporary Geometric Wool Runner Hallway Rug, 2' 6"" x 8', Grey, Ivory",RUG,
+clip_lora_v3_r16_both_seed0,B07B4YVDH9_N2,B07B4YVDH9,N2,0.31294119,0.34582427,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Ikat Inspired Wool Area Rug, 3' 6"" x 5' 6"", Beige",RUG,
+clip_lora_v3_r16_both_seed0,B07DBF788Z_N3,B07DBF788Z,N3,0.32128236,0.31525162,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Console Table, 15.75""W, White Walnut",TABLE,swap_04d90febea5167d5
+clip_lora_v3_r16_both_seed0,B07BWJCBY2_N2,B07BWJCBY2,N2,0.29608664,-0.03094061,wrong_to_correct,"Amazon Brand – Stone & Beam St. Cloud ModernArmless Straight Back Settee, 49""W, Tan",SOFA,
+clip_lora_v3_r16_both_seed0,B07HSF53X6_N2,B07HSF53X6,N2,0.31056041,0.13877732,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Floral Medallion Wool Area Rug, 2'6"" x 8', Taupe on Brown",RUG,
+clip_lora_v3_r16_both_seed0,B07QFRRLG1_N2,B07QFRRLG1,N2,0.32260317,0.34280193,wrong_to_correct,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Bar Stool, 43""H, Chalk",STOOL_SEATING,
+clip_lora_v3_r16_both_seed0,B07QD6V6N8_N2,B07QD6V6N8,N2,0.296745,0.30194917,wrong_to_correct,"Amazon Brand – Ravenna Home Anne Marie Half-Moon Curved Leg Storage Console Entryway Table, 48""W, Dark Espresso",TABLE,
+clip_lora_v3_r16_both_seed0,B07QFB4XG1_pos,B07QFB4XG1,pos,0.27661449,0.49617562,wrong_to_correct,"Ravenna Home Vintage Damask Patterned Rug, 4' x 6', Ivory on Warm Grey",RUG,
+clip_lora_v3_r16_both_seed0,B0735XMSY2_N2,B0735XMSY2,N2,0.29577461,0.14552768,wrong_to_correct,"Ravenna Home Vintage Rug, 7'10"" x 9'10"", Ivory on Blue",RUG,
+clip_lora_v3_r16_both_seed0,B07QGFZ28Y_pos,B07QGFZ28Y,pos,0.29646316,0.27639806,correct_to_wrong,"Amazon Brand – Ravenna Home Mid-Century Side Table with Carved Legs, 18.11""W",TABLE,
+clip_lora_v3_r16_both_seed0,B07TZMWH7X_pos,B07TZMWH7X,pos,0.27391627,0.53280741,wrong_to_correct,"Amazon Basics - 4'X6' Solid Color Shag Rug, Grey",RUG,
+clip_lora_v3_r16_both_seed0,B07P5LNMMS_N3,B07P5LNMMS,N3,0.29219985,0.3594538,wrong_to_correct,"Amazon Brand – Ravenna Home Pull Recliner with Rotating 360 Swivel Glider, Living Room Chair, Fabric, Black",CHAIR,swap_22f75503c1914249
+clip_lora_v3_r16_both_seed1,B07DBCFM4R_N2,B07DBCFM4R,N2,0.29134244,0.11882255,wrong_to_correct,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, White, Set of 2",STOOL_SEATING,
+clip_lora_v3_r16_both_seed1,B001CZEWLU_N2,B001CZEWLU,N2,0.29120889,0.1972333,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Sofa Couch with Chaise, Sand",SOFA,
+clip_lora_v3_r16_both_seed1,B07F2M2VGG_N2,B07F2M2VGG,N2,0.30331272,0.29516369,wrong_to_correct,"Amazon Brand – Stone & Beam Bradbury Chesterfield Classic Ottoman, 30""W, Slate",OTTOMAN,
+clip_lora_v3_r16_both_seed1,B07HZ6X7ZF_N2,B07HZ6X7ZF,N2,0.30723953,0.32254803,wrong_to_correct,Stone & Beam Andover Andover Right Facing U Shape Sectional,SOFA,
+clip_lora_v3_r16_both_seed1,B07BW8QTXH_N2,B07BW8QTXH,N2,0.29726562,-0.00231263,wrong_to_correct,"Amazon Brand – Ravenna Home Dunford Casual Rolled Arm Loveseat Sofa, 76""W, Dark Grey",SOFA,
+clip_lora_v3_r16_both_seed1,B07JLZJ9JM_N2,B07JLZJ9JM,N2,0.26688683,0.37524092,correct_to_wrong,"Amazon Brand – Stone & Beam Striated Velvet Linen-Look Decorative Throw Pillow, 17"" x 17"", Charcoal",PILLOW,
+clip_lora_v3_r16_both_seed1,B071PB2H8H_pos,B071PB2H8H,pos,0.26927942,0.37084615,wrong_to_correct,"Amazon Brand – Stone & Beam Traditional Regal Adornment Rug, 8' x 10', Burgundy",RUG,
+clip_lora_v3_r16_both_seed1,B07QFP4ZHX_N3,B07QFP4ZHX,N3,0.312621,0.20978747,wrong_to_correct,"Amazon Brand – Rivet Asher Modern Storage Ottoman, 15.75""W, Fabric, Beige",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_lora_v3_r16_both_seed1,B082VMWB4G_N2,B082VMWB4G,N2,0.30639842,0.28897536,wrong_to_correct,"Amazon Brand – Stone & Beam Hansberry Upholstered Swivel Chair, 34.4""W, Hemp",CHAIR,
+clip_lora_v3_r16_both_seed1,B075X4N3QJ_pos,B075X4N3QJ,pos,0.28868884,0.34450895,correct_to_wrong,"Amazon Brand – Rivet Lawson Mid-Century Modern Angled Upholstered Arm Chair, 33""W, Pearl",CHAIR,
+clip_lora_v3_r16_both_seed1,B07DB92L77_N3,B07DB92L77,N3,0.29818654,0.14132896,wrong_to_correct,"Amazon Brand – Ravenna Home Sherman Curved Faux Leather Accent Chair, 30.5""W, Blue",CHAIR,swap_6bec9f4a0abaf1e0
+clip_lora_v3_r16_both_seed1,B073NZGLLS_N2,B073NZGLLS,N2,0.2749303,0.40120941,correct_to_wrong,"Amazon Brand – Rivet Yellow and Purple Contrast Watercolor Print Wall Art in White Frame, 24"" x 28""",WALL_ART,
+clip_lora_v3_r16_both_seed1,B000W8RZF8_N3,B000W8RZF8,N3,0.30275017,0.22535804,wrong_to_correct,"Strathwood Folding Garden Arm Chair with Carry Bag, Grey",CHAIR,swap_55e01bcd9bac0a0b
+clip_lora_v3_r16_both_seed1,B07QHL6SYG_pos,B07QHL6SYG,pos,0.28044713,0.51184034,wrong_to_correct,"Amazon Brand – Rivet Contemporary Handtufted Cotton-and-Wool Area Rug with Geometric Feathered Pattern, 5' x 8', Purple and Cream",RUG,
+clip_lora_v3_r16_both_seed1,B07QHL6SYG_N2,B07QHL6SYG,N2,0.29327273,0.2351968,wrong_to_correct,"Ravenna Home Forsyth Rug, 8'W x 10'L, Geometric Medallion Design",RUG,
+clip_lora_v3_r16_both_seed1,B07B7B94L2_N3,B07B7B94L2,N3,0.30467564,0.33044326,wrong_to_correct,"Amazon Brand – Stone & Beam Hughes Modern Casual Wood Buffet Bar, Cabinet Credenza, White",TABLE,swap_f70e8517681510d0
+clip_lora_v3_r16_both_seed1,B07M6PKM8K_N3,B07M6PKM8K,N3,0.29564315,0.24500737,wrong_to_correct,"Amazon Brand – Ravenna Home Classic-Style Solid Pine Dining Chair, 40""H, Beige Finish, Set of 2",CHAIR,swap_22f75503c1914249
+clip_lora_v3_r16_both_seed1,B07B4GQ7M9_N2,B07B4GQ7M9,N2,0.30791566,0.33236524,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Loveseat, 63.5""W, Charcoal",SOFA,
+clip_lora_v3_r16_both_seed1,B07B79SZV1_N3,B07B79SZV1,N3,0.31865042,0.35030887,wrong_to_correct,"Stone & Beam Hughes Casual Wood Dining Room Kitchen Chairs, Navy, Set of 2",CHAIR,swap_058dd5e4345efcd8
+clip_lora_v3_r16_both_seed1,B07B7B1HCT_N3,B07B7B1HCT,N3,0.2911261,0.33309454,wrong_to_correct,"Amazon Brand – Rivet Eastern Modern Dining Room Kitchen Chairs, Velvet, 32 Inch Height, Set of 2, Beige, Bronze Metal",CHAIR,swap_5e280f6c0681f6e7
+clip_lora_v3_r16_both_seed1,B07QBQCG77_pos,B07QBQCG77,pos,0.27909189,0.42545319,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_lora_v3_r16_both_seed1,B08GJZYYRF_pos,B08GJZYYRF,pos,0.28099346,0.41312879,wrong_to_correct,"Amazon Brand - Ravenna Home Archer Outdoor Patio C-Shaped Steel Side Table with Panel Top, 16.54""W, Gray (Renewed)",TABLE,
+clip_lora_v3_r16_both_seed1,B08GJZYYRF_N2,B08GJZYYRF,N2,0.28830844,0.32955521,wrong_to_correct,"Amazon Brand – Ravenna Home Wood and Metal End Table, 44""W, Dark Oak, Black Metal",TABLE,
+clip_lora_v3_r16_both_seed1,B082VM4LMQ_N2,B082VM4LMQ,N2,0.28634912,-0.00820322,wrong_to_correct,"Amazon Brand – Stone & Beam Bagley Sectional Component, Left-Facing Sofa Chaise, Fabric, 41""W, Linen",SOFA,
+clip_lora_v3_r16_both_seed1,B07DBHBCXQ_N3,B07DBHBCXQ,N3,0.29948151,0.24245892,wrong_to_correct,"Amazon Brand – Ravenna Home Eddison Modern Slope Accent Chair, 32""W, Beige",CHAIR,swap_6bec9f4a0abaf1e0
+clip_lora_v3_r16_both_seed1,B07HSBJ1Q4_N2,B07HSBJ1Q4,N2,0.31244099,0.17471969,wrong_to_correct,"Amazon Brand – Rivet Decatur Modern Faux Leather Kitchen Bar Stool, 41""H, Black",STOOL_SEATING,
+clip_lora_v3_r16_both_seed1,B0011MZHA4_N2,B0011MZHA4,N2,0.30711442,0.2386851,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_lora_v3_r16_both_seed1,B07B7B4JTW_N3,B07B7B4JTW,N3,0.29782975,0.23176786,wrong_to_correct,"Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Chair, 40""H, Pack of 2, Navy",CHAIR,swap_b47c2cd584257233
+clip_lora_v3_r16_both_seed1,B07L6C51SC_N2,B07L6C51SC,N2,0.28082627,0.38703269,correct_to_wrong,"Amazon Brand – Ravenna Home Ferris Nailhead Detailed Wood Counter Stool, 26.75""H, Antique Walnut with Dark Brown Faux Leather (2 Pack)",STOOL_SEATING,
+clip_lora_v3_r16_both_seed1,B07DBHF15B_N3,B07DBHF15B,N3,0.28820741,0.26595351,wrong_to_correct,"Amazon Brand – Ravenna Home Morley Classic Round Pedestal Accent Side End Table Nightstand, 20""W, Brown",TABLE,swap_f70e8517681510d0
+clip_lora_v3_r16_both_seed1,B07HZ5DVV2_N2,B07HZ5DVV2,N2,0.32017887,0.24427542,wrong_to_correct,"Amazon Brand – Rivet Alonzo Contemporary Velvet Sofa Couch, 80""W, Blue",SOFA,
+clip_lora_v3_r16_both_seed1,B07QD6ZWQG_pos,B07QD6ZWQG,pos,0.30136934,0.27027228,correct_to_wrong,"Ravenna Home Modern Padded Square Memo Board, 16""H, Beige with Gold Ribbon",HOME,
+clip_lora_v3_r16_both_seed1,B07QHKRRZL_N2,B07QHKRRZL,N2,0.30059546,0.22992013,wrong_to_correct,"Amazon Basics - 4'X6' Plush Diamond Trellis Shag Rug, Grey",RUG,
+clip_lora_v3_r16_both_seed1,B07DBFFG9Z_N3,B07DBFFG9Z,N3,0.29849961,0.28610271,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Coffee Table, 23.6""W, White Walnut",TABLE,swap_7964b5b3aceca3e7
+clip_lora_v3_r16_both_seed1,B07HSHKHHB_pos,B07HSHKHHB,pos,0.27473897,0.3844893,wrong_to_correct,"Amazon Brand – Rivet Contemporary Runner Rug, 2' 10"" x 7' 10"", Taupe and Grey",RUG,
+clip_lora_v3_r16_both_seed1,B07QHKV52D_N2,B07QHKV52D,N2,0.30912572,0.0865133,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Medallion Area Rug, 7' 10"" x 10', Brick",RUG,
+clip_lora_v3_r16_both_seed1,B07Q5ZXRFC_pos,B07Q5ZXRFC,pos,0.27890021,0.55774003,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_lora_v3_r16_both_seed1,B07DBB1GVR_N2,B07DBB1GVR,N2,0.29375395,0.1351243,wrong_to_correct,First Hill Damara Square-Shaped Large Faux-Leather Storage Ottoman - Bittersweet Chocolate,OTTOMAN,
+clip_lora_v3_r16_both_seed1,B072FVHSZQ_N2,B072FVHSZQ,N2,0.32737967,0.25922868,wrong_to_correct,"Amazon Brand – Rivet Curved Tufted Velvet Accent Chair, Marina Mid-Century, 28.7""W, Grape",CHAIR,
+clip_lora_v3_r16_both_seed1,B075YP3BD8_pos,B075YP3BD8,pos,0.26344892,0.37737012,wrong_to_correct,"Amazon Brand – Stone & Beam Bergen Tufted Kitchen Dining Room Table Farmhouse Chairs, 38.6""H, Set of 2, Slate Grey, Wood Oak",CHAIR,
+clip_lora_v3_r16_both_seed1,B07P5LM39Q_N2,B07P5LM39Q,N2,0.32309055,0.2107441,wrong_to_correct,"Amazon Brand – Stone & Beam Kristin Round Arm Storage Ottoman, Stone, 43.5""W",OTTOMAN,
+clip_lora_v3_r16_both_seed1,B07CPH1V4Q_N2,B07CPH1V4Q,N2,0.30988914,0.1461612,wrong_to_correct,"Amazon Brand – Rivet Sloane Mid-Century Modern Ottoman with Tapered Legs, 31.9""W, Storm Gray",OTTOMAN,
+clip_lora_v3_r16_both_seed1,B073P16J7L_N2,B073P16J7L,N2,0.31262636,0.24046761,wrong_to_correct,"Amazon Brand – Rivet Canvas Print of Horses Grazing in Desert Southwest, 36"" x 24""",WALL_ART,
+clip_lora_v3_r16_both_seed1,B07C8MSCX6_N2,B07C8MSCX6,N2,0.3202855,0.34467873,wrong_to_correct,"Amazon Brand – Stone & Beam Classic Plaid Outdoor Throw Pillow, 20"" x 20"", Garden",PILLOW,
+clip_lora_v3_r16_both_seed1,B001BQTX4Q_pos,B001BQTX4Q,pos,0.29545525,0.18795589,correct_to_wrong,Pinzon Renwick Furniture Collection,HOME_FURNITURE_AND_DECOR,
+clip_lora_v3_r16_both_seed1,B075ZBLWBH_N2,B075ZBLWBH,N2,0.31907329,0.14712234,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_lora_v3_r16_both_seed1,B07B4YVDH9_pos,B07B4YVDH9,pos,0.31993297,0.26806942,correct_to_wrong,"Amazon Brand – Rivet Contemporary Geometric Wool Runner Hallway Rug, 2' 6"" x 8', Grey, Ivory",RUG,
+clip_lora_v3_r16_both_seed1,B07B4YVDH9_N2,B07B4YVDH9,N2,0.31294119,0.32756194,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Ikat Inspired Wool Area Rug, 3' 6"" x 5' 6"", Beige",RUG,
+clip_lora_v3_r16_both_seed1,B07DBF788Z_N3,B07DBF788Z,N3,0.32128236,0.29313833,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Console Table, 15.75""W, White Walnut",TABLE,swap_04d90febea5167d5
+clip_lora_v3_r16_both_seed1,B07BWJCBY2_N2,B07BWJCBY2,N2,0.29608664,0.04032671,wrong_to_correct,"Amazon Brand – Stone & Beam St. Cloud ModernArmless Straight Back Settee, 49""W, Tan",SOFA,
+clip_lora_v3_r16_both_seed1,B07HSF53X6_N2,B07HSF53X6,N2,0.31056041,0.12654689,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Floral Medallion Wool Area Rug, 2'6"" x 8', Taupe on Brown",RUG,
+clip_lora_v3_r16_both_seed1,B07QD6V6N8_N2,B07QD6V6N8,N2,0.296745,0.24824694,wrong_to_correct,"Amazon Brand – Ravenna Home Anne Marie Half-Moon Curved Leg Storage Console Entryway Table, 48""W, Dark Espresso",TABLE,
+clip_lora_v3_r16_both_seed1,B07QFB4XG1_pos,B07QFB4XG1,pos,0.27661449,0.51962155,wrong_to_correct,"Ravenna Home Vintage Damask Patterned Rug, 4' x 6', Ivory on Warm Grey",RUG,
+clip_lora_v3_r16_both_seed1,B0735XMSY2_N2,B0735XMSY2,N2,0.29577461,0.2000469,wrong_to_correct,"Ravenna Home Vintage Rug, 7'10"" x 9'10"", Ivory on Blue",RUG,
+clip_lora_v3_r16_both_seed1,B07QGFZ28Y_pos,B07QGFZ28Y,pos,0.29646316,0.24796236,correct_to_wrong,"Amazon Brand – Ravenna Home Mid-Century Side Table with Carved Legs, 18.11""W",TABLE,
+clip_lora_v3_r16_both_seed1,B07TZMWH7X_pos,B07TZMWH7X,pos,0.27391627,0.52654207,wrong_to_correct,"Amazon Basics - 4'X6' Solid Color Shag Rug, Grey",RUG,
+clip_lora_v3_r16_both_seed1,B07P5LNMMS_N3,B07P5LNMMS,N3,0.29219985,0.33385503,wrong_to_correct,"Amazon Brand – Ravenna Home Pull Recliner with Rotating 360 Swivel Glider, Living Room Chair, Fabric, Black",CHAIR,swap_22f75503c1914249
+clip_lora_v3_r16_both_seed2,B07DBCFM4R_N2,B07DBCFM4R,N2,0.29134244,0.14754635,wrong_to_correct,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, White, Set of 2",STOOL_SEATING,
+clip_lora_v3_r16_both_seed2,B001CZEWLU_N2,B001CZEWLU,N2,0.29120889,0.23680341,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Sofa Couch with Chaise, Sand",SOFA,
+clip_lora_v3_r16_both_seed2,B07F2M2VGG_N2,B07F2M2VGG,N2,0.30331272,0.29720086,wrong_to_correct,"Amazon Brand – Stone & Beam Bradbury Chesterfield Classic Ottoman, 30""W, Slate",OTTOMAN,
+clip_lora_v3_r16_both_seed2,B07HZ6X7ZF_N2,B07HZ6X7ZF,N2,0.30723953,0.32976145,wrong_to_correct,Stone & Beam Andover Andover Right Facing U Shape Sectional,SOFA,
+clip_lora_v3_r16_both_seed2,B07BW8QTXH_N2,B07BW8QTXH,N2,0.29726562,0.01234917,wrong_to_correct,"Amazon Brand – Ravenna Home Dunford Casual Rolled Arm Loveseat Sofa, 76""W, Dark Grey",SOFA,
+clip_lora_v3_r16_both_seed2,B071PB2H8H_pos,B071PB2H8H,pos,0.26927942,0.38839531,wrong_to_correct,"Amazon Brand – Stone & Beam Traditional Regal Adornment Rug, 8' x 10', Burgundy",RUG,
+clip_lora_v3_r16_both_seed2,B07QFP4ZHX_N3,B07QFP4ZHX,N3,0.312621,0.19704001,wrong_to_correct,"Amazon Brand – Rivet Asher Modern Storage Ottoman, 15.75""W, Fabric, Beige",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_lora_v3_r16_both_seed2,B082VMWB4G_N2,B082VMWB4G,N2,0.30639842,0.29493982,wrong_to_correct,"Amazon Brand – Stone & Beam Hansberry Upholstered Swivel Chair, 34.4""W, Hemp",CHAIR,
+clip_lora_v3_r16_both_seed2,B075X4N3QJ_pos,B075X4N3QJ,pos,0.28868884,0.33492684,correct_to_wrong,"Amazon Brand – Rivet Lawson Mid-Century Modern Angled Upholstered Arm Chair, 33""W, Pearl",CHAIR,
+clip_lora_v3_r16_both_seed2,B07DB92L77_N3,B07DB92L77,N3,0.29818654,0.18223459,wrong_to_correct,"Amazon Brand – Ravenna Home Sherman Curved Faux Leather Accent Chair, 30.5""W, Blue",CHAIR,swap_6bec9f4a0abaf1e0
+clip_lora_v3_r16_both_seed2,B073NZGLLS_N2,B073NZGLLS,N2,0.2749303,0.40189153,correct_to_wrong,"Amazon Brand – Rivet Yellow and Purple Contrast Watercolor Print Wall Art in White Frame, 24"" x 28""",WALL_ART,
+clip_lora_v3_r16_both_seed2,B000W8RZF8_N3,B000W8RZF8,N3,0.30275017,0.21815145,wrong_to_correct,"Strathwood Folding Garden Arm Chair with Carry Bag, Grey",CHAIR,swap_55e01bcd9bac0a0b
+clip_lora_v3_r16_both_seed2,B07QHL6SYG_pos,B07QHL6SYG,pos,0.28044713,0.49468496,wrong_to_correct,"Amazon Brand – Rivet Contemporary Handtufted Cotton-and-Wool Area Rug with Geometric Feathered Pattern, 5' x 8', Purple and Cream",RUG,
+clip_lora_v3_r16_both_seed2,B07QHL6SYG_N2,B07QHL6SYG,N2,0.29327273,0.22481038,wrong_to_correct,"Ravenna Home Forsyth Rug, 8'W x 10'L, Geometric Medallion Design",RUG,
+clip_lora_v3_r16_both_seed2,B07B7B94L2_N3,B07B7B94L2,N3,0.30467564,0.34103447,wrong_to_correct,"Amazon Brand – Stone & Beam Hughes Modern Casual Wood Buffet Bar, Cabinet Credenza, White",TABLE,swap_f70e8517681510d0
+clip_lora_v3_r16_both_seed2,B07M6PKM8K_N3,B07M6PKM8K,N3,0.29564315,0.26016697,wrong_to_correct,"Amazon Brand – Ravenna Home Classic-Style Solid Pine Dining Chair, 40""H, Beige Finish, Set of 2",CHAIR,swap_22f75503c1914249
+clip_lora_v3_r16_both_seed2,B07B4GQ7M9_N2,B07B4GQ7M9,N2,0.30791566,0.34494793,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Loveseat, 63.5""W, Charcoal",SOFA,
+clip_lora_v3_r16_both_seed2,B07B79SZV1_N3,B07B79SZV1,N3,0.31865042,0.3395479,wrong_to_correct,"Stone & Beam Hughes Casual Wood Dining Room Kitchen Chairs, Navy, Set of 2",CHAIR,swap_058dd5e4345efcd8
+clip_lora_v3_r16_both_seed2,B07B7B1HCT_N3,B07B7B1HCT,N3,0.2911261,0.33588186,wrong_to_correct,"Amazon Brand – Rivet Eastern Modern Dining Room Kitchen Chairs, Velvet, 32 Inch Height, Set of 2, Beige, Bronze Metal",CHAIR,swap_5e280f6c0681f6e7
+clip_lora_v3_r16_both_seed2,B07QBQCG77_pos,B07QBQCG77,pos,0.27909189,0.46276522,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_lora_v3_r16_both_seed2,B08GJZYYRF_pos,B08GJZYYRF,pos,0.28099346,0.42061052,wrong_to_correct,"Amazon Brand - Ravenna Home Archer Outdoor Patio C-Shaped Steel Side Table with Panel Top, 16.54""W, Gray (Renewed)",TABLE,
+clip_lora_v3_r16_both_seed2,B08GJZYYRF_N2,B08GJZYYRF,N2,0.28830844,0.33040521,wrong_to_correct,"Amazon Brand – Ravenna Home Wood and Metal End Table, 44""W, Dark Oak, Black Metal",TABLE,
+clip_lora_v3_r16_both_seed2,B082VM4LMQ_N2,B082VM4LMQ,N2,0.28634912,-0.02283341,wrong_to_correct,"Amazon Brand – Stone & Beam Bagley Sectional Component, Left-Facing Sofa Chaise, Fabric, 41""W, Linen",SOFA,
+clip_lora_v3_r16_both_seed2,B07DBHBCXQ_N3,B07DBHBCXQ,N3,0.29948151,0.25518855,wrong_to_correct,"Amazon Brand – Ravenna Home Eddison Modern Slope Accent Chair, 32""W, Beige",CHAIR,swap_6bec9f4a0abaf1e0
+clip_lora_v3_r16_both_seed2,B07HSBJ1Q4_N2,B07HSBJ1Q4,N2,0.31244099,0.18699473,wrong_to_correct,"Amazon Brand – Rivet Decatur Modern Faux Leather Kitchen Bar Stool, 41""H, Black",STOOL_SEATING,
+clip_lora_v3_r16_both_seed2,B0011MZHA4_N2,B0011MZHA4,N2,0.30711442,0.26419008,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_lora_v3_r16_both_seed2,B07B7B4JTW_N3,B07B7B4JTW,N3,0.29782975,0.20610151,wrong_to_correct,"Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Chair, 40""H, Pack of 2, Navy",CHAIR,swap_b47c2cd584257233
+clip_lora_v3_r16_both_seed2,B07L6C51SC_N2,B07L6C51SC,N2,0.28082627,0.40916985,correct_to_wrong,"Amazon Brand – Ravenna Home Ferris Nailhead Detailed Wood Counter Stool, 26.75""H, Antique Walnut with Dark Brown Faux Leather (2 Pack)",STOOL_SEATING,
+clip_lora_v3_r16_both_seed2,B07DBHF15B_N3,B07DBHF15B,N3,0.28820741,0.2593227,wrong_to_correct,"Amazon Brand – Ravenna Home Morley Classic Round Pedestal Accent Side End Table Nightstand, 20""W, Brown",TABLE,swap_f70e8517681510d0
+clip_lora_v3_r16_both_seed2,B07HZ5DVV2_N2,B07HZ5DVV2,N2,0.32017887,0.27234375,wrong_to_correct,"Amazon Brand – Rivet Alonzo Contemporary Velvet Sofa Couch, 80""W, Blue",SOFA,
+clip_lora_v3_r16_both_seed2,B07QD6ZWQG_pos,B07QD6ZWQG,pos,0.30136934,0.27465913,correct_to_wrong,"Ravenna Home Modern Padded Square Memo Board, 16""H, Beige with Gold Ribbon",HOME,
+clip_lora_v3_r16_both_seed2,B07QHKRRZL_N2,B07QHKRRZL,N2,0.30059546,0.24480405,wrong_to_correct,"Amazon Basics - 4'X6' Plush Diamond Trellis Shag Rug, Grey",RUG,
+clip_lora_v3_r16_both_seed2,B07DBFFG9Z_N3,B07DBFFG9Z,N3,0.29849961,0.2760995,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Coffee Table, 23.6""W, White Walnut",TABLE,swap_7964b5b3aceca3e7
+clip_lora_v3_r16_both_seed2,B07HSHKHHB_pos,B07HSHKHHB,pos,0.27473897,0.42195004,wrong_to_correct,"Amazon Brand – Rivet Contemporary Runner Rug, 2' 10"" x 7' 10"", Taupe and Grey",RUG,
+clip_lora_v3_r16_both_seed2,B07QHKV52D_N2,B07QHKV52D,N2,0.30912572,0.07236391,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Medallion Area Rug, 7' 10"" x 10', Brick",RUG,
+clip_lora_v3_r16_both_seed2,B07Q5ZXRFC_pos,B07Q5ZXRFC,pos,0.27890021,0.55861437,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_lora_v3_r16_both_seed2,B00104G7WK_pos,B00104G7WK,pos,0.32456177,0.35610068,correct_to_wrong,Pinzon Capitola Double-Chaise Sectional Sofa with 8 Pillows,SOFA,
+clip_lora_v3_r16_both_seed2,B07DBB1GVR_N2,B07DBB1GVR,N2,0.29375395,0.1515052,wrong_to_correct,First Hill Damara Square-Shaped Large Faux-Leather Storage Ottoman - Bittersweet Chocolate,OTTOMAN,
+clip_lora_v3_r16_both_seed2,B072FVHSZQ_N2,B072FVHSZQ,N2,0.32737967,0.25995851,wrong_to_correct,"Amazon Brand – Rivet Curved Tufted Velvet Accent Chair, Marina Mid-Century, 28.7""W, Grape",CHAIR,
+clip_lora_v3_r16_both_seed2,B07B4MPVZG_N2,B07B4MPVZG,N2,0.322855,0.35674787,wrong_to_correct,"Strathwood Brooklyn Leather 3 Seat Sofa, Black",SOFA,
+clip_lora_v3_r16_both_seed2,B075YP3BD8_pos,B075YP3BD8,pos,0.26344892,0.3765133,wrong_to_correct,"Amazon Brand – Stone & Beam Bergen Tufted Kitchen Dining Room Table Farmhouse Chairs, 38.6""H, Set of 2, Slate Grey, Wood Oak",CHAIR,
+clip_lora_v3_r16_both_seed2,B07P5LM39Q_N2,B07P5LM39Q,N2,0.32309055,0.21678868,wrong_to_correct,"Amazon Brand – Stone & Beam Kristin Round Arm Storage Ottoman, Stone, 43.5""W",OTTOMAN,
+clip_lora_v3_r16_both_seed2,B07CPH1V4Q_N2,B07CPH1V4Q,N2,0.30988914,0.14612246,wrong_to_correct,"Amazon Brand – Rivet Sloane Mid-Century Modern Ottoman with Tapered Legs, 31.9""W, Storm Gray",OTTOMAN,
+clip_lora_v3_r16_both_seed2,B073P16J7L_N2,B073P16J7L,N2,0.31262636,0.22923023,wrong_to_correct,"Amazon Brand – Rivet Canvas Print of Horses Grazing in Desert Southwest, 36"" x 24""",WALL_ART,
+clip_lora_v3_r16_both_seed2,B07C8MSCX6_N2,B07C8MSCX6,N2,0.3202855,0.35620701,wrong_to_correct,"Amazon Brand – Stone & Beam Classic Plaid Outdoor Throw Pillow, 20"" x 20"", Garden",PILLOW,
+clip_lora_v3_r16_both_seed2,B001BQTX4Q_pos,B001BQTX4Q,pos,0.29545525,0.1404769,correct_to_wrong,Pinzon Renwick Furniture Collection,HOME_FURNITURE_AND_DECOR,
+clip_lora_v3_r16_both_seed2,B075ZBLWBH_pos,B075ZBLWBH,pos,0.33608437,0.35494059,correct_to_wrong,"Amazon Brand – Rivet Shag Diamond Morrocan Area Rug, 2' 2"" x 4"", Cream",RUG,
+clip_lora_v3_r16_both_seed2,B075ZBLWBH_N2,B075ZBLWBH,N2,0.31907329,0.17443173,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_lora_v3_r16_both_seed2,B07B4YVDH9_pos,B07B4YVDH9,pos,0.31993297,0.26745543,correct_to_wrong,"Amazon Brand – Rivet Contemporary Geometric Wool Runner Hallway Rug, 2' 6"" x 8', Grey, Ivory",RUG,
+clip_lora_v3_r16_both_seed2,B07B4YVDH9_N2,B07B4YVDH9,N2,0.31294119,0.31793112,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Ikat Inspired Wool Area Rug, 3' 6"" x 5' 6"", Beige",RUG,
+clip_lora_v3_r16_both_seed2,B07DBF788Z_N3,B07DBF788Z,N3,0.32128236,0.28737515,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Console Table, 15.75""W, White Walnut",TABLE,swap_04d90febea5167d5
+clip_lora_v3_r16_both_seed2,B07BWJCBY2_N2,B07BWJCBY2,N2,0.29608664,0.01744161,wrong_to_correct,"Amazon Brand – Stone & Beam St. Cloud ModernArmless Straight Back Settee, 49""W, Tan",SOFA,
+clip_lora_v3_r16_both_seed2,B07HSF53X6_N2,B07HSF53X6,N2,0.31056041,0.11051503,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Floral Medallion Wool Area Rug, 2'6"" x 8', Taupe on Brown",RUG,
+clip_lora_v3_r16_both_seed2,B07QFRRLG1_N2,B07QFRRLG1,N2,0.32260317,0.36410171,wrong_to_correct,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Bar Stool, 43""H, Chalk",STOOL_SEATING,
+clip_lora_v3_r16_both_seed2,B07QD6V6N8_N2,B07QD6V6N8,N2,0.296745,0.25625139,wrong_to_correct,"Amazon Brand – Ravenna Home Anne Marie Half-Moon Curved Leg Storage Console Entryway Table, 48""W, Dark Espresso",TABLE,
+clip_lora_v3_r16_both_seed2,B07QFB4XG1_pos,B07QFB4XG1,pos,0.27661449,0.50096875,wrong_to_correct,"Ravenna Home Vintage Damask Patterned Rug, 4' x 6', Ivory on Warm Grey",RUG,
+clip_lora_v3_r16_both_seed2,B0735XMSY2_N2,B0735XMSY2,N2,0.29577461,0.24213293,wrong_to_correct,"Ravenna Home Vintage Rug, 7'10"" x 9'10"", Ivory on Blue",RUG,
+clip_lora_v3_r16_both_seed2,B07QGFZ28Y_pos,B07QGFZ28Y,pos,0.29646316,0.24919069,correct_to_wrong,"Amazon Brand – Ravenna Home Mid-Century Side Table with Carved Legs, 18.11""W",TABLE,
+clip_lora_v3_r16_both_seed2,B07TZMWH7X_pos,B07TZMWH7X,pos,0.27391627,0.54636478,wrong_to_correct,"Amazon Basics - 4'X6' Solid Color Shag Rug, Grey",RUG,
+clip_lora_v3_r16_both_seed2,B07P5LNMMS_N3,B07P5LNMMS,N3,0.29219985,0.33043295,wrong_to_correct,"Amazon Brand – Ravenna Home Pull Recliner with Rotating 360 Swivel Glider, Living Room Chair, Fabric, Black",CHAIR,swap_22f75503c1914249
+clip_full_v3_both_seed0,B07DBCFM4R_N2,B07DBCFM4R,N2,0.29134244,0.0591126,wrong_to_correct,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, White, Set of 2",STOOL_SEATING,
+clip_full_v3_both_seed0,B001CZEWLU_N2,B001CZEWLU,N2,0.29120889,0.39758095,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Sofa Couch with Chaise, Sand",SOFA,
+clip_full_v3_both_seed0,B07HZ6X7ZF_N2,B07HZ6X7ZF,N2,0.30723953,0.2404833,wrong_to_correct,Stone & Beam Andover Andover Right Facing U Shape Sectional,SOFA,
+clip_full_v3_both_seed0,B07BW8QTXH_N2,B07BW8QTXH,N2,0.29726562,-0.24898914,wrong_to_correct,"Amazon Brand – Ravenna Home Dunford Casual Rolled Arm Loveseat Sofa, 76""W, Dark Grey",SOFA,
+clip_full_v3_both_seed0,B07QC861L7_N2,B07QC861L7,N2,0.31675455,0.37331733,wrong_to_correct,"Amazon Brand – Rivet Modern Storage Ottoman Side Table, 17.13""W, Birch Veneer with a White Top",TABLE,
+clip_full_v3_both_seed0,B071PB2H8H_pos,B071PB2H8H,pos,0.26927942,0.61841416,wrong_to_correct,"Amazon Brand – Stone & Beam Traditional Regal Adornment Rug, 8' x 10', Burgundy",RUG,
+clip_full_v3_both_seed0,B07QFP4ZHX_N3,B07QFP4ZHX,N3,0.312621,0.38011259,wrong_to_correct,"Amazon Brand – Rivet Asher Modern Storage Ottoman, 15.75""W, Fabric, Beige",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_full_v3_both_seed0,B0735THVQK_N2,B0735THVQK,N2,0.32760292,0.3964794,wrong_to_correct,"Amazon Brand – Rivet Shag Diamond Morrocan Area Rug, 2' 2"" x 4"", Cream",RUG,
+clip_full_v3_both_seed0,B082VMWB4G_N2,B082VMWB4G,N2,0.30639842,-0.04616109,wrong_to_correct,"Amazon Brand – Stone & Beam Hansberry Upholstered Swivel Chair, 34.4""W, Hemp",CHAIR,
+clip_full_v3_both_seed0,B07DB92L77_N3,B07DB92L77,N3,0.29818654,0.12903422,wrong_to_correct,"Amazon Brand – Ravenna Home Sherman Curved Faux Leather Accent Chair, 30.5""W, Blue",CHAIR,swap_6bec9f4a0abaf1e0
+clip_full_v3_both_seed0,B073NZGLLS_N2,B073NZGLLS,N2,0.2749303,0.42738277,correct_to_wrong,"Amazon Brand – Rivet Yellow and Purple Contrast Watercolor Print Wall Art in White Frame, 24"" x 28""",WALL_ART,
+clip_full_v3_both_seed0,B00104AM8A_pos,B00104AM8A,pos,0.24916404,0.42271399,wrong_to_correct,Pinzon by Crypton Charlotte Glider,CHAIR,
+clip_full_v3_both_seed0,B07QHL6SYG_pos,B07QHL6SYG,pos,0.28044713,0.64283705,wrong_to_correct,"Amazon Brand – Rivet Contemporary Handtufted Cotton-and-Wool Area Rug with Geometric Feathered Pattern, 5' x 8', Purple and Cream",RUG,
+clip_full_v3_both_seed0,B07QHL6SYG_N2,B07QHL6SYG,N2,0.29327273,0.21135759,wrong_to_correct,"Ravenna Home Forsyth Rug, 8'W x 10'L, Geometric Medallion Design",RUG,
+clip_full_v3_both_seed0,B07B7B94L2_N3,B07B7B94L2,N3,0.30467564,0.33243138,wrong_to_correct,"Amazon Brand – Stone & Beam Hughes Modern Casual Wood Buffet Bar, Cabinet Credenza, White",TABLE,swap_f70e8517681510d0
+clip_full_v3_both_seed0,B07M6PKM8K_N3,B07M6PKM8K,N3,0.29564315,0.24898437,wrong_to_correct,"Amazon Brand – Ravenna Home Classic-Style Solid Pine Dining Chair, 40""H, Beige Finish, Set of 2",CHAIR,swap_22f75503c1914249
+clip_full_v3_both_seed0,B07B4GQ7M9_N2,B07B4GQ7M9,N2,0.30791566,0.4052904,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Loveseat, 63.5""W, Charcoal",SOFA,
+clip_full_v3_both_seed0,B00IIFW2L4_N3,B00IIFW2L4,N3,0.29569405,0.29006541,wrong_to_correct,"AmazonBasics Mesh, Mid-Back, Adjustable, Swivel Office Desk Chair with Armrests, Green",CHAIR,swap_95ed96c0062dcbe4
+clip_full_v3_both_seed0,B07QBQCG77_pos,B07QBQCG77,pos,0.27909189,0.80839241,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_full_v3_both_seed0,B07RG6ZCZ4_pos,B07RG6ZCZ4,pos,0.28363129,0.60040826,wrong_to_correct,Amazon Brand - Solimo Royale 1 Seater Fabric Sofa (Brown),SOFA,
+clip_full_v3_both_seed0,B08GJZYYRF_pos,B08GJZYYRF,pos,0.28099346,0.7967484,wrong_to_correct,"Amazon Brand - Ravenna Home Archer Outdoor Patio C-Shaped Steel Side Table with Panel Top, 16.54""W, Gray (Renewed)",TABLE,
+clip_full_v3_both_seed0,B08GJZYYRF_N2,B08GJZYYRF,N2,0.28830844,0.40057576,wrong_to_correct,"Amazon Brand – Ravenna Home Wood and Metal End Table, 44""W, Dark Oak, Black Metal",TABLE,
+clip_full_v3_both_seed0,B082VM4LMQ_N2,B082VM4LMQ,N2,0.28634912,-0.16785298,wrong_to_correct,"Amazon Brand – Stone & Beam Bagley Sectional Component, Left-Facing Sofa Chaise, Fabric, 41""W, Linen",SOFA,
+clip_full_v3_both_seed0,B07DBHBCXQ_N3,B07DBHBCXQ,N3,0.29948151,0.31845918,wrong_to_correct,"Amazon Brand – Ravenna Home Eddison Modern Slope Accent Chair, 32""W, Beige",CHAIR,swap_6bec9f4a0abaf1e0
+clip_full_v3_both_seed0,B07HSBJ1Q4_N2,B07HSBJ1Q4,N2,0.31244099,0.26975843,wrong_to_correct,"Amazon Brand – Rivet Decatur Modern Faux Leather Kitchen Bar Stool, 41""H, Black",STOOL_SEATING,
+clip_full_v3_both_seed0,B07B7B4JTW_N3,B07B7B4JTW,N3,0.29782975,0.27039969,wrong_to_correct,"Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Chair, 40""H, Pack of 2, Navy",CHAIR,swap_b47c2cd584257233
+clip_full_v3_both_seed0,B07L6C51SC_N2,B07L6C51SC,N2,0.28082627,0.68099487,correct_to_wrong,"Amazon Brand – Ravenna Home Ferris Nailhead Detailed Wood Counter Stool, 26.75""H, Antique Walnut with Dark Brown Faux Leather (2 Pack)",STOOL_SEATING,
+clip_full_v3_both_seed0,B07DB92HJ9_N2,B07DB92HJ9,N2,0.27192044,0.43012556,correct_to_wrong,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, Grey, Set of 2",STOOL_SEATING,
+clip_full_v3_both_seed0,B07DBHF15B_N3,B07DBHF15B,N3,0.28820741,0.10766564,wrong_to_correct,"Amazon Brand – Ravenna Home Morley Classic Round Pedestal Accent Side End Table Nightstand, 20""W, Brown",TABLE,swap_f70e8517681510d0
+clip_full_v3_both_seed0,B07HZ5DVV2_N2,B07HZ5DVV2,N2,0.32017887,0.15086,wrong_to_correct,"Amazon Brand – Rivet Alonzo Contemporary Velvet Sofa Couch, 80""W, Blue",SOFA,
+clip_full_v3_both_seed0,B07QD6ZWQG_pos,B07QD6ZWQG,pos,0.30136934,0.08953452,correct_to_wrong,"Ravenna Home Modern Padded Square Memo Board, 16""H, Beige with Gold Ribbon",HOME,
+clip_full_v3_both_seed0,B07QHKRRZL_N2,B07QHKRRZL,N2,0.30059546,0.27327973,wrong_to_correct,"Amazon Basics - 4'X6' Plush Diamond Trellis Shag Rug, Grey",RUG,
+clip_full_v3_both_seed0,B07DBFFG9Z_N3,B07DBFFG9Z,N3,0.29849961,0.18708202,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Coffee Table, 23.6""W, White Walnut",TABLE,swap_7964b5b3aceca3e7
+clip_full_v3_both_seed0,B07HSHKHHB_pos,B07HSHKHHB,pos,0.27473897,0.72384477,wrong_to_correct,"Amazon Brand – Rivet Contemporary Runner Rug, 2' 10"" x 7' 10"", Taupe and Grey",RUG,
+clip_full_v3_both_seed0,B07QHKV52D_N2,B07QHKV52D,N2,0.30912572,-0.03108438,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Medallion Area Rug, 7' 10"" x 10', Brick",RUG,
+clip_full_v3_both_seed0,B0735SF34N_pos,B0735SF34N,pos,0.2885164,0.33113852,correct_to_wrong,"Amazon Brand – Stone & Beam Contemporary Doily Wool Farmhouse Area Rug, 5 x 8 Foot, Ivory",RUG,
+clip_full_v3_both_seed0,B07Q5ZXRFC_pos,B07Q5ZXRFC,pos,0.27890021,0.73881817,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_full_v3_both_seed0,B07DBB1GVR_N2,B07DBB1GVR,N2,0.29375395,0.27700198,wrong_to_correct,First Hill Damara Square-Shaped Large Faux-Leather Storage Ottoman - Bittersweet Chocolate,OTTOMAN,
+clip_full_v3_both_seed0,B072FVHSZQ_N2,B072FVHSZQ,N2,0.32737967,0.20647785,wrong_to_correct,"Amazon Brand – Rivet Curved Tufted Velvet Accent Chair, Marina Mid-Century, 28.7""W, Grape",CHAIR,
+clip_full_v3_both_seed0,B075YP3BD8_pos,B075YP3BD8,pos,0.26344892,0.78842878,wrong_to_correct,"Amazon Brand – Stone & Beam Bergen Tufted Kitchen Dining Room Table Farmhouse Chairs, 38.6""H, Set of 2, Slate Grey, Wood Oak",CHAIR,
+clip_full_v3_both_seed0,B07P5LM39Q_N2,B07P5LM39Q,N2,0.32309055,0.03094367,wrong_to_correct,"Amazon Brand – Stone & Beam Kristin Round Arm Storage Ottoman, Stone, 43.5""W",OTTOMAN,
+clip_full_v3_both_seed0,B01D7P5JW8_N3,B01D7P5JW8,N3,0.26944327,0.48352891,correct_to_wrong,"AmazonBasics Low-Back, Upholstered Mesh, Adjustable, Swivel Computer Office Desk Chair, Black",CHAIR,swap_95ed96c0062dcbe4
+clip_full_v3_both_seed0,B07CPH1V4Q_N2,B07CPH1V4Q,N2,0.30988914,0.11295271,wrong_to_correct,"Amazon Brand – Rivet Sloane Mid-Century Modern Ottoman with Tapered Legs, 31.9""W, Storm Gray",OTTOMAN,
+clip_full_v3_both_seed0,B073P16J7L_N2,B073P16J7L,N2,0.31262636,0.34582254,wrong_to_correct,"Amazon Brand – Rivet Canvas Print of Horses Grazing in Desert Southwest, 36"" x 24""",WALL_ART,
+clip_full_v3_both_seed0,B001BQTX4Q_pos,B001BQTX4Q,pos,0.29545525,0.35172233,correct_to_wrong,Pinzon Renwick Furniture Collection,HOME_FURNITURE_AND_DECOR,
+clip_full_v3_both_seed0,B075ZBLWBH_N2,B075ZBLWBH,N2,0.31907329,0.04313003,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_full_v3_both_seed0,B07B4YVDH9_N2,B07B4YVDH9,N2,0.31294119,0.12068067,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Ikat Inspired Wool Area Rug, 3' 6"" x 5' 6"", Beige",RUG,
+clip_full_v3_both_seed0,B07DBF788Z_N3,B07DBF788Z,N3,0.32128236,0.28147173,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Console Table, 15.75""W, White Walnut",TABLE,swap_04d90febea5167d5
+clip_full_v3_both_seed0,B07BWJCBY2_N2,B07BWJCBY2,N2,0.29608664,-0.21329476,wrong_to_correct,"Amazon Brand – Stone & Beam St. Cloud ModernArmless Straight Back Settee, 49""W, Tan",SOFA,
+clip_full_v3_both_seed0,B07HSF53X6_N2,B07HSF53X6,N2,0.31056041,0.1022149,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Floral Medallion Wool Area Rug, 2'6"" x 8', Taupe on Brown",RUG,
+clip_full_v3_both_seed0,B07QFRRLG1_N2,B07QFRRLG1,N2,0.32260317,0.32137683,wrong_to_correct,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Bar Stool, 43""H, Chalk",STOOL_SEATING,
+clip_full_v3_both_seed0,B07QD6V6N8_N2,B07QD6V6N8,N2,0.296745,-0.01036456,wrong_to_correct,"Amazon Brand – Ravenna Home Anne Marie Half-Moon Curved Leg Storage Console Entryway Table, 48""W, Dark Espresso",TABLE,
+clip_full_v3_both_seed0,B07QFB4XG1_pos,B07QFB4XG1,pos,0.27661449,0.7695297,wrong_to_correct,"Ravenna Home Vintage Damask Patterned Rug, 4' x 6', Ivory on Warm Grey",RUG,
+clip_full_v3_both_seed0,B07KTKJXCR_N2,B07KTKJXCR,N2,0.33975533,0.38535869,wrong_to_correct,"Amazon Brand – Rivet Edgewest Low Back Mid-Centory Modern Couch Sofa, 87""W, Hunter Green",SOFA,
+clip_full_v3_both_seed0,B0735XMSY2_N2,B0735XMSY2,N2,0.29577461,-0.04161813,wrong_to_correct,"Ravenna Home Vintage Rug, 7'10"" x 9'10"", Ivory on Blue",RUG,
+clip_full_v3_both_seed0,B07QGFZ28Y_pos,B07QGFZ28Y,pos,0.29646316,0.28823113,correct_to_wrong,"Amazon Brand – Ravenna Home Mid-Century Side Table with Carved Legs, 18.11""W",TABLE,
+clip_full_v3_both_seed0,B07TZMWH7X_pos,B07TZMWH7X,pos,0.27391627,0.66150653,wrong_to_correct,"Amazon Basics - 4'X6' Solid Color Shag Rug, Grey",RUG,
+clip_full_v3_both_seed1,B07DBCFM4R_N2,B07DBCFM4R,N2,0.29134244,-0.01872083,wrong_to_correct,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, White, Set of 2",STOOL_SEATING,
+clip_full_v3_both_seed1,B001CZEWLU_N2,B001CZEWLU,N2,0.29120889,0.29961646,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Sofa Couch with Chaise, Sand",SOFA,
+clip_full_v3_both_seed1,B07HZ6X7ZF_N2,B07HZ6X7ZF,N2,0.30723953,0.1695863,wrong_to_correct,Stone & Beam Andover Andover Right Facing U Shape Sectional,SOFA,
+clip_full_v3_both_seed1,B07BW8QTXH_N2,B07BW8QTXH,N2,0.29726562,-0.18730472,wrong_to_correct,"Amazon Brand – Ravenna Home Dunford Casual Rolled Arm Loveseat Sofa, 76""W, Dark Grey",SOFA,
+clip_full_v3_both_seed1,B07QC861L7_N2,B07QC861L7,N2,0.31675455,0.31307593,wrong_to_correct,"Amazon Brand – Rivet Modern Storage Ottoman Side Table, 17.13""W, Birch Veneer with a White Top",TABLE,
+clip_full_v3_both_seed1,B071PB2H8H_pos,B071PB2H8H,pos,0.26927942,0.68291247,wrong_to_correct,"Amazon Brand – Stone & Beam Traditional Regal Adornment Rug, 8' x 10', Burgundy",RUG,
+clip_full_v3_both_seed1,B07QFP4ZHX_N3,B07QFP4ZHX,N3,0.312621,0.29748824,wrong_to_correct,"Amazon Brand – Rivet Asher Modern Storage Ottoman, 15.75""W, Fabric, Beige",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_full_v3_both_seed1,B082VMWB4G_N2,B082VMWB4G,N2,0.30639842,0.04876292,wrong_to_correct,"Amazon Brand – Stone & Beam Hansberry Upholstered Swivel Chair, 34.4""W, Hemp",CHAIR,
+clip_full_v3_both_seed1,B07DB92L77_N3,B07DB92L77,N3,0.29818654,0.19365323,wrong_to_correct,"Amazon Brand – Ravenna Home Sherman Curved Faux Leather Accent Chair, 30.5""W, Blue",CHAIR,swap_6bec9f4a0abaf1e0
+clip_full_v3_both_seed1,B073NZGLLS_N2,B073NZGLLS,N2,0.2749303,0.42688379,correct_to_wrong,"Amazon Brand – Rivet Yellow and Purple Contrast Watercolor Print Wall Art in White Frame, 24"" x 28""",WALL_ART,
+clip_full_v3_both_seed1,B07B7GV4P3_N2,B07B7GV4P3,N2,0.25674647,0.54922909,correct_to_wrong,"AmazonCommercial 32 inch Height Adjustable Round Table, 32inch, White Granite",TABLE,
+clip_full_v3_both_seed1,B00104AM8A_pos,B00104AM8A,pos,0.24916404,0.50459564,wrong_to_correct,Pinzon by Crypton Charlotte Glider,CHAIR,
+clip_full_v3_both_seed1,B07QHL6SYG_pos,B07QHL6SYG,pos,0.28044713,0.72701037,wrong_to_correct,"Amazon Brand – Rivet Contemporary Handtufted Cotton-and-Wool Area Rug with Geometric Feathered Pattern, 5' x 8', Purple and Cream",RUG,
+clip_full_v3_both_seed1,B07QHL6SYG_N2,B07QHL6SYG,N2,0.29327273,0.16151908,wrong_to_correct,"Ravenna Home Forsyth Rug, 8'W x 10'L, Geometric Medallion Design",RUG,
+clip_full_v3_both_seed1,B07B7B94L2_N3,B07B7B94L2,N3,0.30467564,0.28844893,wrong_to_correct,"Amazon Brand – Stone & Beam Hughes Modern Casual Wood Buffet Bar, Cabinet Credenza, White",TABLE,swap_f70e8517681510d0
+clip_full_v3_both_seed1,B07M6PKM8K_N3,B07M6PKM8K,N3,0.29564315,0.34916937,wrong_to_correct,"Amazon Brand – Ravenna Home Classic-Style Solid Pine Dining Chair, 40""H, Beige Finish, Set of 2",CHAIR,swap_22f75503c1914249
+clip_full_v3_both_seed1,B07QFP4M4D_N2,B07QFP4M4D,N2,0.27616709,0.57548392,correct_to_wrong,"Amazon Brand – Stone & Beam Fischer Queen-Sized Sleeper Sofa, 79""W, Stone Fabric",SOFA,
+clip_full_v3_both_seed1,B07QBQCG77_pos,B07QBQCG77,pos,0.27909189,0.81059074,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_full_v3_both_seed1,B07RG6ZCZ4_pos,B07RG6ZCZ4,pos,0.28363129,0.55429757,wrong_to_correct,Amazon Brand - Solimo Royale 1 Seater Fabric Sofa (Brown),SOFA,
+clip_full_v3_both_seed1,B08GJZYYRF_pos,B08GJZYYRF,pos,0.28099346,0.80365497,wrong_to_correct,"Amazon Brand - Ravenna Home Archer Outdoor Patio C-Shaped Steel Side Table with Panel Top, 16.54""W, Gray (Renewed)",TABLE,
+clip_full_v3_both_seed1,B082VM4LMQ_N2,B082VM4LMQ,N2,0.28634912,-0.14033517,wrong_to_correct,"Amazon Brand – Stone & Beam Bagley Sectional Component, Left-Facing Sofa Chaise, Fabric, 41""W, Linen",SOFA,
+clip_full_v3_both_seed1,B075YMWRX5_N2,B075YMWRX5,N2,0.3046672,0.3145034,wrong_to_correct,"Amazon Brand – Ravenna Home High Back Bistro Metal Bar Stool, 40.25 Inch Height, Black, Set of 4",STOOL_SEATING,
+clip_full_v3_both_seed1,B07HSBJ1Q4_N2,B07HSBJ1Q4,N2,0.31244099,0.16606155,wrong_to_correct,"Amazon Brand – Rivet Decatur Modern Faux Leather Kitchen Bar Stool, 41""H, Black",STOOL_SEATING,
+clip_full_v3_both_seed1,B0011MZHA4_N2,B0011MZHA4,N2,0.30711442,0.24042951,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_full_v3_both_seed1,B07B7B4JTW_N3,B07B7B4JTW,N3,0.29782975,0.18234912,wrong_to_correct,"Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Chair, 40""H, Pack of 2, Navy",CHAIR,swap_b47c2cd584257233
+clip_full_v3_both_seed1,B07L6C51SC_N2,B07L6C51SC,N2,0.28082627,0.68247879,correct_to_wrong,"Amazon Brand – Ravenna Home Ferris Nailhead Detailed Wood Counter Stool, 26.75""H, Antique Walnut with Dark Brown Faux Leather (2 Pack)",STOOL_SEATING,
+clip_full_v3_both_seed1,B07DBHF15B_N3,B07DBHF15B,N3,0.28820741,0.13335422,wrong_to_correct,"Amazon Brand – Ravenna Home Morley Classic Round Pedestal Accent Side End Table Nightstand, 20""W, Brown",TABLE,swap_f70e8517681510d0
+clip_full_v3_both_seed1,B07HZ5DVV2_N2,B07HZ5DVV2,N2,0.32017887,0.1890818,wrong_to_correct,"Amazon Brand – Rivet Alonzo Contemporary Velvet Sofa Couch, 80""W, Blue",SOFA,
+clip_full_v3_both_seed1,B07QD6ZWQG_pos,B07QD6ZWQG,pos,0.30136934,0.20457266,correct_to_wrong,"Ravenna Home Modern Padded Square Memo Board, 16""H, Beige with Gold Ribbon",HOME,
+clip_full_v3_both_seed1,B07QHKRRZL_N2,B07QHKRRZL,N2,0.30059546,0.31520388,wrong_to_correct,"Amazon Basics - 4'X6' Plush Diamond Trellis Shag Rug, Grey",RUG,
+clip_full_v3_both_seed1,B07DBFFG9Z_N3,B07DBFFG9Z,N3,0.29849961,0.2865001,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Coffee Table, 23.6""W, White Walnut",TABLE,swap_7964b5b3aceca3e7
+clip_full_v3_both_seed1,B07HSHKHHB_pos,B07HSHKHHB,pos,0.27473897,0.74782771,wrong_to_correct,"Amazon Brand – Rivet Contemporary Runner Rug, 2' 10"" x 7' 10"", Taupe and Grey",RUG,
+clip_full_v3_both_seed1,B07QHKV52D_N2,B07QHKV52D,N2,0.30912572,-0.0457595,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Medallion Area Rug, 7' 10"" x 10', Brick",RUG,
+clip_full_v3_both_seed1,B0735SF34N_pos,B0735SF34N,pos,0.2885164,0.36233485,correct_to_wrong,"Amazon Brand – Stone & Beam Contemporary Doily Wool Farmhouse Area Rug, 5 x 8 Foot, Ivory",RUG,
+clip_full_v3_both_seed1,B0735SF34N_N2,B0735SF34N,N2,0.32661521,0.3527106,wrong_to_correct,"Amazon Brand – Stone & Beam Shooting Star Modern Diamond Pattern Wool Area Rug, 5' x 8', Taupe",RUG,
+clip_full_v3_both_seed1,B07Q5ZXRFC_pos,B07Q5ZXRFC,pos,0.27890021,0.75457394,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_full_v3_both_seed1,B07DBB1GVR_N2,B07DBB1GVR,N2,0.29375395,0.21964483,wrong_to_correct,First Hill Damara Square-Shaped Large Faux-Leather Storage Ottoman - Bittersweet Chocolate,OTTOMAN,
+clip_full_v3_both_seed1,B072FVHSZQ_N2,B072FVHSZQ,N2,0.32737967,0.23850228,wrong_to_correct,"Amazon Brand – Rivet Curved Tufted Velvet Accent Chair, Marina Mid-Century, 28.7""W, Grape",CHAIR,
+clip_full_v3_both_seed1,B075YP3BD8_pos,B075YP3BD8,pos,0.26344892,0.82255697,wrong_to_correct,"Amazon Brand – Stone & Beam Bergen Tufted Kitchen Dining Room Table Farmhouse Chairs, 38.6""H, Set of 2, Slate Grey, Wood Oak",CHAIR,
+clip_full_v3_both_seed1,B07P5LM39Q_N2,B07P5LM39Q,N2,0.32309055,0.23629525,wrong_to_correct,"Amazon Brand – Stone & Beam Kristin Round Arm Storage Ottoman, Stone, 43.5""W",OTTOMAN,
+clip_full_v3_both_seed1,B01D7P5JW8_N3,B01D7P5JW8,N3,0.26944327,0.46345389,correct_to_wrong,"AmazonBasics Low-Back, Upholstered Mesh, Adjustable, Swivel Computer Office Desk Chair, Black",CHAIR,swap_95ed96c0062dcbe4
+clip_full_v3_both_seed1,B0010SSE0E_pos,B0010SSE0E,pos,0.26674128,0.44888294,wrong_to_correct,"Strathwood Talbot Hardwood Double Sunlounger Cushion, Donatella Lacquer",CHAIR,
+clip_full_v3_both_seed1,B07CPH1V4Q_N2,B07CPH1V4Q,N2,0.30988914,0.13215515,wrong_to_correct,"Amazon Brand – Rivet Sloane Mid-Century Modern Ottoman with Tapered Legs, 31.9""W, Storm Gray",OTTOMAN,
+clip_full_v3_both_seed1,B073P16J7L_N2,B073P16J7L,N2,0.31262636,0.32483801,wrong_to_correct,"Amazon Brand – Rivet Canvas Print of Horses Grazing in Desert Southwest, 36"" x 24""",WALL_ART,
+clip_full_v3_both_seed1,B07DBFQ4CT_N3,B07DBFQ4CT,N3,0.34771359,0.34620592,wrong_to_correct,"Ravenna Home Larry Contemporary Tufted Round Ottoman, 33.46""W, Navy",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_full_v3_both_seed1,B001BQTX4Q_pos,B001BQTX4Q,pos,0.29545525,0.36263686,correct_to_wrong,Pinzon Renwick Furniture Collection,HOME_FURNITURE_AND_DECOR,
+clip_full_v3_both_seed1,B075ZBLWBH_N2,B075ZBLWBH,N2,0.31907329,0.12652239,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_full_v3_both_seed1,B07B4YVDH9_N2,B07B4YVDH9,N2,0.31294119,0.09689914,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Ikat Inspired Wool Area Rug, 3' 6"" x 5' 6"", Beige",RUG,
+clip_full_v3_both_seed1,B07DBF788Z_N3,B07DBF788Z,N3,0.32128236,0.24725889,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Console Table, 15.75""W, White Walnut",TABLE,swap_04d90febea5167d5
+clip_full_v3_both_seed1,B075YLKB4B_pos,B075YLKB4B,pos,0.31993631,0.39580756,correct_to_wrong,"Amazon Brand – Rivet Modern Rustic Wolf Silhouette Print Wall Art Decor - 15 x 15 Inch Frame, Wood Grain",WALL_ART,
+clip_full_v3_both_seed1,B07BWJCBY2_N2,B07BWJCBY2,N2,0.29608664,-0.21536303,wrong_to_correct,"Amazon Brand – Stone & Beam St. Cloud ModernArmless Straight Back Settee, 49""W, Tan",SOFA,
+clip_full_v3_both_seed1,B07HSF53X6_N2,B07HSF53X6,N2,0.31056041,-0.06402446,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Floral Medallion Wool Area Rug, 2'6"" x 8', Taupe on Brown",RUG,
+clip_full_v3_both_seed1,B07QFRRLG1_N2,B07QFRRLG1,N2,0.32260317,0.038354,wrong_to_correct,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Bar Stool, 43""H, Chalk",STOOL_SEATING,
+clip_full_v3_both_seed1,B07QD6V6N8_N2,B07QD6V6N8,N2,0.296745,-0.08912507,wrong_to_correct,"Amazon Brand – Ravenna Home Anne Marie Half-Moon Curved Leg Storage Console Entryway Table, 48""W, Dark Espresso",TABLE,
+clip_full_v3_both_seed1,B07QFB4XG1_pos,B07QFB4XG1,pos,0.27661449,0.77912325,wrong_to_correct,"Ravenna Home Vintage Damask Patterned Rug, 4' x 6', Ivory on Warm Grey",RUG,
+clip_full_v3_both_seed1,B07KTKJXCR_N2,B07KTKJXCR,N2,0.33975533,0.41054228,wrong_to_correct,"Amazon Brand – Rivet Edgewest Low Back Mid-Centory Modern Couch Sofa, 87""W, Hunter Green",SOFA,
+clip_full_v3_both_seed1,B0735XMSY2_N2,B0735XMSY2,N2,0.29577461,0.04973784,wrong_to_correct,"Ravenna Home Vintage Rug, 7'10"" x 9'10"", Ivory on Blue",RUG,
+clip_full_v3_both_seed1,B0732GFWJF_N2,B0732GFWJF,N2,0.32177824,0.3915863,wrong_to_correct,"Amazon Brand – Rivet Modern Ombr&eacute; Wool Rug, 4' x 6', Charcoal",RUG,
+clip_full_v3_both_seed1,B07QGFZ28Y_pos,B07QGFZ28Y,pos,0.29646316,0.33705544,correct_to_wrong,"Amazon Brand – Ravenna Home Mid-Century Side Table with Carved Legs, 18.11""W",TABLE,
+clip_full_v3_both_seed1,B07TZMWH7X_pos,B07TZMWH7X,pos,0.27391627,0.76319772,wrong_to_correct,"Amazon Basics - 4'X6' Solid Color Shag Rug, Grey",RUG,
+clip_full_v3_both_seed2,B07DBCFM4R_N2,B07DBCFM4R,N2,0.29134244,-0.01986671,wrong_to_correct,"Amazon Brand – Ravenna Home Modern Dining Chair, 36 Inch Height, White, Set of 2",STOOL_SEATING,
+clip_full_v3_both_seed2,B001CZEWLU_N2,B001CZEWLU,N2,0.29120889,0.37664297,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Sofa Couch with Chaise, Sand",SOFA,
+clip_full_v3_both_seed2,B07HZ6X7ZF_N2,B07HZ6X7ZF,N2,0.30723953,0.21066475,wrong_to_correct,Stone & Beam Andover Andover Right Facing U Shape Sectional,SOFA,
+clip_full_v3_both_seed2,B07BW8QTXH_N2,B07BW8QTXH,N2,0.29726562,-0.16487561,wrong_to_correct,"Amazon Brand – Ravenna Home Dunford Casual Rolled Arm Loveseat Sofa, 76""W, Dark Grey",SOFA,
+clip_full_v3_both_seed2,B07QC861L7_N2,B07QC861L7,N2,0.31675455,0.28897679,wrong_to_correct,"Amazon Brand – Rivet Modern Storage Ottoman Side Table, 17.13""W, Birch Veneer with a White Top",TABLE,
+clip_full_v3_both_seed2,B071PB2H8H_pos,B071PB2H8H,pos,0.26927942,0.63357902,wrong_to_correct,"Amazon Brand – Stone & Beam Traditional Regal Adornment Rug, 8' x 10', Burgundy",RUG,
+clip_full_v3_both_seed2,B07QFP4ZHX_N3,B07QFP4ZHX,N3,0.312621,0.38623279,wrong_to_correct,"Amazon Brand – Rivet Asher Modern Storage Ottoman, 15.75""W, Fabric, Beige",OTTOMAN,swap_e2427d3ff6b0c98d
+clip_full_v3_both_seed2,B082VMWB4G_N2,B082VMWB4G,N2,0.30639842,0.08489811,wrong_to_correct,"Amazon Brand – Stone & Beam Hansberry Upholstered Swivel Chair, 34.4""W, Hemp",CHAIR,
+clip_full_v3_both_seed2,B07BMTXJ1V_N2,B07BMTXJ1V,N2,0.33994839,0.47380716,wrong_to_correct,"Amazon Brand – Stone & Beam Southwestern Diamond Patterned Decorative Throw Pillow, 17"" x 17"", Ivory",PILLOW,
+clip_full_v3_both_seed2,B07DB92L77_N3,B07DB92L77,N3,0.29818654,0.19404292,wrong_to_correct,"Amazon Brand – Ravenna Home Sherman Curved Faux Leather Accent Chair, 30.5""W, Blue",CHAIR,swap_6bec9f4a0abaf1e0
+clip_full_v3_both_seed2,B000W8RZF8_N3,B000W8RZF8,N3,0.30275017,0.4347147,wrong_to_correct,"Strathwood Folding Garden Arm Chair with Carry Bag, Grey",CHAIR,swap_55e01bcd9bac0a0b
+clip_full_v3_both_seed2,B07QJXMX23_N2,B07QJXMX23,N2,0.31316829,0.42308974,wrong_to_correct,"Amazon Brand – Stone & Beam Sadie Living Room Wingback Accent Chair, 33""W, Charcoal Plaid",CHAIR,
+clip_full_v3_both_seed2,B00104AM8A_pos,B00104AM8A,pos,0.24916404,0.54827124,wrong_to_correct,Pinzon by Crypton Charlotte Glider,CHAIR,
+clip_full_v3_both_seed2,B07QHL6SYG_pos,B07QHL6SYG,pos,0.28044713,0.75111705,wrong_to_correct,"Amazon Brand – Rivet Contemporary Handtufted Cotton-and-Wool Area Rug with Geometric Feathered Pattern, 5' x 8', Purple and Cream",RUG,
+clip_full_v3_both_seed2,B07QHL6SYG_N2,B07QHL6SYG,N2,0.29327273,0.16754946,wrong_to_correct,"Ravenna Home Forsyth Rug, 8'W x 10'L, Geometric Medallion Design",RUG,
+clip_full_v3_both_seed2,B07B7B94L2_N3,B07B7B94L2,N3,0.30467564,0.29215735,wrong_to_correct,"Amazon Brand – Stone & Beam Hughes Modern Casual Wood Buffet Bar, Cabinet Credenza, White",TABLE,swap_f70e8517681510d0
+clip_full_v3_both_seed2,B07M6PKM8K_N3,B07M6PKM8K,N3,0.29564315,0.26751062,wrong_to_correct,"Amazon Brand – Ravenna Home Classic-Style Solid Pine Dining Chair, 40""H, Beige Finish, Set of 2",CHAIR,swap_22f75503c1914249
+clip_full_v3_both_seed2,B07B4GQ7M9_N2,B07B4GQ7M9,N2,0.30791566,0.46929103,wrong_to_correct,"Amazon Brand – Stone & Beam Dalton Loveseat, 63.5""W, Charcoal",SOFA,
+clip_full_v3_both_seed2,B07B79SZV1_N3,B07B79SZV1,N3,0.31865042,0.47022754,wrong_to_correct,"Stone & Beam Hughes Casual Wood Dining Room Kitchen Chairs, Navy, Set of 2",CHAIR,swap_058dd5e4345efcd8
+clip_full_v3_both_seed2,B00IIFW2L4_N3,B00IIFW2L4,N3,0.29569405,0.31735659,wrong_to_correct,"AmazonBasics Mesh, Mid-Back, Adjustable, Swivel Office Desk Chair with Armrests, Green",CHAIR,swap_95ed96c0062dcbe4
+clip_full_v3_both_seed2,B07B7B1HCT_N3,B07B7B1HCT,N3,0.2911261,0.44169873,wrong_to_correct,"Amazon Brand – Rivet Eastern Modern Dining Room Kitchen Chairs, Velvet, 32 Inch Height, Set of 2, Beige, Bronze Metal",CHAIR,swap_5e280f6c0681f6e7
+clip_full_v3_both_seed2,B07QBQCG77_pos,B07QBQCG77,pos,0.27909189,0.82821727,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_full_v3_both_seed2,B07RG6ZCZ4_pos,B07RG6ZCZ4,pos,0.28363129,0.58103573,wrong_to_correct,Amazon Brand - Solimo Royale 1 Seater Fabric Sofa (Brown),SOFA,
+clip_full_v3_both_seed2,B08GJZYYRF_pos,B08GJZYYRF,pos,0.28099346,0.65823305,wrong_to_correct,"Amazon Brand - Ravenna Home Archer Outdoor Patio C-Shaped Steel Side Table with Panel Top, 16.54""W, Gray (Renewed)",TABLE,
+clip_full_v3_both_seed2,B082VM4LMQ_N2,B082VM4LMQ,N2,0.28634912,-0.27076903,wrong_to_correct,"Amazon Brand – Stone & Beam Bagley Sectional Component, Left-Facing Sofa Chaise, Fabric, 41""W, Linen",SOFA,
+clip_full_v3_both_seed2,B075YMWRX5_N2,B075YMWRX5,N2,0.3046672,0.46804237,wrong_to_correct,"Amazon Brand – Ravenna Home High Back Bistro Metal Bar Stool, 40.25 Inch Height, Black, Set of 4",STOOL_SEATING,
+clip_full_v3_both_seed2,B07DBHBCXQ_N3,B07DBHBCXQ,N3,0.29948151,0.33241737,wrong_to_correct,"Amazon Brand – Ravenna Home Eddison Modern Slope Accent Chair, 32""W, Beige",CHAIR,swap_6bec9f4a0abaf1e0
+clip_full_v3_both_seed2,B07HSBJ1Q4_N2,B07HSBJ1Q4,N2,0.31244099,0.18931442,wrong_to_correct,"Amazon Brand – Rivet Decatur Modern Faux Leather Kitchen Bar Stool, 41""H, Black",STOOL_SEATING,
+clip_full_v3_both_seed2,B0011MZHA4_N2,B0011MZHA4,N2,0.30711442,0.25322443,wrong_to_correct,"Amazon Brand – Rivet Contemporary Curved-Back Dining Chair, 35""H, Felt Gray",CHAIR,
+clip_full_v3_both_seed2,B07MFXNYB2_pos,B07MFXNYB2,pos,0.31252992,0.37558439,correct_to_wrong,"Amazon Brand – Ravenna Home Wood and Metal End Table, 44""W, Dark Oak, Black Metal",TABLE,
+clip_full_v3_both_seed2,B07B7B4JTW_pos,B07B7B4JTW,pos,0.31228739,0.46524388,correct_to_wrong,"Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Chair, 40""H, Pack of 2, Beige",CHAIR,
+clip_full_v3_both_seed2,B07B7B4JTW_N3,B07B7B4JTW,N3,0.29782975,0.21502234,wrong_to_correct,"Amazon Brand – Stone & Beam Jon Casual Farmhouse Wood Dining Chair, 40""H, Pack of 2, Navy",CHAIR,swap_b47c2cd584257233
+clip_full_v3_both_seed2,B07L6C51SC_N2,B07L6C51SC,N2,0.28082627,0.72087312,correct_to_wrong,"Amazon Brand – Ravenna Home Ferris Nailhead Detailed Wood Counter Stool, 26.75""H, Antique Walnut with Dark Brown Faux Leather (2 Pack)",STOOL_SEATING,
+clip_full_v3_both_seed2,B07DBHF15B_N3,B07DBHF15B,N3,0.28820741,0.10217993,wrong_to_correct,"Amazon Brand – Ravenna Home Morley Classic Round Pedestal Accent Side End Table Nightstand, 20""W, Brown",TABLE,swap_f70e8517681510d0
+clip_full_v3_both_seed2,B071FMSYZV_pos,B071FMSYZV,pos,0.28797075,0.44122654,correct_to_wrong,"Rivet Fold Modern Ottoman Sofa Bed, 48""W, Light Grey",OTTOMAN,
+clip_full_v3_both_seed2,B07HZ5DVV2_N2,B07HZ5DVV2,N2,0.32017887,0.17312449,wrong_to_correct,"Amazon Brand – Rivet Alonzo Contemporary Velvet Sofa Couch, 80""W, Blue",SOFA,
+clip_full_v3_both_seed2,B07QD6ZWQG_pos,B07QD6ZWQG,pos,0.30136934,0.1442918,correct_to_wrong,"Ravenna Home Modern Padded Square Memo Board, 16""H, Beige with Gold Ribbon",HOME,
+clip_full_v3_both_seed2,B07QHKRRZL_N2,B07QHKRRZL,N2,0.30059546,0.37362713,wrong_to_correct,"Amazon Basics - 4'X6' Plush Diamond Trellis Shag Rug, Grey",RUG,
+clip_full_v3_both_seed2,B07DBFFG9Z_N3,B07DBFFG9Z,N3,0.29849961,0.32817489,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Coffee Table, 23.6""W, White Walnut",TABLE,swap_7964b5b3aceca3e7
+clip_full_v3_both_seed2,B07HSHKHHB_pos,B07HSHKHHB,pos,0.27473897,0.70039481,wrong_to_correct,"Amazon Brand – Rivet Contemporary Runner Rug, 2' 10"" x 7' 10"", Taupe and Grey",RUG,
+clip_full_v3_both_seed2,B07QHKV52D_N2,B07QHKV52D,N2,0.30912572,0.05667822,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Medallion Area Rug, 7' 10"" x 10', Brick",RUG,
+clip_full_v3_both_seed2,B07Q5ZXRFC_pos,B07Q5ZXRFC,pos,0.27890021,0.71755356,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_full_v3_both_seed2,B07DBB1GVR_N2,B07DBB1GVR,N2,0.29375395,0.24459565,wrong_to_correct,First Hill Damara Square-Shaped Large Faux-Leather Storage Ottoman - Bittersweet Chocolate,OTTOMAN,
+clip_full_v3_both_seed2,B07DB9638P_N2,B07DB9638P,N2,0.32988095,0.43259099,wrong_to_correct,Pinzon Griffen Hardwood Side Table,TABLE,
+clip_full_v3_both_seed2,B072FVHSZQ_N2,B072FVHSZQ,N2,0.32737967,0.20597883,wrong_to_correct,"Amazon Brand – Rivet Curved Tufted Velvet Accent Chair, Marina Mid-Century, 28.7""W, Grape",CHAIR,
+clip_full_v3_both_seed2,B075YP3BD8_pos,B075YP3BD8,pos,0.26344892,0.74730456,wrong_to_correct,"Amazon Brand – Stone & Beam Bergen Tufted Kitchen Dining Room Table Farmhouse Chairs, 38.6""H, Set of 2, Slate Grey, Wood Oak",CHAIR,
+clip_full_v3_both_seed2,B07P5LM39Q_N2,B07P5LM39Q,N2,0.32309055,0.05131739,wrong_to_correct,"Amazon Brand – Stone & Beam Kristin Round Arm Storage Ottoman, Stone, 43.5""W",OTTOMAN,
+clip_full_v3_both_seed2,B01D7P5JW8_N3,B01D7P5JW8,N3,0.26944327,0.5345397,correct_to_wrong,"AmazonBasics Low-Back, Upholstered Mesh, Adjustable, Swivel Computer Office Desk Chair, Black",CHAIR,swap_95ed96c0062dcbe4
+clip_full_v3_both_seed2,B0010SSE0E_pos,B0010SSE0E,pos,0.26674128,0.50156689,wrong_to_correct,"Strathwood Talbot Hardwood Double Sunlounger Cushion, Donatella Lacquer",CHAIR,
+clip_full_v3_both_seed2,B07CPH1V4Q_N2,B07CPH1V4Q,N2,0.30988914,0.08914191,wrong_to_correct,"Amazon Brand – Rivet Sloane Mid-Century Modern Ottoman with Tapered Legs, 31.9""W, Storm Gray",OTTOMAN,
+clip_full_v3_both_seed2,B073P16J7L_N2,B073P16J7L,N2,0.31262636,0.39105561,wrong_to_correct,"Amazon Brand – Rivet Canvas Print of Horses Grazing in Desert Southwest, 36"" x 24""",WALL_ART,
+clip_full_v3_both_seed2,B001BQTX4Q_pos,B001BQTX4Q,pos,0.29545525,0.43714768,correct_to_wrong,Pinzon Renwick Furniture Collection,HOME_FURNITURE_AND_DECOR,
+clip_full_v3_both_seed2,B075ZBLWBH_N2,B075ZBLWBH,N2,0.31907329,0.06845057,wrong_to_correct,"Amazon Basics Modern Plush Standard-Pile Shag Area Rug - 4x6 (3'11"" x 5'3""), Grey",RUG,
+clip_full_v3_both_seed2,B07B4YVDH9_N2,B07B4YVDH9,N2,0.31294119,0.20976374,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Ikat Inspired Wool Area Rug, 3' 6"" x 5' 6"", Beige",RUG,
+clip_full_v3_both_seed2,B07DBF788Z_N3,B07DBF788Z,N3,0.32128236,0.28605884,wrong_to_correct,"Amazon Brand – Ravenna Home Flush Mount Wood Cross Console Table, 15.75""W, White Walnut",TABLE,swap_04d90febea5167d5
+clip_full_v3_both_seed2,B07BWJCBY2_N2,B07BWJCBY2,N2,0.29608664,-0.23614776,wrong_to_correct,"Amazon Brand – Stone & Beam St. Cloud ModernArmless Straight Back Settee, 49""W, Tan",SOFA,
+clip_full_v3_both_seed2,B07HSF53X6_N2,B07HSF53X6,N2,0.31056041,-0.02760376,wrong_to_correct,"Amazon Brand – Stone & Beam Contemporary Floral Medallion Wool Area Rug, 2'6"" x 8', Taupe on Brown",RUG,
+clip_full_v3_both_seed2,B07QFRRLG1_N2,B07QFRRLG1,N2,0.32260317,0.21426214,wrong_to_correct,"Amazon Brand – Stone & Beam Alaina Contemporary High-Back Swivel Seat Bar Stool, 43""H, Chalk",STOOL_SEATING,
+clip_full_v3_both_seed2,B07QD6V6N8_N2,B07QD6V6N8,N2,0.296745,-0.02618327,wrong_to_correct,"Amazon Brand – Ravenna Home Anne Marie Half-Moon Curved Leg Storage Console Entryway Table, 48""W, Dark Espresso",TABLE,
+clip_full_v3_both_seed2,B07QFB4XG1_pos,B07QFB4XG1,pos,0.27661449,0.79834932,wrong_to_correct,"Ravenna Home Vintage Damask Patterned Rug, 4' x 6', Ivory on Warm Grey",RUG,
+clip_full_v3_both_seed2,B07KTKJXCR_N2,B07KTKJXCR,N2,0.33975533,0.37322396,wrong_to_correct,"Amazon Brand – Rivet Edgewest Low Back Mid-Centory Modern Couch Sofa, 87""W, Hunter Green",SOFA,
+clip_full_v3_both_seed2,B0735XMSY2_N2,B0735XMSY2,N2,0.29577461,-0.05748182,wrong_to_correct,"Ravenna Home Vintage Rug, 7'10"" x 9'10"", Ivory on Blue",RUG,
+clip_full_v3_both_seed2,B07QGFZ28Y_pos,B07QGFZ28Y,pos,0.29646316,0.25029993,correct_to_wrong,"Amazon Brand – Ravenna Home Mid-Century Side Table with Carved Legs, 18.11""W",TABLE,
+clip_full_v3_both_seed2,B07TZMWH7X_pos,B07TZMWH7X,pos,0.27391627,0.72750616,wrong_to_correct,"Amazon Basics - 4'X6' Solid Color Shag Rug, Grey",RUG,

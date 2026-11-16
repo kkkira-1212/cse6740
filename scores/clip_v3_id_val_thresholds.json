@@ -1,0 +1,86 @@
+{
+  "release_id": "abo-home-v3-20261115",
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "split": "val",
+  "prediction_rule": "score >= threshold",
+  "test_or_ood_evaluated": false,
+  "models": [
+    {
+      "name": "clip_zero_shot_v3",
+      "family": "zero_shot",
+      "seed": null,
+      "threshold": 0.28604528,
+      "selection_objective": "accuracy",
+      "selection_value": 0.8689024390243902,
+      "tie_break": "smallest threshold among maxima",
+      "validation_pairs": 656,
+      "score_sha256": "374f7d47aafc51b3c677a32a1d25d2be3c35f04a9c1792108644c63833bc613b"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed0",
+      "family": "lora",
+      "seed": 0,
+      "threshold": 0.36369967,
+      "selection_objective": "accuracy",
+      "selection_value": 0.9283536585365854,
+      "tie_break": "smallest threshold among maxima",
+      "validation_pairs": 656,
+      "score_sha256": "4a6aba4c90c967cf933a086eaf6104b1e7d23a581bd5a6b7ef907994887cd364"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed1",
+      "family": "lora",
+      "seed": 1,
+      "threshold": 0.35778347,
+      "selection_objective": "accuracy",
+      "selection_value": 0.9314024390243902,
+      "tie_break": "smallest threshold among maxima",
+      "validation_pairs": 656,
+      "score_sha256": "2749362655adb9b066b0f1d2dde5b822ac9f194790e9f6deeffede80d152003a"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed2",
+      "family": "lora",
+      "seed": 2,
+      "threshold": 0.37085807,
+      "selection_objective": "accuracy",
+      "selection_value": 0.9298780487804879,
+      "tie_break": "smallest threshold among maxima",
+      "validation_pairs": 656,
+      "score_sha256": "d5246963bc412a88ca501cc2f18b23e3690fca83a47e4454268ace516d72a9f0"
+    },
+    {
+      "name": "clip_full_v3_both_seed0",
+      "family": "full",
+      "seed": 0,
+      "threshold": 0.41758221,
+      "selection_objective": "accuracy",
+      "selection_value": 0.9344512195121951,
+      "tie_break": "smallest threshold among maxima",
+      "validation_pairs": 656,
+      "score_sha256": "3dc725c8124321df1710b092619558031c9fc48bb2390a15aebdeb55b050a191"
+    },
+    {
+      "name": "clip_full_v3_both_seed1",
+      "family": "full",
+      "seed": 1,
+      "threshold": 0.42112321,
+      "selection_objective": "accuracy",
+      "selection_value": 0.9359756097560976,
+      "tie_break": "smallest threshold among maxima",
+      "validation_pairs": 656,
+      "score_sha256": "14b754da687248f05907e8617acd083e8ffbbe1ac91c2592c489e4d82428b085"
+    },
+    {
+      "name": "clip_full_v3_both_seed2",
+      "family": "full",
+      "seed": 2,
+      "threshold": 0.47414356,
+      "selection_objective": "accuracy",
+      "selection_value": 0.9420731707317073,
+      "tie_break": "smallest threshold among maxima",
+      "validation_pairs": 656,
+      "score_sha256": "659aee3113264c03ffdffd95b64b7d7ad0cbb0aac089207522e73b4a8795b4e4"
+    }
+  ]
+}
