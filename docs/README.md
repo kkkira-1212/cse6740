@@ -2,6 +2,10 @@
 
 ## Current data handoff
 
+- [OOD v3 candidate](../data/releases/abo-ood-v3-20261115-candidate/README.md):
+  lighting/footwear held-out category tests, ID-global grouping checks, explicit
+  model-assisted QC and fixed-ID-threshold handoff; not yet frozen.
+
 - [Furniture + Decor v2 guide](home_v2.md): scope, grouping, splits and negative-generation policy.
 - [Release quickstart and contract](../data/releases/abo-home-v2-20261103/README.md): data tables, images, scoring and classification evaluation.
 - [100-pair human-review batch](../data/reviews/abo-home-v2-20261103/README.md): review/download instructions and provenance.

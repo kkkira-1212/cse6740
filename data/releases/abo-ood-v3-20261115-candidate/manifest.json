@@ -1,0 +1,74 @@
+{
+  "version": "abo-ood-v3-20261115-candidate",
+  "status": "CANDIDATE_UNREVIEWED_NOT_FROZEN",
+  "seed": 20261115,
+  "categories": {
+    "ood_near": [
+      "LAMP",
+      "LIGHT_FIXTURE"
+    ],
+    "ood_far": [
+      "SHOES",
+      "SANDAL",
+      "BOOT"
+    ]
+  },
+  "source_records": 147702,
+  "grouping": "Full-catalog ID-v3 equivalence rules",
+  "selection": "150 per tier, round-robin product types; one representative per global group",
+  "excluded": {
+    "missing_shared_or_swatch": 995
+  },
+  "n3_generation": {
+    "eligible": 62,
+    "unmatched": 28,
+    "skips": {
+      "not_in_raw_checked_ledger": 238,
+      "previously_reviewed_anchors_excluded": 0
+    }
+  },
+  "counts": {
+    "ood_near:pos": 150,
+    "ood_near:N3": 22,
+    "ood_near:N1": 64,
+    "ood_near:N2": 64,
+    "ood_far:pos": 150,
+    "ood_far:N2": 69,
+    "ood_far:N1": 69,
+    "ood_far:N3": 12
+  },
+  "review_rows": 74,
+  "max_title_donor_uses": 1,
+  "source_sha256": {
+    "data/raw/listings/metadata/listings_0.json.gz": "c5e7723f4a4afa3da4f35c497ab30ac0f8ee5b3e473ec0ffa897511e127e9324",
+    "data/raw/listings/metadata/listings_1.json.gz": "3c1b0d27a008d7db96b22baac53f613cba3322ae1bddca3da90f92c2834550c2",
+    "data/raw/listings/metadata/listings_2.json.gz": "90efc22137ddff87db5889d807b60c19e39f157d74ae7f4e8e95270223cbbf3c",
+    "data/raw/listings/metadata/listings_3.json.gz": "72ffc22271d1ce3e091731c12a24d6875c9864a11fc1966272248b018e25a291",
+    "data/raw/listings/metadata/listings_4.json.gz": "7ff0d40dbfa23c6f0972e1814177f15aa866511f96e4720e5c860c9d314719c5",
+    "data/raw/listings/metadata/listings_5.json.gz": "06b88440b35b47a1924ba15e4b2a7b86b62069fd3a02b79bbf361ef9371d8f7f",
+    "data/raw/listings/metadata/listings_6.json.gz": "2cea3adb5f6d8680f62676e6bbb5e3585a08e089687199755dbfe97d23e60376",
+    "data/raw/listings/metadata/listings_7.json.gz": "8a1a5a4c7c8b426cc081baeb51c84e934218934faffd439732bafd567d4e4c1c",
+    "data/raw/listings/metadata/listings_8.json.gz": "5bcaf1ed85c34f204da3d3e787730ad228a96c410565a4fdb57826a297d868cc",
+    "data/raw/listings/metadata/listings_9.json.gz": "e1a8d0ce00d7d1b858db7bcc384e3301a939f449ded3c04aa8e1ef6bd2a123ae",
+    "data/raw/listings/metadata/listings_a.json.gz": "1655cdb9b83e46f3d5bf870bb92ba4259cb3ba85c7e3fc19786f4da1ba60d648",
+    "data/raw/listings/metadata/listings_b.json.gz": "73df50844054d7f33553012f6f606e8128bc83762acadf9a63440ee39f55349b",
+    "data/raw/listings/metadata/listings_c.json.gz": "6339e61243aa6c9ea88c29cfc72e1e005a7c6c2152185e21ceabe8c8046271c6",
+    "data/raw/listings/metadata/listings_d.json.gz": "b7e252bbff66da0084420ccbbec6d36ed251cadefb1daababd3709114a07e299",
+    "data/raw/listings/metadata/listings_e.json.gz": "9240ddbe9f1712c2179ca8eb2f70efa4053a243bbb2609df3609d4933524a45a",
+    "data/raw/listings/metadata/listings_f.json.gz": "0ef3dd735b0542d017c45d7feb939eeeb01d4d1b37398d17b031fd84d8f5bb1b",
+    "data/raw/images/metadata/images.csv.gz": "915263ef354d7a5d3503e899e610082f510c0011cccd5b4dc4f4c5efa86ef539"
+  },
+  "id_items_sha256_lf": "c2a205478ab359d0e6755482fb2f794cc2bc913f28804f117977d83e24c914ae",
+  "id_release": "abo-home-v3-20261115",
+  "id_pairs_sha256_lf": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "note": "No training, OOD threshold tuning or semantic certification. Old pilot review labels are not transferred to changed inputs.",
+  "output_sha256": {
+    "items.csv": "070798b73501a4ed51bd350f25a6577c6f99db24c2ac2d60146d006529e4660c",
+    "pairs.csv": "cb8b3e1b155c16c285ebba8e0048c763e64ff7267209af38554f51f3b443c502",
+    "n3_candidates.csv": "ca0b74b24196b5513bc4e57e7df4d056ec17954cc0c0c20005365ae9480d4b17",
+    "n3_provenance.csv": "c2ca0633eef0f1369e6a8702b12c8942a8ec5e9c61539b53f3f3a885d6e3107a",
+    "title_donor_reuse.csv": "2037b37f1ab771ea5dca8f2f1bef23a3ff3eea53cd748605fd5c50a697a96f6e",
+    "review_sample.csv": "898c77c43d399620f01ee32cfa7be56dc3462993f1370765d619c348e5f31eca",
+    "image_manifest.csv": "33a649ec6187f312a70fbd2720b6f75826675a816c2435783b59ac39b4fa4829"
+  }
+}
