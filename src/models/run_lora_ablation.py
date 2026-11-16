@@ -72,7 +72,8 @@ def export_completed(entry, trainer_sha256=None):
         raise ValueError("stored config/trainer differs from the frozen matrix")
     if metadata["pairs_sha256"] != digest(ROOT / config["pairs_csv"]):
         raise ValueError("dataset changed")
-    if metadata["adapter_sha256"] != digest(run / "best_adapter/adapter_model.safetensors"):
+    checkpoint_sha256 = metadata.get("checkpoint_sha256", metadata.get("adapter_sha256"))
+    if checkpoint_sha256 != digest(run / "best_adapter/adapter_model.safetensors"):
         raise ValueError("checkpoint hash mismatch")
     if metadata["adapter_reload_max_error"] > 1e-5 or len(metadata["history"]) != config["epochs"] + 1:
         raise ValueError("incomplete epoch or checkpoint validation")
@@ -112,9 +113,9 @@ def export_completed(entry, trainer_sha256=None):
             **{"val_auc" if k == "all" else "val_auc_" + k: v for k, v in metrics.items()}}
 
 
-def summarize(records, total):
+def summarize(records, total, output_prefix):
     scores = ROOT / "scores"
-    path = scores / "clip_lora_v2_ablation_runs.csv"
+    path = scores / (output_prefix + "_runs.csv")
     with path.open("w", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(records[0]))
         writer.writeheader()
@@ -131,13 +132,13 @@ def summarize(records, total):
             row[field + "_mean"] = float(np.mean(values))
             row[field + "_std"] = float(np.std(values, ddof=1)) if len(values) > 1 else None
         aggregates.append(row)
-    with (scores / "clip_lora_v2_ablation_summary.csv").open("w", newline="") as stream:
+    with (scores / (output_prefix + "_summary.csv")).open("w", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(aggregates[0]))
         writer.writeheader()
         writer.writerows(aggregates)
     lines = ["# LoRA validation ablation matrix", "", f"Completed: {len(records)}/{total} runs.", "",
              "Five configurations, seeds 0/1/2, five training epochs each. All hyperparameters except tower/rank/seed are shared; alpha/rank stays at 2. Each checkpoint is selected by validation AUC, including epoch 0. These are development validation results; test was not scored.", "",
-             "Reported deviations are sample standard deviations across seeds (ddof=1), not test confidence intervals. Each per-type AUC uses all validation positives and the specified negative type. N3 retains its known text shortcut.", "",
+             "Reported deviations are sample standard deviations across seeds (ddof=1), not test confidence intervals. Each per-type AUC uses all validation positives and the specified negative type.", "",
              "| Towers | Rank | Seeds | Trainable params | Val AUC mean ± SD | N1 AUC | N2 AUC | N3 AUC | Mean seconds |",
              "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for row in aggregates:
@@ -145,7 +146,7 @@ def summarize(records, total):
         lines.append(f"| {row['towers']} | {row['rank']} | {row['n_seeds']} | {row['trainable_parameters']:,} | {row['val_auc_mean']:.6f} ± {std} | {row['val_auc_N1_mean']:.6f} | {row['val_auc_N2_mean']:.6f} | {row['val_auc_N3_mean']:.6f} | {row['seconds_mean']:.1f} |")
     lines.extend(["", "Timings include epoch training and validation, excluding initial model load and final adapter reload verification. Runs execute sequentially on the same device; this is not a hardware-controlled speed benchmark.", "",
                   "The initial zero-shot validation AUC is " + f"{records[0]['initial_val_auc']:.6f}. " + "Frozen data, exact configs, per-run histories and checkpoint hashes are recorded in the adjacent metadata files. Adapter weights remain local under ignored runs/.", ""])
-    (scores / "clip_lora_v2_ablation_summary.md").write_text("\n".join(lines))
+    (scores / (output_prefix + "_summary.md")).write_text("\n".join(lines))
 
 
 def main():
@@ -155,7 +156,8 @@ def main():
     args = parser.parse_args()
     manifest = load_manifest(ROOT / args.manifest)
     frozen_trainer = manifest["trainer_sha256"]
-    progress = ROOT / "runs/lora_ablation/progress.json"
+    output_prefix = manifest.get("output_prefix", "clip_lora_v2_ablation")
+    progress = ROOT / manifest.get("progress_path", "runs/lora_ablation/progress.json")
     log_dir = progress.parent / "logs"
     log_dir.mkdir(parents=True, exist_ok=True)
     records = []
@@ -187,7 +189,7 @@ def main():
                     raise RuntimeError(f"training failed: {entry['name']}; see {log.name}")
         record = export_completed(entry, frozen_trainer)
         records.append(record)
-        summarize(records, len(manifest["runs"]))
+        summarize(records, len(manifest["runs"]), output_prefix)
         print(f"DONE {index}/{len(manifest['runs'])} {entry['name']} val_auc={record['val_auc']:.6f} epoch={record['best_epoch']}", flush=True)
     write_json(progress, {"status": "complete", "total": len(records), "completed": records})
     print("COMPLETE: all 15 configurations/seeds validated and exported; test not scored.", flush=True)

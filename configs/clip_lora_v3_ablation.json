@@ -1,0 +1,89 @@
+{
+  "release_id": "abo-home-v3-20261115",
+  "dataset_version": "abo-home-reciprocal-v3-candidate",
+  "scope": "15 validation-only V3 runs: five configurations, three seeds each",
+  "alpha_over_rank": 2,
+  "selection": "best validation AUC including epoch0; earlier epoch wins ties",
+  "trainer_sha256": "2f69190031b28e7974faaac94ebd16c829527c6cad098f43871110015d5ec5be",
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "output_prefix": "clip_lora_v3_ablation",
+  "progress_path": "runs/lora_ablation_v3/progress.json",
+  "test_inference": false,
+  "runs": [
+    {
+      "name": "clip_lora_v3_r8_both_seed0",
+      "config": "configs/clip_lora_v3_r8_both_seed0.json",
+      "run_dir": "runs/clip_lora_v3_r8_both_seed0"
+    },
+    {
+      "name": "clip_lora_v3_r8_both_seed1",
+      "config": "configs/clip_lora_v3_r8_both_seed1.json",
+      "run_dir": "runs/clip_lora_v3_r8_both_seed1"
+    },
+    {
+      "name": "clip_lora_v3_r8_both_seed2",
+      "config": "configs/clip_lora_v3_r8_both_seed2.json",
+      "run_dir": "runs/clip_lora_v3_r8_both_seed2"
+    },
+    {
+      "name": "clip_lora_v3_r4_both_seed0",
+      "config": "configs/clip_lora_v3_r4_both_seed0.json",
+      "run_dir": "runs/clip_lora_v3_r4_both_seed0"
+    },
+    {
+      "name": "clip_lora_v3_r4_both_seed1",
+      "config": "configs/clip_lora_v3_r4_both_seed1.json",
+      "run_dir": "runs/clip_lora_v3_r4_both_seed1"
+    },
+    {
+      "name": "clip_lora_v3_r4_both_seed2",
+      "config": "configs/clip_lora_v3_r4_both_seed2.json",
+      "run_dir": "runs/clip_lora_v3_r4_both_seed2"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed0",
+      "config": "configs/clip_lora_v3_r16_both_seed0.json",
+      "run_dir": "runs/clip_lora_v3_r16_both_seed0"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed1",
+      "config": "configs/clip_lora_v3_r16_both_seed1.json",
+      "run_dir": "runs/clip_lora_v3_r16_both_seed1"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed2",
+      "config": "configs/clip_lora_v3_r16_both_seed2.json",
+      "run_dir": "runs/clip_lora_v3_r16_both_seed2"
+    },
+    {
+      "name": "clip_lora_v3_r8_text_seed0",
+      "config": "configs/clip_lora_v3_r8_text_seed0.json",
+      "run_dir": "runs/clip_lora_v3_r8_text_seed0"
+    },
+    {
+      "name": "clip_lora_v3_r8_text_seed1",
+      "config": "configs/clip_lora_v3_r8_text_seed1.json",
+      "run_dir": "runs/clip_lora_v3_r8_text_seed1"
+    },
+    {
+      "name": "clip_lora_v3_r8_text_seed2",
+      "config": "configs/clip_lora_v3_r8_text_seed2.json",
+      "run_dir": "runs/clip_lora_v3_r8_text_seed2"
+    },
+    {
+      "name": "clip_lora_v3_r8_vision_seed0",
+      "config": "configs/clip_lora_v3_r8_vision_seed0.json",
+      "run_dir": "runs/clip_lora_v3_r8_vision_seed0"
+    },
+    {
+      "name": "clip_lora_v3_r8_vision_seed1",
+      "config": "configs/clip_lora_v3_r8_vision_seed1.json",
+      "run_dir": "runs/clip_lora_v3_r8_vision_seed1"
+    },
+    {
+      "name": "clip_lora_v3_r8_vision_seed2",
+      "config": "configs/clip_lora_v3_r8_vision_seed2.json",
+      "run_dir": "runs/clip_lora_v3_r8_vision_seed2"
+    }
+  ]
+}
