@@ -59,6 +59,52 @@ python src/eval/controls.py --splits val test --protocol-file docs/controls_v3.m
 Outputs `scores/control_v3_*`; results and interpretation:
 [`docs/controls_v3.md`](../../docs/controls_v3.md).
 
+## Matched-anchor type metrics (v3 and OOD)
+
+Fixed-image pairs have one negative per image anchor, so pooling all positives
+with all negatives describes a different population than the deployed matching
+task. Pass `--matched-type-metrics` to add metrics where every negative is
+compared only with the positive of its own `anchor_item_id`:
+
+- matched-anchor AUC
+- negative recall and corresponding-positive recall at the same frozen threshold
+- balanced accuracy (mean of those two recalls)
+- paired ranking accuracy (positive score strictly above its own negative; ties
+  count as failures) with tie count
+- n_pos, n_neg, anchor count and bootstrap cluster count
+
+N1/N2 intervals resample image-anchor groups. N3 intervals resample complete
+reciprocal exchanges; pass the provenance file with `--n3-provenance`. The join
+accepts both schemas in use: ID `n3_provenance.csv` matches on `pair_id`, while
+OOD `eval_n3_provenance.csv` keeps an internal suffix and is matched on
+`anchor_item_id`. The report is emitted per test split and is not pooled across
+splits.
+
+```bash
+# ID v3 (threshold already frozen on ID val)
+python src/eval/eval.py \
+  --pairs-csv data/releases/abo-home-reciprocal-v3-candidate/pairs.csv \
+  --scores-csv scores/YOUR_ID_MODEL.csv \
+  --test-splits test --fixed-threshold YOUR_ID_VAL_THRESHOLD \
+  --matched-type-metrics \
+  --n3-provenance data/releases/abo-home-reciprocal-v3-candidate/n3_provenance.csv \
+  --bootstrap 1000
+
+# OOD v3 (each model uses its own ID-val threshold)
+python src/eval/eval.py \
+  --pairs-csv data/releases/abo-ood-v3-20261115-candidate/eval_pairs.csv \
+  --scores-csv scores/YOUR_MODEL_ood.csv \
+  --test-splits ood_near ood_far --fixed-threshold YOUR_ID_VAL_THRESHOLD \
+  --matched-type-metrics \
+  --n3-provenance data/releases/abo-ood-v3-20261115-candidate/eval_n3_provenance.csv \
+  --bootstrap 1000
+```
+
+The extra table is written to `<scores>_eval_matched.csv`; the same metrics
+appear under `matched_types` in the JSON sidecar and in the Markdown report.
+Existing outputs are unchanged when the flag is omitted. `--r-at-1` remains
+rejected for fixed-image layouts.
+
 ---
 
 # WP4 评估脚本
