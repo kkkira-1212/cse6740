@@ -134,6 +134,29 @@ Outputs `<stem>.csv` (summary), `<stem>_ranking.csv` (3x3 win/tie/loss matrix),
 pass `--test-splits ood_near ood_far` and the OOD `eval_n3_provenance.csv`.
 These are descriptive counts, not significance tests or a model-selection rule.
 
+## OOD shortcut probe (ID-fitted)
+
+[`src/eval/ood_shortcut.py`](ood_shortcut.py) checks whether the OOD table is
+trivially solvable by a title-only shortcut. It fits TF-IDF word/char logistic
+controls on the frozen ID v3 **train** split, selects each threshold on ID
+**val**, and then scores the OOD candidate. Nothing is fitted or tuned on OOD.
+
+The image-only probe is a structural null: fixed-image pairs share the image, so
+every image-only model is constant per anchor. The script emits a constant 0.5
+score and reports AUC 0.5 / paired-ranking ties; it is not an image-quality
+check and needs no OOD images.
+
+```bash
+python src/eval/ood_shortcut.py \
+  --text-features both \
+  --bootstrap 1000
+```
+
+Outputs `<prefix>_text_word.csv`, `<prefix>_text_char.csv`,
+`<prefix>_image_identity.csv`, their `_eval.*` reports (including matched-anchor
+metrics), plus `<prefix>_summary.md` and `<prefix>_meta.json`. These are
+diagnostics for reviewing the OOD candidate, not final model results.
+
 ---
 
 # WP4 评估脚本
