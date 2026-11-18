@@ -1,0 +1,124 @@
+{
+  "config": {
+    "dataset_version": "abo-home-v2-20261103",
+    "pairs_csv": "data/releases/abo-home-v2-20261103/pairs.csv",
+    "image_root": "data/releases/abo-home-v2-20261103/images",
+    "model_id": "openai/clip-vit-base-patch32",
+    "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "towers": "text",
+    "seed": 2,
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "max_grad_norm": 1.0,
+    "temperature": 0.07,
+    "selection_metric": "val_auc",
+    "include_initial_checkpoint": true
+  },
+  "smoke": false,
+  "device": "mps",
+  "environment": {
+    "python": "3.11.18",
+    "torch": "2.14.1",
+    "transformers": "5.21.0",
+    "peft": "0.21.2",
+    "numpy": "2.4.6"
+  },
+  "pairs_sha256": "3c02d654d810c40751cad1128edcb10db69fcffe4cc2483095e14aab1b40ce77",
+  "script_sha256": "3a84b91281a137cab3fde84e1165ded3ed1cbeec152b2f31876d50cadf779b07",
+  "target_modules": [
+    "text_model.encoder.layers.0.self_attn.v_proj",
+    "text_model.encoder.layers.0.self_attn.q_proj",
+    "text_model.encoder.layers.1.self_attn.v_proj",
+    "text_model.encoder.layers.1.self_attn.q_proj",
+    "text_model.encoder.layers.2.self_attn.v_proj",
+    "text_model.encoder.layers.2.self_attn.q_proj",
+    "text_model.encoder.layers.3.self_attn.v_proj",
+    "text_model.encoder.layers.3.self_attn.q_proj",
+    "text_model.encoder.layers.4.self_attn.v_proj",
+    "text_model.encoder.layers.4.self_attn.q_proj",
+    "text_model.encoder.layers.5.self_attn.v_proj",
+    "text_model.encoder.layers.5.self_attn.q_proj",
+    "text_model.encoder.layers.6.self_attn.v_proj",
+    "text_model.encoder.layers.6.self_attn.q_proj",
+    "text_model.encoder.layers.7.self_attn.v_proj",
+    "text_model.encoder.layers.7.self_attn.q_proj",
+    "text_model.encoder.layers.8.self_attn.v_proj",
+    "text_model.encoder.layers.8.self_attn.q_proj",
+    "text_model.encoder.layers.9.self_attn.v_proj",
+    "text_model.encoder.layers.9.self_attn.q_proj",
+    "text_model.encoder.layers.10.self_attn.v_proj",
+    "text_model.encoder.layers.10.self_attn.q_proj",
+    "text_model.encoder.layers.11.self_attn.v_proj",
+    "text_model.encoder.layers.11.self_attn.q_proj"
+  ],
+  "trainable_parameters": 196608,
+  "total_parameters": 151473921,
+  "train_anchors": 2664,
+  "validation_pairs": 656,
+  "negative_counts": {
+    "N1": 1030,
+    "N2": 1031,
+    "N3": 603
+  },
+  "objective": "mean(image-to-[positive+negative]-text multi-positive InfoNCE, positive-text-to-image InfoNCE)",
+  "checkpoint_selection": "highest val AUC, earlier epoch wins ties; includes initial adapter",
+  "test_evaluated": false,
+  "status": "complete",
+  "history": [
+    {
+      "epoch": 0,
+      "val_auc": 0.90944750148721,
+      "train_loss": null,
+      "seconds": 2.686919667001348
+    },
+    {
+      "epoch": 1,
+      "val_auc": 0.9181383848899465,
+      "train_loss": 1.5872100813610777,
+      "seconds": 37.71902374998899
+    },
+    {
+      "epoch": 2,
+      "val_auc": 0.9337633848899464,
+      "train_loss": 1.235110371857434,
+      "seconds": 37.316579499980435
+    },
+    {
+      "epoch": 3,
+      "val_auc": 0.9406045508625818,
+      "train_loss": 1.1172324742998805,
+      "seconds": 37.339366750005865
+    },
+    {
+      "epoch": 4,
+      "val_auc": 0.9439414782867341,
+      "train_loss": 1.0640694713807322,
+      "seconds": 37.77601420902647
+    },
+    {
+      "epoch": 5,
+      "val_auc": 0.9442668054729328,
+      "train_loss": 1.0561141108607386,
+      "seconds": 38.00440058298409
+    }
+  ],
+  "best_epoch": 5,
+  "best_val_auc": 0.9442668054729328,
+  "elapsed_seconds": 190.84502283402253,
+  "adapter_reload_max_error": 0.0,
+  "adapter_sha256": "4ef690587ac54fc7b8d1a24556bc1ac0ae158c9a29d8e8f4bdda570330fd36d2",
+  "validation_scores_sha256": "1efbd64576852a9a174863febcab33a8cee7c953a03a284a11853c86776a7efd",
+  "checkpoint_path": "runs/clip_lora_v2_r8_text_seed2/best_adapter",
+  "validation_auc_by_type": {
+    "all": 0.9442668054729328,
+    "N1": 0.9909028324154209,
+    "N2": 0.9053402832415421,
+    "N3": 0.9323170731707316
+  }
+}

@@ -1,0 +1,611 @@
+{
+  "tool": "src/eval/eval.py",
+  "pair_layout": "fixed_image_v2",
+  "pairs_csv": "data/releases/abo-home-v2-20261103/pairs.csv",
+  "scores_csv": "scores/abo_home_v2_clip_b32.csv",
+  "selection_split": "val",
+  "objective": "accuracy",
+  "rule": "score >= threshold",
+  "tie_break": "smallest threshold among maximum-accuracy candidates",
+  "threshold": 0.28664815,
+  "test_splits": [
+    "test"
+  ],
+  "input_sha256": {
+    "data/releases/abo-home-v2-20261103/pairs.csv": "3c02d654d810c40751cad1128edcb10db69fcffe4cc2483095e14aab1b40ce77",
+    "scores/abo_home_v2_clip_b32.csv": "89473be153d74aeb08655e3258d18f69b5cf8fb628457fe23f5902142a47ecd4"
+  },
+  "n_pairs": {
+    "before_exclusions": 6670,
+    "after_exclusions": 6670,
+    "n_scores": 6670,
+    "val": 656,
+    "val_scored": 656,
+    "test": 686,
+    "test_scored": 686,
+    "by_test_split": {
+      "test": 686
+    }
+  },
+  "exclusions": {
+    "cross_split_image_paths": {},
+    "drop_cross_split_images": false,
+    "dropped": {},
+    "dropped_by_split": {},
+    "exclude_pair_list": null,
+    "unknown_excluded_pair_ids": []
+  },
+  "bootstrap": {
+    "n_resamples": 1000,
+    "cluster": "image_anchor_group",
+    "seed": 6740,
+    "overall": {
+      "accuracy": {
+        "low": 0.7653061224489796,
+        "high": 0.8163265306122449,
+        "valid_resamples": 1000
+      },
+      "auc": {
+        "low": 0.8686168178225059,
+        "high": 0.9092727095002934,
+        "valid_resamples": 1000
+      },
+      "positive_recall": {
+        "low": 0.8396501457725948,
+        "high": 0.9067784256559765,
+        "valid_resamples": 1000
+      },
+      "negative_recall": {
+        "low": 0.6647230320699709,
+        "high": 0.7551020408163265,
+        "valid_resamples": 1000
+      },
+      "balanced_accuracy": {
+        "low": 0.7653061224489797,
+        "high": 0.8163265306122449,
+        "valid_resamples": 1000
+      }
+    },
+    "by_split": {
+      "test": {
+        "accuracy": {
+          "low": 0.7653061224489796,
+          "high": 0.8163265306122449,
+          "valid_resamples": 1000
+        },
+        "auc": {
+          "low": 0.8686168178225059,
+          "high": 0.9092727095002934,
+          "valid_resamples": 1000
+        },
+        "positive_recall": {
+          "low": 0.8396501457725948,
+          "high": 0.9067784256559765,
+          "valid_resamples": 1000
+        },
+        "negative_recall": {
+          "low": 0.6647230320699709,
+          "high": 0.7551020408163265,
+          "valid_resamples": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.7653061224489797,
+          "high": 0.8163265306122449,
+          "valid_resamples": 1000
+        }
+      }
+    }
+  },
+  "val": {
+    "n": 656,
+    "n_pos": 328,
+    "n_neg": 328,
+    "accuracy": 0.8384146341463414,
+    "auc": 0.90944750148721,
+    "positive_recall": 0.9207317073170732,
+    "negative_recall": 0.7560975609756098,
+    "balanced_accuracy": 0.8384146341463414,
+    "negatives_by_type": {
+      "N1": {
+        "n": 124,
+        "recall": 0.9838709677419355
+      },
+      "N2": {
+        "n": 124,
+        "recall": 0.7258064516129032
+      },
+      "N3": {
+        "n": 80,
+        "recall": 0.45
+      }
+    }
+  },
+  "test": {
+    "n": 686,
+    "n_pos": 343,
+    "n_neg": 343,
+    "accuracy": 0.793002915451895,
+    "auc": 0.8893998249028892,
+    "positive_recall": 0.8746355685131195,
+    "negative_recall": 0.7113702623906706,
+    "balanced_accuracy": 0.793002915451895,
+    "negatives_by_type": {
+      "N1": {
+        "n": 128,
+        "recall": 0.9453125
+      },
+      "N2": {
+        "n": 128,
+        "recall": 0.6796875
+      },
+      "N3": {
+        "n": 87,
+        "recall": 0.41379310344827586
+      }
+    }
+  },
+  "test_by_split": {
+    "test": {
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.793002915451895,
+      "auc": 0.8893998249028892,
+      "positive_recall": 0.8746355685131195,
+      "negative_recall": 0.7113702623906706,
+      "balanced_accuracy": 0.793002915451895,
+      "negatives_by_type": {
+        "N1": {
+          "n": 128,
+          "recall": 0.9453125
+        },
+        "N2": {
+          "n": 128,
+          "recall": 0.6796875
+        },
+        "N3": {
+          "n": 87,
+          "recall": 0.41379310344827586
+        }
+      }
+    }
+  },
+  "groups": [
+    {
+      "dimension": "overall",
+      "value": "all",
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.793002915451895,
+      "auc": 0.8893998249028892,
+      "positive_recall": 0.8746355685131195,
+      "negative_recall": 0.7113702623906706,
+      "balanced_accuracy": 0.793002915451895,
+      "negatives_by_type": {
+        "N1": {
+          "n": 128,
+          "recall": 0.9453125
+        },
+        "N2": {
+          "n": 128,
+          "recall": 0.6796875
+        },
+        "N3": {
+          "n": 87,
+          "recall": 0.41379310344827586
+        }
+      },
+      "ci": {
+        "accuracy": {
+          "low": 0.7653061224489796,
+          "high": 0.8163265306122449,
+          "valid_resamples": 1000
+        },
+        "auc": {
+          "low": 0.8686168178225059,
+          "high": 0.9092727095002934,
+          "valid_resamples": 1000
+        },
+        "positive_recall": {
+          "low": 0.8396501457725948,
+          "high": 0.9067784256559765,
+          "valid_resamples": 1000
+        },
+        "negative_recall": {
+          "low": 0.6647230320699709,
+          "high": 0.7551020408163265,
+          "valid_resamples": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.7653061224489797,
+          "high": 0.8163265306122449,
+          "valid_resamples": 1000
+        }
+      }
+    },
+    {
+      "dimension": "split",
+      "value": "test",
+      "n": 686,
+      "n_pos": 343,
+      "n_neg": 343,
+      "accuracy": 0.793002915451895,
+      "auc": 0.8893998249028892,
+      "positive_recall": 0.8746355685131195,
+      "negative_recall": 0.7113702623906706,
+      "balanced_accuracy": 0.793002915451895,
+      "negatives_by_type": {
+        "N1": {
+          "n": 128,
+          "recall": 0.9453125
+        },
+        "N2": {
+          "n": 128,
+          "recall": 0.6796875
+        },
+        "N3": {
+          "n": 87,
+          "recall": 0.41379310344827586
+        }
+      },
+      "ci": {
+        "accuracy": {
+          "low": 0.7653061224489796,
+          "high": 0.8163265306122449,
+          "valid_resamples": 1000
+        },
+        "auc": {
+          "low": 0.8686168178225059,
+          "high": 0.9092727095002934,
+          "valid_resamples": 1000
+        },
+        "positive_recall": {
+          "low": 0.8396501457725948,
+          "high": 0.9067784256559765,
+          "valid_resamples": 1000
+        },
+        "negative_recall": {
+          "low": 0.6647230320699709,
+          "high": 0.7551020408163265,
+          "valid_resamples": 1000
+        },
+        "balanced_accuracy": {
+          "low": 0.7653061224489797,
+          "high": 0.8163265306122449,
+          "valid_resamples": 1000
+        }
+      }
+    },
+    {
+      "dimension": "neg_type",
+      "value": "N1",
+      "n": 128,
+      "n_pos": 0,
+      "n_neg": 128,
+      "accuracy": 0.9453125,
+      "auc": null,
+      "positive_recall": null,
+      "negative_recall": 0.9453125,
+      "balanced_accuracy": null,
+      "negatives_by_type": {
+        "N1": {
+          "n": 128,
+          "recall": 0.9453125
+        }
+      }
+    },
+    {
+      "dimension": "neg_type",
+      "value": "N2",
+      "n": 128,
+      "n_pos": 0,
+      "n_neg": 128,
+      "accuracy": 0.6796875,
+      "auc": null,
+      "positive_recall": null,
+      "negative_recall": 0.6796875,
+      "balanced_accuracy": null,
+      "negatives_by_type": {
+        "N2": {
+          "n": 128,
+          "recall": 0.6796875
+        }
+      }
+    },
+    {
+      "dimension": "neg_type",
+      "value": "N3",
+      "n": 87,
+      "n_pos": 0,
+      "n_neg": 87,
+      "accuracy": 0.41379310344827586,
+      "auc": null,
+      "positive_recall": null,
+      "negative_recall": 0.41379310344827586,
+      "balanced_accuracy": null,
+      "negatives_by_type": {
+        "N3": {
+          "n": 87,
+          "recall": 0.41379310344827586
+        }
+      }
+    },
+    {
+      "dimension": "neg_type",
+      "value": "pos",
+      "n": 343,
+      "n_pos": 343,
+      "n_neg": 0,
+      "accuracy": 0.8746355685131195,
+      "auc": null,
+      "positive_recall": 0.8746355685131195,
+      "negative_recall": null,
+      "balanced_accuracy": null,
+      "negatives_by_type": {}
+    },
+    {
+      "dimension": "category",
+      "value": "CHAIR",
+      "n": 162,
+      "n_pos": 81,
+      "n_neg": 81,
+      "accuracy": 0.8271604938271605,
+      "auc": 0.9189147995732357,
+      "positive_recall": 0.9506172839506173,
+      "negative_recall": 0.7037037037037037,
+      "balanced_accuracy": 0.8271604938271605,
+      "negatives_by_type": {
+        "N1": {
+          "n": 26,
+          "recall": 0.9615384615384616
+        },
+        "N2": {
+          "n": 26,
+          "recall": 0.8461538461538461
+        },
+        "N3": {
+          "n": 29,
+          "recall": 0.3448275862068966
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "HOME",
+      "n": 22,
+      "n_pos": 11,
+      "n_neg": 11,
+      "accuracy": 0.7727272727272727,
+      "auc": 0.9421487603305785,
+      "positive_recall": 0.6363636363636364,
+      "negative_recall": 0.9090909090909091,
+      "balanced_accuracy": 0.7727272727272727,
+      "negatives_by_type": {
+        "N1": {
+          "n": 4,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 4,
+          "recall": 0.75
+        },
+        "N3": {
+          "n": 3,
+          "recall": 1.0
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "HOME_FURNITURE_AND_DECOR",
+      "n": 46,
+      "n_pos": 23,
+      "n_neg": 23,
+      "accuracy": 0.782608695652174,
+      "auc": 0.9262759924385633,
+      "positive_recall": 0.6956521739130435,
+      "negative_recall": 0.8695652173913043,
+      "balanced_accuracy": 0.7826086956521738,
+      "negatives_by_type": {
+        "N1": {
+          "n": 9,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 10,
+          "recall": 1.0
+        },
+        "N3": {
+          "n": 4,
+          "recall": 0.25
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "OTTOMAN",
+      "n": 38,
+      "n_pos": 19,
+      "n_neg": 19,
+      "accuracy": 0.7894736842105263,
+      "auc": 0.85595567867036,
+      "positive_recall": 0.9473684210526315,
+      "negative_recall": 0.631578947368421,
+      "balanced_accuracy": 0.7894736842105263,
+      "negatives_by_type": {
+        "N1": {
+          "n": 6,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 7,
+          "recall": 0.5714285714285714
+        },
+        "N3": {
+          "n": 6,
+          "recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "PILLOW",
+      "n": 30,
+      "n_pos": 15,
+      "n_neg": 15,
+      "accuracy": 0.8,
+      "auc": 0.9511111111111112,
+      "positive_recall": 0.9333333333333333,
+      "negative_recall": 0.6666666666666666,
+      "balanced_accuracy": 0.8,
+      "negatives_by_type": {
+        "N1": {
+          "n": 5,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 6,
+          "recall": 0.6666666666666666
+        },
+        "N3": {
+          "n": 4,
+          "recall": 0.25
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "RUG",
+      "n": 116,
+      "n_pos": 58,
+      "n_neg": 58,
+      "accuracy": 0.7672413793103449,
+      "auc": 0.8543400713436385,
+      "positive_recall": 0.7241379310344828,
+      "negative_recall": 0.8103448275862069,
+      "balanced_accuracy": 0.7672413793103448,
+      "negatives_by_type": {
+        "N1": {
+          "n": 24,
+          "recall": 0.9583333333333334
+        },
+        "N2": {
+          "n": 24,
+          "recall": 0.6666666666666666
+        },
+        "N3": {
+          "n": 10,
+          "recall": 0.8
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "SOFA",
+      "n": 70,
+      "n_pos": 35,
+      "n_neg": 35,
+      "accuracy": 0.7142857142857143,
+      "auc": 0.8579591836734693,
+      "positive_recall": 0.9714285714285714,
+      "negative_recall": 0.45714285714285713,
+      "balanced_accuracy": 0.7142857142857143,
+      "negatives_by_type": {
+        "N1": {
+          "n": 12,
+          "recall": 0.75
+        },
+        "N2": {
+          "n": 12,
+          "recall": 0.3333333333333333
+        },
+        "N3": {
+          "n": 11,
+          "recall": 0.2727272727272727
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "STOOL_SEATING",
+      "n": 44,
+      "n_pos": 22,
+      "n_neg": 22,
+      "accuracy": 0.6136363636363636,
+      "auc": 0.865702479338843,
+      "positive_recall": 1.0,
+      "negative_recall": 0.22727272727272727,
+      "balanced_accuracy": 0.6136363636363636,
+      "negatives_by_type": {
+        "N1": {
+          "n": 7,
+          "recall": 0.7142857142857143
+        },
+        "N2": {
+          "n": 6,
+          "recall": 0.0
+        },
+        "N3": {
+          "n": 9,
+          "recall": 0.0
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "TABLE",
+      "n": 86,
+      "n_pos": 43,
+      "n_neg": 43,
+      "accuracy": 0.8488372093023255,
+      "auc": 0.9226608977825852,
+      "positive_recall": 0.9534883720930233,
+      "negative_recall": 0.7441860465116279,
+      "balanced_accuracy": 0.8488372093023255,
+      "negatives_by_type": {
+        "N1": {
+          "n": 17,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 16,
+          "recall": 0.5
+        },
+        "N3": {
+          "n": 10,
+          "recall": 0.7
+        }
+      }
+    },
+    {
+      "dimension": "category",
+      "value": "WALL_ART",
+      "n": 72,
+      "n_pos": 36,
+      "n_neg": 36,
+      "accuracy": 0.8888888888888888,
+      "auc": 0.9891975308641975,
+      "positive_recall": 0.8055555555555556,
+      "negative_recall": 0.9722222222222222,
+      "balanced_accuracy": 0.8888888888888888,
+      "negatives_by_type": {
+        "N1": {
+          "n": 18,
+          "recall": 1.0
+        },
+        "N2": {
+          "n": 17,
+          "recall": 0.9411764705882353
+        },
+        "N3": {
+          "n": 1,
+          "recall": 1.0
+        }
+      }
+    }
+  ],
+  "notes": [
+    "No non-empty year values in the selected test split(s); year grouping omitted."
+  ]
+}

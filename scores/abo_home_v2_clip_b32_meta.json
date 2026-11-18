@@ -1,0 +1,21 @@
+{
+  "dataset": "abo-home-v2-20261103",
+  "model": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "device": "mps",
+  "batch_size": 32,
+  "python": "3.11.18",
+  "versions": {
+    "torch": "2.14.1",
+    "transformers": "5.21.0",
+    "numpy": "2.4.6",
+    "sklearn": "1.9.1"
+  },
+  "sha256": {
+    "data/releases/abo-home-v2-20261103/pairs.csv": "3c02d654d810c40751cad1128edcb10db69fcffe4cc2483095e14aab1b40ce77",
+    "scores/abo_home_v2_clip_b32.csv": "89473be153d74aeb08655e3258d18f69b5cf8fb628457fe23f5902142a47ecd4",
+    "src/models/zero_shot_clip.py": "bb7483126219b3e79b0d04f3d37774b17fb6806834503337a52aafe732ec1a3d"
+  },
+  "n_pairs": 6670,
+  "image_manifest_verified": true
+}

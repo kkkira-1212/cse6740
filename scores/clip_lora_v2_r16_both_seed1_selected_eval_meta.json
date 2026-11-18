@@ -1,0 +1,17 @@
+{
+  "name": "clip_lora_v2_r16_both_seed1",
+  "kind": "lora",
+  "seed": 1,
+  "selection": "frozen from validation before test inference",
+  "dataset_version": "abo-home-v2-20261103",
+  "pairs_sha256": "3c02d654d810c40751cad1128edcb10db69fcffe4cc2483095e14aab1b40ce77",
+  "training_metadata": "scores/clip_lora_v2_r16_both_seed1_meta.json",
+  "training_metadata_sha256": "311c268f10441afe0a90f92fd2a767f584cacfc357ab25ae79a9d80cdb51b597",
+  "checkpoint": "runs/clip_lora_v2_r16_both_seed1/best_adapter",
+  "checkpoint_sha256": "004eebbb1f20a18a4779053f78f40736c4fc605dda529de5b196d435bafd6663",
+  "validation_scores": "scores/clip_lora_v2_r16_both_seed1_val.csv",
+  "validation_scores_sha256": "89f8cf59a588483625ef66a58c58cffa15a5ddc461bf097bcb3a99ad5be67065",
+  "test_pairs": 686,
+  "output_scores_sha256": "1a2c95c139a50fa677ae33684e8d5028476b96b14b9f8a0bb443ff52cd06e787",
+  "test_evaluated": true
+}

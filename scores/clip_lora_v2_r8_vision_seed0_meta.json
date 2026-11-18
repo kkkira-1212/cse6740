@@ -1,0 +1,124 @@
+{
+  "config": {
+    "dataset_version": "abo-home-v2-20261103",
+    "pairs_csv": "data/releases/abo-home-v2-20261103/pairs.csv",
+    "image_root": "data/releases/abo-home-v2-20261103/images",
+    "model_id": "openai/clip-vit-base-patch32",
+    "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "towers": "vision",
+    "seed": 0,
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "max_grad_norm": 1.0,
+    "temperature": 0.07,
+    "selection_metric": "val_auc",
+    "include_initial_checkpoint": true
+  },
+  "smoke": false,
+  "device": "mps",
+  "environment": {
+    "python": "3.11.18",
+    "torch": "2.14.1",
+    "transformers": "5.21.0",
+    "peft": "0.21.2",
+    "numpy": "2.4.6"
+  },
+  "pairs_sha256": "3c02d654d810c40751cad1128edcb10db69fcffe4cc2483095e14aab1b40ce77",
+  "script_sha256": "3a84b91281a137cab3fde84e1165ded3ed1cbeec152b2f31876d50cadf779b07",
+  "target_modules": [
+    "vision_model.encoder.layers.0.self_attn.v_proj",
+    "vision_model.encoder.layers.0.self_attn.q_proj",
+    "vision_model.encoder.layers.1.self_attn.v_proj",
+    "vision_model.encoder.layers.1.self_attn.q_proj",
+    "vision_model.encoder.layers.2.self_attn.v_proj",
+    "vision_model.encoder.layers.2.self_attn.q_proj",
+    "vision_model.encoder.layers.3.self_attn.v_proj",
+    "vision_model.encoder.layers.3.self_attn.q_proj",
+    "vision_model.encoder.layers.4.self_attn.v_proj",
+    "vision_model.encoder.layers.4.self_attn.q_proj",
+    "vision_model.encoder.layers.5.self_attn.v_proj",
+    "vision_model.encoder.layers.5.self_attn.q_proj",
+    "vision_model.encoder.layers.6.self_attn.v_proj",
+    "vision_model.encoder.layers.6.self_attn.q_proj",
+    "vision_model.encoder.layers.7.self_attn.v_proj",
+    "vision_model.encoder.layers.7.self_attn.q_proj",
+    "vision_model.encoder.layers.8.self_attn.v_proj",
+    "vision_model.encoder.layers.8.self_attn.q_proj",
+    "vision_model.encoder.layers.9.self_attn.v_proj",
+    "vision_model.encoder.layers.9.self_attn.q_proj",
+    "vision_model.encoder.layers.10.self_attn.v_proj",
+    "vision_model.encoder.layers.10.self_attn.q_proj",
+    "vision_model.encoder.layers.11.self_attn.v_proj",
+    "vision_model.encoder.layers.11.self_attn.q_proj"
+  ],
+  "trainable_parameters": 294912,
+  "total_parameters": 151572225,
+  "train_anchors": 2664,
+  "validation_pairs": 656,
+  "negative_counts": {
+    "N1": 1030,
+    "N2": 1031,
+    "N3": 603
+  },
+  "objective": "mean(image-to-[positive+negative]-text multi-positive InfoNCE, positive-text-to-image InfoNCE)",
+  "checkpoint_selection": "highest val AUC, earlier epoch wins ties; includes initial adapter",
+  "test_evaluated": false,
+  "status": "complete",
+  "history": [
+    {
+      "epoch": 0,
+      "val_auc": 0.90944750148721,
+      "train_loss": null,
+      "seconds": 2.770429541997146
+    },
+    {
+      "epoch": 1,
+      "val_auc": 0.9427331201665675,
+      "train_loss": 1.3516935357997368,
+      "seconds": 41.441499125008704
+    },
+    {
+      "epoch": 2,
+      "val_auc": 0.9524464604402141,
+      "train_loss": 0.8365602989096541,
+      "seconds": 41.312001541024074
+    },
+    {
+      "epoch": 3,
+      "val_auc": 0.9561830755502677,
+      "train_loss": 0.7557979738032138,
+      "seconds": 41.00750425001024
+    },
+    {
+      "epoch": 4,
+      "val_auc": 0.9562667311124331,
+      "train_loss": 0.7190759146177733,
+      "seconds": 40.62018679198809
+    },
+    {
+      "epoch": 5,
+      "val_auc": 0.9560901249256395,
+      "train_loss": 0.6883525012491701,
+      "seconds": 40.571118916996056
+    }
+  ],
+  "best_epoch": 4,
+  "best_val_auc": 0.9562667311124331,
+  "elapsed_seconds": 207.72492270800285,
+  "adapter_reload_max_error": 0.0,
+  "adapter_sha256": "cc835af882ad383c81c1c4ce196e4b6400e6ab636fbf176947c3ebea57b67a72",
+  "validation_scores_sha256": "9ea5e90562c14d8fcce1424913d3ebe9ff52999ede3b6406f834fe0c42ed2f99",
+  "checkpoint_path": "runs/clip_lora_v2_r8_vision_seed0/best_adapter",
+  "validation_auc_by_type": {
+    "all": 0.9562667311124331,
+    "N1": 0.9972462627852084,
+    "N2": 0.9282061369000787,
+    "N3": 0.9362423780487804
+  }
+}

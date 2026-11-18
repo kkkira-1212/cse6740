@@ -1,0 +1,22 @@
+family,run,seed,configuration,device,epochs,trainable_parameters,total_parameters,elapsed_seconds,device_hours,monetary_cost_usd,cost_note
+lora,clip_lora_v3_r16_both_seed0,0,r16_both,mps,5,983040,152260353,286.77007470899844,0.0796583540858329,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r16_both_seed1,1,r16_both,mps,5,983040,152260353,298.2931774999888,0.08285921597221911,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r16_both_seed2,2,r16_both,mps,5,983040,152260353,304.5846404589829,0.08460684457193969,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r4_both_seed0,0,r4_both,mps,5,245760,151523073,265.8837655840034,0.07385660155111205,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r4_both_seed1,1,r4_both,mps,5,245760,151523073,261.81422829200164,0.072726174525556,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r4_both_seed2,2,r4_both,mps,5,245760,151523073,261.64466416600044,0.07267907337944457,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_both_seed0,0,r8_both,mps,5,491520,151768833,271.7785522080085,0.07549404228000235,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_both_seed1,1,r8_both,mps,5,491520,151768833,272.4173121670028,0.07567147560194523,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_both_seed2,2,r8_both,mps,5,491520,151768833,266.681677125016,0.07407824364583777,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_text_seed0,0,r8_text,mps,5,196608,151473921,186.0661750420113,0.05168504862278092,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_text_seed1,1,r8_text,mps,5,196608,151473921,185.91417212499073,0.0516428255902752,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_text_seed2,2,r8_text,mps,5,196608,151473921,189.69655245900503,0.05269348679416806,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_vision_seed0,0,r8_vision,mps,5,294912,151572225,202.44413150000037,0.05623448097222233,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_vision_seed1,1,r8_vision,mps,5,294912,151572225,203.71985020799912,0.05658884727999976,,local Apple MPS; no metered cloud charge
+lora,clip_lora_v3_r8_vision_seed2,2,r8_vision,mps,5,294912,151572225,212.5295009999827,0.0590359724999952,,local Apple MPS; no metered cloud charge
+full,clip_full_v3_both_seed0,0,both_lr3e-5,mps,5,151277313,151277313,630.3624927079945,0.17510069241888737,,local Apple MPS; no metered cloud charge
+full,clip_full_v3_both_seed1,1,both_lr3e-5,mps,5,151277313,151277313,627.8688735839969,0.17440802043999915,,local Apple MPS; no metered cloud charge
+full,clip_full_v3_both_seed2,2,both_lr3e-5,mps,5,151277313,151277313,623.8392664159765,0.173288685115549,,local Apple MPS; no metered cloud charge
+zero_shot,clip_zero_shot_v3_seed0,0,clip_vit_b32,mps,0,0,151277313,6.7454114590073,0.0018737254052798057,,local Apple MPS inference; no metered cloud charge
+zero_shot,clip_zero_shot_v3_seed1,1,clip_vit_b32,mps,0,0,151277313,5.144692583999131,0.0014290812733330919,,local Apple MPS inference; no metered cloud charge
+zero_shot,clip_zero_shot_v3_seed2,2,clip_vit_b32,mps,0,0,151277313,5.380441291985335,0.001494567025551482,,local Apple MPS inference; no metered cloud charge
