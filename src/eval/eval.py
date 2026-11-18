@@ -122,6 +122,8 @@ def load_pairs(path):
             "category": (row.get("category") or "").strip(),
             "year": (row.get("year") or "").strip(),
             "image_path": (row.get("image_path") or "").strip(),
+            "text": (row.get("text") or "").strip(),
+            "label_status": (row.get("label_status") or "").strip(),
             "anchor_item_id": anchor,
             "anchor_group_id": (row.get("anchor_group_id") or anchor).strip(),
             "text_item_id": (row.get("text_item_id") or text_item_id(pair_id, neg_type)).strip(),

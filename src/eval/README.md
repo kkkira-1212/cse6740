@@ -105,6 +105,35 @@ appear under `matched_types` in the JSON sidecar and in the Markdown report.
 Existing outputs are unchanged when the flag is omitted. `--r-at-1` remains
 rejected for fixed-image layouts.
 
+## Paired corrected/introduced errors
+
+[`src/eval/paired_errors.py`](paired_errors.py) compares two models on the same
+pairs rows. Each model uses its own frozen ID-val threshold; rows are joined by
+`pair_id`. It reports:
+
+- pair-level wrong -> correct (corrected), correct -> wrong (introduced),
+  both correct and both wrong counts, overall and on matched-anchor type scopes;
+- anchor-level ranking changes (win / tie / loss before and after), including
+  ties;
+- every changed pair ID with both scores, predictions, current and original
+  titles, category, negative type, label status and N3 exchange ID.
+
+```bash
+python src/eval/paired_errors.py \
+  --pairs-csv data/releases/abo-home-reciprocal-v3-candidate/pairs.csv \
+  --baseline-scores scores/zero_shot.csv \
+  --adapted-scores scores/adapted_seed0.csv \
+  --baseline-threshold ZERO_SHOT_ID_VAL_THRESHOLD \
+  --adapted-threshold ADAPTED_ID_VAL_THRESHOLD \
+  --test-splits test \
+  --n3-provenance data/releases/abo-home-reciprocal-v3-candidate/n3_provenance.csv
+```
+
+Outputs `<stem>.csv` (summary), `<stem>_ranking.csv` (3x3 win/tie/loss matrix),
+`<stem>_changed.csv` (changed IDs), plus JSON and Markdown provenance. For OOD,
+pass `--test-splits ood_near ood_far` and the OOD `eval_n3_provenance.csv`.
+These are descriptive counts, not significance tests or a model-selection rule.
+
 ---
 
 # WP4 评估脚本
