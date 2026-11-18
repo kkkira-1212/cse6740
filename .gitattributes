@@ -5,3 +5,9 @@ data/reviews/reciprocal-v3-model-assisted/*.csv text eol=lf
 data/releases/abo-ood-v3-20261115-candidate/*.csv text eol=lf
 data/releases/abo-ood-v3-20261115-candidate/*.json text eol=lf
 data/reviews/ood-v3-model-assisted/*.csv text eol=lf
+
+# Preserve byte hashes in the CLIP pre-test freeze on Windows.
+src/models/train_clip_lora.py text eol=lf
+configs/clip*.json text eol=lf
+scores/clip*.csv text eol=lf
+scores/clip*.json text eol=lf

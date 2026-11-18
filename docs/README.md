@@ -2,9 +2,15 @@
 
 ## Current data handoff
 
-- [OOD v3 candidate](../data/releases/abo-ood-v3-20261115-candidate/README.md):
+- [Final evaluation handoff](final_evaluation_handoff.md): adoption evidence,
+  frozen OOD hashes, model-run prerequisites and Amazon Reviews WP9 status.
+
+- [Adopted OOD v3 population](../data/releases/abo-ood-v3-20261115-candidate/README.md):
   lighting/footwear held-out category tests, ID-global grouping checks, explicit
-  model-assisted QC and fixed-ID-threshold handoff; not yet frozen.
+  model-assisted QC and fixed-ID-threshold handoff; 568-pair table hash-pinned.
+- [Adopted v3 reporting protocol](v3_evaluation_protocol.md): overall and
+  matched N2/N3 metrics, paired error analysis, uncertainty and ID/OOD selection
+  boundaries; adoption evidence and execution requirements in the handoff.
 
 - [Furniture + Decor v2 guide](home_v2.md): scope, grouping, splits and negative-generation policy.
 - [Release quickstart and contract](../data/releases/abo-home-v2-20261103/README.md): data tables, images, scoring and classification evaluation.

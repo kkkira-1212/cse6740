@@ -1,0 +1,49 @@
+{
+  "status": "ADOPTED_EVALUATION_POPULATION_NOT_HUMAN_CERTIFIED",
+  "adopted_date": "2026-11-18",
+  "release_id": "abo-ood-v3-20261115",
+  "storage_version": "abo-ood-v3-20261115-candidate",
+  "construction_commit": "c03444caa4e13bb086fd686252625954179901c6",
+  "adoption_pr": 15,
+  "adoption_merge_commit": "202be7b5b085565ab06f362431c2a8750ec08bb2",
+  "id_release": "abo-home-v3-20261115",
+  "id_pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "sha256": {
+    "eval_pairs.csv": "de18418821a796f32befa99355d3af12cc7411f725576c5e80d506d284d4904c",
+    "eval_n3_provenance.csv": "ec816e95d27557b0f4d89207e428c1afa2532c25423d0fd43dfe1823e7ac9199",
+    "eval_excluded_anchors.csv": "c6beaa1ca2cc944c9a05d91148039b369fade1c6366b7d63d6dd89e4f6ca0e59",
+    "image_manifest.csv": "33a649ec6187f312a70fbd2720b6f75826675a816c2435783b59ac39b4fa4829",
+    "manifest.json": "d892371fc9f3ebbf041050f28cb66ccba56f0eb9df94dcf3fa9bf780d183af80",
+    "screening_manifest.json": "7d5cc8e4bd7d231b4438223282229ad5538bd8a807f568ebb7b2e87bc1800522"
+  },
+  "splits": {
+    "ood_near": {
+      "n_pairs": 276,
+      "n_positive": 138,
+      "n1": 64,
+      "n2": 62,
+      "n3": 12,
+      "n3_exchanges": 6
+    },
+    "ood_far": {
+      "n_pairs": 292,
+      "n_positive": 146,
+      "n1": 68,
+      "n2": 68,
+      "n3": 10,
+      "n3_exchanges": 5
+    }
+  },
+  "policy": "Fixed image/title replacement; pre-scoring whole-anchor and whole-exchange exclusions, no replacements. Each model uses its selected ID configuration and own ID-val threshold. No OOD tuning.",
+  "evidence": "Kira data-owner review on PR15; Aaron interface implementation and OOD integration checks in PR19; adoption authorized by repository collaborator on 2026-11-18.",
+  "limitations": [
+    "74 candidate negatives received model-assisted visual QC, not independent human certification.",
+    "Unsampled N1/N2 remain generated candidates; original positives are listing-unverified.",
+    "Screening excludes 16 anchors and changes the evaluation population.",
+    "Only six near and five far N3 exchanges remain.",
+    "ABO category shift only; not Amazon Reviews cross-source/time evaluation.",
+    "Global grouping is heuristic; prior historical pilot source exposure is documented."
+  ],
+  "historical_manifests": "manifest.json and screening_manifest.json preserve construction-time candidate status; this additive file records adoption without rewriting their audit history.",
+  "review_decisions_sha256": "f8703e33cbeea9bf183bfc3410db7918e00b84ebccd486848182e7faeaa99f9b"
+}
