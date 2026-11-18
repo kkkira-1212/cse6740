@@ -26,6 +26,11 @@ from pathlib import Path
 import numpy as np
 from sklearn.metrics import roc_auc_score
 
+_EVAL_DIR = str(Path(__file__).resolve().parent)
+if _EVAL_DIR not in sys.path:
+    sys.path.insert(0, _EVAL_DIR)
+import matched_metrics  # noqa: E402
+
 PAIR_REQUIRED = ("pair_id", "label", "neg_type", "split")
 SCORE_REQUIRED = ("pair_id", "score")
 NEG_TYPES = ("N1", "N2", "N3")
@@ -42,6 +47,16 @@ CSV_COLUMNS = (
     "negative_recall_ci_low", "negative_recall_ci_high",
     "balanced_accuracy_ci_low", "balanced_accuracy_ci_high",
     "r_at_1_ci_low", "r_at_1_ci_high",
+)
+MATCHED_CSV_COLUMNS = (
+    "split", "neg_type", "n_pos", "n_neg", "n_anchors", "n_clusters",
+    "n_exchanges", "cluster", "threshold",
+    "auc", "auc_ci_low", "auc_ci_high",
+    "positive_recall", "positive_recall_ci_low", "positive_recall_ci_high",
+    "negative_recall", "negative_recall_ci_low", "negative_recall_ci_high",
+    "balanced_accuracy", "balanced_accuracy_ci_low", "balanced_accuracy_ci_high",
+    "paired_ranking_accuracy", "paired_ranking_accuracy_ci_low",
+    "paired_ranking_accuracy_ci_high", "paired_ranking_ties",
 )
 
 
@@ -107,6 +122,11 @@ def load_pairs(path):
             "category": (row.get("category") or "").strip(),
             "year": (row.get("year") or "").strip(),
             "image_path": (row.get("image_path") or "").strip(),
+            "text": (row.get("text") or "").strip(),
+            "label_status": (row.get("label_status") or "").strip(),
+            "dataset_version": (row.get("dataset_version") or "").strip(),
+            "anchor_item_id": anchor,
+            "anchor_group_id": (row.get("anchor_group_id") or anchor).strip(),
             "text_item_id": (row.get("text_item_id") or text_item_id(pair_id, neg_type)).strip(),
             "query_id": anchor or text_item_id(pair_id, neg_type),
             "cluster_id": (row.get("anchor_group_id") or anchor or text_item_id(pair_id, neg_type)).strip(),
@@ -419,6 +439,41 @@ def write_csv(path, records, threshold):
             writer.writerow([format_value(row[column]) for column in CSV_COLUMNS])
 
 
+def write_matched_csv(path, matched_types, threshold):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.writer(stream, lineterminator="\n")
+        writer.writerow(MATCHED_CSV_COLUMNS)
+        for split, entries in matched_types.items():
+            for neg_type, metrics in sorted(entries.items()):
+                row = {
+                    "split": split,
+                    "neg_type": neg_type,
+                    "n_pos": metrics.get("n_pos"),
+                    "n_neg": metrics.get("n_neg"),
+                    "n_anchors": metrics.get("n_anchors"),
+                    "n_clusters": metrics.get("n_clusters"),
+                    "n_exchanges": metrics.get("n_exchanges"),
+                    "cluster": metrics.get("cluster"),
+                    "threshold": float(threshold),
+                    "auc": metrics.get("auc"),
+                    "positive_recall": metrics.get("positive_recall"),
+                    "negative_recall": metrics.get("negative_recall"),
+                    "balanced_accuracy": metrics.get("balanced_accuracy"),
+                    "paired_ranking_accuracy": metrics.get("paired_ranking_accuracy"),
+                    "paired_ranking_ties": metrics.get("paired_ranking_ties"),
+                }
+                ci = metrics.get("ci") or {}
+                for name in (
+                    "auc", "positive_recall", "negative_recall",
+                    "balanced_accuracy", "paired_ranking_accuracy",
+                ):
+                    interval = ci.get(name) or {}
+                    row[f"{name}_ci_low"] = interval.get("low")
+                    row[f"{name}_ci_high"] = interval.get("high")
+                writer.writerow([format_value(row[column]) for column in MATCHED_CSV_COLUMNS])
+
+
 def md_escape(text):
     return str(text).replace("|", "\\|")
 
@@ -537,6 +592,56 @@ def write_markdown(path, meta, records):
     lines.extend(md_table(headers, table_rows))
     lines.append("")
 
+    matched_types = meta.get("matched_types")
+    if matched_types is not None:
+        lines.append("## Matched-anchor type metrics")
+        lines.append("")
+        if not any(matched_types.values()):
+            lines.append("No negative types in the selected test splits.")
+            lines.append("")
+        else:
+            headers = ["Split", "Type", "n_pos/n_neg", "Clusters", "AUC",
+                       "Pos recall", "Neg recall", "Balanced", "Paired rank", "Ties"]
+            table_rows = []
+            for split, entries in matched_types.items():
+                for neg_type, metrics in sorted(entries.items()):
+                    if metrics.get("cluster") == matched_metrics.EXCHANGE_CLUSTER:
+                        clusters = f"{metrics['n_clusters']} exchanges"
+                    else:
+                        clusters = f"{metrics['n_clusters']} groups"
+                    table_rows.append([
+                        md_escape(split),
+                        neg_type,
+                        f"{metrics['n_pos']}/{metrics['n_neg']}",
+                        clusters,
+                        fmt_metric(metrics, "auc", fmt_num),
+                        fmt_metric(metrics, "positive_recall", fmt_pct),
+                        fmt_metric(metrics, "negative_recall", fmt_pct),
+                        fmt_metric(metrics, "balanced_accuracy", fmt_pct),
+                        fmt_metric(metrics, "paired_ranking_accuracy", fmt_pct),
+                        str(metrics.get("paired_ranking_ties", 0)),
+                    ])
+            lines.extend(md_table(headers, table_rows))
+            lines.append("")
+            lines.append(
+                "- Each negative is compared with the positive of its own `anchor_item_id`."
+            )
+            lines.append(
+                "- Paired ranking requires the positive score strictly above its negative; "
+                "ties count as failures."
+            )
+            lines.append(
+                "- Matched metrics are reported per test split and are not pooled across splits."
+            )
+            bootstrap_meta = meta.get("matched_metadata") or {}
+            if bootstrap_meta.get("n_resamples"):
+                lines.append(
+                    f"- Matched intervals use {bootstrap_meta['n_resamples']} cluster resamples "
+                    f"(seed {bootstrap_meta['seed']}): N1/N2 image-anchor groups, "
+                    "N3 complete reciprocal exchanges."
+                )
+            lines.append("")
+
     for dimension, title, first_header in (
         ("neg_type", "By negative type", "neg_type"),
         ("category", "By category", "Category"),
@@ -624,6 +729,15 @@ def main(argv=None):
                         help="cluster-bootstrap resamples for 95 percent CI (default: %(default)s)")
     parser.add_argument("--seed", type=int, default=0,
                         help="bootstrap seed (default: %(default)s)")
+    parser.add_argument("--matched-type-metrics", action="store_true",
+                        help="also report matched-anchor N1/N2/N3 metrics "
+                             "(fixed-image layouts only)")
+    parser.add_argument("--n3-provenance",
+                        help="N3 provenance CSV with exchange_id; required when "
+                             "N3 negatives are present")
+    parser.add_argument("--out-matched-csv",
+                        help="matched-anchor metrics CSV "
+                             "(default: <scores>_eval_matched.csv)")
     args = parser.parse_args(argv)
 
     if args.bootstrap < 0:
@@ -636,6 +750,12 @@ def main(argv=None):
     pair_layout = pairs[0]["pair_layout"]
     if args.r_at_1 and pair_layout == "fixed_image_v2":
         parser.error("--r-at-1 is legacy three-way ranking; v2 has one negative per image. Use classification metrics.")
+    if args.matched_type_metrics and pair_layout != "fixed_image_v2":
+        parser.error("--matched-type-metrics requires explicit anchor_item_id rows")
+    if args.n3_provenance and not args.matched_type_metrics:
+        warn("--n3-provenance is ignored without --matched-type-metrics")
+    if args.out_matched_csv and not args.matched_type_metrics:
+        warn("--out-matched-csv is ignored without --matched-type-metrics")
     cluster_unit = "image_anchor_group" if pair_layout == "fixed_image_v2" else "text_source_item"
     scores = load_scores(args.scores_csv)
     pairs = merge_scores(pairs, scores)
@@ -677,6 +797,53 @@ def main(argv=None):
         require_scores(rows, split)
         test_by_split[split] = rows
     test_rows = [row for split in test_splits for row in test_by_split[split]]
+
+    matched_types = None
+    matched_metadata = None
+    if args.matched_type_metrics:
+        n3_present = any(
+            row["label"] == 0 and row["neg_type"] == "N3" for row in test_rows
+        )
+        if n3_present and not args.n3_provenance:
+            parser.error(
+                "--n3-provenance is required when the selected test splits contain N3 negatives"
+            )
+        provenance_rows = []
+        if args.n3_provenance:
+            _, provenance_rows = read_csv_rows(args.n3_provenance)
+        exchange_map = (
+            matched_metrics.build_exchange_map(test_rows, provenance_rows)
+            if args.n3_provenance else {}
+        )
+        matched_types = {}
+        for split in test_splits:
+            rows = test_by_split[split]
+            entries = {}
+            for neg_type in matched_metrics.negative_types(rows):
+                units = matched_metrics.matched_units(rows, neg_type, exchange_map)
+                metrics = matched_metrics.matched_metrics(units, threshold)
+                if args.bootstrap > 0:
+                    metrics["ci"] = matched_metrics.matched_bootstrap(
+                        units, threshold, args.bootstrap, args.seed
+                    )
+                entries[neg_type] = metrics
+            matched_types[split] = entries
+        matched_metadata = {
+            "n_resamples": args.bootstrap,
+            "seed": args.seed,
+            "provenance_csv": args.n3_provenance,
+            "provenance_sha256": (
+                sha256(args.n3_provenance) if args.n3_provenance else None
+            ),
+            "cluster_units": "N1/N2 image_anchor_group; N3 reciprocal_exchange",
+            "paired_ranking_rule": (
+                "positive score strictly greater than its own negative; ties fail"
+            ),
+            "n3_exchanges_by_split": {
+                split: entries["N3"]["n_clusters"]
+                for split, entries in matched_types.items() if "N3" in entries
+            },
+        }
 
     val_metrics = None
     if val_rows and all("score" in row for row in val_rows):
@@ -735,6 +902,10 @@ def main(argv=None):
     out_csv = Path(args.out_csv) if args.out_csv else scores_path.parent / f"{stem}_eval.csv"
     out_md = Path(args.out_md) if args.out_md else scores_path.parent / f"{stem}_eval.md"
     out_json = Path(args.out_json) if args.out_json else scores_path.parent / f"{stem}_eval.json"
+    out_matched = (
+        Path(args.out_matched_csv) if args.out_matched_csv
+        else out_csv.with_name(f"{out_csv.stem}_matched.csv")
+    )
 
     result = {
         "tool": "src/eval/eval.py",
@@ -750,6 +921,8 @@ def main(argv=None):
         "input_sha256": {
             **{args.pairs_csv: sha256(args.pairs_csv), args.scores_csv: sha256(args.scores_csv)},
             **({args.exclude_pair_list: sha256(args.exclude_pair_list)} if args.exclude_pair_list else {}),
+            **({args.n3_provenance: sha256(args.n3_provenance)}
+               if args.matched_type_metrics and args.n3_provenance else {}),
         },
         "n_pairs": {
             "before_exclusions": n_before,
@@ -776,6 +949,9 @@ def main(argv=None):
         "groups": records,
         "notes": notes,
     }
+    if matched_types is not None:
+        result["matched_types"] = matched_types
+        result["matched_metadata"] = matched_metadata
 
     write_csv(out_csv, records, threshold)
     write_markdown(out_md, {
@@ -796,7 +972,11 @@ def main(argv=None):
         "drop_cross_split_images": args.drop_cross_split_images,
         "bootstrap": bootstrap,
         "include_r_at_1": args.r_at_1,
+        "matched_types": matched_types,
+        "matched_metadata": matched_metadata,
     }, records)
+    if matched_types is not None:
+        write_matched_csv(out_matched, matched_types, threshold)
     out_json.parent.mkdir(parents=True, exist_ok=True)
     with out_json.open("w", encoding="utf-8", newline="\n") as stream:
         json.dump(result, stream, indent=2, ensure_ascii=False)
@@ -811,6 +991,8 @@ def main(argv=None):
     print(f"wrote {out_csv}")
     print(f"wrote {out_md}")
     print(f"wrote {out_json}")
+    if matched_types is not None:
+        print(f"wrote {out_matched}")
     return 0
 
 
