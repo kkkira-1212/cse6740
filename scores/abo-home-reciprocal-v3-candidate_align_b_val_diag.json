@@ -1,0 +1,27 @@
+{
+  "pairs_csv": "data/releases/abo-home-reciprocal-v3-candidate/pairs.csv",
+  "scores_csv": "scores/abo-home-reciprocal-v3-candidate_align_b_val.csv",
+  "split": "val",
+  "n_pairs": 656,
+  "auc_overall": 0.9661009071980964,
+  "by_neg_type": {
+    "N1": {
+      "n": 152,
+      "auc_vs_all_positives": 0.9911144094993581,
+      "auc_vs_same_anchor_positives": 0.9919927285318559,
+      "same_anchor_pos_ranked_higher": 0.9868421052631579
+    },
+    "N2": {
+      "n": 152,
+      "auc_vs_all_positives": 0.9561537227214378,
+      "auc_vs_same_anchor_positives": 0.9561547783933518,
+      "same_anchor_pos_ranked_higher": 0.9605263157894737
+    },
+    "N3": {
+      "n": 24,
+      "auc_vs_all_positives": 0.8706808943089431,
+      "auc_vs_same_anchor_positives": 0.9322916666666667,
+      "same_anchor_pos_ranked_higher": 1.0
+    }
+  }
+}

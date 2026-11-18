@@ -1,3 +1,26 @@
+# v3 candidate / frozen release workflow (2026-11-14)
+
+`run_wp8.sh` now targets the fixed-image releases. Default `MODE=val` scores **val only** on
+`data/releases/abo-home-reciprocal-v3-candidate/pairs.csv` (images from the v2 release) and runs
+`val_diagnostics.py`: threshold-free AUC overall and per negative type, each negative type
+compared with the positives of the same image anchors. It never reads test.
+
+```bash
+bash src/baselines/run_wp8.sh                                   # val diagnostics, default models
+MODELS="siglip-b16" bash src/baselines/run_wp8.sh               # one model
+MODE=final CONFIRM_FROZEN=yes DATA_DIR=data/releases/<frozen> bash src/baselines/run_wp8.sh
+```
+
+OOD (after the OOD release is adopted): add `OOD_DIR=data/releases/<adopted-ood-release>` to the
+`MODE=final` command. OOD pairs (`eval_pairs.csv` by default, override with `OOD_PAIRS`) are scored
+with the same models, joined with the ID scores by `concat_csv.py`, and evaluated with
+`--test-splits test ood_near ood_far`, so each model's threshold comes from ID val only.
+
+Default models: `siglip-b16`, `blip-itm-b`, `align-b`. Outputs are named
+`scores/<dataset_version>_<model>[_val].csv`; each `*_meta.json` records the resolved Hugging Face
+commit, the pairs-file SHA-256 and the dataset version. `MODE=final` (val + test, shared evaluator,
+`--bootstrap 1000`, no `--r-at-1`) refuses to run unless `CONFIRM_FROZEN=yes`.
+
 # v2 data compatibility (2026-11-03)
 
 The scorer consumes arbitrary image/title pairs, so the new fixed-image construction needs new inputs and fresh scores, not a model-architecture change. Provide the v2 pairs file and its own image root explicitly:
