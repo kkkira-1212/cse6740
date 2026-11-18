@@ -9,5 +9,6 @@ data/reviews/ood-v3-model-assisted/*.csv text eol=lf
 # Preserve byte hashes in the CLIP pre-test freeze on Windows.
 src/models/train_clip_lora.py text eol=lf
 configs/clip*.json text eol=lf
-scores/clip*.csv text eol=lf
+scores/clip*.csv -text
+scores/clip*.md -text
 scores/clip*.json text eol=lf
