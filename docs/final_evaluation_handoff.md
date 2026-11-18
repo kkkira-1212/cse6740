@@ -149,5 +149,6 @@ scikit-learn 1.9.1. Windows test invocation uses `python -X utf8 -m unittest
 discover -s tests`. These fixture tests do not independently reproduce the
 locally held selected checkpoints or the original MPS environment.
 Windows CRLF checkout can break the frozen trainer's byte hash; `.gitattributes`
-now pins that trainer and the CLIP config/score files to LF, preserving their
-Git blob contents and existing hashes. Dataset/review hash verifiers pass.
+now pins the trainer and CLIP JSON files to LF and disables newline conversion
+for CLIP CSV/Markdown artifacts. The latter have mixed stored LF/CRLF endings,
+so preserving their original blob bytes is required for existing freeze hashes. Dataset/review hash verifiers pass.
