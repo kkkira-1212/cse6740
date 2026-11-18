@@ -1,9 +1,12 @@
-# Proposed final v3 reporting protocol
+# Final v3 reporting protocol
 
-Status: team-review proposal, 2026-11-15. No new inference or result selection
-is performed by this document. ID data is the adopted `abo-home-v3-20261115`
-snapshot; bind scores to its exact pairs hash. OOD remains a separate candidate
-in PR #15 and must be adopted/pinned before scoring.
+Status: adopted reporting scope, 2026-11-18. The collaborator authorized merge
+after reviewing the owner updates and Aaron's #19 implementation. Exact sources,
+prior test exposure, adopted OOD hashes and remaining model-run prerequisites
+are in [the final evaluation handoff](final_evaluation_handoff.md). This records
+attributed owner statements, not formal approvals submitted on their behalf.
+No new final model inference or result selection is performed by this document.
+ID data is `abo-home-v3-20261115`; OOD uses PR #15's adopted 568-pair table.
 
 ## Questions and scope
 
@@ -108,7 +111,7 @@ does not justify relabeling the same scored benchmark after inspecting outcomes.
 
 ## OOD and ownership
 
-After team adoption of the PR #15 OOD table/hash, apply the SAME fixed ID
+Using the adopted PR #15 OOD table/hash, apply the SAME fixed ID
 checkpoints/preprocessing and EACH model's ID-val threshold. Never train on OOD
 or use it for checkpoint/prompt/model/threshold selection. Report lighting and
 footwear separately, with the same metrics/counts. Negative-type/category mixes
@@ -122,5 +125,6 @@ web-scale pretraining. Small OOD N3 exchange counts require explicit caveats.
 - Jane: pretrained reference scores/metadata under the same ID/OOD protocol;
   if adding Luna, lock prompt/settings before test and use the same evaluation set.
 - Yichi: N3/OOD construction, QC provenance/limitations and interpretation.
-- Kira/team: confirm the reporting plan and adopted data snapshots. This document
-  is a proposal, not a declaration that teammates approved or ran these analyses.
+- Kira/team: preserve the adopted reporting plan and data snapshots. Adoption
+  evidence and outstanding execution requirements are recorded in the handoff;
+  adoption does not mean final analyses have already been run.

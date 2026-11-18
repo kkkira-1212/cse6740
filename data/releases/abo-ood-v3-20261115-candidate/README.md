@@ -1,9 +1,16 @@
 # OOD v3 candidate: lighting and footwear
 
-Status: **candidate for team review, not frozen or human-certified**. This is
-Sean/Yichi's WP10 handoff aligned to ID release `abo-home-v3-20261115`. It does
-not change the frozen ID dataset. No model inference, OOD-based checkpoint/prompt
-selection or threshold fitting has been run here.
+Status: **adopted evaluation population, 2026-11-18; not human-certified**.
+PR #15 adopts the screened 568-pair table. Exact bytes, source/adoption commits,
+counts and limitations are pinned in [evaluation_freeze.json](evaluation_freeze.json).
+The existing `candidate` directory/version remains the storage identity; the
+construction and screening manifests keep their original candidate status as
+historical records. No pairs, exclusions, QC judgments or image hashes changed.
+
+See [final evaluation handoff](../../../docs/final_evaluation_handoff.md) for
+accepted reporting scope, owner-message provenance and remaining model-run
+prerequisites. Adoption of this population does not certify every label or
+claim final model inference has happened.
 
 ## Scope and construction
 
@@ -54,7 +61,7 @@ cannot generally be verified from a small image. Original positives remain
 listing-unverified. All 300 images are valid readable files; captured SHA-256
 hashes bind future downloads to the initial source image bytes.
 
-`eval_pairs.csv` is the **proposed primary scoring table**, produced by explicit
+`eval_pairs.csv` is the **adopted primary scoring table**, produced by explicit
 QC exclusions before any model scoring. Remove uncertain anchors together with
 their positives; if either reciprocal direction is flagged, remove the complete
 exchange. Do not resample replacements. Keep all original candidates/decisions.
@@ -104,7 +111,7 @@ python -m unittest discover -s tests -v
 Metadata/source hashes and construction inputs are in `manifest.json`. Review
 input text hashes normalize CRLF to LF; output CSVs use LF.
 
-## Model handoff (after team adopts a pinned table/hash)
+## Model handoff (use the adopted table/hash)
 
 Jane and Jinlin score `eval_pairs.csv` using the EXACT same model revisions,
 selected ID checkpoints, preprocessing and higher-is-match score convention as
@@ -132,8 +139,9 @@ evaluator intervals use anchor groups; N3 needs exchange-level resampling with
 near/far or pooled-ID-vs-OOD numbers as controlled causal domain-shift effects:
 category and negative-type mixtures differ. No legacy three-way R@1.
 
-Before freeze: Kira reviews scope/grouping/exclusions; Aaron checks evaluation
-and shortcut diagnostics using frozen ID-fitted probes (no fitting on OOD);
-team agrees the evaluation population and limitations. Then pin hashes and run
-selected models once. If adding further semantic adjudication, preserve history
+Adoption evidence: Kira reviewed scope/grouping/exclusions in PR #15; Aaron
+implemented the evaluation and ID-fitted shortcut interface in PR #19, including
+OOD integration checks. The team collaborator authorized adoption on 2026-11-18.
+The handoff pins hashes; final model runs still require the execution checks
+listed in the final evaluation handoff. If adding further semantic adjudication, preserve history
 and issue a new table/hash before inference.
