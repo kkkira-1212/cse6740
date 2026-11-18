@@ -15,7 +15,7 @@ ID data is `abo-home-v3-20261115`; OOD uses PR #15's adopted 568-pair table.
 2. Does LoRA approach full-tuning performance with fewer trainable parameters?
 3. Is any ID gain accompanied by loss of held-out-category performance on OOD?
 
-BLIP/SigLIP (ALIGN in the appendix if agreed) are strong pretrained references,
+BLIP/SigLIP (ALIGN in the appendix) are strong pretrained references,
 not architecture-controlled measures of the benefit of CLIP fine-tuning. No
 method is required to outperform these baselines for a valid conclusion. Report
 no clear benefit or negative transfer when supported; do not manufacture harder
@@ -123,7 +123,7 @@ web-scale pretraining. Small OOD N3 exchange counts require explicit caveats.
 - Jinlin: fixed CLIP zero-shot/LoRA/full-tuning scores, selected configurations,
   per-seed predictions, ID thresholds and paired comparisons.
 - Jane: pretrained reference scores/metadata under the same ID/OOD protocol;
-  if adding Luna, lock prompt/settings before test and use the same evaluation set.
+  Luna is deferred under the adopted scope.
 - Yichi: N3/OOD construction, QC provenance/limitations and interpretation.
 - Kira/team: preserve the adopted reporting plan and data snapshots. Adoption
   evidence and outstanding execution requirements are recorded in the handoff;
