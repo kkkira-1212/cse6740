@@ -11,6 +11,11 @@ MODELS="siglip-b16" bash src/baselines/run_wp8.sh               # one model
 MODE=final CONFIRM_FROZEN=yes DATA_DIR=data/releases/<frozen> bash src/baselines/run_wp8.sh
 ```
 
+OOD (after the OOD release is adopted): add `OOD_DIR=data/releases/<adopted-ood-release>` to the
+`MODE=final` command. OOD pairs (`eval_pairs.csv` by default, override with `OOD_PAIRS`) are scored
+with the same models, joined with the ID scores by `concat_csv.py`, and evaluated with
+`--test-splits test ood_near ood_far`, so each model's threshold comes from ID val only.
+
 Default models: `siglip-b16`, `blip-itm-b`, `align-b`. Outputs are named
 `scores/<dataset_version>_<model>[_val].csv`; each `*_meta.json` records the resolved Hugging Face
 commit, the pairs-file SHA-256 and the dataset version. `MODE=final` (val + test, shared evaluator,
