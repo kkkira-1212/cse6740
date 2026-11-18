@@ -38,6 +38,11 @@ REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "src" / "baselines"))
 from common import pick_device, read_pairs, write_scores  # noqa: E402
 
+_EVAL_DIR = str(Path(__file__).resolve().parent)
+if _EVAL_DIR not in sys.path:
+    sys.path.insert(0, _EVAL_DIR)
+import matched_metrics  # noqa: E402
+
 V2_PAIRS = REPO / "data" / "releases" / "abo-home-v2-20261103" / "pairs.csv"
 V2_IMAGES = REPO / "data" / "releases" / "abo-home-v2-20261103" / "images"
 V2_DATASET_VERSION = "abo-home-v2-20261103"
@@ -317,69 +322,40 @@ def load_exchange_map(pairs_csv):
 
 
 def matched_negatives(test_rows, neg_type, exchange_map):
-    positives = {}
-    for row in test_rows:
-        if row["label"] == 1:
-            if row["anchor_item_id"] in positives:
-                raise ValueError(f"duplicate positive for anchor {row['anchor_item_id']}")
-            positives[row["anchor_item_id"]] = row
-    negatives = [
-        row for row in test_rows if row["label"] == 0 and row["neg_type"] == neg_type
-    ]
-    if not negatives:
+    """Pair negatives with their own anchor positives.
+
+    Kept as a thin compatibility wrapper; the implementation lives in
+    ``matched_metrics`` and is shared with the full evaluator.
+    """
+    units = matched_metrics.matched_units(test_rows, neg_type, exchange_map)
+    if not units:
         return [], "none"
-    units = []
-    for negative in negatives:
-        positive = positives.get(negative["anchor_item_id"])
-        if positive is None:
-            raise ValueError(
-                f"no positive for anchor {negative['anchor_item_id']} "
-                f"(negative {negative['pair_id']})"
-            )
-        if neg_type == "N3" and exchange_map:
-            key = exchange_map.get(negative["pair_id"])
-            if key is None:
-                raise ValueError(f"missing exchange_id for N3 pair {negative['pair_id']}")
-            cluster = "reciprocal_exchange"
-        else:
-            key = negative["anchor_group_id"]
-            cluster = "image_anchor_group"
-        units.append((key, positive, negative, cluster))
-    return units, cluster
+    cluster = units[0].cluster
+    return [
+        (unit.cluster_key, unit.positive, unit.negative, unit.cluster)
+        for unit in units
+    ], cluster
 
 
 def matched_auc(test_rows, scores, neg_type, exchange_map, n_resamples, seed):
-    units, cluster = matched_negatives(test_rows, neg_type, exchange_map)
+    scored_rows = [dict(row, score=scores[row["pair_id"]]) for row in test_rows]
+    units = matched_metrics.matched_units(scored_rows, neg_type, exchange_map)
     if not units:
         return None
-    labels = [1] * len(units) + [0] * len(units)
-    values = [scores[positive["pair_id"]] for _, positive, _, _ in units]
-    values += [scores[negative["pair_id"]] for _, _, negative, _ in units]
-    point = float(roc_auc_score(labels, values))
-
-    by_cluster = defaultdict(list)
-    for unit in units:
-        by_cluster[unit[0]].append(unit)
-    keys = list(by_cluster)
-    rng = np.random.default_rng(seed)
-    samples = []
-    for _ in range(n_resamples):
-        drawn = []
-        for key in rng.choice(keys, size=len(keys), replace=True):
-            drawn.extend(by_cluster[str(key)])
-        y = [1] * len(drawn) + [0] * len(drawn)
-        s = [scores[positive["pair_id"]] for _, positive, _, _ in drawn]
-        s += [scores[negative["pair_id"]] for _, _, negative, _ in drawn]
-        samples.append(float(roc_auc_score(y, s)))
+    metrics = matched_metrics.matched_metrics(units, threshold=None)
+    intervals = matched_metrics.matched_bootstrap(
+        units, threshold=None, n_resamples=n_resamples, seed=seed
+    )
+    auc_interval = (intervals or {}).get("auc") or {}
     return {
-        "auc": point,
-        "ci_low": float(np.percentile(samples, 2.5)) if samples else None,
-        "ci_high": float(np.percentile(samples, 97.5)) if samples else None,
-        "n_pos": len(units),
-        "n_neg": len(units),
-        "n_clusters": len(keys),
-        "cluster": cluster,
-        "n_resamples": len(samples),
+        "auc": metrics["auc"],
+        "ci_low": auc_interval.get("low"),
+        "ci_high": auc_interval.get("high"),
+        "n_pos": metrics["n_pos"],
+        "n_neg": metrics["n_neg"],
+        "n_clusters": metrics["n_clusters"],
+        "cluster": metrics["cluster"],
+        "n_resamples": auc_interval.get("valid_resamples", 0),
     }
 
 

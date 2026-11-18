@@ -1,0 +1,127 @@
+{
+  "config": {
+    "release_id": "abo-home-v3-20261115",
+    "dataset_version": "abo-home-reciprocal-v3-candidate",
+    "pairs_csv": "data/releases/abo-home-reciprocal-v3-candidate/pairs.csv",
+    "image_root": "data/releases/abo-home-v2-20261103/images",
+    "model_id": "openai/clip-vit-base-patch32",
+    "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+    "dropout": 0,
+    "epochs": 5,
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "max_grad_norm": 1,
+    "temperature": 0.07,
+    "selection_metric": "val_auc",
+    "include_initial_checkpoint": true,
+    "rank": 8,
+    "alpha": 16,
+    "towers": "vision",
+    "seed": 2
+  },
+  "smoke": false,
+  "device": "mps",
+  "environment": {
+    "python": "3.11.18",
+    "torch": "2.14.1",
+    "transformers": "5.21.0",
+    "peft": "0.21.2",
+    "numpy": "2.4.6"
+  },
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "script_sha256": "2f69190031b28e7974faaac94ebd16c829527c6cad098f43871110015d5ec5be",
+  "target_modules": [
+    "vision_model.encoder.layers.0.self_attn.v_proj",
+    "vision_model.encoder.layers.0.self_attn.q_proj",
+    "vision_model.encoder.layers.1.self_attn.v_proj",
+    "vision_model.encoder.layers.1.self_attn.q_proj",
+    "vision_model.encoder.layers.2.self_attn.v_proj",
+    "vision_model.encoder.layers.2.self_attn.q_proj",
+    "vision_model.encoder.layers.3.self_attn.v_proj",
+    "vision_model.encoder.layers.3.self_attn.q_proj",
+    "vision_model.encoder.layers.4.self_attn.v_proj",
+    "vision_model.encoder.layers.4.self_attn.q_proj",
+    "vision_model.encoder.layers.5.self_attn.v_proj",
+    "vision_model.encoder.layers.5.self_attn.q_proj",
+    "vision_model.encoder.layers.6.self_attn.v_proj",
+    "vision_model.encoder.layers.6.self_attn.q_proj",
+    "vision_model.encoder.layers.7.self_attn.v_proj",
+    "vision_model.encoder.layers.7.self_attn.q_proj",
+    "vision_model.encoder.layers.8.self_attn.v_proj",
+    "vision_model.encoder.layers.8.self_attn.q_proj",
+    "vision_model.encoder.layers.9.self_attn.v_proj",
+    "vision_model.encoder.layers.9.self_attn.q_proj",
+    "vision_model.encoder.layers.10.self_attn.v_proj",
+    "vision_model.encoder.layers.10.self_attn.q_proj",
+    "vision_model.encoder.layers.11.self_attn.v_proj",
+    "vision_model.encoder.layers.11.self_attn.q_proj"
+  ],
+  "trainable_parameters": 294912,
+  "total_parameters": 151572225,
+  "train_anchors": 2664,
+  "validation_pairs": 656,
+  "negative_counts": {
+    "N1": 1199,
+    "N2": 1199,
+    "N3": 266
+  },
+  "objective": "mean(image-to-[positive+negative]-text multi-positive InfoNCE, positive-text-to-image InfoNCE)",
+  "checkpoint_selection": "highest val AUC, earlier epoch wins ties; includes initial checkpoint",
+  "training_mode": "lora",
+  "test_evaluated": false,
+  "status": "complete",
+  "history": [
+    {
+      "epoch": 0,
+      "val_auc": 0.9240593396787626,
+      "train_loss": null,
+      "seconds": 2.510125665983651
+    },
+    {
+      "epoch": 1,
+      "val_auc": 0.9478082242712671,
+      "train_loss": 1.3697719720748809,
+      "seconds": 41.24895187499351
+    },
+    {
+      "epoch": 2,
+      "val_auc": 0.9516377900059488,
+      "train_loss": 0.8669233146730486,
+      "seconds": 44.32813654199708
+    },
+    {
+      "epoch": 3,
+      "val_auc": 0.9534410321237359,
+      "train_loss": 0.7588845827916005,
+      "seconds": 41.516781457990874
+    },
+    {
+      "epoch": 4,
+      "val_auc": 0.9544077186198691,
+      "train_loss": 0.7143771612608397,
+      "seconds": 41.37479850000818
+    },
+    {
+      "epoch": 5,
+      "val_auc": 0.9545099643069601,
+      "train_loss": 0.7026433124914542,
+      "seconds": 41.54999441598193
+    }
+  ],
+  "best_epoch": 5,
+  "best_val_auc": 0.9545099643069601,
+  "elapsed_seconds": 212.5295009999827,
+  "reload_max_error": 0.0,
+  "checkpoint_sha256": "94eb018463058d599df47124c26dc013b0f0ec38ad3481e613e6b9a5b4f7ad19",
+  "adapter_reload_max_error": 0.0,
+  "validation_scores_sha256": "b2bda1bcee513a735bc6396b0413278af74ec1e67146b63b6eb53588a0ad78a8",
+  "checkpoint_path": "runs/clip_lora_v3_r8_vision_seed2/best_adapter",
+  "validation_auc_by_type": {
+    "all": 0.9545099643069601,
+    "N1": 0.9975529525032092,
+    "N2": 0.9128891206675225,
+    "N3": 0.9455030487804879
+  }
+}

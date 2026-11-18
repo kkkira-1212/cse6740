@@ -1,0 +1,4 @@
+seed,device,validation_pairs,elapsed_seconds
+0,mps,656,6.7454114590073
+1,mps,656,5.144692583999131
+2,mps,656,5.380441291985335

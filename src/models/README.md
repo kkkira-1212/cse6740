@@ -1,3 +1,21 @@
+# WP6: CLIP adaptation on frozen v2
+
+The completed development study compares Q/V LoRA rank/tower ablations and
+full-parameter controls using explicitly paired negative titles. See the
+[training protocol](../../docs/jack_wp6_training.md) and
+[configuration](../../configs/clip_lora_v2_r8_both_seed0.json).
+Run `train_clip_lora.py` from the repository root. It supports `lora` and `full`
+training modes, selects checkpoints by validation AUC and does not score test.
+Use `run_lora_ablation.py` for the frozen 15-run matrix and
+`export_full_finetune.py` to validate/export completed full controls. Model
+weights are kept under ignored `runs/`; committed development results are
+labeled as validation results.
+
+The held-out comparison is frozen in `configs/clip_v2_selected_test.json`.
+`score_selected_checkpoints.py` scores test only for those six adapted
+checkpoints and combines the predictions with their already-frozen validation
+scores. `summarize_selected_test.py` aggregates the shared evaluator outputs.
+
 # WP5: zero-shot CLIP
 
 This baseline uses OpenAI CLIP ViT-B/32 (`openai/clip-vit-base-patch32`),

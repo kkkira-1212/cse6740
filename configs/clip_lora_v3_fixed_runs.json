@@ -1,0 +1,28 @@
+{
+  "release_id": "abo-home-v3-20261115",
+  "release_tag": "abo-home-v3-20261115",
+  "dataset_version": "abo-home-reciprocal-v3-candidate",
+  "pairs_csv": "data/releases/abo-home-reciprocal-v3-candidate/pairs.csv",
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "trainer_sha256": "2f69190031b28e7974faaac94ebd16c829527c6cad098f43871110015d5ec5be",
+  "selection_source": "V2 validation ablation selected rank 16 on both towers; no V3 model hyperparameter selection",
+  "scope": "three validation-only LoRA runs at seeds 0, 1, and 2; held-out test inference is excluded",
+  "test_inference": false,
+  "runs": [
+    {
+      "name": "clip_lora_v3_r16_both_seed0",
+      "config": "configs/clip_lora_v3_r16_both_seed0.json",
+      "run_dir": "runs/clip_lora_v3_r16_both_seed0"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed1",
+      "config": "configs/clip_lora_v3_r16_both_seed1.json",
+      "run_dir": "runs/clip_lora_v3_r16_both_seed1"
+    },
+    {
+      "name": "clip_lora_v3_r16_both_seed2",
+      "config": "configs/clip_lora_v3_r16_both_seed2.json",
+      "run_dir": "runs/clip_lora_v3_r16_both_seed2"
+    }
+  ]
+}

@@ -12,12 +12,14 @@ MODEL_ID = "openai/clip-vit-base-patch32"
 MODEL_REVISION = "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
 
 
-def read_pairs(path, limit=None):
+def read_pairs(path, limit=None, splits=None):
     with open(path, newline="", encoding="utf-8") as stream:
         rows = list(csv.DictReader(stream))
     required = {"pair_id", "image_path", "text"}
     if not rows or not required.issubset(rows[0]):
         raise ValueError(f"pairs CSV needs {sorted(required)} and at least one row")
+    if splits:
+        rows = [row for row in rows if row.get("split") in splits]
     rows = rows[:limit] if limit else rows
     ids = [row["pair_id"] for row in rows]
     if len(ids) != len(set(ids)):
@@ -67,13 +69,17 @@ def main():
     parser.add_argument("--out-csv", default="scores/clip_vit_b32_zero_shot.csv")
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--splits", nargs="+", choices=("train", "val", "test"))
+    parser.add_argument("--seed", type=int, default=0,
+                        help="reproducibility label; zero-shot scoring is deterministic")
     parser.add_argument("--device", choices=("auto", "mps", "cpu"), default="auto")
     parser.add_argument("--model-revision", default=MODEL_REVISION)
     args = parser.parse_args()
     if args.batch_size < 1 or (args.limit is not None and args.limit < 1):
         parser.error("batch-size and limit must be positive")
 
-    rows = read_pairs(args.pairs_csv, args.limit)
+    torch.manual_seed(args.seed)
+    rows = read_pairs(args.pairs_csv, args.limit, args.splits)
     device = "mps" if args.device == "auto" and torch.backends.mps.is_available() else args.device
     if device == "auto":
         device = "cpu"

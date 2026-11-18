@@ -59,6 +59,104 @@ python src/eval/controls.py --splits val test --protocol-file docs/controls_v3.m
 Outputs `scores/control_v3_*`; results and interpretation:
 [`docs/controls_v3.md`](../../docs/controls_v3.md).
 
+## Matched-anchor type metrics (v3 and OOD)
+
+Fixed-image pairs have one negative per image anchor, so pooling all positives
+with all negatives describes a different population than the deployed matching
+task. Pass `--matched-type-metrics` to add metrics where every negative is
+compared only with the positive of its own `anchor_item_id`:
+
+- matched-anchor AUC
+- negative recall and corresponding-positive recall at the same frozen threshold
+- balanced accuracy (mean of those two recalls)
+- paired ranking accuracy (positive score strictly above its own negative; ties
+  count as failures) with tie count
+- n_pos, n_neg, anchor count and bootstrap cluster count
+
+N1/N2 intervals resample image-anchor groups. N3 intervals resample complete
+reciprocal exchanges; pass the provenance file with `--n3-provenance`. The join
+accepts both schemas in use: ID `n3_provenance.csv` matches on `pair_id`, while
+OOD `eval_n3_provenance.csv` keeps an internal suffix and is matched on
+`anchor_item_id`. The report is emitted per test split and is not pooled across
+splits.
+
+```bash
+# ID v3 (threshold already frozen on ID val)
+python src/eval/eval.py \
+  --pairs-csv data/releases/abo-home-reciprocal-v3-candidate/pairs.csv \
+  --scores-csv scores/YOUR_ID_MODEL.csv \
+  --test-splits test --fixed-threshold YOUR_ID_VAL_THRESHOLD \
+  --matched-type-metrics \
+  --n3-provenance data/releases/abo-home-reciprocal-v3-candidate/n3_provenance.csv \
+  --bootstrap 1000
+
+# OOD v3 (each model uses its own ID-val threshold)
+python src/eval/eval.py \
+  --pairs-csv data/releases/abo-ood-v3-20261115-candidate/eval_pairs.csv \
+  --scores-csv scores/YOUR_MODEL_ood.csv \
+  --test-splits ood_near ood_far --fixed-threshold YOUR_ID_VAL_THRESHOLD \
+  --matched-type-metrics \
+  --n3-provenance data/releases/abo-ood-v3-20261115-candidate/eval_n3_provenance.csv \
+  --bootstrap 1000
+```
+
+The extra table is written to `<scores>_eval_matched.csv`; the same metrics
+appear under `matched_types` in the JSON sidecar and in the Markdown report.
+Existing outputs are unchanged when the flag is omitted. `--r-at-1` remains
+rejected for fixed-image layouts.
+
+## Paired corrected/introduced errors
+
+[`src/eval/paired_errors.py`](paired_errors.py) compares two models on the same
+pairs rows. Each model uses its own frozen ID-val threshold; rows are joined by
+`pair_id`. It reports:
+
+- pair-level wrong -> correct (corrected), correct -> wrong (introduced),
+  both correct and both wrong counts, overall and on matched-anchor type scopes;
+- anchor-level ranking changes (win / tie / loss before and after), including
+  ties;
+- every changed pair ID with both scores, predictions, current and original
+  titles, category, negative type, label status and N3 exchange ID.
+
+```bash
+python src/eval/paired_errors.py \
+  --pairs-csv data/releases/abo-home-reciprocal-v3-candidate/pairs.csv \
+  --baseline-scores scores/zero_shot.csv \
+  --adapted-scores scores/adapted_seed0.csv \
+  --baseline-threshold ZERO_SHOT_ID_VAL_THRESHOLD \
+  --adapted-threshold ADAPTED_ID_VAL_THRESHOLD \
+  --test-splits test \
+  --n3-provenance data/releases/abo-home-reciprocal-v3-candidate/n3_provenance.csv
+```
+
+Outputs `<stem>.csv` (summary), `<stem>_ranking.csv` (3x3 win/tie/loss matrix),
+`<stem>_changed.csv` (changed IDs), plus JSON and Markdown provenance. For OOD,
+pass `--test-splits ood_near ood_far` and the OOD `eval_n3_provenance.csv`.
+These are descriptive counts, not significance tests or a model-selection rule.
+
+## OOD shortcut probe (ID-fitted)
+
+[`src/eval/ood_shortcut.py`](ood_shortcut.py) checks whether the OOD table is
+trivially solvable by a title-only shortcut. It fits TF-IDF word/char logistic
+controls on the frozen ID v3 **train** split, selects each threshold on ID
+**val**, and then scores the OOD candidate. Nothing is fitted or tuned on OOD.
+
+The image-only probe is a structural null: fixed-image pairs share the image, so
+every image-only model is constant per anchor. The script emits a constant 0.5
+score and reports AUC 0.5 / paired-ranking ties; it is not an image-quality
+check and needs no OOD images.
+
+```bash
+python src/eval/ood_shortcut.py \
+  --text-features both \
+  --bootstrap 1000
+```
+
+Outputs `<prefix>_text_word.csv`, `<prefix>_text_char.csv`,
+`<prefix>_image_identity.csv`, their `_eval.*` reports (including matched-anchor
+metrics), plus `<prefix>_summary.md` and `<prefix>_meta.json`. These are
+diagnostics for reviewing the OOD candidate, not final model results.
+
 ---
 
 # WP4 评估脚本
