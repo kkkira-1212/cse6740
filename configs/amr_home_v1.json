@@ -1,0 +1,110 @@
+{
+  "version": "amr-home-v1-20261118",
+  "seed": 20261118,
+  "source": {
+    "path": "data/raw/Amazon2023/meta_Home_and_Kitchen.jsonl",
+    "category": "Home_and_Kitchen"
+  },
+  "root_category": "Home & Kitchen",
+  "second_level_categories": [
+    "Furniture",
+    "Home Décor Products",
+    "Wall Art",
+    "Pillows, Throws & Poufs",
+    "Bedding"
+  ],
+  "type_rules": [
+    {
+      "type": "RUG",
+      "second_level_any": ["Home Décor Products"],
+      "leaf_contains_any": ["area rugs"]
+    },
+    {
+      "type": "WALL_ART",
+      "second_level_any": ["Wall Art"]
+    },
+    {
+      "type": "SOFA",
+      "leaf_contains_any": ["sofas & couches"]
+    },
+    {
+      "type": "OTTOMAN",
+      "leaf_contains_any": ["ottomans"]
+    },
+    {
+      "type": "STOOL_SEATING",
+      "leaf_contains_any": ["barstools", "stools"],
+      "leaf_exclude_any": ["stool covers"]
+    },
+    {
+      "type": "CHAIR",
+      "leaf_contains_any": ["chairs", "armchairs"],
+      "leaf_exclude_any": ["slipcovers", "chair pads", "chair cushions", "chair mats"]
+    },
+    {
+      "type": "TABLE",
+      "leaf_contains_any": ["tables", "table sets"],
+      "leaf_exclude_any": ["table linens", "tablecloths", "table runners", "place mats", "table covers", "table pads"]
+    },
+    {
+      "type": "PILLOW",
+      "second_level_any": ["Bedding"],
+      "path_contains_any": ["decorative pillows"],
+      "leaf_contains_any": ["pillow", "pillows", "cushion", "cushions", "throw pillows"]
+    },
+    {
+      "type": "PILLOW",
+      "second_level_any": ["Pillows, Throws & Poufs"],
+      "leaf_contains_any": ["pillow", "pillows", "cushion", "cushions", "throw pillows"]
+    }
+  ],
+  "fallbacks": {
+    "Furniture": "HOME_FURNITURE_AND_DECOR",
+    "Home Décor Products": "HOME"
+  },
+  "exclude_segments_any": [
+    "replacement parts",
+    "slipcovers",
+    "lamps & lighting",
+    "lighting",
+    "lamps",
+    "light fixtures",
+    "chandeliers",
+    "sconces",
+    "ceiling lights",
+    "pendant lights",
+    "oil lamps & accessories"
+  ],
+  "exclude_leaves_any": [
+    "rug pads",
+    "rug grip tape & pads",
+    "chair pads",
+    "stool covers",
+    "pillowcases",
+    "pillow shams",
+    "pillow protectors",
+    "sofa parts",
+    "recliner parts",
+    "bed parts",
+    "toy bags & nets",
+    "backpacks & lunch boxes",
+    "lunch bags",
+    "lunch boxes"
+  ],
+  "max_per_type": 200,
+  "images": {
+    "variant_order": ["large", "hi_res", "thumb"],
+    "allowed_hosts": ["m.media-amazon.com"],
+    "allowed_formats": ["JPEG"],
+    "min_dimension": 64,
+    "max_dimension": 10000,
+    "max_pixels": 60000000,
+    "low_resolution_threshold": 224,
+    "workers": 4,
+    "requests_per_second": 2.0,
+    "timeout_seconds": 30,
+    "retries": 3,
+    "max_bytes": 20000000
+  },
+  "policy": "Intermediate source-items pilot for Amazon Reviews 2023 Home_and_Kitchen, mapped to the project's 10 ABO product types. One MAIN image per item, large then hi_res then thumb. Not a frozen release, not grouped, not split, no negatives. Broad Furniture/Home Decor fallbacks follow ABO catch-all semantics; raw metadata and images are not committed."
+}

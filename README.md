@@ -10,6 +10,13 @@ QC limitations and handoff instructions. The reviewed pairs retain the existing
 `abo-home-reciprocal-v3-candidate` storage/version identity. Download the full
 image-and-data package from the [V3 release](https://github.com/kkkira-1212/cse6740/releases/tag/abo-home-v3-20261115).
 
+## Cross-source pilot
+
+[Amazon Reviews 2023 Home & Kitchen source items](docs/amr_home.md) is an
+intermediate, type-balanced pilot (200 items/type) with one MAIN image per
+item. It is not a frozen release and has no near-duplicate groups, splits or
+negative pairs yet. Code lives in [`src/data/Amazon2023/`](src/data/Amazon2023/README.md).
+
 ## Historical v2 release and setup
 
 **[ABO Furniture + Decor v2 — 2026-11-03](https://github.com/kkkira-1212/cse6740/releases/tag/abo-home-v2-20261103)** is available for preliminary experiments and human N2 review. It contains **3,335 image anchors and 6,670 image–title pairs** across 10 retained furniture/decor types.
