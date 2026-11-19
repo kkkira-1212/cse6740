@@ -1,0 +1,18 @@
+{
+  "name": "clip_zero_shot_v3",
+  "dataset": "val",
+  "splits": [
+    "val"
+  ],
+  "pairs": 656,
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "scores_sha256": "374f7d47aafc51b3c677a32a1d25d2be3c35f04a9c1792108644c63833bc613b",
+  "selection_manifest_sha256": "965438d406352f71ab027bc0fa4f77e6a85b3f85e4b006c514131f3a952fdbb9",
+  "checkpoint_sha256": null,
+  "threshold": 0.28604528,
+  "model_id": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "device": "mps",
+  "elapsed_seconds": 2.9870948329917155,
+  "val_max_abs_error": 4.984436030586181e-09
+}
