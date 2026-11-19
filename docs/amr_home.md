@@ -36,13 +36,30 @@ python src/data/Amazon2023/download_amr_images.py \
   --requests-per-second 2
 
 python src/data/Amazon2023/verify_amr.py \
-  --out-dir data/processed/amr-home-v1 --images --allow-image-failures
+  --out-dir data/processed/amr-home-v1 \
+  --images --allow-image-failures \
+  --abo-listings-dir data/raw/listings/metadata
 ```
 
 `--resume-images` on either command skips images whose file SHA-256 matches the
 manifest. `--allow-image-failures` makes `verify --images` report unrecoverable
 items (for example a thumb-only 40x40 URL) without failing the whole pilot; the
-strict default still rejects any image error. `--skip-source-hash` avoids hashing the 11.8 GB metadata for smoke
+strict default still rejects any image error.
+
+## ABO overlap exclusion
+
+Before top-K selection, the builder loads all 16 official ABO listing shards
+(`data/raw/listings/metadata`, 147,702 records) and excludes AMR items that
+match any of:
+
+- ABO `item_id` == AMR `parent_asin`;
+- any ABO `main_image_id` or `other_image_id` == any AMR MAIN-image variant id;
+- exact normalized en_US title (length >= 12) — a conservative relisting check.
+
+Excluded rows go to `abo_overlap.csv` with `signals`/`details`; the top-K then
+fills from the remaining eligible items, so the per-type cap still holds. Use
+`--skip-abo-overlap` only for domains where ABO overlap is not relevant. The
+ABO directory can be overridden with `--abo-listings-dir`. `--skip-source-hash` avoids hashing the 11.8 GB metadata for smoke
 runs. `--max-per-type 0` keeps every eligible item and is memory-heavy.
 
 ## Category mapping
@@ -88,6 +105,7 @@ large catch-alls.
 - `filter_summary.csv`, `sampling_summary.csv`, `dfa_summary.csv`,
   `second_level_counts.csv`, `exclusion_summary.csv`.
 - `no_main_images.csv` when any mapped item has no MAIN image.
+- `abo_overlap.csv` when any candidate matches ABO by item id, image id or exact title.
 - `config.json`, `manifest.json`, `validation.json`, `checksums.json`.
 - `images/<type>/<sha256-prefix>/<parent_asin>.jpg` (untracked).
 
@@ -103,10 +121,12 @@ are listing title + MAIN image and are not human-certified.
 
 ## Next phase
 
-ABO ASIN/image-id overlap exclusion, near-duplicate grouping, `crosstime_<year>`
-splits, N1/N2/N3 construction, review-timestamp fallback, and human QC.
+Near-duplicate grouping, `crosstime_<year>` splits, N1/N2/N3 construction,
+review-timestamp fallback, and human QC.
 
-A preliminary check against the 147,702 raw ABO listings found 10 of the 2,000
-pilot ASINs already present in ABO (0 `main_image_id` overlaps). Those ASINs
-must be excluded before the cross-time/adaptation comparison; the overlap check
-is not yet applied in this pilot.
+ABO overlap exclusion is applied before top-K and recorded in
+`abo_overlap.csv`. The full eligible pool excludes 2,825 candidates on at least
+one signal (2,442 item-id, 2,678 image-id, 1,955 exact-title matches). The
+previous 2,000-item pilot contained 12 of them, so the rebuilt selection changes
+by 12 replacements and still holds 200 items/type with zero remaining ABO
+item/image/title overlap.

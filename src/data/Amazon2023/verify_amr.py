@@ -16,9 +16,10 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'negatives'))
 from sean_common import read_csv
 
+from abo_overlap import load_abo_overlap_ids, overlap_signals
 from amr_io import (
     IMAGE_MANIFEST_FIELDS, PRODUCT_TYPES, FilterSpec, classify_categories,
-    sha256_file, write_json_lf,
+    image_id_from_url, sha256_file, write_json_lf,
 )
 
 try:
@@ -31,7 +32,7 @@ def _fail(message):
     raise ValueError(message)
 
 
-def verify(out_dir, config, check_images=False, allow_image_failures=False):
+def verify(out_dir, config, check_images=False, allow_image_failures=False, abo_overlap=None):
     out_dir = Path(out_dir)
     items_path = out_dir / 'items.csv'
     manifest_path = out_dir / 'manifest.json'
@@ -87,6 +88,22 @@ def verify(out_dir, config, check_images=False, allow_image_failures=False):
         _fail('per-type counts differ from manifest')
     if manifest.get('validation', {}).get('status') != 'STRUCTURAL_CHECKS_PASSED_INTERMEDIATE_SOURCE_ITEMS':
         _fail('validation.json status is not the expected intermediate status')
+    abo_overlap_checked = 0
+    if abo_overlap is not None:
+        for row in items:
+            image_ids = {
+                image_id_from_url(url)
+                for url in [row['image_url_large'], row['image_url_hi_res'], row['image_url_thumb']]
+                if url
+            }
+            image_ids.discard('')
+            signals = overlap_signals(
+                row['item_id'], row['title'], image_ids, abo_overlap,
+                config.get('abo_overlap', {}),
+            )
+            if signals:
+                _fail(f'ABO overlap remains for {row["item_id"]}: {signals}')
+        abo_overlap_checked = len(items)
 
     if checksums_path.is_file():
         checksums = json.loads(checksums_path.read_text(encoding='utf-8'))
@@ -149,13 +166,16 @@ def verify(out_dir, config, check_images=False, allow_image_failures=False):
         'items': len(items),
         'by_type': by_type,
         'year_items': year_count,
+        'abo_overlap_checked': abo_overlap_checked,
         'images_checked': checked_images if check_images else 0,
         'image_failures': image_failures,
         'checks': [
             'unique_item_ids', 'unique_image_paths', 'safe_image_paths',
             'main_image_id_present', 'split_placeholder', 'year_format',
             'category_reclassification', 'manifest_counts', 'checksums',
-        ] + (['image_manifest', 'image_hashes', 'pillow_decode', 'no_part_files'] if check_images else []),
+        ] + (['abo_overlap_free'] if abo_overlap is not None else []) + (
+            ['image_manifest', 'image_hashes', 'pillow_decode', 'no_part_files'] if check_images else []
+        ),
     }
     write_json_lf(out_dir / 'verify.json', result)
     return result
@@ -167,13 +187,18 @@ def main(argv=None):
     parser.add_argument('--config', default='configs/amr_home_v1.json')
     parser.add_argument('--images', action='store_true')
     parser.add_argument('--allow-image-failures', action='store_true')
+    parser.add_argument('--abo-listings-dir', default=None)
     args = parser.parse_args(argv)
     config = json.loads(Path(args.config).read_text(encoding='utf-8'))
     try:
+        abo_overlap = None
+        if args.abo_listings_dir:
+            abo_overlap = load_abo_overlap_ids(Path(args.abo_listings_dir))
         result = verify(
             Path(args.out_dir), config,
             check_images=args.images,
             allow_image_failures=args.allow_image_failures,
+            abo_overlap=abo_overlap,
         )
     except Exception as exc:
         print(f'VERIFY FAILED: {exc}', file=sys.stderr)

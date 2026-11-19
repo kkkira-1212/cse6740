@@ -14,8 +14,9 @@ image-and-data package from the [V3 release](https://github.com/kkkira-1212/cse6
 
 [Amazon Reviews 2023 Home & Kitchen source items](docs/amr_home.md) is an
 intermediate, type-balanced pilot (200 items/type) with one MAIN image per
-item. It is not a frozen release and has no near-duplicate groups, splits or
-negative pairs yet. Code lives in [`src/data/Amazon2023/`](src/data/Amazon2023/README.md).
+item; ABO item/image/title overlap is excluded before top-K. It is not a frozen
+release and has no near-duplicate groups, splits or negative pairs yet. Code
+lives in [`src/data/Amazon2023/`](src/data/Amazon2023/README.md).
 
 ## Historical v2 release and setup
 

@@ -91,6 +91,13 @@
     "lunch bags",
     "lunch boxes"
   ],
+  "abo_overlap": {
+    "enabled": true,
+    "listings_dir": "data/raw/listings/metadata",
+    "exclude_item_ids": true,
+    "exclude_image_ids": true,
+    "exclude_exact_titles": true
+  },
   "max_per_type": 200,
   "images": {
     "variant_order": ["large", "hi_res", "thumb"],

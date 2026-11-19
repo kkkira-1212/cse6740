@@ -22,12 +22,15 @@ import time
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'negatives'))
 from sean_common import read_csv, write_csv, write_json, stable_key, validate_items
 
+from abo_overlap import load_abo_overlap_ids, overlap_signals, overlap_summary
 from amr_io import (
     ITEM_FIELDS, NO_MAIN_FIELDS, PRODUCT_TYPES, FilterSpec, canonical_json_sha256,
-    classify_categories, clean_text, detail_string, image_path_for,
+    classify_categories, clean_text, detail_string, image_id_from_url, image_path_for,
     iter_json_records, parse_date_first_available, safe_item_id,
     select_main_image, sha256_file, write_checksums,
 )
+
+ABO_OVERLAP_FIELDS = ['item_id', 'product_type', 'signals', 'details', 'source_line']
 
 
 def write_json_lf(path, value):
@@ -133,7 +136,8 @@ def item_record(obj, product_type, reason, category_l2, category_leaf, rule_id, 
     }
 
 
-def scan_and_select(meta_path, config, spec, max_per_type, seed, progress_every=100000):
+def scan_and_select(meta_path, config, spec, max_per_type, seed, progress_every=100000,
+                    overlap=None, abo_options=None):
     top = {product_type: (TopK(max_per_type) if max_per_type > 0 else AllItems()) for product_type in PRODUCT_TYPES}
     by_type_mapped = Counter()
     by_type_eligible = Counter()
@@ -142,9 +146,12 @@ def scan_and_select(meta_path, config, spec, max_per_type, seed, progress_every=
     by_second = Counter()
     exclusions = Counter()
     no_main = []
+    abo_rows = []
+    abo_by_signal = Counter()
     malformed = []
     malformed_examples = []
     duplicates = 0
+    abo_options = abo_options or {}
     lines = 0
     json_ok = 0
     started = time.time()
@@ -185,6 +192,26 @@ def scan_and_select(meta_path, config, spec, max_per_type, seed, progress_every=
             continue
         main = select_main_image(obj.get('images'), spec.allowed_hosts, spec.variant_order)
         category_path = ' | '.join(clean_text(value) for value in (categories or []) if clean_text(value))
+        if overlap:
+            image_ids = {
+                image_id_from_url(url)
+                for url in main.get('urls', {}).values() if url
+            }
+            image_ids.discard('')
+            signals = overlap_signals(item_id, title, image_ids, overlap, abo_options)
+            if signals:
+                exclusions['abo_overlap'] += 1
+                for signal, _ in signals:
+                    abo_by_signal[signal] += 1
+                if len(abo_rows) < 10000:
+                    abo_rows.append({
+                        'item_id': item_id,
+                        'product_type': product_type,
+                        'signals': ';'.join(signal for signal, _ in signals),
+                        'details': '; '.join(f'{signal}={detail}' for signal, detail in signals),
+                        'source_line': str(line_number),
+                    })
+                continue
         if main['reason'] == 'no_main_variant':
             exclusions['no_main_image'] += 1
             if len(no_main) < 10000:
@@ -262,6 +289,8 @@ def scan_and_select(meta_path, config, spec, max_per_type, seed, progress_every=
         'exclusions': exclusions,
         'sampling': sampling,
         'no_main': no_main,
+        'abo_overlap_rows': abo_rows,
+        'abo_by_signal': abo_by_signal,
         'malformed_examples': malformed_examples,
         'malformed_messages': malformed[:20],
     }
@@ -316,7 +345,7 @@ def validate_source_items(items, config, max_per_type, counts):
     }
 
 
-def build_manifest(config, meta_path, source_sha256, source_bytes, scan, validation, max_per_type, seed):
+def build_manifest(config, meta_path, source_sha256, source_bytes, scan, validation, max_per_type, seed, overlap=None):
     filter_config = {
         'root_category': config['root_category'],
         'second_level_categories': config['second_level_categories'],
@@ -324,6 +353,7 @@ def build_manifest(config, meta_path, source_sha256, source_bytes, scan, validat
         'fallbacks': config.get('fallbacks', {}),
         'exclude_segments_any': config.get('exclude_segments_any', []),
         'exclude_leaves_any': config.get('exclude_leaves_any', []),
+        'abo_overlap': config.get('abo_overlap', {}),
     }
     generator = hashlib.sha256()
     for path in [Path(__file__), Path(__file__).resolve().parent / 'amr_io.py']:
@@ -360,6 +390,10 @@ def build_manifest(config, meta_path, source_sha256, source_bytes, scan, validat
             'excluded_by_reason': dict(sorted(scan['exclusions'].items())),
         },
         'sampling': scan['sampling'],
+        'abo_overlap': (
+            overlap_summary(overlap, scan['exclusions'].get('abo_overlap', 0), scan['abo_by_signal'])
+            if overlap else {'enabled': False}
+        ),
         'dfa': {
             'by_type': {
                 product_type: {
@@ -389,7 +423,7 @@ def build_manifest(config, meta_path, source_sha256, source_bytes, scan, validat
     }
 
 
-def write_build_outputs(out_dir, config, meta_path, source_sha256, source_bytes, scan, validation, max_per_type, seed):
+def write_build_outputs(out_dir, config, meta_path, source_sha256, source_bytes, scan, validation, max_per_type, seed, overlap=None):
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     write_csv(out_dir / 'items.csv', scan['items'], ITEM_FIELDS)
@@ -430,14 +464,19 @@ def write_build_outputs(out_dir, config, meta_path, source_sha256, source_bytes,
     )
     if scan['no_main']:
         write_csv(out_dir / 'no_main_images.csv', scan['no_main'], NO_MAIN_FIELDS)
+    if scan['abo_overlap_rows']:
+        write_csv(out_dir / 'abo_overlap.csv', scan['abo_overlap_rows'], ABO_OVERLAP_FIELDS)
     write_json_lf(out_dir / 'config.json', config)
-    manifest = build_manifest(config, meta_path, source_sha256, source_bytes, scan, validation, max_per_type, seed)
+    manifest = build_manifest(
+        config, meta_path, source_sha256, source_bytes, scan, validation,
+        max_per_type, seed, overlap=overlap,
+    )
     write_json_lf(out_dir / 'validation.json', validation)
     write_json_lf(out_dir / 'manifest.json', manifest)
     write_checksums(out_dir, [
         'items.csv', 'filter_summary.csv', 'sampling_summary.csv', 'dfa_summary.csv',
         'second_level_counts.csv', 'exclusion_summary.csv', 'no_main_images.csv',
-        'config.json', 'validation.json', 'manifest.json',
+        'abo_overlap.csv', 'config.json', 'validation.json', 'manifest.json',
     ])
     return manifest
 
@@ -507,6 +546,8 @@ def main(argv=None):
     parser.add_argument('--force', action='store_true')
     parser.add_argument('--progress-every', type=int, default=100000)
     parser.add_argument('--skip-source-hash', action='store_true')
+    parser.add_argument('--abo-listings-dir', default=None)
+    parser.add_argument('--skip-abo-overlap', action='store_true')
     parser.add_argument('--workers', type=int, default=None)
     parser.add_argument('--requests-per-second', type=float, default=None)
     parser.add_argument('--timeout', type=float, default=None)
@@ -531,8 +572,26 @@ def main(argv=None):
     source_bytes = meta_path.stat().st_size
     source_sha256 = '' if args.skip_source_hash else sha256_file(meta_path)
     spec = FilterSpec(config)
+    abo_config = config.get('abo_overlap', {})
+    overlap = None
+    if abo_config.get('enabled', True) and not args.skip_abo_overlap:
+        abo_dir = Path(args.abo_listings_dir or abo_config.get('listings_dir', 'data/raw/listings/metadata'))
+        if not abo_dir.is_dir():
+            raise SystemExit(f'ABO listings directory not found: {abo_dir}; use --skip-abo-overlap to disable.')
+        print(f'loading ABO overlap IDs from {abo_dir} ...', flush=True)
+        overlap = load_abo_overlap_ids(abo_dir)
+        print(
+            f'ABO overlap: records={overlap["records"]:,}; '
+            f'item_ids={len(overlap["item_ids"]):,}; '
+            f'image_ids={len(overlap["image_ids"]):,}; '
+            f'title_keys={len(overlap["title_keys"]):,}',
+            flush=True,
+        )
     started = time.time()
-    scan = scan_and_select(meta_path, config, spec, max_per_type, seed, args.progress_every)
+    scan = scan_and_select(
+        meta_path, config, spec, max_per_type, seed, args.progress_every,
+        overlap=overlap, abo_options=abo_config,
+    )
     items = scan['items']
     if args.limit is not None and args.limit >= 0:
         items = items[:args.limit]
@@ -553,13 +612,17 @@ def main(argv=None):
             'by_type_eligible': dict(sorted(scan['by_type_eligible'].items())),
             'by_type_selected': validation['by_type'],
             'exclusions': dict(sorted(scan['exclusions'].items())),
+            'abo_overlap': (
+                overlap_summary(overlap, scan['exclusions'].get('abo_overlap', 0), scan['abo_by_signal'])
+                if overlap else {'enabled': False}
+            ),
             'elapsed_seconds': round(time.time() - started, 1),
         }, ensure_ascii=False, indent=2))
         return 0
 
     manifest = write_build_outputs(
         out_dir, config, meta_path, source_sha256, source_bytes,
-        scan, validation, max_per_type, seed,
+        scan, validation, max_per_type, seed, overlap=overlap,
     )
     print(json.dumps({
         'out_dir': str(out_dir),

@@ -91,10 +91,23 @@ def write_fixture(path, reversed_order=False, include_bad=True):
     return path
 
 
-def write_config(path, fixture, max_per_type=2):
+def write_abo_fixture(directory, records):
+    directory = Path(directory)
+    directory.mkdir(parents=True, exist_ok=True)
+    for suffix in '0123456789abcdef':
+        path = directory / f'listings_{suffix}.json.gz'
+        with gzip.open(path, 'wt', encoding='utf-8', newline='\n') as handle:
+            if suffix == '0':
+                for record_value in records:
+                    handle.write(json.dumps(record_value, ensure_ascii=False) + '\n')
+    return directory
+
+
+def write_config(path, fixture, max_per_type=2, abo_overlap=None):
     config = load_config()
     config['source']['path'] = str(fixture)
     config['max_per_type'] = max_per_type
+    config['abo_overlap'] = {'enabled': False} if abo_overlap is None else abo_overlap
     Path(path).write_text(json.dumps(config, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return path
 
@@ -299,6 +312,49 @@ class BuilderTests(unittest.TestCase):
                 '--config', str(self.config), '--out-dir', str(self.root / 'missing'),
                 '--resume-images',
             ])
+
+    def test_abo_overlap_excludes_item_image_and_title(self):
+        categories = ['Home & Kitchen', 'Furniture', 'Living Room Furniture', 'Chairs']
+        amr_records = [
+            record(0, 0, 0, categories, parent_asin='B000000000'),
+            record(0, 0, 1, categories, parent_asin='B000000001'),
+            record(0, 0, 2, categories, parent_asin='B000000002',
+                   title='Exact overlap title for candidate two'),
+            record(0, 0, 3, categories, parent_asin='B000000003', title='safe candidate'),
+        ]
+        amr_path = self.root / 'overlap-amr.jsonl'
+        with open(amr_path, 'w', encoding='utf-8', newline='\n') as handle:
+            for item in amr_records:
+                handle.write(json.dumps(item, ensure_ascii=False) + '\n')
+        abo_dir = write_abo_fixture(self.root / 'abo', [
+            {'item_id': 'B000000000', 'main_image_id': 'I999999999', 'other_image_id': [],
+             'item_name': [{'language_tag': 'en_US', 'value': 'item overlap'}]},
+            {'item_id': 'B999999999', 'main_image_id': 'I000000001', 'other_image_id': [],
+             'item_name': [{'language_tag': 'en_US', 'value': 'image overlap'}]},
+            {'item_id': 'B888888888', 'main_image_id': 'I888888888', 'other_image_id': [],
+             'item_name': [{'language_tag': 'en_US', 'value': 'Exact overlap title for candidate two'}]},
+        ])
+        config = write_config(
+            self.root / 'overlap-config.json', amr_path, max_per_type=3,
+            abo_overlap={
+                'enabled': True, 'listings_dir': str(abo_dir),
+                'exclude_item_ids': True, 'exclude_image_ids': True, 'exclude_exact_titles': True,
+            },
+        )
+        out = self.root / 'overlap-out'
+        self.assertEqual(run_builder(amr_path, out, config, extra=['--max-per-type', '3']), 0)
+        items = read_rows(out / 'items.csv')
+        self.assertEqual([row['item_id'] for row in items], ['B000000003'])
+        overlaps = read_rows(out / 'abo_overlap.csv')
+        self.assertEqual(len(overlaps), 3)
+        self.assertEqual({row['item_id'] for row in overlaps}, {'B000000000', 'B000000001', 'B000000002'})
+        signals = {row['item_id']: row['signals'] for row in overlaps}
+        self.assertIn('item_id', signals['B000000000'])
+        self.assertIn('image_id', signals['B000000001'])
+        self.assertIn('title', signals['B000000002'])
+        manifest = json.loads((out / 'manifest.json').read_text())
+        self.assertEqual(manifest['abo_overlap']['excluded'], 3)
+        self.assertEqual(manifest['abo_overlap']['by_signal'], {'image_id': 1, 'item_id': 1, 'title': 1})
 
     def test_duplicate_parent_asin_selected_once(self):
         out = self.root / 'dupes'
