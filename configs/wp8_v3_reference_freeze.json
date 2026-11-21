@@ -1,0 +1,39 @@
+{
+  "id_dataset": "abo-home-reciprocal-v3-candidate",
+  "id_pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "selection_note": "Thresholds come from saved val scores only; no test or OOD scores were read.",
+  "models": {
+    "siglip-b16": {
+      "role": "main",
+      "hf_id": "google/siglip-base-patch16-224",
+      "revision": "7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed",
+      "revision_evidence": "single cached snapshot predating the val run (record_hf_revisions.py)",
+      "snapshot_file_sha256": {
+        "config.json": "cd85b3d28829722820bcb89a2cfbb4160e55fd359249a3044da724166a8d9688",
+        "model.safetensors": "2c63cb7d1f2e95ba501893cbb8faeb4ea9a3af295498d35097126228659c2af8",
+        "preprocessor_config.json": "d11ccb80f15d358a11bdb070e92e2d889005874b7db15823d5f10d9b2533b14a",
+        "special_tokens_map.json": "2b6a1ff67a27e0df9ac0c7d93250fc0d87431c7b366b3d5669217104f9088a26",
+        "spiece.model": "1e5036bed065526c3c212dfbe288752391797c4bb1a284aa18c9a0b23fcaf8ec",
+        "tokenizer.json": "c6e405cb7c670d56636a9402c81023a55bc6c3c53d89cf02b92f5c5005bfe920",
+        "tokenizer_config.json": "d6423dae508cc3a129d22ea443841c111832a1a73125b8f25ea8736951698bcb"
+      },
+      "val_scores": "scores/abo-home-reciprocal-v3-candidate_siglip_b16_val.csv",
+      "val_scores_sha256": "491346abfa3047cbd3bc372abc62d325985fa7f21b6962612ff37c711e16f24a",
+      "n_val": 656,
+      "id_val_threshold": 0.04772732,
+      "id_val_accuracy_at_threshold": 0.9192073170731707,
+      "threshold_rule": "maximum ID-val accuracy, ties -> smallest threshold; apply as score >= threshold",
+      "val_environment": {
+        "torch": "2.14.1",
+        "transformers": "5.21.0",
+        "device": "mps",
+        "n_params": 203155970
+      },
+      "batch_size": 16
+    }
+  },
+  "not_frozen": [
+    "blip-itm-b: revision not recovered (ambiguous); rerun val pinned first",
+    "align-b: revision not recovered (ambiguous); rerun val pinned first"
+  ]
+}
