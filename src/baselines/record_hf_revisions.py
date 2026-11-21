@@ -8,8 +8,10 @@ cache on the machine that produced those scores and records, per model:
   - every cached snapshot with its modification time,
   - SHA-256 of the weight and processor/tokenizer files in each snapshot.
 
-A model counts as recovered only when exactly one snapshot exists and it was
-already on disk before the val run finished (VAL_RUN_END). Otherwise it is
+A model counts as recovered when exactly one full snapshot (with config.json)
+exists, it is refs/main, and it was on disk before the val run finished
+(VAL_RUN_END). Weight-only safetensors snapshots from the converter bot's PR are
+recorded but ignored, because from_pretrained never loads them here. Otherwise it is
 flagged as ambiguous, and the val split must be rerun with a pinned revision
 before any test inference (docs/final_evaluation_handoff.md, item 3).
 
@@ -74,10 +76,25 @@ def inspect(hf_id, root):
                 "present_before_val_run_end": bool(downloaded and downloaded <= VAL_RUN_END),
                 "file_sha256": files,
             })
-    usable = [s for s in record["snapshots"] if s["present_before_val_run_end"]]
-    if len(record["snapshots"]) == 1 and len(usable) == 1:
+    # A snapshot holding only model.safetensors (no config) that is not refs/main is the
+    # converter bot's refs/pr/N commit. transformers downloads it in a background thread after
+    # loading pytorch_model.bin from the requested revision ("for next time"); from_pretrained
+    # with use_safetensors=None and a repo without safetensors never loads it.
+    for snap in record["snapshots"]:
+        names = set(snap["file_sha256"])
+        snap["is_safetensors_conversion_only"] = (
+            snap["commit"] != record["refs_main"] and names == {"model.safetensors"})
+    candidates = [s for s in record["snapshots"] if not s["is_safetensors_conversion_only"]]
+    if (len(candidates) == 1 and candidates[0]["present_before_val_run_end"]
+            and candidates[0]["commit"] == record["refs_main"]
+            and "config.json" in candidates[0]["file_sha256"]):
+        chosen = candidates[0]
         record["status"] = "recovered"
-        record["recovered_commit"] = usable[0]["commit"]
+        record["recovered_commit"] = chosen["commit"]
+        weights = [f for f in ("model.safetensors", "pytorch_model.bin") if f in chosen["file_sha256"]]
+        record["loaded_weights_file"] = weights[0] if weights else None
+        record["loaded_weights_sha256"] = chosen["file_sha256"].get(weights[0]) if weights else None
+        record["ignored_snapshots"] = [s["commit"] for s in record["snapshots"] if s is not chosen]
     else:
         record["status"] = "ambiguous"
         record["recovered_commit"] = None
@@ -94,7 +111,7 @@ def main():
         "recorded_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "hf_cache": str(root),
         "val_run_end_utc": VAL_RUN_END.isoformat(),
-        "rule": "recovered only if exactly one cached snapshot exists and it predates the val run end",
+        "rule": "recovered if exactly one full snapshot (config.json) exists, equals refs/main and predates the val run end; converter-bot safetensors-only snapshots are ignored",
         "models": {key: inspect(hf_id, root) for key, hf_id in MODELS.items()},
     }
     out = Path(args.out)
