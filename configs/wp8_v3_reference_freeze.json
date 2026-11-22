@@ -3,11 +3,43 @@
   "id_pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
   "selection_note": "Thresholds come from saved val scores only; no test or OOD scores were read.",
   "models": {
+    "blip-itm-b": {
+      "role": "main",
+      "hf_id": "Salesforce/blip-itm-base-coco",
+      "revision": "bed8ad38cb2d04a5a4bdf2d071b3c3c0a4aa724c",
+      "revision_evidence": "only full cached snapshot, equal to refs/main, predating the val run (record_hf_revisions.py)",
+      "loaded_weights_file": "pytorch_model.bin",
+      "loaded_weights_sha256": "017fb3e7f4e125f13a8a4717f1402dbe0d0bb877474b4a203db13a4447b0227f",
+      "snapshot_file_sha256": {
+        "config.json": "3e6464c2ce7c54512ddb101c5e9a8e77f4c2d637be9e3d005667ccd4a34c6ef2",
+        "preprocessor_config.json": "0aa66e2e9ac3ea3b5cd4388c35072e22db4e1cc1f96c7872bed07749c712ade1",
+        "pytorch_model.bin": "017fb3e7f4e125f13a8a4717f1402dbe0d0bb877474b4a203db13a4447b0227f",
+        "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "tokenizer_config.json": "86da6fdb761b02f73a05561aba71711c2d7c205fe1fd1744046173a410263925",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "val_scores": "scores/abo-home-reciprocal-v3-candidate_blip_itm_b_val.csv",
+      "val_scores_sha256": "b494abb35f5e90204f858ae0e73a5986161fa63ffd34acf8047d1068789f7d59",
+      "n_val": 656,
+      "id_val_threshold": 0.26430228,
+      "id_val_accuracy_at_threshold": 0.948170731707317,
+      "threshold_rule": "maximum ID-val accuracy, ties -> smallest threshold; apply as score >= threshold",
+      "val_environment": {
+        "torch": "2.14.1",
+        "transformers": "5.21.0",
+        "device": "mps",
+        "n_params": 223744258
+      },
+      "batch_size": 16
+    },
     "siglip-b16": {
       "role": "main",
       "hf_id": "google/siglip-base-patch16-224",
       "revision": "7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed",
-      "revision_evidence": "single cached snapshot predating the val run (record_hf_revisions.py)",
+      "revision_evidence": "only full cached snapshot, equal to refs/main, predating the val run (record_hf_revisions.py)",
+      "loaded_weights_file": "model.safetensors",
+      "loaded_weights_sha256": "2c63cb7d1f2e95ba501893cbb8faeb4ea9a3af295498d35097126228659c2af8",
       "snapshot_file_sha256": {
         "config.json": "cd85b3d28829722820bcb89a2cfbb4160e55fd359249a3044da724166a8d9688",
         "model.safetensors": "2c63cb7d1f2e95ba501893cbb8faeb4ea9a3af295498d35097126228659c2af8",
@@ -30,10 +62,36 @@
         "n_params": 203155970
       },
       "batch_size": 16
+    },
+    "align-b": {
+      "role": "appendix",
+      "hf_id": "kakaobrain/align-base",
+      "revision": "e96a37facc7b1f59090ece82293226b817afd6ba",
+      "revision_evidence": "only full cached snapshot, equal to refs/main, predating the val run (record_hf_revisions.py)",
+      "loaded_weights_file": "pytorch_model.bin",
+      "loaded_weights_sha256": "ecaec21eaccd1a20d0eb735dc2fa6c53473e6400362b0ebc4b07592672f147df",
+      "snapshot_file_sha256": {
+        "config.json": "333bad5a89f545231812b2f51817a60a81ac35e474e520a4e7422d82af7a80f0",
+        "preprocessor_config.json": "6ef1d9b167c8143ebf0c7a4153b05547ba20348044cff8082e17bebeb4563175",
+        "pytorch_model.bin": "ecaec21eaccd1a20d0eb735dc2fa6c53473e6400362b0ebc4b07592672f147df",
+        "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+        "tokenizer_config.json": "c0d6ba14576b59d6dc83c7a9c279e0003b0aa80c4900ff17a653b3b6eff5cd41",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "val_scores": "scores/abo-home-reciprocal-v3-candidate_align_b_val.csv",
+      "val_scores_sha256": "d207d972ccdad73d4d517236c0f6a522c2744dce87971809431fb03e14507e06",
+      "n_val": 656,
+      "id_val_threshold": 0.15929934,
+      "id_val_accuracy_at_threshold": 0.9176829268292683,
+      "threshold_rule": "maximum ID-val accuracy, ties -> smallest threshold; apply as score >= threshold",
+      "val_environment": {
+        "torch": "2.14.1",
+        "transformers": "5.21.0",
+        "device": "mps",
+        "n_params": 172117841
+      },
+      "batch_size": 16
     }
   },
-  "not_frozen": [
-    "blip-itm-b: revision not recovered (ambiguous); rerun val pinned first",
-    "align-b: revision not recovered (ambiguous); rerun val pinned first"
-  ]
+  "not_frozen": []
 }

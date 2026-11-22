@@ -1,8 +1,8 @@
 {
-  "recorded_at_utc": "2026-11-21T22:42:18.770198+00:00",
+  "recorded_at_utc": "2026-11-22T05:35:48.593068+00:00",
   "hf_cache": "/Users/sunyijun/.cache/huggingface/hub",
   "val_run_end_utc": "2026-11-14T18:13:21+00:00",
-  "rule": "recovered only if exactly one cached snapshot exists and it predates the val run end",
+  "rule": "recovered if exactly one full snapshot (config.json) exists, equals refs/main and predates the val run end; converter-bot safetensors-only snapshots are ignored",
   "models": {
     "siglip-b16": {
       "hf_id": "google/siglip-base-patch16-224",
@@ -21,11 +21,15 @@
             "spiece.model": "1e5036bed065526c3c212dfbe288752391797c4bb1a284aa18c9a0b23fcaf8ec",
             "tokenizer.json": "c6e405cb7c670d56636a9402c81023a55bc6c3c53d89cf02b92f5c5005bfe920",
             "tokenizer_config.json": "d6423dae508cc3a129d22ea443841c111832a1a73125b8f25ea8736951698bcb"
-          }
+          },
+          "is_safetensors_conversion_only": false
         }
       ],
       "status": "recovered",
-      "recovered_commit": "7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed"
+      "recovered_commit": "7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed",
+      "loaded_weights_file": "model.safetensors",
+      "loaded_weights_sha256": "2c63cb7d1f2e95ba501893cbb8faeb4ea9a3af295498d35097126228659c2af8",
+      "ignored_snapshots": []
     },
     "blip-itm-b": {
       "hf_id": "Salesforce/blip-itm-base-coco",
@@ -38,7 +42,8 @@
           "present_before_val_run_end": true,
           "file_sha256": {
             "model.safetensors": "1f6a317de217900da9b16b6b605eb7ec174f53db8c7a3f944af7650d418f6b12"
-          }
+          },
+          "is_safetensors_conversion_only": true
         },
         {
           "commit": "bed8ad38cb2d04a5a4bdf2d071b3c3c0a4aa724c",
@@ -52,11 +57,17 @@
             "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
             "tokenizer_config.json": "86da6fdb761b02f73a05561aba71711c2d7c205fe1fd1744046173a410263925",
             "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
-          }
+          },
+          "is_safetensors_conversion_only": false
         }
       ],
-      "status": "ambiguous",
-      "recovered_commit": null
+      "status": "recovered",
+      "recovered_commit": "bed8ad38cb2d04a5a4bdf2d071b3c3c0a4aa724c",
+      "loaded_weights_file": "pytorch_model.bin",
+      "loaded_weights_sha256": "017fb3e7f4e125f13a8a4717f1402dbe0d0bb877474b4a203db13a4447b0227f",
+      "ignored_snapshots": [
+        "284ad943d88cca86a509c056bee0de902854b8e5"
+      ]
     },
     "align-b": {
       "hf_id": "kakaobrain/align-base",
@@ -69,7 +80,8 @@
           "present_before_val_run_end": true,
           "file_sha256": {
             "model.safetensors": "1263881b602ada0b56dd2d812c34910aa98f82b9ee9aed2142b1c7326d0ea2b3"
-          }
+          },
+          "is_safetensors_conversion_only": true
         },
         {
           "commit": "e96a37facc7b1f59090ece82293226b817afd6ba",
@@ -82,11 +94,17 @@
             "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
             "tokenizer_config.json": "c0d6ba14576b59d6dc83c7a9c279e0003b0aa80c4900ff17a653b3b6eff5cd41",
             "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
-          }
+          },
+          "is_safetensors_conversion_only": false
         }
       ],
-      "status": "ambiguous",
-      "recovered_commit": null
+      "status": "recovered",
+      "recovered_commit": "e96a37facc7b1f59090ece82293226b817afd6ba",
+      "loaded_weights_file": "pytorch_model.bin",
+      "loaded_weights_sha256": "ecaec21eaccd1a20d0eb735dc2fa6c53473e6400362b0ebc4b07592672f147df",
+      "ignored_snapshots": [
+        "36f732b75ad72fe6b9d56219ed0d400223c322de"
+      ]
     }
   }
 }
