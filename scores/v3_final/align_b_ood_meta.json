@@ -1,0 +1,21 @@
+{
+  "model_key": "align-b",
+  "hf_id": "kakaobrain/align-base",
+  "revision": "e96a37facc7b1f59090ece82293226b817afd6ba",
+  "family": "dual",
+  "score": "cosine similarity",
+  "n_params": 172117841,
+  "device": "mps",
+  "seconds": 37.9,
+  "pairs_csv": "data/releases/abo-ood-v3-20261115-candidate/eval_pairs.csv",
+  "splits": [
+    "ood_near",
+    "ood_far"
+  ],
+  "n_pairs": 568,
+  "torch": "2.14.1",
+  "transformers": "5.21.0",
+  "resolved_commit": "e96a37facc7b1f59090ece82293226b817afd6ba",
+  "pairs_sha256": "de18418821a796f32befa99355d3af12cc7411f725576c5e80d506d284d4904c",
+  "dataset_version": "abo-ood-v3-20261115-candidate"
+}

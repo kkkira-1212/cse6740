@@ -1,0 +1,10 @@
+{
+  "code_commit": "872b5fb730351be23dbfa3cb3865d4f8573789bc",
+  "started_utc": "2026-11-22T06:48:36.976989+00:00",
+  "torch": "2.14.1",
+  "transformers": "5.21.0",
+  "mps": true,
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "code_tree": "0950fa5e57b87a950e1da9805720655d0fa944c9",
+  "original_code_commit": "0bb36acec099a277e92866e5055d0b8ba70f66d0"
+}
