@@ -1,0 +1,19 @@
+{
+  "name": "clip_full_v3_both_seed2",
+  "dataset": "ood",
+  "splits": [
+    "ood_far",
+    "ood_near"
+  ],
+  "pairs": 568,
+  "pairs_sha256": "de18418821a796f32befa99355d3af12cc7411f725576c5e80d506d284d4904c",
+  "scores_sha256": "24e768a1f69d83b06d623f7c2de805e2b6a32c82c91cb959acb01d439e8d5b05",
+  "selection_manifest_sha256": "965438d406352f71ab027bc0fa4f77e6a85b3f85e4b006c514131f3a952fdbb9",
+  "checkpoint_sha256": "167f9fb3518340b3df8de5425a0e104038b346ba97abf5a39f325410ed3f19f3",
+  "threshold": 0.47414356,
+  "model_id": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "device": "mps",
+  "elapsed_seconds": 2.1529136660392396,
+  "val_max_abs_error": null
+}

@@ -1,0 +1,18 @@
+{
+  "name": "clip_lora_v3_r16_both_seed0",
+  "dataset": "id",
+  "splits": [
+    "test"
+  ],
+  "pairs": 686,
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "scores_sha256": "107270beba95ffa4776fbf0fe7e81e1a8f27731963e72b42ae4fa7f2369f33a1",
+  "selection_manifest_sha256": "965438d406352f71ab027bc0fa4f77e6a85b3f85e4b006c514131f3a952fdbb9",
+  "checkpoint_sha256": "706c4db12e06c240b14a2a323a02b5d0ea77390d4905ae5963a779ad066d1cab",
+  "threshold": 0.36369967,
+  "model_id": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "device": "mps",
+  "elapsed_seconds": 2.7236460839631036,
+  "val_max_abs_error": null
+}
