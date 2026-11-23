@@ -27,7 +27,20 @@ These descriptive OOD results suggest a large full-tuning regression on both
 categories. Near/far negative mixes and category distributions differ; avoid
 interpreting pooled differences as causal effects. N3 has only six near and five
 far reciprocal exchanges, and candidate labels are not fully human certified.
-V3 ID test model inference was not run in this delivery.
+The same seven frozen CLIP configurations were subsequently scored on the
+686-pair V3 ID test. Each score file covers exactly the frozen test pair IDs;
+evaluation uses its previously selected ID-validation threshold. Per-seed
+score, metadata, overall, and matched-type reports are under `scores/v3_final/`.
+
+| Model | ID test AUC | ID test accuracy |
+|---|---:|---:|
+| Zero-shot CLIP | 0.910263 | 0.822157 |
+| LoRA r16 both seed 0 | 0.978878 | 0.927114 |
+| LoRA r16 both seed 1 | 0.979762 | 0.937318 |
+| LoRA r16 both seed 2 | 0.979906 | 0.931487 |
+| Full tuning seed 0 | 0.983910 | 0.937318 |
+| Full tuning seed 1 | 0.986927 | 0.946064 |
+| Full tuning seed 2 | 0.985108 | 0.935860 |
 
 To reproduce the scorer after restoring the local ignored checkpoints and OOD
 images, run `python src/models/score_v3_final.py --dataset val` first, then
