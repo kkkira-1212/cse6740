@@ -1,25 +1,26 @@
-# v3 candidate / frozen release workflow (2026-11-14)
+# Final V3 references: freeze, then score ID test and OOD (2026-11-21)
 
-`run_wp8.sh` now targets the fixed-image releases. Default `MODE=val` scores **val only** on
-`data/releases/abo-home-reciprocal-v3-candidate/pairs.csv` (images from the v2 release) and runs
-`val_diagnostics.py`: threshold-free AUC overall and per negative type, each negative type
-compared with the positives of the same image anchors. It never reads test.
+Implements `docs/final_evaluation_handoff.md` items 3-4 for the pretrained references
+(BLIP and SigLIP main, ALIGN appendix). Run on the Mac that produced the saved val scores.
 
-```bash
-bash src/baselines/run_wp8.sh                                   # val diagnostics, default models
-MODELS="siglip-b16" bash src/baselines/run_wp8.sh               # one model
-MODE=final CONFIRM_FROZEN=yes DATA_DIR=data/releases/<frozen> bash src/baselines/run_wp8.sh
-```
+1. `python src/baselines/record_hf_revisions.py` reads the local Hugging Face cache (read-only) and
+   writes `configs/wp8_hf_revisions_recovered.json`: refs/main, every cached snapshot with file
+   SHA-256 and time. A model is "recovered" only if exactly one snapshot exists and it predates the
+   V3 val run (2026-11-14 13:13 EST); a newly resolved `main` is not accepted as evidence.
+2. `python src/baselines/freeze_references.py` writes `configs/wp8_v3_reference_freeze.json`: per
+   model the recovered revision, val score file + SHA-256, environment, and the ID-val threshold
+   (maximum val accuracy, ties -> smallest; the shared evaluator's own `select_threshold`).
+   Models without a recovered revision are listed under `not_frozen`; rerun their val split with
+   `--revision <commit>` before freezing them.
+3. Commit both JSON files, then `MODE=final CONFIRM_FROZEN=yes bash src/baselines/run_wp8.sh`.
+   Final mode refuses uncommitted changes, does not update the environment, checks torch and
+   transformers versions against the frozen val run, verifies ID and OOD images, records the code
+   commit in `scores/v3_final/run_record.json`, scores ID `test` and OOD `ood_near`/`ood_far` with
+   `--revision <frozen>`, and evaluates ID and OOD separately with `--fixed-threshold`,
+   `--matched-type-metrics`, the matching N3 exchange provenance, `--bootstrap 1000 --seed 0`.
+   Outputs: `scores/v3_final/<model>_{id_test,ood}[_eval*].{csv,md,json}`.
 
-OOD (after the OOD release is adopted): add `OOD_DIR=data/releases/<adopted-ood-release>` to the
-`MODE=final` command. OOD pairs (`eval_pairs.csv` by default, override with `OOD_PAIRS`) are scored
-with the same models, joined with the ID scores by `concat_csv.py`, and evaluated with
-`--test-splits test ood_near ood_far`, so each model's threshold comes from ID val only.
-
-Default models: `siglip-b16`, `blip-itm-b`, `align-b`. Outputs are named
-`scores/<dataset_version>_<model>[_val].csv`; each `*_meta.json` records the resolved Hugging Face
-commit, the pairs-file SHA-256 and the dataset version. `MODE=final` (val + test, shared evaluator,
-`--bootstrap 1000`, no `--r-at-1`) refuses to run unless `CONFIRM_FROZEN=yes`.
+Default `MODE=val` (no test) is unchanged: `bash src/baselines/run_wp8.sh`.
 
 # v2 data compatibility (2026-11-03)
 

@@ -1,0 +1,21 @@
+{
+  "model_key": "blip-itm-b",
+  "hf_id": "Salesforce/blip-itm-base-coco",
+  "revision": "bed8ad38cb2d04a5a4bdf2d071b3c3c0a4aa724c",
+  "family": "itm",
+  "score": "softmax P(match) from ITM head",
+  "n_params": 223744258,
+  "device": "mps",
+  "seconds": 115.9,
+  "pairs_csv": "data/releases/abo-ood-v3-20261115-candidate/eval_pairs.csv",
+  "splits": [
+    "ood_near",
+    "ood_far"
+  ],
+  "n_pairs": 568,
+  "torch": "2.14.1",
+  "transformers": "5.21.0",
+  "resolved_commit": "bed8ad38cb2d04a5a4bdf2d071b3c3c0a4aa724c",
+  "pairs_sha256": "de18418821a796f32befa99355d3af12cc7411f725576c5e80d506d284d4904c",
+  "dataset_version": "abo-ood-v3-20261115-candidate"
+}

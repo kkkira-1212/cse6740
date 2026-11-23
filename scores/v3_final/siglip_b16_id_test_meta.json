@@ -1,0 +1,20 @@
+{
+  "model_key": "siglip-b16",
+  "hf_id": "google/siglip-base-patch16-224",
+  "revision": "7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed",
+  "family": "dual",
+  "score": "cosine similarity",
+  "n_params": 203155970,
+  "device": "mps",
+  "seconds": 21.7,
+  "pairs_csv": "data/releases/abo-home-reciprocal-v3-candidate/pairs.csv",
+  "splits": [
+    "test"
+  ],
+  "n_pairs": 686,
+  "torch": "2.14.1",
+  "transformers": "5.21.0",
+  "resolved_commit": "7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed",
+  "pairs_sha256": "14814aa6bba905c07377a929c44e7d28b76893497c9c59eb86b8b6a9da334003",
+  "dataset_version": "abo-home-reciprocal-v3-candidate"
+}
