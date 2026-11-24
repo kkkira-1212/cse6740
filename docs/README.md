@@ -17,6 +17,7 @@
 - [100-pair human-review batch](../data/reviews/abo-home-v2-20261103/README.md): review/download instructions and provenance.
 - [Generation configuration](../configs/abo_home_v2.json): the exact parameters used by the release builder.
 - [Experiment entry points and status](experiments.md): current scoring and evaluation interfaces, plus pending model PRs.
+- [Amazon Reviews 2023 Home & Kitchen source items](amr_home.md): intermediate cross-source pilot, category mapping and image downloader.
 - [Environment setup](environment_setup.md): the shared project environment.
 
 ## Historical pilot and planning
